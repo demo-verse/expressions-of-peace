@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  background: linear-gradient(to bottom, #1d003b, #1e1e1e, #1e1e1e);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100vw;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1,
+h2 {
+  margin-bottom: 1rem;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 69rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.navbar {
+  color: #fff;
+  height: 4rem;
+}
+
+.navbar .logo {
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.connect-button {
+  background: #e90270;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: 1px solid black;
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.8rem;
+  cursor: pointer;
+}
+
+.connect-button:active {
+  background: #d00057;
+  color: #fdfdfd;
+}
+
+.navbar label {
+  background: #202428;
+  font-size: 1.1rem;
+  color: white;
+  border: 1px solid black;
+  padding: 0.5rem 0.7rem;
+  border-radius: 0.8rem;
+  margin: 0.2rem;
+}
+
+.account-button {
+  background: #202428;
+  font-size: 1.1rem;
+  font: inherit;
+  color: white;
+  border: 1px solid black;
+  padding: 0.5rem 0.7rem;
+  border-radius: 0.8rem;
+  margin: 0.2rem;
+  cursor: pointer;
+}
+
+.account-button:active {
+  background: #303438;
+  color: #fdfdfd;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  max-width: 25rem;
+  margin: 4rem auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+
+
+textarea {
+  width: 100%;
+  min-height: 100px;
+  background: #fdfdfd;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #202428;
+  color: #fff;
+  border-radius: 0.8rem;
+  margin: 1.25rem 0.7rem;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+  padding: 1.2rem 2rem;
+}
+
+.card button {
+  background: #2073e5;
+  color: white;
+  font: inherit;
+  font-size: 1.2rem;
+  border: 1px solid black;
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  /* margin: 1rem; */
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.card button:active {
+  background: #0e61d3;
+  color: #fdfdfd;
+}
+
+.card form {
+  width: 100%;
+}
+
+.card input:hover,
+.card input:focus {
+  outline: 2px solid #383c44;
+}
+
+.card label {
+  background: #282c34;
+  width: 100%;
+  border-radius: 0.8rem;
+  font-size: 1.3rem;
+  color: #f1f1f1;
+  padding: 0.2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.card input {
+  background: #282c34;
+  border: hidden;
+  width: 100%;
+  border-radius: 0.8rem;
+  font-size: 1.3rem;
+  color: #f1f1f1;
+  padding: 0.4rem 0.5rem;
+  margin-bottom: 1rem;
+}
+
+footer {
+  margin-top: auto;
+  justify-content: flex-end;
+  padding-bottom: 0.07rem;
+  /* font-size: 0.7rem; */
+  color: #d4d4d4;
+}
+
+footer .container {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 0.7rem;
+}
