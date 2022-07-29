@@ -33,14 +33,14 @@ const App = () => {
       const provider = new ethers.providers.Web3Provider(window.ethereum);
 
       // Set some data like block number and gas price provided, you can find more options in the API docs
-      const setBlockchainData = async () => {
-        // setBlockNumber(await provider.getBlockNumber());
-        let gasPrice = await provider.getGasPrice();
-        // formats a returned big number as gwei where 1,000,000,000 gwei is 1 ether
-        // you can read about more denominations here: https://ethdocs.org/en/latest/ether.html
-        gasPrice = Math.trunc(ethers.utils.formatUnits(gasPrice, "gwei"));
-        // setGasPrice(gasPrice);
-      };
+      // const setBlockchainData = async () => {
+      //   setBlockNumber(await provider.getBlockNumber());
+      //   let gasPrice = await provider.getGasPrice();
+      //   // formats a returned big number as gwei where 1,000,000,000 gwei is 1 ether
+      //   // you can read about more denominations here: https://ethdocs.org/en/latest/ether.html
+      //   gasPrice = Math.trunc(ethers.utils.formatUnits(gasPrice, "gwei"));
+      //   setGasPrice(gasPrice);
+      // };
 
       // Set aquired blockchain data as state to use in our frontend
       // setBlockchainData();
