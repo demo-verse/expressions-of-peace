@@ -9,7 +9,7 @@ This tool's purpose is making a World Peace observable and sustainable.
 
 ![Paulette Walker](https://i.imgur.com/SLjgN6p.png)
 
-![Yoko Ono](blob:https://imgur.com/b495620b-b94c-46b7-9ea8-3b04b44c44cc)
+![Yoko Ono](https://i.imgur.com/mmO7xDx.png)
 
 
 Right now, it is based on a very simple contract, where only the last expression written to that contract is stored on-chain, as a string field. (needs input sanitization).
@@ -44,7 +44,9 @@ Hope this gives a hint for what's next, it is acknowledgements.
 
 We've found that easiest way is referring/quoting from another expression, with its transactionHash on the ledger.
 
-special thanks to @ChristianChiarulli for open sourcing their stack and especially well use of the ethers library. 
+Special thanks to [@ChristianChiarulli](https://github.com/ChristianChiarulli) for open sourcing their web3 knowledge, stack and especially well use of the ethers library [on this repo](https://github.com/ChristianChiarulli/intro-fullstack-ethereum), resulting we decided building on top of that code, seperating hardhat logic to another repository for now, to be added soon. 
+
+**Bests, in Peace**
 
 ## Our stack
 
