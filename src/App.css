@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
 * {
   box-sizing: border-box;
@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1rem;
   line-height: 1.5;
   background: linear-gradient(to bottom, #1d003b, #1e1e1e, #1e1e1e);
@@ -111,7 +111,7 @@ h2 {
   display: flex;
   /* flex: 1; */
   flex-direction: horizontal;
-  align-items: center ;
+  align-items: center;
 }
 
 textarea {
@@ -193,6 +193,23 @@ footer {
 
 footer .container {
   display: flex;
-  justify-content: flex-end;
+  direction: horizontal;
+
+  justify-content: center;
   padding-bottom: 0.7rem;
+  background-color: #bfc5cd;
+}
+
+
+footer a {
+  color: #2c0c1e;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+  padding-top: 0.5rem;
+  /* add hover */
+}
+a:hover {
+  background-color: yellow;
 }

@@ -180,8 +180,9 @@ const App = () => {
 
       <footer>
         <div className="container">
-          please do not refresh the page <br></br> until your expression is
-          signed.
+          <a href="https://github.com/demo-verse/expressions-editor-react" rel="noreferrer" target="_blank" >/source code</a>
+          <a href="https://rinkeby.etherscan.io/address/0x6d584295790d2c9f7f2d4249b6caebc15b1da682" rel="noreferrer" target="_blank">/contract @ testnet</a> 
+          <a href="https://faucet.rinkeby.io/" rel="noreferrer" target="_blank">/get test eth</a>
           {/* {gasPrice} gwei &bull; {blockNumber} */}
         </div>
       </footer>
