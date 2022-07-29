@@ -107,7 +107,12 @@ h2 {
   text-align: center;
 }
 
-
+.checkbox {
+  display: flex;
+  /* flex: 1; */
+  flex-direction: horizontal;
+  align-items: center ;
+}
 
 textarea {
   width: 100%;

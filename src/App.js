@@ -16,11 +16,12 @@ const App = () => {
   const [provider, setProvider] = useState();
   const [inputValue, setInputValue] = useState("");
   const [value, setValue] = useState("...");
-  const [blockNumber, setBlockNumber] = useState("0");
-  const [gasPrice, setGasPrice] = useState("0");
+  // const [blockNumber, setBlockNumber] = useState("0");
+  // const [gasPrice, setGasPrice] = useState("0");
   const [account, setAccount] = useState("");
-  const [balance, setBalance] = useState("");
+  // const [balance, setBalance] = useState("");
   const [connected, setConnected] = useState(false);
+  // const [refIncluded, setRefIncluded] = useState(false);
 
   // Will run once everytime a user connects to the dapp
   useEffect(() => {
@@ -33,16 +34,16 @@ const App = () => {
 
       // Set some data like block number and gas price provided, you can find more options in the API docs
       const setBlockchainData = async () => {
-        setBlockNumber(await provider.getBlockNumber());
+        // setBlockNumber(await provider.getBlockNumber());
         let gasPrice = await provider.getGasPrice();
         // formats a returned big number as gwei where 1,000,000,000 gwei is 1 ether
         // you can read about more denominations here: https://ethdocs.org/en/latest/ether.html
         gasPrice = Math.trunc(ethers.utils.formatUnits(gasPrice, "gwei"));
-        setGasPrice(gasPrice);
+        // setGasPrice(gasPrice);
       };
 
       // Set aquired blockchain data as state to use in our frontend
-      setBlockchainData();
+      // setBlockchainData();
 
       // Set provider so we can use it in other functions
       setProvider(provider);
@@ -57,6 +58,8 @@ const App = () => {
     // setBalance(ethers.utils.formatEther(balance));
   };
 
+
+
   // handles connecting account
   const connectHandler = async () => {
     // MetaMask requires requesting permission to connect users accounts
@@ -67,7 +70,12 @@ const App = () => {
     setConnected(!connected);
   };
 
+  // const handleRefToggle = async () => {
+  //   setRefIncluded(!refIncluded);
+  // }
+
   // handles submit button
+  // add textual version  of the expression
   const handleSubmit = async (e) => {
     // stops page from refreshing
     e.preventDefault();
@@ -137,7 +145,7 @@ const App = () => {
               {value.substring(0, 400)} ... <a > read all</a>
               </>
             ) : value}</p> */}
-             <p>{value}</p>
+            <p>{value}</p>
           </div>
           <div className="card">
             <h2>yours, sincerely</h2>
@@ -153,6 +161,13 @@ const App = () => {
                 name="value"
                 placeholder="how would you imagine and express a world peace?"
               />
+              {/* <div className="checkbox">
+                including ref? {refIncluded} <input
+                  type="checkbox"
+                  checked={refIncluded}
+                  onChange={(e) => handleRefToggle(e.target.checked)}
+                />
+              </div> */}
               <button>sign</button>
             </form>
           </div>
