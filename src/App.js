@@ -173,7 +173,9 @@ const App = () => {
           </div>
         </section>
       ) : (
-        <></>
+        <div className="expressions">
+          <h1>Expressions</h1>
+          </div>
       )}
 
       <footer>

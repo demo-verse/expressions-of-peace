@@ -7,7 +7,14 @@ That is, observed as a potentially viable one, with a simple editor and the use 
 ---
 This tool's purpose is making a World Peace observable and sustainable. 
 
-Right now, it is based on a very simple contract, where only the last expression written to that contract is stored on-chain, as a string field. (needs sanitization).
+![Paulette Walker](https://i.imgur.com/SLjgN6p.png)
+
+![Yoko Ono](blob:https://imgur.com/b495620b-b94c-46b7-9ea8-3b04b44c44cc)
+
+
+Right now, it is based on a very simple contract, where only the last expression written to that contract is stored on-chain, as a string field. (needs input sanitization).
+
+
 
 Here is that contract deployed on Rinkeby testnet. You can check `contracts` folder.
 https://rinkeby.etherscan.io/address/0x6d584295790d2c9f7f2d4249b6caebc15b1da682
@@ -17,9 +24,6 @@ One can simply check transaction hashes to display each expressions made with ea
 
 For example, this transaction:
 https://rinkeby.etherscan.io/tx/0xa7df107d235becf0d5d8c891c8a8d5be01eff05a406b1b330549fbbb23dc69c2
-
-
-
 
 
 to try it yourselves.  
