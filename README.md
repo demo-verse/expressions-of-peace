@@ -1,6 +1,6 @@
 # Expressions of Peace
 
-Expressions of Peace are sincere attempts on resiliently, undeniebly and simply, expressing peace, and happening to be core, civil component of an undeniable World Peace. 
+Expressions of Peace are sincere attempts on resiliently, simply, expressing peace, and happening to be core, civil component of an undeniable World Peace. 
 
 That is, observed as a potentially viable one, with a simple editor and the use of blockchain technology; to be co-imaginable, claimable and experienced, as a global human right; extending the freedom of speech.
 
