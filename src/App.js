@@ -14,9 +14,7 @@ const expressionOfPeaceABI = ExpressionOfPeace;
 // NOTE: checkout the API for ethers.js here: https://docs.ethers.io/v5/api/
 // TIP: Remember to console.log something if you are unsure of what is being returned
 
-
 const App = () => {
-
   const [provider, setProvider] = useState();
   const [inputValue, setInputValue] = useState("");
   const [value, setValue] = useState("...");
@@ -90,29 +88,25 @@ const App = () => {
       provider
     );
 
-    // a signer is necessary when your want to write to the blockchain
-    // your wallet doesn't need to sign or spend any ether to read from the blockchain
-    // but it does need to spend ether and therefore sign to write to the blockchain
+    // a signer is necessary when we want to write to blockchain
+    // a wallet doesn't need to sign/spend any gas to read from blockchain
     const signer = provider.getSigner();
     const contractWithSigner = contract.connect(signer);
-    // we can use 'set' here because the abi provides us with a reference to the methods defined in our smart contract
     console.log(await contractWithSigner.set(inputValue));
-    // console.log(inputValue);
   };
 
   const handleRetrieveData = async () => {
+    console.log("retreiving data..");
     const expressionOfPeaceContract = new ethers.Contract(
       expressionOfPeaceAddress,
       expressionOfPeaceABI,
       provider
     );
-    // we can use 'get' here because the abi provides us with a reference to the methods defined in our smart contract
 
-    //get current value
+    //get last expression value, stored as current_expression.
+    // we can use 'get' here because the abi provides us with a reference to the methods defined in our smart contract
     const expressionTxt = await expressionOfPeaceContract.get();
-    // console.log(`Expression of Peace: ${expressionTxt}`);
     setValue(expressionTxt);
-    // console.log(`value from contract: ${await expressionOfPeaceContract.get()}`);
   };
 
   return (
@@ -142,12 +136,8 @@ const App = () => {
         <section className="cards">
           <div className="last-expression-card">
             <h2>last expression</h2>
-            <button onClick={handleRetrieveData}>read </button>
-            {/* <p>{value.length > 600 ? (
-              <>
-              {value.substring(0, 400)} ... <a > read all</a>
-              </>
-            ) : value}</p> */}
+            <button onClick={handleRetrieveData}>read</button>
+
             <p>{value}</p>
           </div>
           <div className="new-expression-card">
@@ -183,22 +173,29 @@ const App = () => {
 
       <footer>
         <div className="container">
-          <a className="source-code"
+          <a
+            className="source-code"
             href="https://github.com/demo-verse/expressions-editor-react"
             rel="noreferrer"
             target="_blank"
           >
-            /source code
+            source code
           </a>
-          <a className="contract-at-rinkeby"
+          <a
+            className="contract-at-rinkeby"
             href="https://rinkeby.etherscan.io/address/0x6d584295790d2c9f7f2d4249b6caebc15b1da682"
             rel="noreferrer"
             target="_blank"
           >
-            /contract @ rinkeby
+            contract @ rinkeby
           </a>
-          <a className="get-fake-eth" href="https://faucet.rinkeby.io/" rel="noreferrer" target="_blank">
-            /get fake eth
+          <a
+            className="get-fake-eth"
+            href="https://faucet.rinkeby.io/"
+            rel="noreferrer"
+            target="_blank"
+          >
+            get test eth
           </a>
           {/* {gasPrice} gwei &bull; {blockNumber} */}
         </div>

@@ -48,8 +48,6 @@ h2 {
   font-weight: bold;
 }
 
-
-
 .connect-button {
   background: #e90270;
   color: white;
@@ -102,11 +100,11 @@ h2 {
 
 .cards {
   display: flex;
-    flex-direction: column;
-    margin: 4rem auto;
-    padding: 0 2rem;
-    text-align: center;
-    width: 80%;
+  flex-direction: column;
+  margin: 2rem auto;
+  padding: 0 2rem;
+  text-align: center;
+  width: 80%;
 }
 
 .checkbox {
@@ -119,7 +117,7 @@ h2 {
 textarea {
   font-size: 1.2rem;
   width: 100%;
-  min-height: 220px;
+  min-height: 420px;
   background: #cdc74f;
 }
 
@@ -136,6 +134,11 @@ textarea {
   padding: 1.2rem 2rem;
 }
 
+.last-expression-card p {
+  height: auto;
+  overflow-y: auto;
+  font-size: 1.2rem;
+}
 .last-expression-card {
   display: flex;
   flex-direction: column;
@@ -160,6 +163,10 @@ textarea {
   margin: 1.25rem 0.7rem;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
   padding: 1.2rem 2rem;
+}
+
+.new-expression-card textarea {
+  font-size: 1.4rem;
 }
 
 .new-expression-card button {
@@ -241,17 +248,33 @@ footer .container {
 
   justify-content: center;
   padding-bottom: 0.7rem;
-  background-color: #090a0b;
+  background-color: transparent;
+}
+
+.Collapsible__trigger {
+  background: #202428;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: 1px solid black;
+  padding: 0.5rem 0.7rem;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  /* position: absolute; */
 }
 
 
-footer  a {
+
+footer a {
   color: #f4ebf0;
   text-decoration: none;
   font-size: 1.2rem;
-  margin-right: 1.5rem;
+  margin-right: 1.2rem;
   margin-left: 1.5rem;
   padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.2rem;
+
   /* add hover */
 }
 a:hover {
@@ -262,10 +285,62 @@ a:hover {
 .source-code:hover {
   background-color: rgb(112, 226, 152);
   color: #1d003b;
-
 }
 .get-fake-eth:hover {
   background-color: rgb(239, 185, 84);
   color: #1d003b;
+}
 
+.last-expression-card button:hover {
+  font-size: larger;
+}
+
+@media only screen and (max-width: 960px) {
+  .new-expression-card button {
+    width: 40%;
+  }
+  .last-expression-card button {
+    width: 40%;
+  }
+
+  .last-expression-card p {
+    text-align: start;
+    height: 12rem;
+    overflow-y: auto;
+    font-size: 1.2rem;
+  }
+
+  .new-expression-card  {
+    width: 100%;
+  }
+  textarea {
+    font-size: 1.2rem;
+    width: 100%;
+    min-height: 320px;
+    background: #cdc74f;
+  }
+}
+
+@media only screen and (min-width: 961px) {
+  .new-expression-card button {
+    width: 20%;
+    margin-top: 30px;
+  }
+  .last-expression-card button {
+    width: 20%;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+
+  .last-expression-card p {
+    text-align: start;
+    height: 16rem;
+    overflow-y: auto;
+    font-size: 1.2rem;
+  }
+
+  .cards {
+   
+    width: 60%;
+  }
 }
