@@ -48,6 +48,8 @@ h2 {
   font-weight: bold;
 }
 
+
+
 .connect-button {
   background: #e90270;
   color: white;
@@ -100,11 +102,11 @@ h2 {
 
 .cards {
   display: flex;
-  flex-direction: column;
-  max-width: 25rem;
-  margin: 4rem auto;
-  padding: 0 2rem;
-  text-align: center;
+    flex-direction: column;
+    margin: 4rem auto;
+    padding: 0 2rem;
+    text-align: center;
+    width: 80%;
 }
 
 .checkbox {
@@ -115,9 +117,10 @@ h2 {
 }
 
 textarea {
+  font-size: 1.2rem;
   width: 100%;
-  min-height: 100px;
-  background: #fdfdfd;
+  min-height: 220px;
+  background: #cdc74f;
 }
 
 .card {
@@ -133,7 +136,33 @@ textarea {
   padding: 1.2rem 2rem;
 }
 
-.card button {
+.last-expression-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #202428;
+  color: #fff;
+  border-radius: 0.8rem;
+  margin: 1.25rem 0.7rem;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+  padding: 1.2rem 2rem;
+}
+
+.new-expression-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #202428;
+  color: #fff;
+  border-radius: 0.8rem;
+  margin: 1.25rem 0.7rem;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+  padding: 1.2rem 2rem;
+}
+
+.new-expression-card button {
   background: #2073e5;
   color: white;
   font: inherit;
@@ -143,7 +172,22 @@ textarea {
   border-radius: 0.8rem;
   cursor: pointer;
   /* margin: 1rem; */
-  width: 100%;
+  width: 60%;
+  margin-bottom: 1rem;
+  margin-top: 12px;
+}
+
+.last-expression-card button {
+  background: #80e840;
+  color: black;
+  font: inherit;
+  font-size: 1.2rem;
+  border: 1px solid black;
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  /* margin: 1rem; */
+  width: 60%;
   margin-bottom: 1rem;
 }
 
@@ -152,7 +196,7 @@ textarea {
   color: #fdfdfd;
 }
 
-.card form {
+.new-expression-card form {
   width: 100%;
 }
 
@@ -172,12 +216,12 @@ textarea {
   margin-bottom: 1rem;
 }
 
-.card input {
+.new-expression-card input {
   background: #282c34;
   border: hidden;
   width: 100%;
   border-radius: 0.8rem;
-  font-size: 1.3rem;
+  font-size: 2rem;
   color: #f1f1f1;
   padding: 0.4rem 0.5rem;
   margin-bottom: 1rem;
@@ -197,12 +241,12 @@ footer .container {
 
   justify-content: center;
   padding-bottom: 0.7rem;
-  background-color: #bfc5cd;
+  background-color: #090a0b;
 }
 
 
-footer a {
-  color: #2c0c1e;
+footer  a {
+  color: #f4ebf0;
   text-decoration: none;
   font-size: 1.2rem;
   margin-right: 1.5rem;
@@ -212,4 +256,16 @@ footer a {
 }
 a:hover {
   background-color: yellow;
+  color: #1d003b;
+}
+
+.source-code:hover {
+  background-color: rgb(112, 226, 152);
+  color: #1d003b;
+
+}
+.get-fake-eth:hover {
+  background-color: rgb(239, 185, 84);
+  color: #1d003b;
+
 }

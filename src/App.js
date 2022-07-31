@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
 import { ethers } from "ethers";
 
+// import "dotenv/config"; // see https://github.com/motdotla/dotenv#how-do-i-use-dotenv-with-import
 import "./App.css";
 import ExpressionOfPeace from "./artifacts/contracts/ExpressionOfPeace.sol/ExpressionOfPeace.json";
 
 // NOTE: Make sure to change this to the contract address you deployed
+
 const expressionOfPeaceAddress = "0x6d584295790d2C9f7F2D4249B6CAebC15b1DA682";
 // ABI so the web3 library knows how to interact with our contract
 const expressionOfPeaceABI = ExpressionOfPeace;
@@ -12,7 +14,9 @@ const expressionOfPeaceABI = ExpressionOfPeace;
 // NOTE: checkout the API for ethers.js here: https://docs.ethers.io/v5/api/
 // TIP: Remember to console.log something if you are unsure of what is being returned
 
+
 const App = () => {
+
   const [provider, setProvider] = useState();
   const [inputValue, setInputValue] = useState("");
   const [value, setValue] = useState("...");
@@ -21,13 +25,14 @@ const App = () => {
   const [account, setAccount] = useState("");
   // const [balance, setBalance] = useState("");
   const [connected, setConnected] = useState(false);
+  // const [assetTransfers, setAssetTransfers] = useState([]);
   // const [refIncluded, setRefIncluded] = useState(false);
 
   // Will run once everytime a user connects to the dapp
   useEffect(() => {
     // check if ethereum is provided by something like Metamask
     if (typeof window.ethereum !== "undefined") {
-      console.log("ethereum is available");
+      // console.log("ethereum is available");
 
       // get provider injected by metamask
       const provider = new ethers.providers.Web3Provider(window.ethereum);
@@ -58,14 +63,12 @@ const App = () => {
     // setBalance(ethers.utils.formatEther(balance));
   };
 
-
-
   // handles connecting account
   const connectHandler = async () => {
     // MetaMask requires requesting permission to connect users accounts
     await provider.send("eth_requestAccounts", []);
     const accountList = await provider.listAccounts();
-    console.log(accountList);
+    // console.log(accountList);
     accountHandler(accountList[0]);
     setConnected(!connected);
   };
@@ -137,7 +140,7 @@ const App = () => {
       </header>
       {connected ? (
         <section className="cards">
-          <div className="card">
+          <div className="last-expression-card">
             <h2>last expression</h2>
             <button onClick={handleRetrieveData}>read </button>
             {/* <p>{value.length > 600 ? (
@@ -147,9 +150,9 @@ const App = () => {
             ) : value}</p> */}
             <p>{value}</p>
           </div>
-          <div className="card">
+          <div className="new-expression-card">
             <h2>yours, sincerely</h2>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} className="input">
               <textarea
                 type="text"
                 required
@@ -175,14 +178,28 @@ const App = () => {
       ) : (
         <div className="expressions">
           <h1>Expressions</h1>
-          </div>
+        </div>
       )}
 
       <footer>
         <div className="container">
-          <a href="https://github.com/demo-verse/expressions-editor-react" rel="noreferrer" target="_blank" >/source code</a>
-          <a href="https://rinkeby.etherscan.io/address/0x6d584295790d2c9f7f2d4249b6caebc15b1da682" rel="noreferrer" target="_blank">/contract @ testnet</a> 
-          <a href="https://faucet.rinkeby.io/" rel="noreferrer" target="_blank">/get test eth</a>
+          <a className="source-code"
+            href="https://github.com/demo-verse/expressions-editor-react"
+            rel="noreferrer"
+            target="_blank"
+          >
+            /source code
+          </a>
+          <a className="contract-at-rinkeby"
+            href="https://rinkeby.etherscan.io/address/0x6d584295790d2c9f7f2d4249b6caebc15b1da682"
+            rel="noreferrer"
+            target="_blank"
+          >
+            /contract @ rinkeby
+          </a>
+          <a className="get-fake-eth" href="https://faucet.rinkeby.io/" rel="noreferrer" target="_blank">
+            /get fake eth
+          </a>
           {/* {gasPrice} gwei &bull; {blockNumber} */}
         </div>
       </footer>
