@@ -40,23 +40,28 @@ h2 {
 
 .navbar {
   color: #fff;
-  height: 4rem;
+  height: 6rem;
 }
 
 .navbar .logo {
   font-size: x-large;
   font-weight: bold;
+  align-self: center;
+  padding-left: 2%;
+  margin-left: 0;
 }
 
 .connect-button {
   background: #e90270;
   color: white;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: bold;
   border: 1px solid black;
-  padding: 0.3rem 0.5rem;
+  /* padding: 0.3rem 0.5rem; */
   border-radius: 0.8rem;
   cursor: pointer;
+  width: 8rem;
+  height: 2.2rem;
 }
 
 .connect-button:active {
@@ -133,7 +138,24 @@ textarea {
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
   padding: 1.2rem 2rem;
 }
+.expressions {
+  background-color: #f1f1f1;
+  padding: 1.2rem;
+  margin-bottom: 0.5rem;
+  
+}
+.expressions h2 {
+  line-height: 1.2rem;
+  margin-top: 0.6rem;
 
+}
+
+.expressions p {
+  margin-top: 2rem;
+  margin-bottom: 1.6rem;
+  font-size: 1.2rem;
+
+}
 .last-expression-card p {
   height: auto;
   overflow-y: auto;
@@ -179,7 +201,7 @@ textarea {
   border-radius: 0.8rem;
   cursor: pointer;
   /* margin: 1rem; */
-  width: 60%;
+  /* width: 60%; */
   margin-bottom: 1rem;
   margin-top: 12px;
 }
@@ -194,7 +216,7 @@ textarea {
   border-radius: 0.8rem;
   cursor: pointer;
   /* margin: 1rem; */
-  width: 60%;
+  /* width: 60%; */
   margin-bottom: 1rem;
 }
 
@@ -236,6 +258,7 @@ textarea {
 
 footer {
   margin-top: auto;
+  margin-bottom: auto;
   justify-content: flex-end;
   padding-bottom: 0.07rem;
   /* font-size: 0.7rem; */
@@ -245,7 +268,6 @@ footer {
 footer .container {
   display: flex;
   direction: horizontal;
-
   justify-content: center;
   padding-bottom: 0.7rem;
   background-color: transparent;
@@ -282,6 +304,18 @@ a:hover {
   color: #1d003b;
 }
 
+.metamask-link {
+  text-decoration: none;
+  
+}
+
+.metamask-link:hover {
+  /* background-color: rgb(214, 169, 44); */
+  background-color: #F6851B;
+  color: #1d003b;
+}
+
+
 .source-code:hover {
   background-color: rgb(112, 226, 152);
   color: #1d003b;
@@ -294,6 +328,7 @@ a:hover {
 .last-expression-card button:hover {
   font-size: larger;
 }
+
 
 @media only screen and (max-width: 960px) {
   .new-expression-card button {
@@ -334,13 +369,12 @@ a:hover {
 
   .last-expression-card p {
     text-align: start;
-    height: 16rem;
+    height: 14rem;
     overflow-y: auto;
     font-size: 1.2rem;
   }
 
   .cards {
-   
     width: 60%;
   }
 }

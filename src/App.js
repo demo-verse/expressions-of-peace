@@ -166,9 +166,58 @@ const App = () => {
           </div>
         </section>
       ) : (
-        <div className="expressions">
-          <h1>Expressions</h1>
-        </div>
+        <section className="expressions">
+          <h2>
+            {" "}
+            <span>what </span> is this?
+          </h2>
+          <p>
+            {" "}
+            This is an open sourced and minded tool to illustrate and make{" "}
+            <strong>a World Peace</strong>, catayzed via tech and creativity. In
+            this context, expressions of peace, extend freedom of expression; as
+            a global human right to experience.
+          </p>
+
+          <h2>
+            <span>why </span> would I use this
+            tool?{" "}
+          </h2>
+          <p>
+            this way, any individual can express their imagination and their way
+            of peace-making in the scale of billions.{" "}
+          </p>
+
+          <h2>
+            <span>how </span> do I use this
+            tool?{" "}
+          </h2>
+          <p>
+            all you need is a browser, {""}
+            <a
+              className="metamask-link"
+              href="https://metamask.zendesk.com/hc/en-us/articles/360015489531-Getting-started-with-MetaMask"
+              rel="noreferrer"
+              target="_blank"
+            >
+              a metamask wallet,
+            </a>{" "}
+            connected to (currently) rinkeby testnet and a few clicks. .
+          </p>
+
+          <h2>
+            <span>why </span> blockchain is at
+            core?{" "}
+          </h2>
+          <p>
+            - decentralized, distributed
+            <br></br>- transparent, immutable
+            <br></br>- cannot be censored or shut down
+            <br></br>- equally accessible to everyone
+            <br></br>- anonymity is guaranteed<strong> by design.</strong>
+            {/* <br></br><span style={{paddingLeft: "30%"}}></span */}
+          </p>
+        </section>
       )}
 
       <footer>
