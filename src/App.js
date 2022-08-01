@@ -222,6 +222,16 @@ const App = () => {
 
       <footer>
         <div className="container">
+
+        
+        <a
+            className="license-link"
+            href="https://creativecommons.org/licenses/by-sa/2.0/"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-sa.svg" alt="creative commons shareAlike"></img>
+          </a>
           <a
             className="source-code"
             href="https://github.com/demo-verse/expressions-editor-react"
