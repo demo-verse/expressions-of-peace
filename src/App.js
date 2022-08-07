@@ -5,11 +5,16 @@ import { ethers } from "ethers";
 import "./App.css";
 import ExpressionOfPeace from "./artifacts/contracts/ExpressionOfPeace.sol/ExpressionOfPeace.json";
 
-// NOTE: Make sure to change this to the contract address you deployed
+// will initiate all chains with their test networks.
+// first, ethereum's rinkeby test network.
+// later, we'll deploy contracts in the other test networks as well.
+// all here. https://en.wikipedia.org/wiki/List_of_blockchains
 
+// NOTE: Make sure to change this to the contract address you deployed
 const expressionOfPeaceAddress = "0x6d584295790d2C9f7F2D4249B6CAebC15b1DA682";
 // ABI so the web3 library knows how to interact with our contract
 const expressionOfPeaceABI = ExpressionOfPeace;
+const CHAIN_ID = 4; // rinkeby testnet @ ethereum
 
 // NOTE: checkout the API for ethers.js here: https://docs.ethers.io/v5/api/
 // TIP: Remember to console.log something if you are unsure of what is being returned
@@ -18,10 +23,12 @@ const App = () => {
   const [provider, setProvider] = useState();
   const [inputValue, setInputValue] = useState("");
   const [value, setValue] = useState("...");
+  const [asdf, setAsdf] = useState(null);
   // const [blockNumber, setBlockNumber] = useState("0");
   // const [gasPrice, setGasPrice] = useState("0");
   const [account, setAccount] = useState("");
   // const [balance, setBalance] = useState("");
+  const [currentChainId, setCurrentChainId] = useState(null);
   const [connected, setConnected] = useState(false);
   // const [assetTransfers, setAssetTransfers] = useState([]);
   // const [refIncluded, setRefIncluded] = useState(false);
@@ -50,27 +57,86 @@ const App = () => {
 
       // Set provider so we can use it in other functions
       setProvider(provider);
+    } else {
+      console.log("install metamask");
     }
   }, []);
 
+  // useEffect(() => {
+   
+  // }, [connected, currentChainId, asdf]);
+
   // handles setting account and balance
   const accountHandler = async (account) => {
+
+  
     setAccount(account);
+    
     // const balance = await provider.getBalance(account);
     // notice that we use format ether here, uncomment the following console.log and see what happens if we don't
     // setBalance(ethers.utils.formatEther(balance));
   };
 
+  const networkHandler = async (networkId) => {
+    function dec2hex(i) {
+      return `0x${i.toString(16)}`;
+    }
+    async function requestSwitchNetwork() {
+      try {
+        const hexChainId = dec2hex(CHAIN_ID);
+        await window.ethereum.request({
+          method: "wallet_switchEthereumChain",
+          params: [{ chainId: hexChainId }],
+        });
+      } catch (switchError) {
+        // This error code indicates that the chain has not been added to MetaMask.
+        if (switchError.code === 4902) {
+          console.log(
+            "This network is not available in your metamask, please add it"
+          );
+        }
+        console.log("Failed to switch to the network");
+      }
+    }
+
+    if(provider) {
+
+      if (window.ethereum && currentChainId !== Number(CHAIN_ID)) {
+        // setNetworkValid(false);
+        console.log("switching to network: ", CHAIN_ID);
+        requestSwitchNetwork();
+      } else {
+        console.log("wallet already connected to rinkeby");
+      }
+    } else {
+      console.log("no provider");
+    }
+  }
   // handles connecting account
   const connectHandler = async () => {
-    // MetaMask requires requesting permission to connect users accounts
+    console.log("checking network status ...");
+    await networkHandler();
+   
+   
+    console.log("connecting..");
+    // MetaMask requesting permission to connect users accounts if it is first time of an account.
     await provider.send("eth_requestAccounts", []);
     const accountList = await provider.listAccounts();
     // console.log(accountList);
     accountHandler(accountList[0]);
-    setConnected(!connected);
+    console.log("connected to dapp with account: " + accountList[0]);
+    
+    // MetaMask requires requesting permission to connect users accounts
+    const network = await provider.getNetwork();
+    console.log(`network (chainid): ${network.chainId}`);
+    setCurrentChainId(network.chainId);
+    setConnected(true);
   };
 
+  const disconnectHandler = async () => {
+    console.log("disconnecting wallet");
+    setConnected(false);
+  };
   // const handleRefToggle = async () => {
   //   setRefIncluded(!refIncluded);
   // }
@@ -120,12 +186,13 @@ const App = () => {
                 {`${Number.parseFloat(balance).toPrecision(4)} ETH`}
               </label> */}
               hi,
-              <button className="account-button" onClick={connectHandler}>
+              <button className="account-button" onClick={disconnectHandler}>
                 {account.substring(0, 5)}...
                 {account.substring(account.length - 4)}
               </button>
             </div>
           ) : (
+            
             <button className="connect-button" onClick={connectHandler}>
               connect
             </button>
@@ -180,8 +247,7 @@ const App = () => {
           </p>
 
           <h2>
-            <span>why </span> would I use this
-            tool?{" "}
+            <span>why </span> would I use this tool?{" "}
           </h2>
           <p>
             this way, any individual can express their imagination and their way
@@ -189,8 +255,7 @@ const App = () => {
           </p>
 
           <h2>
-            <span>how </span> do I use this
-            tool?{" "}
+            <span>how </span> do I use this tool?{" "}
           </h2>
           <p>
             all you need is a browser, {""}
@@ -206,8 +271,7 @@ const App = () => {
           </p>
 
           <h2>
-            <span>why </span> blockchain is at
-            core?{" "}
+            <span>why </span> blockchain is at core?{" "}
           </h2>
           <p>
             - decentralized, distributed
@@ -222,15 +286,16 @@ const App = () => {
 
       <footer>
         <div className="container">
-
-        
-        <a
+          <a
             className="license-link"
             href="https://creativecommons.org/licenses/by-sa/2.0/"
             rel="noreferrer"
             target="_blank"
           >
-            <img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-sa.svg" alt="creative commons shareAlike"></img>
+            <img
+              src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-sa.svg"
+              alt="creative commons shareAlike"
+            ></img>
           </a>
           <a
             className="source-code"
