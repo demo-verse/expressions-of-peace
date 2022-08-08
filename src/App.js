@@ -1,76 +1,141 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { ethers } from "ethers";
 
 // import "dotenv/config"; // see https://github.com/motdotla/dotenv#how-do-i-use-dotenv-with-import
 import "./App.css";
 import ExpressionOfPeace from "./artifacts/contracts/ExpressionOfPeace.sol/ExpressionOfPeace.json";
 
-// NOTE: Make sure to change this to the contract address you deployed
+// will initiate all chains with their test networks.
+// first, ethereum's rinkeby test network.
+// later, we'll deploy contracts in the other test networks as well.
+// all here. https://en.wikipedia.org/wiki/List_of_blockchains
 
+// NOTE: Make sure to change this to the contract address you deployed
 const expressionOfPeaceAddress = "0x6d584295790d2C9f7F2D4249B6CAebC15b1DA682";
 // ABI so the web3 library knows how to interact with our contract
 const expressionOfPeaceABI = ExpressionOfPeace;
+const CHAIN_ID = 4; // rinkeby testnet @ ethereum
 
 // NOTE: checkout the API for ethers.js here: https://docs.ethers.io/v5/api/
 // TIP: Remember to console.log something if you are unsure of what is being returned
 
 const App = () => {
-  const [provider, setProvider] = useState();
+  // const [provider, setProvider] = useState();
   const [inputValue, setInputValue] = useState("");
   const [value, setValue] = useState("...");
   // const [blockNumber, setBlockNumber] = useState("0");
   // const [gasPrice, setGasPrice] = useState("0");
   const [account, setAccount] = useState("");
   // const [balance, setBalance] = useState("");
+  const [currentChainId, setCurrentChainId] = useState(null);
   const [connected, setConnected] = useState(false);
   // const [assetTransfers, setAssetTransfers] = useState([]);
   // const [refIncluded, setRefIncluded] = useState(false);
 
   // Will run once everytime a user connects to the dapp
-  useEffect(() => {
-    // check if ethereum is provided by something like Metamask
-    if (typeof window.ethereum !== "undefined") {
-      // console.log("ethereum is available");
+  // useEffect(() => {
+  //   // check if ethereum is provided by something like Metamask
+  //   if (typeof window.ethereum !== "undefined") {
+  //     // console.log("ethereum is available");
 
-      // get provider injected by metamask
-      const provider = new ethers.providers.Web3Provider(window.ethereum);
+  //     // get provider injected by metamask
+  //     const provider = new ethers.providers.Web3Provider(window.ethereum);
 
-      // Set some data like block number and gas price provided, you can find more options in the API docs
-      // const setBlockchainData = async () => {
-      //   setBlockNumber(await provider.getBlockNumber());
-      //   let gasPrice = await provider.getGasPrice();
-      //   // formats a returned big number as gwei where 1,000,000,000 gwei is 1 ether
-      //   // you can read about more denominations here: https://ethdocs.org/en/latest/ether.html
-      //   gasPrice = Math.trunc(ethers.utils.formatUnits(gasPrice, "gwei"));
-      //   setGasPrice(gasPrice);
-      // };
+  //     // Set some data like block number and gas price provided, you can find more options in the API docs
+  //     // const setBlockchainData = async () => {
+  //     //   setBlockNumber(await provider.getBlockNumber());
+  //     //   let gasPrice = await provider.getGasPrice();
+  //     //   // formats a returned big number as gwei where 1,000,000,000 gwei is 1 ether
+  //     //   // you can read about more denominations here: https://ethdocs.org/en/latest/ether.html
+  //     //   gasPrice = Math.trunc(ethers.utils.formatUnits(gasPrice, "gwei"));
+  //     //   setGasPrice(gasPrice);
+  //     // };
 
-      // Set aquired blockchain data as state to use in our frontend
-      // setBlockchainData();
+  //     // Set aquired blockchain data as state to use in our frontend
+  //     // setBlockchainData();
 
-      // Set provider so we can use it in other functions
-      setProvider(provider);
-    }
-  }, []);
+  //     // Set provider so we can use it in other functions
+  //     setProvider(provider);
+  //   } else {
+  //     console.log("install metamask");
+  //   }
+  // }, []);
+
+  // useEffect(() => {
+
+  // }, [connected, currentChainId, asdf]);
 
   // handles setting account and balance
   const accountHandler = async (account) => {
     setAccount(account);
+
     // const balance = await provider.getBalance(account);
     // notice that we use format ether here, uncomment the following console.log and see what happens if we don't
     // setBalance(ethers.utils.formatEther(balance));
   };
 
+  const networkHandler = async (networkId) => {
+    function dec2hex(i) {
+      return `0x${i.toString(16)}`;
+    }
+    async function requestSwitchNetwork() {
+      try {
+        const hexChainId = dec2hex(CHAIN_ID);
+        await window.ethereum.request({
+          method: "wallet_switchEthereumChain",
+          params: [{ chainId: hexChainId }],
+        });
+      } catch (switchError) {
+        // This error code indicates that the chain has not been added to MetaMask.
+        if (switchError.code === 4902) {
+          console.log(
+            "This network is not available in your metamask, please add it"
+          );
+        }
+        console.log("Failed to switch to the network");
+      }
+    }
+
+    const provider = new ethers.providers.Web3Provider(window.ethereum);
+
+    if (provider) {
+      if (window.ethereum && currentChainId !== Number(CHAIN_ID)) {
+        // setNetworkValid(false);
+        console.log("switching to network: ", CHAIN_ID);
+        requestSwitchNetwork();
+      } else {
+        console.log("wallet already connected to rinkeby");
+      }
+    } else {
+      console.log("no provider");
+    }
+  };
   // handles connecting account
   const connectHandler = async () => {
-    // MetaMask requires requesting permission to connect users accounts
+    console.log("checking network status ...");
+    const provider = new ethers.providers.Web3Provider(window.ethereum);
+
+    await networkHandler();
+
+    console.log("connecting..");
+    // MetaMask requesting permission to connect users accounts if it is first time of an account.
     await provider.send("eth_requestAccounts", []);
     const accountList = await provider.listAccounts();
     // console.log(accountList);
     accountHandler(accountList[0]);
-    setConnected(!connected);
+    console.log("connected to dapp with account: " + accountList[0]);
+
+    // MetaMask requires requesting permission to connect users accounts
+    const network = await provider.getNetwork();
+    console.log(`network (chainid): ${network.chainId}`);
+    setCurrentChainId(network.chainId);
+    setConnected(true);
   };
 
+  const disconnectHandler = async () => {
+    console.log("disconnecting wallet");
+    setConnected(false);
+  };
   // const handleRefToggle = async () => {
   //   setRefIncluded(!refIncluded);
   // }
@@ -80,6 +145,9 @@ const App = () => {
   const handleSubmit = async (e) => {
     // stops page from refreshing
     e.preventDefault();
+
+    const provider = new ethers.providers.Web3Provider(window.ethereum);
+    networkHandler();
 
     // create instance of contract using our contract address, abi, and provider
     const contract = new ethers.Contract(
@@ -96,6 +164,8 @@ const App = () => {
   };
 
   const handleRetrieveData = async () => {
+    const provider = new ethers.providers.Web3Provider(window.ethereum);
+    networkHandler();
     console.log("retreiving data..");
     const expressionOfPeaceContract = new ethers.Contract(
       expressionOfPeaceAddress,
@@ -115,12 +185,12 @@ const App = () => {
         <div className="container">
           <div className="logo">Expressions of Peace</div>
           {connected ? (
-            <div>
+            <div className="after-connect">
               {/* <label>
                 {`${Number.parseFloat(balance).toPrecision(4)} ETH`}
               </label> */}
               hi,
-              <button className="account-button" onClick={connectHandler}>
+              <button className="account-button" onClick={disconnectHandler}>
                 {account.substring(0, 5)}...
                 {account.substring(account.length - 4)}
               </button>
@@ -174,23 +244,35 @@ const App = () => {
           <p>
             {" "}
             This is an open sourced and minded tool to illustrate and make{" "}
-            <strong>a World Peace</strong>, catayzed via tech and creativity. In
-            this context, expressions of peace, extend freedom of expression; as
-            a global human right to experience.
+            <strong>a World Peace</strong>, catayzed via tech and creativity.
+          </p>
+          <p>
+            {" "}
+            In this context, Expressions of Peace, extend the Freedom of Expression;
+            as a global human right to experience, as a multi-generation civilisation: <strong>#GenerationPeace</strong>.
           </p>
 
           <h2>
-            <span>why </span> would I use this
-            tool?{" "}
+            <span>why </span> would I use this tool?{" "}
           </h2>
           <p>
             this way, any individual can express their imagination and their way
             of peace-making in the scale of billions.{" "}
           </p>
-
+          <div className="express-yourself">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/jW4VZ5J0fNQ"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <br></br>
           <h2>
-            <span>how </span> do I use this
-            tool?{" "}
+            <span>how </span> do I use this tool?{" "}
           </h2>
           <p>
             all you need is a browser, {""}
@@ -202,12 +284,16 @@ const App = () => {
             >
               a metamask wallet,
             </a>{" "}
-            connected to (currently) rinkeby testnet and a few clicks. .
+            connected to (currently) rinkeby testnet and a few clicks to sign
+            what you wanted to express.
+          </p>
+          <p>
+            initially, only in textual form. a letter, from you, to the rest of
+            the world. transparent, and cannot be deleted.
           </p>
 
           <h2>
-            <span>why </span> blockchain is at
-            core?{" "}
+            <span>how come </span> blockchain is there for?{" "}
           </h2>
           <p>
             - decentralized, distributed
@@ -222,15 +308,16 @@ const App = () => {
 
       <footer>
         <div className="container">
-
-        
-        <a
+          <a
             className="license-link"
             href="https://creativecommons.org/licenses/by-sa/2.0/"
             rel="noreferrer"
             target="_blank"
           >
-            <img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-sa.svg" alt="creative commons shareAlike"></img>
+            <img
+              src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-sa.svg"
+              alt="creative commons shareAlike"
+            ></img>
           </a>
           <a
             className="source-code"
