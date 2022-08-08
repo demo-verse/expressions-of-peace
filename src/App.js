@@ -1,8 +1,7 @@
+import "./App.css";
 import { useState } from "react";
 import { ethers } from "ethers";
 
-// import "dotenv/config"; // see https://github.com/motdotla/dotenv#how-do-i-use-dotenv-with-import
-import "./App.css";
 import ExpressionOfPeace from "./artifacts/contracts/ExpressionOfPeace.sol/ExpressionOfPeace.json";
 
 // will initiate all chains with their test networks.
@@ -29,41 +28,6 @@ const App = () => {
   // const [balance, setBalance] = useState("");
   const [currentChainId, setCurrentChainId] = useState(null);
   const [connected, setConnected] = useState(false);
-  // const [assetTransfers, setAssetTransfers] = useState([]);
-  // const [refIncluded, setRefIncluded] = useState(false);
-
-  // Will run once everytime a user connects to the dapp
-  // useEffect(() => {
-  //   // check if ethereum is provided by something like Metamask
-  //   if (typeof window.ethereum !== "undefined") {
-  //     // console.log("ethereum is available");
-
-  //     // get provider injected by metamask
-  //     const provider = new ethers.providers.Web3Provider(window.ethereum);
-
-  //     // Set some data like block number and gas price provided, you can find more options in the API docs
-  //     // const setBlockchainData = async () => {
-  //     //   setBlockNumber(await provider.getBlockNumber());
-  //     //   let gasPrice = await provider.getGasPrice();
-  //     //   // formats a returned big number as gwei where 1,000,000,000 gwei is 1 ether
-  //     //   // you can read about more denominations here: https://ethdocs.org/en/latest/ether.html
-  //     //   gasPrice = Math.trunc(ethers.utils.formatUnits(gasPrice, "gwei"));
-  //     //   setGasPrice(gasPrice);
-  //     // };
-
-  //     // Set aquired blockchain data as state to use in our frontend
-  //     // setBlockchainData();
-
-  //     // Set provider so we can use it in other functions
-  //     setProvider(provider);
-  //   } else {
-  //     console.log("install metamask");
-  //   }
-  // }, []);
-
-  // useEffect(() => {
-
-  // }, [connected, currentChainId, asdf]);
 
   // handles setting account and balance
   const accountHandler = async (account) => {
@@ -184,10 +148,8 @@ const App = () => {
       <header className="navbar">
         <div className="container">
           <div className="logo">
-            <a href="https://expressionsofpeace.org">
-            Expressions of Peace
-            </a> 
-            </div>
+            <a href="https://expressionsofpeace.org">Expressions of Peace</a>
+          </div>
         </div>
       </header>
       {connected ? (
@@ -198,6 +160,7 @@ const App = () => {
 
             <p>{value}</p>
           </div>
+
           <div className="new-expression-card">
             <h2>yours, sincerely</h2>
             <form onSubmit={handleSubmit} className="input">
@@ -240,27 +203,25 @@ const App = () => {
             to experience, as a multi-generation civilisation:{" "}
             <strong>#GenerationPeace</strong>.
           </p>
+          <br></br>
 
           <h2>what can we observe with this app? </h2>
           <p>
             this way, any individual can express their imagination and their way
             of peace-making in the scale of billions.{" "}
           </p>
-          <div className="express-yourself">
-            <iframe
-              width="80%"
-              height="640"
-              src="https://www.youtube.com/embed/jW4VZ5J0fNQ"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-          </div>
+          <br></br>
+          <div className="morpheus">
+            <img
+              src="https://www.demover.se/images/morpheus.png"
+              alt="creative commons shareAlike"
+            ></img>
+          </div>{" "}
+          <br></br>
           <br></br>
           <h2>what it takes do use this tool? </h2>
           <p>
-            all one needs is a browser, {""}
+            all you need is a browser, {""}
             <a
               className="metamask-link"
               href="https://metamask.zendesk.com/hc/en-us/articles/360015489531-Getting-started-with-MetaMask"
@@ -269,10 +230,48 @@ const App = () => {
             >
               a metamask wallet,
             </a>{" "}
-            and a few clicks to sign and confirm what you wanted to express.
+            and a few clicks to sign and confirm what you want to express.{" "} first of all, free will and generousity.
+            <br></br><br></br> + rinkebyETH {">> "}
+            <a
+              className="get-fake-eth"
+              href="https://faucet.rinkeby.io/"
+              rel="noreferrer"
+              target="_blank"
+            >
+              get from faucet for free!
+            </a>
+            <br></br>
+            <br></br>
+            it is all about experiencing this right to express and acknowledge
+            for the world.
           </p>
-          <p><span style={{fontStyle: "italic"}}> ~ a better guide will be added soon.</span></p>
-
+          <p>
+            <strong>
+              Expressions of Peace, are hopefully be: a civilisation
+              self-manifesting and claiming itself as part of starting and
+              sealing/recognizing a World Peace.
+            </strong>
+          </p>
+          <p>
+            <span style={{ fontStyle: "italic" }}>
+              {" "}
+              ~ a full guide will be added soon. for now, check the code
+              repository to see the demo.
+            </span>
+          </p>
+          <div className="express-yourself">
+            {/* <iframe
+              width="80%"
+              height="640"
+              src="https://www.youtube.com/embed/jW4VZ5J0fNQ"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe> */}
+          </div>
+          <br></br>
+          <br></br>
           <div className="centered">
             {connected ? (
               <div className="after-connect">
@@ -291,7 +290,8 @@ const App = () => {
               </button>
             )}
           </div>
-<br></br>
+          <br></br>
+          <br></br>
           <h2>
             <span>why </span> blockchain is core part of it?{" "}
           </h2>
@@ -307,11 +307,24 @@ const App = () => {
             >
               in each network
             </a>{" "}
-            for this purpose. 
+            for this purpose.
           </p>
-          <p>we have initiated the first mailbox contract on the rinkeby testnet. </p>
-          <p>Learn more about test networks and mainnet <a href="https://blog.logrocket.com/mainnet-vs-testnet-environments-explained/" target={"_blank"} rel="noreferrer">
-          here. </a> </p>
+          <p>
+            we have initiated the first mailbox contract on the rinkeby testnet.
+            next, goerli in eth network.{" "}
+          </p>
+          <p>
+            <span style={{ fontStyle: "italic" }}>
+              Learn more about test networks and mainnet{" "}
+              <a
+                href="https://blog.logrocket.com/mainnet-vs-testnet-environments-explained/"
+                target={"_blank"}
+                rel="noreferrer"
+              >
+                here.{" "}
+              </a>{" "}
+            </span>
+          </p>
           <p>
             - based on a distributed consensus algorithm,
             <br></br>- transparent, immutable, open-source
