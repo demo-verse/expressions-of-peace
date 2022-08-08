@@ -232,7 +232,7 @@ const App = () => {
           <p>
             {" "}
             This is an open sourced and minded tool to illustrate and make{" "}
-            <strong>a World Peace</strong>, catayzed via tech and creativity.
+            <strong>a World Peace</strong>, catalyzed via tech and creativity.
           </p>
           <p>
             {" "}
