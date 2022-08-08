@@ -183,23 +183,11 @@ const App = () => {
     <div className="layout">
       <header className="navbar">
         <div className="container">
-          <div className="logo">Expressions of Peace</div>
-          {connected ? (
-            <div className="after-connect">
-              {/* <label>
-                {`${Number.parseFloat(balance).toPrecision(4)} ETH`}
-              </label> */}
-              hi,
-              <button className="account-button" onClick={disconnectHandler}>
-                {account.substring(0, 5)}...
-                {account.substring(account.length - 4)}
-              </button>
+          <div className="logo">
+            <a href="https://expressionsofpeace.org">
+            Expressions of Peace
+            </a> 
             </div>
-          ) : (
-            <button className="connect-button" onClick={connectHandler}>
-              connect
-            </button>
-          )}
         </div>
       </header>
       {connected ? (
@@ -248,21 +236,20 @@ const App = () => {
           </p>
           <p>
             {" "}
-            In this context, Expressions of Peace, extend the Freedom of Expression;
-            as a global human right to experience, as a multi-generation civilisation: <strong>#GenerationPeace</strong>.
+            Expressions of Peace, extend the Freedom of Expression; as a right
+            to experience, as a multi-generation civilisation:{" "}
+            <strong>#GenerationPeace</strong>.
           </p>
 
-          <h2>
-            <span>why </span> would I use this tool?{" "}
-          </h2>
+          <h2>what can we observe with this app? </h2>
           <p>
             this way, any individual can express their imagination and their way
             of peace-making in the scale of billions.{" "}
           </p>
           <div className="express-yourself">
             <iframe
-              width="560"
-              height="315"
+              width="80%"
+              height="640"
               src="https://www.youtube.com/embed/jW4VZ5J0fNQ"
               title="YouTube video player"
               frameborder="0"
@@ -271,11 +258,9 @@ const App = () => {
             ></iframe>
           </div>
           <br></br>
-          <h2>
-            <span>how </span> do I use this tool?{" "}
-          </h2>
+          <h2>what it takes do use this tool? </h2>
           <p>
-            all you need is a browser, {""}
+            all one needs is a browser, {""}
             <a
               className="metamask-link"
               href="https://metamask.zendesk.com/hc/en-us/articles/360015489531-Getting-started-with-MetaMask"
@@ -284,24 +269,64 @@ const App = () => {
             >
               a metamask wallet,
             </a>{" "}
-            connected to (currently) rinkeby testnet and a few clicks to sign
-            what you wanted to express.
+            and a few clicks to sign and confirm what you wanted to express.
           </p>
-          <p>
-            initially, only in textual form. a letter, from you, to the rest of
-            the world. transparent, and cannot be deleted.
-          </p>
+          <p><span style={{fontStyle: "italic"}}> ~ a better guide will be added soon.</span></p>
 
+          <div className="centered">
+            {connected ? (
+              <div className="after-connect">
+                {/* <label>
+                {`${Number.parseFloat(balance).toPrecision(4)} ETH`}
+              </label> */}
+                hi,
+                <button className="account-button" onClick={disconnectHandler}>
+                  {account.substring(0, 5)}...
+                  {account.substring(account.length - 4)}
+                </button>
+              </div>
+            ) : (
+              <button className="connect-button" onClick={connectHandler}>
+                connect metamask
+              </button>
+            )}
+          </div>
+<br></br>
           <h2>
-            <span>how come </span> blockchain is there for?{" "}
+            <span>why </span> blockchain is core part of it?{" "}
           </h2>
           <p>
-            - decentralized, distributed
-            <br></br>- transparent, immutable
-            <br></br>- cannot be censored or shut down
-            <br></br>- equally accessible to everyone
+            afterall, these are letters, from you, to the rest of the world.
+          </p>
+          <p>
+            smart contracts, are mailboxes {"("}to be available{")"}{" "}
+            <a
+              href="https://en.wikipedia.org/wiki/List_of_blockchains"
+              target={"_blank"}
+              rel="noreferrer"
+            >
+              in each network
+            </a>{" "}
+            for this purpose. 
+          </p>
+          <p>we have initiated the first mailbox contract on the rinkeby testnet. </p>
+          <p>Learn more about test networks and mainnet <a href="https://blog.logrocket.com/mainnet-vs-testnet-environments-explained/" target={"_blank"} rel="noreferrer">
+          here. </a> </p>
+          <p>
+            - based on a distributed consensus algorithm,
+            <br></br>- transparent, immutable, open-source
+            <br></br>- cannot be censored or shut down <strong>*</strong>
+            <br></br>- equally accessible to everyone <strong>**</strong>
             <br></br>- anonymity is guaranteed<strong> by design.</strong>
             {/* <br></br><span style={{paddingLeft: "30%"}}></span */}
+          </p>
+          <hr></hr>
+          <p>
+            <strong>*</strong>more research and development needed in the
+            personhood/uniqueness/did
+            <br></br> <br></br>
+            <strong>**</strong>there are still accessibility issues possible,
+            but there are ways to overcome.
           </p>
         </section>
       )}
@@ -320,6 +345,14 @@ const App = () => {
             ></img>
           </a>
           <a
+            className="contract-at-rinkeby"
+            href="https://rinkeby.etherscan.io/address/0x6d584295790d2c9f7f2d4249b6caebc15b1da682"
+            rel="noreferrer"
+            target="_blank"
+          >
+            all expressions
+          </a>
+          <a
             className="source-code"
             href="https://github.com/demo-verse/expressions-editor-react"
             rel="noreferrer"
@@ -327,14 +360,7 @@ const App = () => {
           >
             source code
           </a>
-          <a
-            className="contract-at-rinkeby"
-            href="https://rinkeby.etherscan.io/address/0x6d584295790d2c9f7f2d4249b6caebc15b1da682"
-            rel="noreferrer"
-            target="_blank"
-          >
-            contract @ rinkeby
-          </a>
+
           <a
             className="get-fake-eth"
             href="https://faucet.rinkeby.io/"

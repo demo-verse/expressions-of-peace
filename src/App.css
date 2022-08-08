@@ -48,6 +48,11 @@ h2 {
   align-items: center;
 }
 
+.centered
+{
+  align-self: center;
+  text-align: center;
+}
 .navbar {
   color: #fff;
   height: 6rem;
@@ -61,17 +66,29 @@ h2 {
   margin-left: 0;
 }
 
+.navbar .logo a {
+  color: #fff;
+  text-decoration: none;
+  
+}
+
+.navbar .logo a:hover {
+  padding: "";
+  color: black;
+  background-color: pink;
+}
+
 .connect-button {
   background: #e90270;
   color: white;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   font-weight: bold;
   border: 1px solid black;
   /* padding: 0.3rem 0.5rem; */
   border-radius: 0.8rem;
   cursor: pointer;
-  width: 8rem;
-  height: 2.2rem;
+  width: 12rem;
+  height: 5.2rem;
 }
 
 .connect-button:active {
@@ -152,19 +169,16 @@ textarea {
   background-color: #f1f1f1;
   padding: 1.2rem;
   margin-bottom: 0.5rem;
-  
 }
 .expressions h2 {
   line-height: 1.2rem;
   margin-top: 0.6rem;
-
 }
 
 .expressions p {
   margin-top: 2rem;
   margin-bottom: 1.6rem;
   font-size: 1.2rem;
-
 }
 .last-expression-card p {
   height: auto;
@@ -295,15 +309,13 @@ footer .container {
   /* position: absolute; */
 }
 
-
-
 footer a {
   color: #f4ebf0;
   text-decoration: none;
   font-size: 1.4rem;
   margin-right: 1.2rem;
-  margin-left: 1.5rem;
-  padding-top: 0.5rem;
+  margin-left: 0.4rem;
+  padding-top: 0.2rem;
   /* padding-bottom: 0.5rem; */
   padding-left: 0.2rem;
 
@@ -316,15 +328,13 @@ a:hover {
 
 .metamask-link {
   text-decoration: none;
-  
 }
 
 .metamask-link:hover {
   /* background-color: rgb(214, 169, 44); */
-  background-color: #F6851B;
+  background-color: #f6851b;
   color: #1d003b;
 }
-
 
 .source-code:hover {
   background-color: rgb(112, 226, 152);
@@ -344,8 +354,10 @@ a:hover {
   font-size: larger;
 }
 
-
 @media only screen and (max-width: 960px) {
+  footer a {
+    font-size: 0.8rem;
+  }
   .new-expression-card button {
     width: 40%;
   }
@@ -360,7 +372,7 @@ a:hover {
     font-size: 1.2rem;
   }
 
-  .new-expression-card  {
+  .new-expression-card {
     width: 100%;
   }
   textarea {
