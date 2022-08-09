@@ -2,7 +2,7 @@ import "./App.css";
 import { useState } from "react";
 import { ethers } from "ethers";
 
-import ExpressionOfPeace from "./artifacts/contracts/ExpressionOfPeace.sol/ExpressionOfPeace_Rinkeby.json";
+// import ExpressionOfPeace from "./artifacts/contracts/ExpressionOfPeace.sol/ExpressionOfPeace_Rinkeby.json";
 import ExpressionOfPeace_Goerli from "./artifacts/contracts/ExpressionOfPeace.sol/ExpressionOfPeace_Goerli.json";
 
 // will initiate all chains with their test networks.
@@ -11,14 +11,14 @@ import ExpressionOfPeace_Goerli from "./artifacts/contracts/ExpressionOfPeace.so
 // all here. https://en.wikipedia.org/wiki/List_of_blockchains
 
 // NOTE: Make sure to change this to the contract address you deployed
-const expressionOfPeaceAddress = "0x6d584295790d2C9f7F2D4249B6CAebC15b1DA682";
+// const expressionOfPeaceAddress = "0x6d584295790d2C9f7F2D4249B6CAebC15b1DA682";
 const expressionOfPeaceAddress_Goerli =
   "0xe563950E3d97c1CF11665163D4B14EAD092C503C";
 
 // ABI so the web3 library knows how to interact with our contract
-const expressionOfPeaceABI = ExpressionOfPeace;
+// const expressionOfPeaceABI = ExpressionOfPeace;
 const expressionOfPeaceABI_Goerli = ExpressionOfPeace_Goerli;
-const CHAIN_ID_RINKEBY = 4; // rinkeby testnet @ ethereum
+// const CHAIN_ID_RINKEBY = 4; // rinkeby testnet @ ethereum
 const CHAIN_ID_GOERLI = 5; // goerli testnet @ ethereum
 
 const App = () => {
@@ -27,8 +27,8 @@ const App = () => {
   const [value, setValue] = useState("...");
   // const [blockNumber, setBlockNumber] = useState("0");
   // const [gasPrice, setGasPrice] = useState("0");
-  const [desiredChainId, setDesiredChainId] = useState(null);
-  const [desiredContractAddress, setDesiredContractAddress] = useState("");
+  // const [desiredChainId, setDesiredChainId] = useState(null);
+  // const [desiredContractAddress, setDesiredContractAddress] = useState("");
 
   const [account, setAccount] = useState("");
   // const [balance, setBalance] = useState("");
