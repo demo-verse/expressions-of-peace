@@ -424,7 +424,7 @@ const App = () => {
           </a>
           <a
             className="contract-at-goerli"
-            href="https://rinkeby.etherscan.io/address/0x6d584295790d2c9f7f2d4249b6caebc15b1da682"
+            href="https://goerli.etherscan.io/address/0xe563950e3d97c1cf11665163d4b14ead092c503c"
             rel="noreferrer"
             target="_blank"
           >
