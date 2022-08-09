@@ -309,6 +309,15 @@ footer .container {
   display: flex;
   direction: horizontal;
   justify-content: center;
+  align-items: center;
+  padding-bottom: 0.7rem;
+  background-color: transparent;
+}
+
+.expressions-container .container {
+  display: flex;
+  direction: horizontal;
+  justify-content: center;
   padding-bottom: 0.7rem;
   background-color: transparent;
 }
@@ -352,6 +361,20 @@ a:hover {
   color: #1d003b;
 }
 
+.contract-at-rinkeby:hover {
+  background-color: rgb(128, 134, 130);
+  color: #1d003b;
+
+
+}
+
+
+.contract-at-goerli:hover {
+  background-color: rgb(240, 117, 189);
+  color: #1d003b;
+
+
+}
 .source-code:hover {
   background-color: rgb(112, 226, 152);
   color: #1d003b;
@@ -366,14 +389,50 @@ a:hover {
   color: #1d003b;
 }
 
+.faucet-rinkeby:hover {
+  background-color: rgb(128, 134, 130);
+  color: #1d003b;
+}
+
+.faucet-goerli:hover {
+  background-color: rgb(240, 117, 189);
+  color: #1d003b;
+}
+
 .last-expression-card button:hover {
   font-size: larger;
 }
 
+/* @media only screen and (max-width: 960px) {
+
+} */
+
+
 @media only screen and (max-width: 960px) {
-  footer a {
-    font-size: 0.8rem;
+
+
+  .account-button {
+    display: none;
   }
+  
+  .account-button:active {
+    display: none;
+
+  }
+
+  
+  footer a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0.7rem;
+    background-color: transparent;
+    font-size: 0.6rem;
+
+  }
+
+ 
   .new-expression-card button {
     width: 40%;
   }

@@ -2,7 +2,8 @@ import "./App.css";
 import { useState } from "react";
 import { ethers } from "ethers";
 
-import ExpressionOfPeace from "./artifacts/contracts/ExpressionOfPeace.sol/ExpressionOfPeace.json";
+import ExpressionOfPeace from "./artifacts/contracts/ExpressionOfPeace.sol/ExpressionOfPeace_Rinkeby.json";
+import ExpressionOfPeace_Goerli from "./artifacts/contracts/ExpressionOfPeace.sol/ExpressionOfPeace_Goerli.json";
 
 // will initiate all chains with their test networks.
 // first, ethereum's rinkeby test network.
@@ -11,12 +12,14 @@ import ExpressionOfPeace from "./artifacts/contracts/ExpressionOfPeace.sol/Expre
 
 // NOTE: Make sure to change this to the contract address you deployed
 const expressionOfPeaceAddress = "0x6d584295790d2C9f7F2D4249B6CAebC15b1DA682";
+const expressionOfPeaceAddress_Goerli =
+  "0xe563950E3d97c1CF11665163D4B14EAD092C503C";
+
 // ABI so the web3 library knows how to interact with our contract
 const expressionOfPeaceABI = ExpressionOfPeace;
-const CHAIN_ID = 4; // rinkeby testnet @ ethereum
-
-// NOTE: checkout the API for ethers.js here: https://docs.ethers.io/v5/api/
-// TIP: Remember to console.log something if you are unsure of what is being returned
+const expressionOfPeaceABI_Goerli = ExpressionOfPeace_Goerli;
+const CHAIN_ID_RINKEBY = 4; // rinkeby testnet @ ethereum
+const CHAIN_ID_GOERLI = 5; // goerli testnet @ ethereum
 
 const App = () => {
   // const [provider, setProvider] = useState();
@@ -24,9 +27,12 @@ const App = () => {
   const [value, setValue] = useState("...");
   // const [blockNumber, setBlockNumber] = useState("0");
   // const [gasPrice, setGasPrice] = useState("0");
+  const [desiredChainId, setDesiredChainId] = useState(null);
+  const [desiredContractAddress, setDesiredContractAddress] = useState("");
+
   const [account, setAccount] = useState("");
   // const [balance, setBalance] = useState("");
-  const [currentChainId, setCurrentChainId] = useState(null);
+  // const [currentChainId, setCurrentChainId] = useState(null);
   const [connected, setConnected] = useState(false);
 
   // handles setting account and balance
@@ -38,13 +44,13 @@ const App = () => {
     // setBalance(ethers.utils.formatEther(balance));
   };
 
-  const networkHandler = async (networkId) => {
+  const networkHandler = async (_currentChainId) => {
     function dec2hex(i) {
       return `0x${i.toString(16)}`;
     }
-    async function requestSwitchNetwork() {
+    async function requestSwitchNetwork(_currentChainId) {
       try {
-        const hexChainId = dec2hex(CHAIN_ID);
+        const hexChainId = dec2hex(_currentChainId);
         await window.ethereum.request({
           method: "wallet_switchEthereumChain",
           params: [{ chainId: hexChainId }],
@@ -63,12 +69,16 @@ const App = () => {
     const provider = new ethers.providers.Web3Provider(window.ethereum);
 
     if (provider) {
-      if (window.ethereum && currentChainId !== Number(CHAIN_ID)) {
+      // if wallet is not connected to rinkeby of goerli networks already,
+      // request switch network. (writig one of them depending on availability.
+      // note that rinkeby will be closed down in October 2022.
+      if (window.ethereum && _currentChainId !== Number(CHAIN_ID_GOERLI)) {
         // setNetworkValid(false);
-        console.log("switching to network: ", CHAIN_ID);
-        requestSwitchNetwork();
+        console.log("switching to goerli for now.");
+        // setDesiredChainId(CHAIN_ID_GOERLI);
+        requestSwitchNetwork(CHAIN_ID_GOERLI);
       } else {
-        console.log("wallet already connected to rinkeby");
+        console.log("network is valid");
       }
     } else {
       console.log("no provider");
@@ -76,24 +86,27 @@ const App = () => {
   };
   // handles connecting account
   const connectHandler = async () => {
-    console.log("checking network status ...");
-    const provider = new ethers.providers.Web3Provider(window.ethereum);
-
-    await networkHandler();
-
-    console.log("connecting..");
+    console.log("therefore connecting to network ...");
     // MetaMask requesting permission to connect users accounts if it is first time of an account.
+    const provider = new ethers.providers.Web3Provider(window.ethereum);
     await provider.send("eth_requestAccounts", []);
     const accountList = await provider.listAccounts();
     // console.log(accountList);
     accountHandler(accountList[0]);
+
+    console.log("checking network status ...");
+    const network = await provider.getNetwork();
+    console.log(`current network (chainid): ${network.chainId}`);
+
+    await networkHandler();
+
     console.log("connected to dapp with account: " + accountList[0]);
 
     // MetaMask requires requesting permission to connect users accounts
-    const network = await provider.getNetwork();
-    console.log(`network (chainid): ${network.chainId}`);
-    setCurrentChainId(network.chainId);
+
     setConnected(true);
+
+    // we set desiredChainId as the
   };
 
   const disconnectHandler = async () => {
@@ -115,8 +128,8 @@ const App = () => {
 
     // create instance of contract using our contract address, abi, and provider
     const contract = new ethers.Contract(
-      expressionOfPeaceAddress,
-      expressionOfPeaceABI,
+      expressionOfPeaceAddress_Goerli,
+      expressionOfPeaceABI_Goerli,
       provider
     );
 
@@ -132,8 +145,8 @@ const App = () => {
     networkHandler();
     console.log("retreiving data..");
     const expressionOfPeaceContract = new ethers.Contract(
-      expressionOfPeaceAddress,
-      expressionOfPeaceABI,
+      expressionOfPeaceAddress_Goerli,
+      expressionOfPeaceABI_Goerli,
       provider
     );
 
@@ -150,6 +163,7 @@ const App = () => {
           <div className="logo">
             <a href="https://expressionsofpeace.org">Expressions of Peace</a>
           </div>
+          
         </div>
       </header>
       {connected ? (
@@ -204,7 +218,6 @@ const App = () => {
             <strong>#GenerationPeace</strong>.
           </p>
           <br></br>
-
           <h2>what can we observe with this app? </h2>
           <p>
             this way, any individual can express their imagination and their way
@@ -213,6 +226,7 @@ const App = () => {
           <br></br>
           <div className="morpheus">
             <img
+              width="40%"
               src="https://www.demover.se/images/morpheus.png"
               alt="creative commons shareAlike"
             ></img>
@@ -220,28 +234,24 @@ const App = () => {
           <br></br>
           <br></br>
           <h2>what it takes do use this tool? </h2>
-          <p>
-            all you need is a browser, {""}
-            <a
+          a metamask wallet with a good new account is essential. first,  <a
               className="metamask-link"
               href="https://metamask.zendesk.com/hc/en-us/articles/360015489531-Getting-started-with-MetaMask"
               rel="noreferrer"
               target="_blank"
             >
-              a metamask wallet,
+            {" "} install metamask.
             </a>{" "}
-            and a few clicks to sign and confirm what you want to express.{" "} first of all, free will and generousity.
-            <br></br><br></br> + rinkebyETH {">> "}
-            <a
-              className="get-fake-eth"
-              href="https://faucet.rinkeby.io/"
-              rel="noreferrer"
-              target="_blank"
-            >
-              get from faucet for free!
-            </a>
+          <p style={{backgroundColor: "black", color:"white"}}>
+            all you need is a browser, {""}
+          
+            and a few clicks to sign and confirm what you want to express. 
+          
+          <br></br>
             <br></br>
-            <br></br>
+
+            first of all, it takes free will, responsibility and generousity in giving out this assurance.
+<br></br><br></br>
             it is all about experiencing this right to express and acknowledge
             for the world.
           </p>
@@ -256,20 +266,17 @@ const App = () => {
             <span style={{ fontStyle: "italic" }}>
               {" "}
               ~ a full guide will be added soon. for now, check the code
-              repository to see the demo.
+              <a
+                href="https://github.com/demo-verse/expressions-of-peace"
+                target={"_blank"}
+                rel="noreferrer"
+              >
+                {" "}
+                repository on github{" "}
+              </a>
+              to see more details around reading expressions other than the last one. we are working on it.{" "}
             </span>
           </p>
-          <div className="express-yourself">
-            {/* <iframe
-              width="80%"
-              height="640"
-              src="https://www.youtube.com/embed/jW4VZ5J0fNQ"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe> */}
-          </div>
           <br></br>
           <br></br>
           <div className="centered">
@@ -307,12 +314,49 @@ const App = () => {
             >
               in each network
             </a>{" "}
-            for this purpose.
+            for this purpose. 
           </p>
+
           <p>
-            we have initiated the first mailbox contract on the rinkeby testnet.
-            next, goerli in eth network.{" "}
+            we have initiated the first mailbox contract on rinkeby and goerli testnets. 
+            <br></br> <br></br>currently, rinkeby faucet is offline and network will be closed in October. 
+            {/* <br></br><br></br> Currently we're developing to support multiple chains, next week we'll do it in more than 3 networks and will get Rinkeby back as well. */}
+            
+            <br></br><br></br> You can always manually write or fork this app to use in your purpose, with your contracts anytime. 
+            
+            <br></br><br></br>
+            Let us know if you need help.
+          <a
+            className="contract-at-rinkeby"
+            href="https://rinkeby.etherscan.io/address/0x6d584295790d2c9f7f2d4249b6caebc15b1da682"
+            rel="noreferrer"
+            target="_blank"
+          >
+            Rinkeby
+          </a>
+          {" & "}
+          <a
+            className="contract-at-goerli"
+            href="https://rinkeby.etherscan.io/address/0x6d584295790d2c9f7f2d4249b6caebc15b1da682"
+            rel="noreferrer"
+            target="_blank"
+          >
+            Goerli 
+          </a> {" "}test networks. 
           </p>
+
+          
+          <p style={{backgroundColor: "yellow"}}>
+            a blockchain, is a distributed ledger technology, that is:
+          <br></br><br></br>  - based on a distributed consensus algorithm, 
+            <br></br>- transparent, immutable, open-source
+            <br></br>- cannot be censored or shut down <strong>*</strong>
+            <br></br>- equally accessible to everyone <strong>**</strong>
+            <br></br>- anonymity is guaranteed<strong> by design.</strong>
+            {/* <br></br><span style={{paddingLeft: "30%"}}></span */}
+          </p>
+          <hr></hr>
+ 
           <p>
             <span style={{ fontStyle: "italic" }}>
               Learn more about test networks and mainnet{" "}
@@ -326,21 +370,33 @@ const App = () => {
             </span>
           </p>
           <p>
-            - based on a distributed consensus algorithm,
-            <br></br>- transparent, immutable, open-source
-            <br></br>- cannot be censored or shut down <strong>*</strong>
-            <br></br>- equally accessible to everyone <strong>**</strong>
-            <br></br>- anonymity is guaranteed<strong> by design.</strong>
-            {/* <br></br><span style={{paddingLeft: "30%"}}></span */}
-          </p>
-          <hr></hr>
-          <p>
             <strong>*</strong>more research and development needed in the
-            personhood/uniqueness/did
+            proof of personhood, uniqueness {" & "}decentralized iddentities
             <br></br> <br></br>
             <strong>**</strong>there are still accessibility issues possible,
-            but there are ways to overcome.
+            but there are ways to overcome. we'll deploy this app to IPFS and Internet Computer, and add guide on how to customize network settings for metamask. but right now it should be accessible globally.
           </p>
+          <div className="express-yourself">
+            <iframe
+               width="90%"
+               height="640"
+              src="https://www.youtube.com/embed/ymNFyxvIdaM"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+
+            {/* <iframe
+              width="80%"
+              height="640"
+              src="https://www.youtube.com/embed/jW4VZ5J0fNQ"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe> */}
+          </div>
         </section>
       )}
 
@@ -357,31 +413,41 @@ const App = () => {
               alt="creative commons shareAlike"
             ></img>
           </a>
+          expressions:
           <a
             className="contract-at-rinkeby"
             href="https://rinkeby.etherscan.io/address/0x6d584295790d2c9f7f2d4249b6caebc15b1da682"
             rel="noreferrer"
             target="_blank"
           >
-            all expressions
+             @Rinkeby
           </a>
           <a
-            className="source-code"
-            href="https://github.com/demo-verse/expressions-editor-react"
+            className="contract-at-goerli"
+            href="https://rinkeby.etherscan.io/address/0x6d584295790d2c9f7f2d4249b6caebc15b1da682"
             rel="noreferrer"
             target="_blank"
           >
-            source code
+            @Goerli
           </a>
-
+           faucets:
           <a
-            className="get-fake-eth"
+            className="faucet-rinkeby"
             href="https://faucet.rinkeby.io/"
             rel="noreferrer"
             target="_blank"
           >
-            get test eth
+            $Rinkeby
           </a>
+          <a
+            className="faucet-goerli"
+            href="https://goerlifaucet.com/"
+            rel="noreferrer"
+            target="_blank"
+          >
+            $Goerli
+          </a>
+        
           {/* {gasPrice} gwei &bull; {blockNumber} */}
         </div>
       </footer>

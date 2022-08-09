@@ -3,7 +3,7 @@ import { ethers } from "ethers";
 
 // import "dotenv/config"; // see https://github.com/motdotla/dotenv#how-do-i-use-dotenv-with-import
 import "./App.css";
-import ExpressionOfPeace from "./artifacts/contracts/ExpressionOfPeace.sol/ExpressionOfPeace.json";
+import ExpressionOfPeace from "./artifacts/contracts/ExpressionOfPeace.sol/ExpressionOfPeace_Rinkeby.json";
 
 // NOTE: Make sure to change this to the contract address you deployed
 
