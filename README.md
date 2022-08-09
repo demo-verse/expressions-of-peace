@@ -17,7 +17,13 @@ Right now, it is based on a very simple contract, where only the last expression
 
 
 Here is that contract deployed on Rinkeby testnet. You can check `contracts` folder.
+
+First contract deployed at the end of July, to Rinkeby network.
 https://rinkeby.etherscan.io/address/0x6d584295790d2c9f7f2d4249b6caebc15b1da682
+
+As of 9.8.2022 we've made a hard switch to Goerli network since Rinkeby's faucet was not working. However will bring it back as multi-chain support soon.
+
+https://goerli.etherscan.io/address/0xe563950e3d97c1cf11665163d4b14ead092c503c
 
 
 One can simply check transaction hashes to display each expressions made with each set operation on the contract.
