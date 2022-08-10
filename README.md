@@ -2,7 +2,7 @@
 
 Expressions of Peace are sincere ways of resiliently, simply, expressing peace, being the core civil component of an undeniable, resilient World Peace. 
 
-That is, observed as a potentially viable one, with a simple editor and the use of blockchain technology; to be co-imaginable, claimable and experienced, as a global human right; extending the freedom of speech.
+They are extending the Freedom of Expression.
 
 ---
 This tool's purpose is making a World Peace observable and sustainable. 
@@ -12,11 +12,9 @@ This tool's purpose is making a World Peace observable and sustainable.
 ![Yoko Ono](https://i.imgur.com/mmO7xDx.png)
 
 
-Right now, it is based on a very simple contract, where only the last expression written to that contract is stored on-chain, as a string field. (needs input sanitization).
+Right now, it is based on a very simple contract, where only the last expression written to that contract is stored in the contract, as a string field. (needs safety in size of string, listed as feature request here:
+https://github.com/demo-verse/expressions-of-peace/issues/2
 
-
-
-Here is that contract deployed on Rinkeby testnet. You can check `contracts` folder.
 
 First contract deployed at the end of July, to Rinkeby network.
 https://rinkeby.etherscan.io/address/0x6d584295790d2c9f7f2d4249b6caebc15b1da682
@@ -25,16 +23,14 @@ As of 9.8.2022 we've made a hard switch to Goerli network since Rinkeby's faucet
 
 https://goerli.etherscan.io/address/0xe563950e3d97c1cf11665163d4b14ead092c503c
 
-
 One can simply check transaction hashes to display each expressions made with each set operation on the contract.
 
 For example, this transaction:
 https://rinkeby.etherscan.io/tx/0xa7df107d235becf0d5d8c891c8a8d5be01eff05a406b1b330549fbbb23dc69c2
 
-
 to try it yourselves.  
 
-for an an arbitrary transaction, go below the page and `click to see more` ..
+for an any transaction, click to their tx hash and go to its page. go below the page and `click to see more` ..
 at the end, you'll see a window of Input data. 
 ![Raw](https://i.imgur.com/mOV8Lqp.png)
 
