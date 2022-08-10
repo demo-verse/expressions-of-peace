@@ -86,6 +86,8 @@ const App = () => {
   };
   // handles connecting account
   const connectHandler = async () => {
+    window.scrollTo(0, 0);
+
     console.log("therefore connecting to network ...");
     // MetaMask requesting permission to connect users accounts if it is first time of an account.
     const provider = new ethers.providers.Web3Provider(window.ethereum);
