@@ -163,7 +163,6 @@ const App = () => {
           <div className="logo">
             <a href="https://expressionsofpeace.org">Expressions of Peace</a>
           </div>
-          
         </div>
       </header>
       {connected ? (
@@ -234,51 +233,50 @@ const App = () => {
           <br></br>
           <br></br>
           <h2>what it takes do use this tool? </h2>
-          a metamask wallet with a good new account is essential. first,  <a
-              className="metamask-link"
-              href="https://metamask.zendesk.com/hc/en-us/articles/360015489531-Getting-started-with-MetaMask"
-              rel="noreferrer"
-              target="_blank"
+          <p>a metamask wallet with a good new account is preferrable. </p>
+          {/* <a
+            className="metamask-link"
+            href="https://metamask.zendesk.com/hc/en-us/articles/360015489531-Getting-started-with-MetaMask"
+            rel="noreferrer"
+            target="_blank"
+          >
+            {" "}
+            install metamask.
+          </a>{" "} */}
+          {!connected ? (
+            <button
+              className="connect-button"
+              style={{
+                backgroundColor: "orange",
+                color: "black",
+                marginLeft: "10%",
+              }}
             >
-            {" "} install metamask.
-            </a>{" "}
-          <p style={{backgroundColor: "black", color:"white"}}>
+              <a href="https://metamask.zendesk.com/hc/en-us/articles/360015489531-Getting-started-with-MetaMask">
+                install metamask
+              </a>
+            </button>
+          ) : null}
+          <p
+            style={{
+              backgroundColor: "black",
+              color: "white",
+              paddingLeft: "30px",
+              paddingTop: "12px",
+              paddingBottom: "12px",
+            }}
+          >
             all you need is a browser, {""}
-          
-            and a few clicks to sign and confirm what you want to express. 
-          
-          <br></br>
+            and a few clicks to sign and confirm what you want to express.
             <br></br>
-
-            first of all, it takes free will, responsibility and generousity in giving out this assurance.
-<br></br><br></br>
+            <br></br>
+            first of all, it takes free will, responsibility and generousity in
+            giving out this assurance.
+            <br></br>
+            <br></br>
             it is all about experiencing this right to express and acknowledge
             for the world.
           </p>
-          <p>
-            <strong>
-              Expressions of Peace, are hopefully be: a civilisation
-              self-manifesting and claiming itself as part of starting and
-              sealing/recognizing a World Peace.
-            </strong>
-          </p>
-          <p>
-            <span style={{ fontStyle: "italic" }}>
-              {" "}
-              ~ a full guide will be added soon. for now, check the code
-              <a
-                href="https://github.com/demo-verse/expressions-of-peace"
-                target={"_blank"}
-                rel="noreferrer"
-              >
-                {" "}
-                repository on github{" "}
-              </a>
-              to see more details around reading expressions other than the last one. we are working on it.{" "}
-            </span>
-          </p>
-          <br></br>
-          <br></br>
           <div className="centered">
             {connected ? (
               <div className="after-connect">
@@ -292,18 +290,49 @@ const App = () => {
                 </button>
               </div>
             ) : (
-              <button className="connect-button" onClick={connectHandler}>
-                connect metamask
-              </button>
+              <>
+                <button className="connect-button" onClick={connectHandler}>
+                  connect metamask
+                </button>
+              </>
             )}
           </div>
+          <p>
+            <strong>
+              Expressions of Peace, are hopefully be: a civilisation
+              self-manifesting and claiming itself as part of starting and
+              sealing/recognizing a World Peace.
+            </strong>
+          </p>
+          <p>
+            <span style={{ fontStyle: "italic" }}>
+              {" "}
+              ~ a full multimedia guide will be added soon. for now, check the
+              code
+              <a
+                href="https://github.com/demo-verse/expressions-of-peace"
+                target={"_blank"}
+                rel="noreferrer"
+              >
+                {" "}
+                repository on github{" "}
+              </a>
+              to see more details around reading expressions other than the last
+              one. we are working on it. <br></br>
+              <br></br> Let us know if you need any help.
+            </span>
+          </p>
+          <br></br>
+          <br></br>
           <br></br>
           <br></br>
           <h2>
             <span>why </span> blockchain is core part of it?{" "}
           </h2>
           <p>
-            afterall, these are letters, from you, to the rest of the world.
+            afterall, expressions are letters, from you, to the rest of the
+            world. they act as social and environmental contracts that are
+            global.
           </p>
           <p>
             smart contracts, are mailboxes {"("}to be available{")"}{" "}
@@ -314,41 +343,24 @@ const App = () => {
             >
               in each network
             </a>{" "}
-            for this purpose. 
+            for this purpose.
           </p>
-
           <p>
-            we have initiated the first mailbox contract on rinkeby and goerli testnets. 
-            <br></br> <br></br>currently, rinkeby faucet is offline and network will be closed in October. 
+            we have initiated the first mailbox contract on rinkeby and goerli
+            testnets.
+            <br></br> <br></br>currently, rinkeby faucet is offline and network
+            will be closed in October.
             {/* <br></br><br></br> Currently we're developing to support multiple chains, next week we'll do it in more than 3 networks and will get Rinkeby back as well. */}
-            
-            <br></br><br></br> You can always manually write or fork this app to use in your purpose, with your contracts anytime. 
-            
-            <br></br><br></br>
-            Let us know if you need help.
-          <a
-            className="contract-at-rinkeby"
-            href="https://rinkeby.etherscan.io/address/0x6d584295790d2c9f7f2d4249b6caebc15b1da682"
-            rel="noreferrer"
-            target="_blank"
-          >
-            Rinkeby
-          </a>
-          {" & "}
-          <a
-            className="contract-at-goerli"
-            href="https://rinkeby.etherscan.io/address/0x6d584295790d2c9f7f2d4249b6caebc15b1da682"
-            rel="noreferrer"
-            target="_blank"
-          >
-            Goerli 
-          </a> {" "}test networks. 
+            <br></br>
+            <br></br> You can always manually write or fork this app to use in
+            your purpose, with your contracts anytime.
+            <br></br>
+            <br></br>
           </p>
-
-          
-          <p style={{backgroundColor: "yellow"}}>
+          <p style={{ backgroundColor: "yellow" }}>
             a blockchain, is a distributed ledger technology, that is:
-          <br></br><br></br>  - based on a distributed consensus algorithm, 
+            <br></br>
+            <br></br> - based on a distributed consensus algorithm,
             <br></br>- transparent, immutable, open-source
             <br></br>- cannot be censored or shut down <strong>*</strong>
             <br></br>- equally accessible to everyone <strong>**</strong>
@@ -356,7 +368,6 @@ const App = () => {
             {/* <br></br><span style={{paddingLeft: "30%"}}></span */}
           </p>
           <hr></hr>
- 
           <p>
             <span style={{ fontStyle: "italic" }}>
               Learn more about test networks and mainnet{" "}
@@ -370,16 +381,32 @@ const App = () => {
             </span>
           </p>
           <p>
-            <strong>*</strong>more research and development needed in the
-            proof of personhood, uniqueness {" & "}decentralized iddentities
+            <strong>*</strong>there are still accessibility issues possible, but
+            there are ways to overcome. <br></br> test network shutdowns are
+            curable, and by design, one live contract per version on a network
+            will be guaranteed. <br></br>
+            <br></br> all expressions in different networks aggregated and
+            distributed data will be available to everyone. we'll deploy this
+            app to IPFS and Internet Computer, and add guide on how to customize
+            network settings for metamask.
             <br></br> <br></br>
-            <strong>**</strong>there are still accessibility issues possible,
-            but there are ways to overcome. we'll deploy this app to IPFS and Internet Computer, and add guide on how to customize network settings for metamask. but right now it should be accessible globally.
+            as of August 2022, this decentralized app/dapp is accessible
+            globally, unless https://expressionsofpeace.org is blocked.
+            <br></br> <br></br>
+            <strong>**</strong>more research and development needed in the proof
+            of personhood, uniqueness {" & "}{" "}
+            <a
+              href="https://www.google.com/search?client=firefox-b-d&q=decentralized+identity+technology"
+              target={"_blank"}
+              rel="noreferrer"
+            >
+              decentralized iddentities
+            </a>
           </p>
           <div className="express-yourself">
             <iframe
-               width="90%"
-               height="640"
+              width="90%"
+              height="640"
               src="https://www.youtube.com/embed/ymNFyxvIdaM"
               title="YouTube video player"
               frameborder="0"
@@ -420,7 +447,7 @@ const App = () => {
             rel="noreferrer"
             target="_blank"
           >
-             @Rinkeby
+            @Rinkeby
           </a>
           <a
             className="contract-at-goerli"
@@ -430,7 +457,7 @@ const App = () => {
           >
             @Goerli
           </a>
-           faucets:
+          faucets:
           <a
             className="faucet-rinkeby"
             href="https://faucet.rinkeby.io/"
@@ -447,7 +474,15 @@ const App = () => {
           >
             $Goerli
           </a>
-        
+          <a
+                      className="source-code-link"
+
+            href="https://github.com/demo-verse/expressions-of-peace"
+            rel="noreferrer"
+            target="_blank"
+          >
+           {"|> "} source code
+          </a>
           {/* {gasPrice} gwei &bull; {blockNumber} */}
         </div>
       </footer>
