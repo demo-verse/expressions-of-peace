@@ -2,9 +2,7 @@
 
 Expressions of Peace are sincere ways of resiliently, simply, expressing peace, being the core civil component of an undeniable, resilient World Peace. 
 
-It's a human right; extending the Freedom of Expression.
-
-That is, observed as a potentially viable one, with a simple editor and the use of blockchain technology; to be co-imaginable, claimable and experienced.
+They are extending the Freedom of Expression.
 
 ---
 This tool's purpose is making a World Peace observable and sustainable. 
