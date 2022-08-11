@@ -54,6 +54,10 @@ h2 {
   justify-content: center;
   align-items: center;
 }
+.morpheus img {
+  /* padding: 1.2rem; */
+  width: "60%";
+}
 .change-the-world {
   padding: 1.2rem;
   background-color: #7098e9;
@@ -206,12 +210,14 @@ textarea {
 .expressions h2 {
   line-height: 1.2rem;
   margin-top: 0.6rem;
+  text-align: center;
 }
 
 .expressions p {
   margin-top: 2rem;
   margin-bottom: 1.6rem;
   font-size: 1.2rem;
+  text-align: center;
 }
 .last-expression-card p {
   height: auto;

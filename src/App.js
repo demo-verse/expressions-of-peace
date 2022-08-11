@@ -113,10 +113,9 @@ const App = () => {
 
   const disconnectHandler = async () => {
     console.log("disconnecting account");
-    setAccount("")
+    setAccount("");
     setConnected(false);
     setValue("");
-
   };
   // const handleRefToggle = async () => {
   //   setRefIncluded(!refIncluded);
@@ -167,21 +166,20 @@ const App = () => {
         <div className="container">
           <div className="logo">
             <a href="https://expressionsofpeace.org">Expressions of Peace</a>
-            
           </div>
-        {!connected? (
-            <div style={{alignSelf: "flex-end"}}>
-            <button className="enter-dapp-button" onClick={connectHandler}>
-                    enter dapp
-                  </button>
+          {!connected ? (
+            <div style={{ alignSelf: "flex-end" }}>
+              <button className="enter-dapp-button" onClick={connectHandler}>
+                enter dapp
+              </button>
             </div>
-        ):(
-          <div style={{alignSelf: "flex-end"}}>
-          <button className="enter-dapp-button" onClick={disconnectHandler}>
-                  close
-                </button>
-          </div>
-        )}
+          ) : (
+            <div style={{ alignSelf: "flex-end" }}>
+              <button className="enter-dapp-button" onClick={disconnectHandler}>
+                close
+              </button>
+            </div>
+          )}
         </div>
       </header>
       {connected ? (
@@ -219,7 +217,7 @@ const App = () => {
           </div>
         </section>
       ) : (
-        <section className="expressions">
+        <section className="expressions center">
           <h2>
             {" "}
             <span>what </span> is this?
@@ -227,7 +225,8 @@ const App = () => {
           <p>
             {" "}
             this is an open sourced and minded tool to illustrate and make{" "}
-            <strong>a World Peace</strong>, catalyzed via decentralized tech and creativity, focused on this phenomenon.
+            <strong>a World Peace</strong>, catalyzed via decentralized tech and
+            creativity, focused on this phenomenon.
           </p>
           <p>
             {" "}
@@ -236,25 +235,115 @@ const App = () => {
             <strong>#GenerationPeace</strong>.
           </p>
           <br></br>
-          <h2>how this app look like? </h2>
-          <p>
-            here is a demo. after setting up your wallet, it will take you to space where you can see last expression and write yours. homepage and dapp will be in multimedia and languages.
-          </p>
-          <br></br><br></br>
-          <h2>what can we observe with this app? </h2>
-          <p>
-            this way, any individual can express their imagination and their way
-            of peace-making in the scale of billions.{" "}
-          </p>
           <br></br>
           <div className="morpheus">
             <img
-              width="40%"
               src="https://www.demover.se/images/morpheus.png"
               alt="creative commons shareAlike"
             ></img>
           </div>{" "}
           <br></br>
+          <br></br>
+          <h2>what can we observe with this app? </h2>
+          <p>
+            this way, any individual can express their imagination and their way
+            of peace-making in the scale of billions. Peer to peer diplomacy.{" "}
+          </p>
+       
+          <h2>how this app look like? </h2>
+        
+          <p>
+            here is a demo. after setting up your wallet, it will take you to
+            space where you can see last expression and write yours. homepage
+            and dapp will be in multimedia and languages.
+          </p>
+<br></br>
+        <div className="centered">
+        <iframe
+            width="80%"
+            height="640"
+            src="https://www.youtube.com/embed/D-olSEdx8MM"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </div>
+          <br></br>
+          <br></br>
+          <hr></hr>
+
+          <br></br>
+
+          <h2>what it takes do use this app? </h2>
+          <p>a metamask wallet with a good new account is preferrable. </p>
+          {/* <a
+            className="metamask-link"
+            href="https://metamask.zendesk.com/hc/en-us/articles/360015489531-Getting-started-with-MetaMask"
+            rel="noreferrer"
+            target="_blank"
+          >
+            {" "}
+            install metamask.
+          </a>{" "} */}
+          {!connected ? (
+            <div className="centered">
+              <button
+                className="connect-button"
+                style={{
+                  backgroundColor: "orange",
+                  color: "black",
+                }}
+              >
+                <a href="https://metamask.io/">
+                  get metamask wallet
+                </a>
+              </button>
+            </div>
+          ) : null}
+          <p
+            style={{
+              backgroundColor: "black",
+              color: "white",
+              paddingLeft: "30px",
+              paddingTop: "12px",
+              paddingBottom: "12px",
+            }}
+          >
+            all you need is a browser, {""}
+            and a few clicks to sign and confirm what you want to express.
+            <br></br>
+            <br></br>
+            first of all, it takes free will, responsibility and generousity in
+            giving out this assurance.
+            <br></br>
+            <br></br>
+            it is all about experiencing this right to express and acknowledge
+            for the world.
+          </p>
+          <div className="centered">
+            {connected ? (
+              <div className="after-connect">
+                {/* <label>
+                {`${Number.parseFloat(balance).toPrecision(4)} ETH`}
+              </label> */}
+                hi,
+                <button className="account-button" onClick={disconnectHandler}>
+                  {account.substring(0, 5)}...
+                  {account.substring(account.length - 4)}
+                </button>
+              </div>
+            ) : (
+              <>
+                <button className="connect-button" onClick={connectHandler}>
+                  enter dapp
+                </button>
+              </>
+            )}
+          </div>
+         <br></br>
+         <hr></hr>
+         <br></br>
           <h2>
             <span>why </span> blockchain is core part of it?{" "}
           </h2>
@@ -275,16 +364,16 @@ const App = () => {
             for this purpose.
           </p>
           <p>
-            we have initiated the first mailbox contract on rinkeby and goerli
+            we have initiated the first mailbox contract on Rinkeby and Goerli
             testnets.
-            <br></br> <br></br>currently, rinkeby faucet is offline and network
+            {/* <br></br> <br></br>currently, rinkeby faucet is offline and network
             will be closed in October.
-            {/* <br></br><br></br> Currently we're developing to support multiple chains, next week we'll do it in more than 3 networks and will get Rinkeby back as well. */}
+            <br></br><br></br> Currently we're developing to support multiple chains, next week we'll do it in more than 3 networks and will get Rinkeby back as well.
             <br></br>
             <br></br> You can always manually write or fork this app to use in
             your purpose, with your contracts anytime.
             <br></br>
-            <br></br>
+            <br></br> */}
           </p>
           <p style={{ backgroundColor: "yellow" }}>
             a blockchain, is a distributed ledger technology, that is:
@@ -333,73 +422,7 @@ const App = () => {
             </a>
           </p>
           <br></br>
-          <h2>what it takes do use this app? </h2>
-          <p>a metamask wallet with a good new account is preferrable. </p>
-          {/* <a
-            className="metamask-link"
-            href="https://metamask.zendesk.com/hc/en-us/articles/360015489531-Getting-started-with-MetaMask"
-            rel="noreferrer"
-            target="_blank"
-          >
-            {" "}
-            install metamask.
-          </a>{" "} */}
-          {!connected ? (
-            <div className="centered">
-            <button
-              className="connect-button"
-              style={{
-                backgroundColor: "orange",
-                color: "black",
-              }}
-            >
-              <a href="https://metamask.zendesk.com/hc/en-us/articles/360015489531-Getting-started-with-MetaMask">
-                install metamask
-              </a>
-            </button>
-
-            </div>
-          ) : null}
-          <p
-            style={{
-              backgroundColor: "black",
-              color: "white",
-              paddingLeft: "30px",
-              paddingTop: "12px",
-              paddingBottom: "12px",
-            }}
-          >
-            all you need is a browser, {""}
-            and a few clicks to sign and confirm what you want to express.
-            <br></br>
-            <br></br>
-            first of all, it takes free will, responsibility and generousity in
-            giving out this assurance.
-            <br></br>
-            <br></br>
-            it is all about experiencing this right to express and acknowledge
-            for the world.
-          </p>
-          <div className="centered">
-            {connected ? (
-              <div className="after-connect">
-                {/* <label>
-                {`${Number.parseFloat(balance).toPrecision(4)} ETH`}
-              </label> */}
-                hi,
-                <button className="account-button" onClick={disconnectHandler}>
-                  {account.substring(0, 5)}...
-                  {account.substring(account.length - 4)}
-                </button>
-              </div>
-            ) : (
-              <>
-                <button className="connect-button" onClick={connectHandler}>
-                  enter dapp
-                </button>
-              </>
-            )}
-          </div>
+         
           <p>
             <strong>
               Expressions of Peace, are hopefully be: a civilisation
@@ -429,7 +452,6 @@ const App = () => {
           <br></br>
           <br></br>
           <br></br>
-         
           <div className="express-yourself">
             <iframe
               width="90%"
@@ -502,13 +524,12 @@ const App = () => {
             $Goerli
           </a>
           <a
-                      className="source-code-link"
-
+            className="source-code-link"
             href="https://github.com/demo-verse/expressions-of-peace"
             rel="noreferrer"
             target="_blank"
           >
-           {"|> "} source code
+            {"|> "} source code
           </a>
           {/* {gasPrice} gwei &bull; {blockNumber} */}
         </div>
