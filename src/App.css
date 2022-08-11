@@ -72,6 +72,8 @@ h2 {
 .navbar {
   color: #fff;
   height: 6rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .navbar .logo {
@@ -106,6 +108,21 @@ h2 {
   width: 12rem;
   height: 5.2rem;
 }
+.enter-dapp-button {
+  background: #e90270;
+  color: white;
+  font-size: 1.6rem;
+  font-weight: bold;
+  border: 1px solid black;
+  /* padding: 0.3rem 0.5rem; */
+  border-radius: 0.8rem;
+  cursor: pointer;
+  width: 12rem;
+  height: 3.6rem;
+}
+
+
+
 
 .connect-button:active {
   background: #d00057;

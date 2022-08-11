@@ -164,7 +164,21 @@ const App = () => {
         <div className="container">
           <div className="logo">
             <a href="https://expressionsofpeace.org">Expressions of Peace</a>
+            
           </div>
+        {!connected? (
+            <div style={{alignSelf: "flex-end"}}>
+            <button className="enter-dapp-button" onClick={connectHandler}>
+                    enter dapp
+                  </button>
+            </div>
+        ):(
+          <div style={{alignSelf: "flex-end"}}>
+          <button className="enter-dapp-button" onClick={disconnectHandler}>
+                  exit app
+                </button>
+          </div>
+        )}
         </div>
       </header>
       {connected ? (
