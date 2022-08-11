@@ -112,8 +112,11 @@ const App = () => {
   };
 
   const disconnectHandler = async () => {
-    console.log("disconnecting wallet");
+    console.log("disconnecting account");
+    setAccount("")
     setConnected(false);
+    setValue("");
+
   };
   // const handleRefToggle = async () => {
   //   setRefIncluded(!refIncluded);
@@ -175,7 +178,7 @@ const App = () => {
         ):(
           <div style={{alignSelf: "flex-end"}}>
           <button className="enter-dapp-button" onClick={disconnectHandler}>
-                  exit app
+                  close
                 </button>
           </div>
         )}
@@ -223,8 +226,8 @@ const App = () => {
           </h2>
           <p>
             {" "}
-            This is an open sourced and minded tool to illustrate and make{" "}
-            <strong>a World Peace</strong>, catalyzed via tech and creativity.
+            this is an open sourced and minded tool to illustrate and make{" "}
+            <strong>a World Peace</strong>, catalyzed via decentralized tech and creativity, focused on this phenomenon.
           </p>
           <p>
             {" "}
@@ -233,6 +236,11 @@ const App = () => {
             <strong>#GenerationPeace</strong>.
           </p>
           <br></br>
+          <h2>how this app look like? </h2>
+          <p>
+            here is a demo. after setting up your wallet, it will take you to space where you can see last expression and write yours. homepage and dapp will be in multimedia and languages.
+          </p>
+          <br></br><br></br>
           <h2>what can we observe with this app? </h2>
           <p>
             this way, any individual can express their imagination and their way
@@ -246,101 +254,6 @@ const App = () => {
               alt="creative commons shareAlike"
             ></img>
           </div>{" "}
-          <br></br>
-          <br></br>
-          <h2>what it takes do use this tool? </h2>
-          <p>a metamask wallet with a good new account is preferrable. </p>
-          {/* <a
-            className="metamask-link"
-            href="https://metamask.zendesk.com/hc/en-us/articles/360015489531-Getting-started-with-MetaMask"
-            rel="noreferrer"
-            target="_blank"
-          >
-            {" "}
-            install metamask.
-          </a>{" "} */}
-          {!connected ? (
-            <button
-              className="connect-button"
-              style={{
-                backgroundColor: "orange",
-                color: "black",
-                marginLeft: "10%",
-              }}
-            >
-              <a href="https://metamask.zendesk.com/hc/en-us/articles/360015489531-Getting-started-with-MetaMask">
-                install metamask
-              </a>
-            </button>
-          ) : null}
-          <p
-            style={{
-              backgroundColor: "black",
-              color: "white",
-              paddingLeft: "30px",
-              paddingTop: "12px",
-              paddingBottom: "12px",
-            }}
-          >
-            all you need is a browser, {""}
-            and a few clicks to sign and confirm what you want to express.
-            <br></br>
-            <br></br>
-            first of all, it takes free will, responsibility and generousity in
-            giving out this assurance.
-            <br></br>
-            <br></br>
-            it is all about experiencing this right to express and acknowledge
-            for the world.
-          </p>
-          <div className="centered">
-            {connected ? (
-              <div className="after-connect">
-                {/* <label>
-                {`${Number.parseFloat(balance).toPrecision(4)} ETH`}
-              </label> */}
-                hi,
-                <button className="account-button" onClick={disconnectHandler}>
-                  {account.substring(0, 5)}...
-                  {account.substring(account.length - 4)}
-                </button>
-              </div>
-            ) : (
-              <>
-                <button className="connect-button" onClick={connectHandler}>
-                  connect metamask
-                </button>
-              </>
-            )}
-          </div>
-          <p>
-            <strong>
-              Expressions of Peace, are hopefully be: a civilisation
-              self-manifesting and claiming itself as part of starting and
-              sealing/recognizing a World Peace.
-            </strong>
-          </p>
-          <p>
-            <span style={{ fontStyle: "italic" }}>
-              {" "}
-              ~ a full multimedia guide will be added soon. for now, check the
-              code
-              <a
-                href="https://github.com/demo-verse/expressions-of-peace"
-                target={"_blank"}
-                rel="noreferrer"
-              >
-                {" "}
-                repository on github{" "}
-              </a>
-              to see more details around reading expressions other than the last
-              one. we are working on it. <br></br>
-              <br></br> Let us know if you need any help.
-            </span>
-          </p>
-          <br></br>
-          <br></br>
-          <br></br>
           <br></br>
           <h2>
             <span>why </span> blockchain is core part of it?{" "}
@@ -419,6 +332,104 @@ const App = () => {
               decentralized iddentities
             </a>
           </p>
+          <br></br>
+          <h2>what it takes do use this app? </h2>
+          <p>a metamask wallet with a good new account is preferrable. </p>
+          {/* <a
+            className="metamask-link"
+            href="https://metamask.zendesk.com/hc/en-us/articles/360015489531-Getting-started-with-MetaMask"
+            rel="noreferrer"
+            target="_blank"
+          >
+            {" "}
+            install metamask.
+          </a>{" "} */}
+          {!connected ? (
+            <div className="centered">
+            <button
+              className="connect-button"
+              style={{
+                backgroundColor: "orange",
+                color: "black",
+              }}
+            >
+              <a href="https://metamask.zendesk.com/hc/en-us/articles/360015489531-Getting-started-with-MetaMask">
+                install metamask
+              </a>
+            </button>
+
+            </div>
+          ) : null}
+          <p
+            style={{
+              backgroundColor: "black",
+              color: "white",
+              paddingLeft: "30px",
+              paddingTop: "12px",
+              paddingBottom: "12px",
+            }}
+          >
+            all you need is a browser, {""}
+            and a few clicks to sign and confirm what you want to express.
+            <br></br>
+            <br></br>
+            first of all, it takes free will, responsibility and generousity in
+            giving out this assurance.
+            <br></br>
+            <br></br>
+            it is all about experiencing this right to express and acknowledge
+            for the world.
+          </p>
+          <div className="centered">
+            {connected ? (
+              <div className="after-connect">
+                {/* <label>
+                {`${Number.parseFloat(balance).toPrecision(4)} ETH`}
+              </label> */}
+                hi,
+                <button className="account-button" onClick={disconnectHandler}>
+                  {account.substring(0, 5)}...
+                  {account.substring(account.length - 4)}
+                </button>
+              </div>
+            ) : (
+              <>
+                <button className="connect-button" onClick={connectHandler}>
+                  enter dapp
+                </button>
+              </>
+            )}
+          </div>
+          <p>
+            <strong>
+              Expressions of Peace, are hopefully be: a civilisation
+              self-manifesting and claiming itself as part of starting and
+              sealing/recognizing a World Peace.
+            </strong>
+          </p>
+          <p>
+            <span style={{ fontStyle: "italic" }}>
+              {" "}
+              ~ a full multimedia guide will be added soon. for now, check the
+              code
+              <a
+                href="https://github.com/demo-verse/expressions-of-peace"
+                target={"_blank"}
+                rel="noreferrer"
+              >
+                {" "}
+                repository on github{" "}
+              </a>
+              to see more details around reading expressions other than the last
+              one. we are working on it. <br></br>
+              <br></br> Let us know if you need any help.
+            </span>
+          </p>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+         
           <div className="express-yourself">
             <iframe
               width="90%"
