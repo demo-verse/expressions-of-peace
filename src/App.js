@@ -175,9 +175,9 @@ const App = () => {
           <div className="logo">
             <a href="https://expressionsofpeace.org">Expressions of Peace</a>
           </div>
-          <div>
+          {/* <div>
             <img width={"20%"}></img>
-          </div>
+          </div> */}
           {!connected ? null : (
             <div style={{ alignSelf: "flex-end" }}>
               <button className="enter-dapp-button" onClick={disconnectHandler}>
