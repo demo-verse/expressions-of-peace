@@ -401,6 +401,8 @@ const App = () => {
             this way, any individual can express their imagination and their way
             of peace-making scale of billions.
           </p> */}
+          <div className="columns">
+
           <p
             style={{
               // marginRight: "6%",
@@ -414,7 +416,7 @@ const App = () => {
               fontSize: "1.6rem",
             }}
           >
-            As a proof of concept; a peer-to-peer diplomacy tool, <br></br> started on
+            As a proof of concept; a peer-to-peer diplomacy tool, started on
             blockchain (
             <a
               href="https://blog.logrocket.com/mainnet-vs-testnet-environments-explained/"
@@ -430,6 +432,11 @@ const App = () => {
               together {"&"} undeniably.
             </strong>
           </p>
+
+          <button className="dapp-button" onClick={connectHandler}>
+              open app
+            </button>
+          </div>
           {/* <br></br> */}
           {/* <a
             className="metamask-link"
@@ -453,9 +460,6 @@ const App = () => {
               </a>
             </button>
 
-            <button className="connect-button" onClick={connectHandler}>
-              open app
-            </button>
             <button
               className="connect-button"
               style={{
@@ -534,6 +538,8 @@ const App = () => {
           <h2 style={{ fontSize: "2rem", marginTop: "100px" }}>
             <span>Why </span> blockchain @ design?{" "}
           </h2>
+
+          
           <p
             style={{
               fontSize: "1.6rem",
@@ -542,6 +548,15 @@ const App = () => {
               paddingRight: "10%",
             }}
           >
+             <div>
+              <strong>resilience {" <|> "} </strong>
+              <strong>transparency {" <|> "} </strong>
+              <strong>immutability {" <|> "} </strong>
+              <strong>anonymity*</strong>
+
+              {/* <strong> anonymity </strong> */}
+            </div>
+            <br></br>
             Expressions of Peace are letters, from you, to the rest of the world.
             <br></br> <br></br>
             <a
@@ -549,7 +564,7 @@ const App = () => {
               target={"_blank"}
               rel="noreferrer"
             >
-              smart contracts
+              Smart contracts
             </a>{" "}
             here in this context, act as global, public mail boxes, 
             <br></br> yet to become social consensus contracts.
@@ -574,22 +589,15 @@ const App = () => {
              is an article about social contract theories.
             <br></br>
             <br></br>
-            <div>
-              <strong>resilience {" <|> "} </strong>
-              <strong>transparency {" <|> "} </strong>
-              <strong>immutability {" <|> "} </strong>
-              <strong>anonymity*</strong>
-
-              {/* <strong> anonymity </strong> */}
-            </div>
-            <br></br>
+           
 
             <strong>* </strong>
             <span style={{ fontStyle: "italic" }}>
 
              in case people cannot express or acknowledge peace for
-            security reasons, <br></br> they'd keep their anonymity as long as they
-            needed.
+            security reasons, they'd keep their anonymity as long as they
+            needed. <br></br> 
+            ( until their uniqueness in the system is proven. )
             </span>
           </p>
           {/* <p style={{ backgroundColor: "yellow" }}>

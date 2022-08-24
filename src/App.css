@@ -93,6 +93,25 @@ h2 {
   margin: 0.5rem;
 }
 
+.dapp-button {
+  margin: 0.5rem;
+
+}
+.dapp-button {
+  background: #020202;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding-right: "12px";
+  border: 10px solid rgb(0, 255, 238);
+  /* padding: 0.3rem 0.5rem; */
+  border-radius: 0.8rem;
+  margin-right: 6rem;
+  cursor: pointer;
+  width: 40rem;
+  height: 5.2rem;
+}
+
 .navbar .logo {
   font-size: 2rem;
   font-weight: bold;
