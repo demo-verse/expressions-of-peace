@@ -1,7 +1,7 @@
 import "./App.css";
 import { useState } from "react";
 import { ethers } from "ethers";
-
+// import { makeNFT } from "./NFTMaker";
 // import ExpressionOfPeace from "./artifacts/contracts/ExpressionOfPeace.sol/ExpressionOfPeace_Rinkeby.json";
 import ExpressionOfPeace_Goerli from "./artifacts/contracts/ExpressionOfPeace.sol/ExpressionOfPeace_Goerli.json";
 
@@ -34,7 +34,14 @@ const App = () => {
   // const [balance, setBalance] = useState("");
   // const [currentChainId, setCurrentChainId] = useState(null);
   const [connected, setConnected] = useState(false);
-
+  // const [nftGenerarated, setNftGenerarated] = useState(false);
+  // const [alreadySigned, setAlreadySigned] = useState(false);
+  // const generateNFT = async () => {
+  //   console.log("generateNFT");
+  //   const result = makeNFT(inputValue);
+  //   setNftGenerarated(true);
+  //   console.log(result);
+  // };
   // handles setting account and balance
   const accountHandler = async (account) => {
     setAccount(account);
@@ -141,7 +148,8 @@ const App = () => {
     // a wallet doesn't need to sign/spend any gas to read from blockchain
     const signer = provider.getSigner();
     const contractWithSigner = contract.connect(signer);
-    console.log(await contractWithSigner.set(inputValue));
+    await contractWithSigner.set(inputValue);
+    // setAlreadySigned(true);
   };
 
   const handleRetrieveData = async () => {
@@ -163,17 +171,14 @@ const App = () => {
   return (
     <div className="layout">
       <header className="navbar">
-        <div className="container">
+        <div className="container columns">
           <div className="logo">
             <a href="https://expressionsofpeace.org">Expressions of Peace</a>
           </div>
-          {!connected ? (
-            <div style={{ alignSelf: "flex-end" }}>
-              <button className="enter-dapp-button" onClick={connectHandler}>
-                enter dapp
-              </button>
-            </div>
-          ) : (
+          <div>
+            <img width={"20%"}></img>
+          </div>
+          {!connected ? null : (
             <div style={{ alignSelf: "flex-end" }}>
               <button className="enter-dapp-button" onClick={disconnectHandler}>
                 close
@@ -213,70 +218,208 @@ const App = () => {
                 />
               </div> */}
               <button>sign</button>
+              {/* {alreadySigned ? (
+                <button onClick={generateNFT}> make nft</button>
+              ) : (
+                <button onClick={generateNFT} disabled>
+                  {" "}
+                  make nft
+                </button>
+              )} */}
             </form>
+
+            {/* {nftGenerarated ? (
+              <iframe
+                src="https://thentic.tech/request?id=nC9mNnMiFIi2kKru"
+                title="your nft"
+                height="360px"
+                width="360px"
+              ></iframe>
+            ) : null} */}
           </div>
         </section>
       ) : (
         <section className="expressions center">
-          <h2>
-            {" "}
-            <span>what </span> is this?
-          </h2>
-          <p>
+          <div className="columns">
+            <div style={{ marginLeft: "10%" }}>
+              <h1 style={{ fontSize: "2rem", marginTop: "1rem" }}>
+                start, a world peace.
+              </h1>
+              <h1
+                style={{ fontSize: "2rem", marginTop: "1rem", color: "purple" }}
+              >
+                express yourself!
+              </h1>
+              .
+              {/* <h1>
+                <a
+                  href="https://www.youtube.com/watch?v=2lK4LrD8Ii4"
+                  target={"_blank"}
+                  rel="noreferrer"
+                >
+                  {"&"} go all the way
+                </a>
+              </h1> */}
+            </div>
+            <div>
+              <p
+                // style={{ fontSize: "2rem", margin: "100px" }}
+
+                style={{
+                  // backgroundColor: "black",
+                  // marginRight: "6%",
+                  marginLeft: "10%",
+                  marginRight: "8%",
+                  color: "white",
+                  padding: "30px",
+                  backgroundColor: "#4B6D8B",
+
+                  textAlign: "right",
+                  fontSize: "1.6rem",
+                }}
+              >
+                {" "}
+                Expressions of Peace, extend the Freedom of Expression;{" "}
+                <span
+                  style={{
+                    backgroundColor: "yellow",
+                    color: "black",
+                    paddingLeft: "4px",
+                    paddingRight: "4px",
+                  }}
+                >
+                  to experience,
+                </span>{" "}
+                as a civilisation. <strong>#GenerationPeace</strong>
+              </p>
+            </div>
+          </div>
+
+          {/* <p>
             {" "}
             this is an open sourced and minded tool to illustrate and make{" "}
-            <strong>a World Peace</strong>, catalyzed via decentralized tech and
-            creativity, focused on this phenomenon.
+            <strong>a World Peace</strong>, that is catalyzed with creativity,
+            generousity and technology incorporating the solutions optionally
+            along the way.
           </p>
           <p>
-            {" "}
-            Expressions of Peace, extend the Freedom of Expression; as a right
-            to experience, as a multi-generation civilisation:{" "}
-            <strong>#GenerationPeace</strong>.
-          </p>
+            <strong>
+              Expressions of Peace, are hopefully be observed as: a
+              civilisation, self-manifesting and claiming itself as part of
+              starting and sealing a World Peace.
+            </strong>
+            <br></br>
+            <br></br>
+            We hope, this would be a new perspective, where any individual can
+            express their imagination and their way of peace-making, empowering
+            the rest, including their states, to seal a world peace.
+          </p> */}
           <br></br>
-          <br></br>
-          <div className="morpheus">
+          {/* <div className="morpheus">
             <img
               src="https://www.demover.se/images/morpheus.png"
               alt="creative commons shareAlike"
             ></img>
-          </div>{" "}
-          <br></br>
-          <br></br>
-          <h2>what can we observe with this app? </h2>
+          </div>{" "} */}
+          <h2
+            className="centered"
+            style={{ fontSize: "2.2rem", lineHeight: "2.6rem" }}
+          >
+            let technology serve peace, <br></br> sincerely{" "}
+          </h2>
+          <div className="columns">
+            <p
+              style={{
+                backgroundColor: "black",
+                marginLeft: "10%",
+                color: "white",
+                padding: "40px",
+
+                textAlign: "left",
+                fontSize: "1.6rem",
+              }}
+            >
+              {/* this is our first tool, using blockchain tech. web3 components for
+              transparency and resiliency.
+              <br></br> */}
+              {/* <br></br>
+            we got some reasonings as using tech in our first method of
+            expressions and acknowledgements. we'll be oracles, architechs and
+            makers of peace, as a civilisation. It is to have access to a human
+            right and accessible universal experience.
+            <br></br>
+            <br></br>
+            In all that, this tech, or digital versions of them are not the only
+            way, just one of solutions that are scalable. All could work with a
+            letter/directly. all you need is a browser, {""}
+            and a few clicks to sign and confirm what you want to express.
+            <br></br> */}
+              It takes free will, responsibility and generousity in giving out
+              an assurance, which to become your promise, your legacy.
+              {/* <br></br>
+              <br></br>
+              it is all about experiencing this right to express and acknowledge
+              for the world. */}
+            </p>
+            <p
+              style={{
+                // backgroundColor: "black",
+                // marginRight: "6%",
+                marginLeft: "8%",
+                marginRight: "8%",
+                color: "black",
+                padding: "40px",
+                backgroundColor: "#BBE6B6",
+
+                textAlign: "right",
+                fontSize: "1.6rem",
+              }}
+            >
+              {" "}
+              tech is an optional, catalyzing tool of reflection and resilience;
+              where individuals'initiation of a world peace in a
+              multi-stakeholder, inclusive and transparent process and
+              environment.
+            </p>
+
+            {/* <p>
+            <br></br> . As a proof of concept, and
+            part of futher research and development, <br></br>
+            Expressions of Peace were initiated on blockchain. <br></br>
+          </p> */}
+          </div>
+
+          {/* <h2>what can we observe with this app? </h2>
           <p>
             this way, any individual can express their imagination and their way
-            of peace-making in the scale of billions. Peer to peer diplomacy.{" "}
-          </p>
-       
-          <h2>how this app look like? </h2>
-        
-          <p>
-            here is a demo. after setting up your wallet, it will take you to
-            space where you can see last expression and write yours. homepage
-            and dapp will be in multimedia and languages.
-          </p>
-<br></br>
-        <div className="centered">
-        <iframe
-            width="80%"
-            height="640"
-            src="https://www.youtube.com/embed/D-olSEdx8MM"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
-        </div>
-          <br></br>
-          <br></br>
-          <hr></hr>
+            of peace-making scale of billions.
+          </p> */}
+          <p
+            style={{
+              // marginRight: "6%",
+              marginLeft: "8%",
+              marginRight: "8%",
+              color: "black",
+              padding: "40px",
+              // backgroundColor: "#BBE6B6",
 
-          <br></br>
-
-          <h2>what it takes do use this app? </h2>
-          <p>a metamask wallet with a good new account is preferrable. </p>
+              textAlign: "left",
+              fontSize: "1.6rem",
+            }}
+          >
+            as a proof of concept; a peer-to-peer diplomacy tool, started on
+            blockchain (
+            <a
+              href="https://blog.logrocket.com/mainnet-vs-testnet-environments-explained/"
+              target={"_blank"}
+              rel="noreferrer"
+            >
+              testnets{") "}
+            </a>
+            making use of crypto-wallets to declare and seal a world peace*
+            together.
+          </p>
+          {/* <br></br> */}
           {/* <a
             className="metamask-link"
             href="https://metamask.zendesk.com/hc/en-us/articles/360015489531-Getting-started-with-MetaMask"
@@ -286,96 +429,83 @@ const App = () => {
             {" "}
             install metamask.
           </a>{" "} */}
+
           {!connected ? (
-            <div className="centered">
+            <div className="centered columns">
               <button
                 className="connect-button"
                 style={{
-                  backgroundColor: "orange",
+                  backgroundColor: "yellow",
                   color: "black",
                 }}
               >
-                <a href="https://metamask.io/">
-                  get metamask wallet
+                <a href="https://www.canva.com/design/DAFJb1m8MxA/olzSyTC7tGyGkbUrSBhMfQ/edit?utm_content=DAFJb1m8MxA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">
+                  web3 guide{" "}
                 </a>
               </button>
-            </div>
-          ) : null}
-          <p
-            style={{
-              backgroundColor: "black",
-              color: "white",
-              paddingLeft: "30px",
-              paddingTop: "12px",
-              paddingBottom: "12px",
-            }}
-          >
-            all you need is a browser, {""}
-            and a few clicks to sign and confirm what you want to express.
-            <br></br>
-            <br></br>
-            first of all, it takes free will, responsibility and generousity in
-            giving out this assurance.
-            <br></br>
-            <br></br>
-            it is all about experiencing this right to express and acknowledge
-            for the world.
-          </p>
-          <div className="centered">
-            {connected ? (
-              <div className="after-connect">
-                {/* <label>
+              <br></br>
+              <button
+                className="connect-button"
+                style={{
+                  backgroundColor: "#C29B8D",
+                  color: "black",
+                }}
+              >
+                <a
+                  href="https://www.youtube.com/watch?v=mYwuYeqp6a0"
+                  target={"_blank"}
+                  rel="noreferrer"
+                >
+                  demo video{" "}
+                </a>
+              </button>
+
+              {connected ? (
+                <div className="after-connect">
+                  {/* <label>
                 {`${Number.parseFloat(balance).toPrecision(4)} ETH`}
               </label> */}
-                hi,
-                <button className="account-button" onClick={disconnectHandler}>
-                  {account.substring(0, 5)}...
-                  {account.substring(account.length - 4)}
-                </button>
-              </div>
-            ) : (
-              <>
-                <button className="connect-button" onClick={connectHandler}>
-                  enter dapp
-                </button>
-              </>
-            )}
-          </div>
-         <br></br>
-         <hr></hr>
-         <br></br>
-          <h2>
-            <span>why </span> blockchain is core part of it?{" "}
+                  hi,
+                  <button
+                    className="account-button"
+                    onClick={disconnectHandler}
+                  >
+                    {account.substring(0, 5)}...
+                    {account.substring(account.length - 4)}
+                  </button>
+                </div>
+              ) : (
+                <>
+                  <br></br>
+                  <button className="connect-button" onClick={connectHandler}>
+                    app
+                  </button>
+                </>
+              )}
+            </div>
+          ) : null}
+
+          <h2 style={{ fontSize: "2rem", marginTop: "100px" }}>
+            <span>why </span> blockchain tech is @ design?{" "}
           </h2>
-          <p>
-            afterall, expressions are letters, from you, to the rest of the
-            world. they act as social and environmental contracts that are
-            global.
-          </p>
-          <p>
-            smart contracts, are mailboxes {"("}to be available{")"}{" "}
-            <a
-              href="https://en.wikipedia.org/wiki/List_of_blockchains"
-              target={"_blank"}
-              rel="noreferrer"
-            >
-              in each network
-            </a>{" "}
-            for this purpose.
-          </p>
-          <p>
-            we have initiated the first mailbox contract on Rinkeby and Goerli
-            testnets.
-            {/* <br></br> <br></br>currently, rinkeby faucet is offline and network
-            will be closed in October.
-            <br></br><br></br> Currently we're developing to support multiple chains, next week we'll do it in more than 3 networks and will get Rinkeby back as well.
+          <p
+            style={{
+              fontSize: "1.6rem",
+              marginTop: "40px",
+              paddingLeft: "10%",
+              paddingRight: "10%",
+            }}
+          >
+            expressions are letters, from you, to the rest of the world. smart
+            contracts here in this solution/version, act as global, public mail
+            boxes.
             <br></br>
-            <br></br> You can always manually write or fork this app to use in
-            your purpose, with your contracts anytime.
             <br></br>
-            <br></br> */}
+            <strong>anonymity {"|>"} </strong> in case people cannot express a peacemaking request physically,
+            they'd to this way. including the rest of the people and their
+            groups and entities.
           </p>
-          <p style={{ backgroundColor: "yellow" }}>
+          {/* <p style={{ backgroundColor: "yellow" }}>
             a blockchain, is a distributed ledger technology, that is:
             <br></br>
             <br></br> - based on a distributed consensus algorithm,
@@ -383,10 +513,9 @@ const App = () => {
             <br></br>- cannot be censored or shut down <strong>*</strong>
             <br></br>- equally accessible to everyone <strong>**</strong>
             <br></br>- anonymity is guaranteed<strong> by design.</strong>
-            {/* <br></br><span style={{paddingLeft: "30%"}}></span */}
-          </p>
+          </p> */}
           <hr></hr>
-          <p>
+          {/* <p>
             <span style={{ fontStyle: "italic" }}>
               Learn more about test networks and mainnet{" "}
               <a
@@ -397,8 +526,8 @@ const App = () => {
                 here.{" "}
               </a>{" "}
             </span>
-          </p>
-          <p>
+          </p> */}
+          {/* <p>
             <strong>*</strong>there are still accessibility issues possible, but
             there are ways to overcome. <br></br> test network shutdowns are
             curable, and by design, one live contract per version on a network
@@ -420,17 +549,9 @@ const App = () => {
             >
               decentralized iddentities
             </a>
-          </p>
-          <br></br>
-         
-          <p>
-            <strong>
-              Expressions of Peace, are hopefully be: a civilisation
-              self-manifesting and claiming itself as part of starting and
-              sealing/recognizing a World Peace.
-            </strong>
-          </p>
-          <p>
+          </p> */}
+          {/* <br></br> */}
+          {/* <p>
             <span style={{ fontStyle: "italic" }}>
               {" "}
               ~ a full multimedia guide will be added soon. for now, check the
@@ -449,11 +570,11 @@ const App = () => {
             </span>
           </p>
           <br></br>
-          <br></br>
+          <br></br> */}
           <br></br>
           <br></br>
           <div className="express-yourself">
-            <iframe
+            {/* <iframe
               width="90%"
               height="640"
               src="https://www.youtube.com/embed/ymNFyxvIdaM"
@@ -461,6 +582,16 @@ const App = () => {
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
+            ></iframe> */}
+
+            <iframe
+              width="80%"
+              height="640"
+              src="https://www.youtube.com/embed/cLnkQAeMbIM"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
             ></iframe>
 
             {/* <iframe

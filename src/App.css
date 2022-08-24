@@ -78,13 +78,26 @@ h2 {
   height: 6rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  background-color: #020406;
+}
+
+/* create a div with two columns centered */
+.columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  
+}
+.columns .connect-button {
+  margin: 0.5rem;
 }
 
 .navbar .logo {
-  font-size: x-large;
+  font-size: 2rem;
   font-weight: bold;
   align-self: center;
-  padding-left: 2%;
+  /* padding-left: 2%; */
   margin-left: 0;
 }
 
@@ -101,7 +114,7 @@ h2 {
 }
 
 .connect-button {
-  background: #e90270;
+  background: #020202;
   color: white;
   font-size: 1.6rem;
   font-weight: bold;
@@ -134,7 +147,7 @@ h2 {
 }
 
 .navbar label {
-  background: #202428;
+  background: #020406;
   font-size: 1.1rem;
   color: white;
   border: 1px solid black;
@@ -267,6 +280,40 @@ textarea {
   /* width: 60%; */
   margin-bottom: 1rem;
   margin-top: 12px;
+}
+
+/* divide a div in two  */
+.left {
+  width: 50%;
+  float: left;
+}
+
+.right {
+  width: 50%;
+  float: right;
+}
+
+/* create a div with horizontal direction */
+
+.vertical {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: space-between;
+  align-items: center;
+}
+
+.blockbg-black {
+  width: "200px";
+  background-color: #202428;
+}
+
+/* create a row with two columns */
+.button-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .last-expression-card button {
