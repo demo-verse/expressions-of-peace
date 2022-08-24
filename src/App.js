@@ -414,7 +414,7 @@ const App = () => {
               fontSize: "1.6rem",
             }}
           >
-            As a proof of concept; a peer-to-peer diplomacy tool, started on
+            As a proof of concept; a peer-to-peer diplomacy tool, <br></br> started on
             blockchain (
             <a
               href="https://blog.logrocket.com/mainnet-vs-testnet-environments-explained/"
@@ -423,11 +423,11 @@ const App = () => {
             >
               testnets
             </a>
-            ) for literally{" "}
+            ) for {" "}
             <strong>
               {" "}
-              freely expressing, co-signing and sealing of a world peace,
-              together.
+              freely expressing, <br></br> co-signing and sealing a world peace,
+              together {"&"} undeniably.
             </strong>
           </p>
           {/* <br></br> */}
@@ -542,7 +542,7 @@ const App = () => {
               paddingRight: "10%",
             }}
           >
-            expressions are letters, from you, to the rest of the world.
+            Expressions of Peace are letters, from you, to the rest of the world.
             <br></br> <br></br>
             <a
               href="https://en.wikipedia.org/wiki/Smart_contract"
@@ -551,7 +551,27 @@ const App = () => {
             >
               smart contracts
             </a>{" "}
-            here in this context, act as global, public mail boxes.
+            here in this context, act as global, public mail boxes, 
+            <br></br> yet to become social consensus contracts.
+            <br></br> <br></br>
+            <a
+              href="https://www.youtube.com/watch?v=xxLLIxuY3gg"
+              target={"_blank"}
+              rel="noreferrer"
+            >
+              Here
+            </a>
+             {" "} is a short video and {" "} 
+             <a
+              href="https://www.e-ir.info/2012/10/09/the-social-contract-theory-in-a-global-context/"
+              target={"_blank"}
+              rel="noreferrer"
+            >
+              here
+            </a>
+             {" "} 
+             
+             is an article about social contract theories.
             <br></br>
             <br></br>
             <div>
@@ -563,9 +583,14 @@ const App = () => {
               {/* <strong> anonymity </strong> */}
             </div>
             <br></br>
-            <strong>* </strong> in case people cannot express or acknowledge for
-            security reasons, they'd keep their anonymity as long as they
+
+            <strong>* </strong>
+            <span style={{ fontStyle: "italic" }}>
+
+             in case people cannot express or acknowledge peace for
+            security reasons, <br></br> they'd keep their anonymity as long as they
             needed.
+            </span>
           </p>
           {/* <p style={{ backgroundColor: "yellow" }}>
             a blockchain, is a distributed ledger technology, that is:
