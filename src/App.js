@@ -102,7 +102,6 @@ const App = () => {
     const accountList = await provider.listAccounts();
     // console.log(accountList);
     accountHandler(accountList[0]);
-
     console.log("checking network status ...");
     const network = await provider.getNetwork();
     console.log(`current network (chainid): ${network.chainId}`);
@@ -112,7 +111,7 @@ const App = () => {
     console.log("connected to dapp with account: " + accountList[0]);
 
     // MetaMask requires requesting permission to connect users accounts
-
+    console.log(`connected as: ${account}`);
     setConnected(true);
 
     // we set desiredChainId as the
@@ -268,10 +267,11 @@ const App = () => {
                 style={{
                   // backgroundColor: "black",
                   // marginRight: "6%",
-                  marginLeft: "10%",
-                  marginRight: "8%",
+                  marginLeft: "16%",
+                  marginRight: "10%",
                   color: "white",
-                  padding: "30px",
+                  padding: "36px",
+                  paddingRight: "40px",
                   backgroundColor: "#4B6D8B",
 
                   textAlign: "right",
@@ -290,7 +290,7 @@ const App = () => {
                 >
                   to experience,
                 </span>{" "}
-                as a civilisation. <strong>#GenerationPeace</strong>
+                as a civilisation. 
               </p>
             </div>
           </div>
@@ -321,11 +321,13 @@ const App = () => {
               alt="creative commons shareAlike"
             ></img>
           </div>{" "} */}
+
+          <h2 style={{ fontSize: "2.2rem", lineHeight: "2.6rem", marginTop:"2rem" }}><strong>#GenerationPeace!</strong></h2>
           <h2
             className="centered"
             style={{ fontSize: "2.2rem", lineHeight: "2.6rem" }}
           >
-            let technology serve peace, <br></br> sincerely{" "}
+            Let technology serve peace, <br></br> sincerely{" "}
           </h2>
           <div className="columns">
             <p
@@ -368,7 +370,7 @@ const App = () => {
                 marginLeft: "8%",
                 marginRight: "8%",
                 color: "black",
-                padding: "40px",
+                padding: "30px",
                 backgroundColor: "#BBE6B6",
 
                 textAlign: "right",
@@ -376,9 +378,9 @@ const App = () => {
               }}
             >
               {" "}
-              tech is an optional, catalyzing tool of reflection and resilience;
-              where individuals'initiation of a world peace in a
-              multi-stakeholder, inclusive and transparent process and
+              Tech use is intended as an optional tool. 
+              Aim is to catalyze and empower
+              making a world peace, via an accessible, inclusive, transparent and legit process and
               environment.
             </p>
 
@@ -407,17 +409,16 @@ const App = () => {
               fontSize: "1.6rem",
             }}
           >
-            as a proof of concept; a peer-to-peer diplomacy tool, started on
+            As a proof of concept; a peer-to-peer diplomacy tool, started on
             blockchain (
             <a
               href="https://blog.logrocket.com/mainnet-vs-testnet-environments-explained/"
               target={"_blank"}
               rel="noreferrer"
             >
-              testnets{") "}
+              testnets
             </a>
-            making use of crypto-wallets to declare and seal a world peace*
-            together.
+            ) on literally  <strong> freely co-signing and sealing of a world peace together.</strong> 
           </p>
           {/* <br></br> */}
           {/* <a
@@ -430,8 +431,8 @@ const App = () => {
             install metamask.
           </a>{" "} */}
 
-          {!connected ? (
             <div className="centered columns">
+               
               <button
                 className="connect-button"
                 style={{
@@ -440,10 +441,13 @@ const App = () => {
                 }}
               >
                 <a href="https://www.canva.com/design/DAFJb1m8MxA/olzSyTC7tGyGkbUrSBhMfQ/edit?utm_content=DAFJb1m8MxA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">
-                  web3 guide{" "}
+                  read guide{" "}
                 </a>
               </button>
-              <br></br>
+
+              <button className="connect-button" onClick={connectHandler}>
+                      open app
+                    </button>
               <button
                 className="connect-button"
                 style={{
@@ -456,37 +460,57 @@ const App = () => {
                   target={"_blank"}
                   rel="noreferrer"
                 >
-                  demo video{" "}
+                  watch demo{" "}
                 </a>
               </button>
 
-              {connected ? (
-                <div className="after-connect">
-                  {/* <label>
-                {`${Number.parseFloat(balance).toPrecision(4)} ETH`}
-              </label> */}
-                  hi,
-                  <button
-                    className="account-button"
-                    onClick={disconnectHandler}
-                  >
-                    {account.substring(0, 5)}...
-                    {account.substring(account.length - 4)}
-                  </button>
-                </div>
-              ) : (
-                <>
-                  <br></br>
-                  <button className="connect-button" onClick={connectHandler}>
-                    app
-                  </button>
-                </>
-              )}
             </div>
-          ) : null}
+<br></br>
+            <hr></hr>
+          <h2 style={{ fontSize: "2rem", marginTop: "60px", marginBottom: "60px" }}>Deployed contracts:</h2>
+          <div className="centered columns">
+              <button
+                className="connect-button"
+                style={{
+                  backgroundColor: "white",
+                  color: "black",
+                }}
+              >
+                 <a
+            className="contract-at-goerli"
+            href="https://goerli.etherscan.io/address/0xe563950e3d97c1cf11665163d4b14ead092c503c"
+            rel="noreferrer"
+            target="_blank"
+          >
+            @Goerli
+          </a>
+              </button>
+              <br></br>
+              <button
+                className="connect-button"
+                style={{
+                  backgroundColor: "white",
+                  color: "black",
+                }}
+              >
+               <a
+            className="contract-at-rinkeby"
+            href="https://rinkeby.etherscan.io/address/0x6d584295790d2c9f7f2d4249b6caebc15b1da682"
+            rel="noreferrer"
+            target="_blank"
+          >
+            @Rinkeby
+          </a>
+              </button>
+
+              {/* <button className="connect-button" onClick={connectHandler}>
+                    open app
+                  </button> */}
+            </div>
+            
 
           <h2 style={{ fontSize: "2rem", marginTop: "100px" }}>
-            <span>why </span> blockchain tech is @ design?{" "}
+            <span>Why </span> blockchain @ design?{" "}
           </h2>
           <p
             style={{
@@ -499,12 +523,30 @@ const App = () => {
             expressions are letters, from you, to the rest of the world. smart
             contracts here in this solution/version, act as global, public mail
             boxes.
-            <br></br>
-            <br></br>
-            <strong>anonymity {"|>"} </strong> in case people cannot express a peacemaking request physically,
-            they'd to this way. including the rest of the people and their
-            groups and entities.
+            <br></br><br></br>
+
+           
+            <div>
+            <strong>resilience {" <|> "} </strong>
+            <strong>transparency {" <|> "} </strong>
+            <strong>immutability {" <|> "} </strong>
+            <strong>anonymity*</strong>
+
+    
+            {/* <strong> anonymity </strong> */}
+
+            </div>
+
+<br></br>
+            
+            <strong>*  </strong> in case people cannot express or acknowledge for security reasons,
+            they'd keep their anonymity as long as they needed.
+
+            
+
+
           </p>
+
           {/* <p style={{ backgroundColor: "yellow" }}>
             a blockchain, is a distributed ledger technology, that is:
             <br></br>
@@ -660,7 +702,7 @@ const App = () => {
             rel="noreferrer"
             target="_blank"
           >
-            {"|> "} source code
+              code
           </a>
           {/* {gasPrice} gwei &bull; {blockNumber} */}
         </div>
