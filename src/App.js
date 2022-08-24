@@ -290,11 +290,10 @@ const App = () => {
                 >
                   to experience,
                 </span>{" "}
-                as a civilisation. 
+                as a civilisation.
               </p>
             </div>
           </div>
-
           {/* <p>
             {" "}
             this is an open sourced and minded tool to illustrate and make{" "}
@@ -321,8 +320,16 @@ const App = () => {
               alt="creative commons shareAlike"
             ></img>
           </div>{" "} */}
-
-          <h2 style={{ fontSize: "2.2rem", lineHeight: "2.6rem", marginTop:"2rem" }}><strong>#GenerationPeace!</strong></h2>
+          <h2
+            style={{
+              fontSize: "2.2rem",
+              lineHeight: "2.6rem",
+              marginTop: "2rem",
+              marginBottom: "2rem",
+            }}
+          >
+            <strong>#GenerationPeace!</strong>
+          </h2>
           <h2
             className="centered"
             style={{ fontSize: "2.2rem", lineHeight: "2.6rem" }}
@@ -378,10 +385,9 @@ const App = () => {
               }}
             >
               {" "}
-              Tech use is intended as an optional tool. 
-              Aim is to catalyze and empower
-              making a world peace, via an accessible, inclusive, transparent and legit process and
-              environment.
+              Tech is intended as an optional tool. Aim is to catalyze and
+              empower making a world peace, via an accessible, inclusive,
+              transparent and legit process and environment.
             </p>
 
             {/* <p>
@@ -390,7 +396,6 @@ const App = () => {
             Expressions of Peace were initiated on blockchain. <br></br>
           </p> */}
           </div>
-
           {/* <h2>what can we observe with this app? </h2>
           <p>
             this way, any individual can express their imagination and their way
@@ -418,7 +423,12 @@ const App = () => {
             >
               testnets
             </a>
-            ) on literally  <strong> freely co-signing and sealing of a world peace together.</strong> 
+            ) for literally{" "}
+            <strong>
+              {" "}
+              freely expressing, co-signing and sealing of a world peace,
+              together.
+            </strong>
           </p>
           {/* <br></br> */}
           {/* <a
@@ -430,85 +440,97 @@ const App = () => {
             {" "}
             install metamask.
           </a>{" "} */}
-
-            <div className="centered columns">
-               
-              <button
-                className="connect-button"
-                style={{
-                  backgroundColor: "yellow",
-                  color: "black",
-                }}
-              >
-                <a href="https://www.canva.com/design/DAFJb1m8MxA/olzSyTC7tGyGkbUrSBhMfQ/edit?utm_content=DAFJb1m8MxA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">
-                  read guide{" "}
-                </a>
-              </button>
-
-              <button className="connect-button" onClick={connectHandler}>
-                      open app
-                    </button>
-              <button
-                className="connect-button"
-                style={{
-                  backgroundColor: "#C29B8D",
-                  color: "black",
-                }}
-              >
-                <a
-                  href="https://www.youtube.com/watch?v=mYwuYeqp6a0"
-                  target={"_blank"}
-                  rel="noreferrer"
-                >
-                  watch demo{" "}
-                </a>
-              </button>
-
-            </div>
-<br></br>
-            <hr></hr>
-          <h2 style={{ fontSize: "2rem", marginTop: "60px", marginBottom: "60px" }}>Deployed contracts:</h2>
           <div className="centered columns">
-              <button
-                className="connect-button"
-                style={{
-                  backgroundColor: "white",
-                  color: "black",
-                }}
-              >
-                 <a
-            className="contract-at-goerli"
-            href="https://goerli.etherscan.io/address/0xe563950e3d97c1cf11665163d4b14ead092c503c"
-            rel="noreferrer"
-            target="_blank"
-          >
-            @Goerli
-          </a>
-              </button>
-              <br></br>
-              <button
-                className="connect-button"
-                style={{
-                  backgroundColor: "white",
-                  color: "black",
-                }}
-              >
-               <a
-            className="contract-at-rinkeby"
-            href="https://rinkeby.etherscan.io/address/0x6d584295790d2c9f7f2d4249b6caebc15b1da682"
-            rel="noreferrer"
-            target="_blank"
-          >
-            @Rinkeby
-          </a>
-              </button>
+            <button
+              className="connect-button"
+              style={{
+                backgroundColor: "yellow",
+                color: "black",
+              }}
+            >
+              <a href="https://www.canva.com/design/DAFJb1m8MxA/olzSyTC7tGyGkbUrSBhMfQ/edit?utm_content=DAFJb1m8MxA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">
+                read guide{" "}
+              </a>
+            </button>
 
-              {/* <button className="connect-button" onClick={connectHandler}>
+            <button className="connect-button" onClick={connectHandler}>
+              open app
+            </button>
+            <button
+              className="connect-button"
+              style={{
+                backgroundColor: "#C29B8D",
+                color: "black",
+              }}
+            >
+              <a
+                href="https://www.youtube.com/watch?v=mYwuYeqp6a0"
+                target={"_blank"}
+                rel="noreferrer"
+              >
+                watch demo{" "}
+              </a>
+            </button>
+          </div>
+          <br></br>
+          <div className="centered" style={{ marginTop: "40px" }}>
+            <img
+              alt="express yourself!"
+              // height={"100px"}
+              src="envelope.jpg"
+              width={"40%"}
+            ></img>
+          </div>{" "}
+          <br></br>
+          <hr></hr>
+          <h2
+            style={{
+              fontSize: "2rem",
+              marginTop: "60px",
+              marginBottom: "60px",
+            }}
+          >
+            Current expressions:
+          </h2>
+          <div className="centered columns">
+            <button
+              className="connect-button"
+              style={{
+                backgroundColor: "white",
+                color: "black",
+              }}
+            >
+              <a
+                className="contract-at-goerli"
+                href="https://goerli.etherscan.io/address/0xe563950e3d97c1cf11665163d4b14ead092c503c"
+                rel="noreferrer"
+                target="_blank"
+              >
+                @Goerli
+              </a>
+            </button>
+            <br></br>
+            <button
+              className="connect-button"
+              style={{
+                backgroundColor: "white",
+                color: "black",
+              }}
+            >
+              <a
+                className="contract-at-rinkeby"
+                href="https://rinkeby.etherscan.io/address/0x6d584295790d2c9f7f2d4249b6caebc15b1da682"
+                rel="noreferrer"
+                target="_blank"
+              >
+                @Rinkeby
+              </a>
+            </button>
+
+            {/* <button className="connect-button" onClick={connectHandler}>
                     open app
                   </button> */}
-            </div>
-            
-
+          </div>
           <h2 style={{ fontSize: "2rem", marginTop: "100px" }}>
             <span>Why </span> blockchain @ design?{" "}
           </h2>
@@ -520,33 +542,31 @@ const App = () => {
               paddingRight: "10%",
             }}
           >
-            expressions are letters, from you, to the rest of the world. smart
-            contracts here in this solution/version, act as global, public mail
-            boxes.
-            <br></br><br></br>
-
-           
+            expressions are letters, from you, to the rest of the world.
+            <br></br> <br></br>
+            <a
+              href="https://en.wikipedia.org/wiki/Smart_contract"
+              target={"_blank"}
+              rel="noreferrer"
+            >
+              smart contracts
+            </a>{" "}
+            here in this context, act as global, public mail boxes.
+            <br></br>
+            <br></br>
             <div>
-            <strong>resilience {" <|> "} </strong>
-            <strong>transparency {" <|> "} </strong>
-            <strong>immutability {" <|> "} </strong>
-            <strong>anonymity*</strong>
+              <strong>resilience {" <|> "} </strong>
+              <strong>transparency {" <|> "} </strong>
+              <strong>immutability {" <|> "} </strong>
+              <strong>anonymity*</strong>
 
-    
-            {/* <strong> anonymity </strong> */}
-
+              {/* <strong> anonymity </strong> */}
             </div>
-
-<br></br>
-            
-            <strong>*  </strong> in case people cannot express or acknowledge for security reasons,
-            they'd keep their anonymity as long as they needed.
-
-            
-
-
+            <br></br>
+            <strong>* </strong> in case people cannot express or acknowledge for
+            security reasons, they'd keep their anonymity as long as they
+            needed.
           </p>
-
           {/* <p style={{ backgroundColor: "yellow" }}>
             a blockchain, is a distributed ledger technology, that is:
             <br></br>
@@ -702,7 +722,7 @@ const App = () => {
             rel="noreferrer"
             target="_blank"
           >
-              code
+            code
           </a>
           {/* {gasPrice} gwei &bull; {blockNumber} */}
         </div>
