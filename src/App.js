@@ -336,51 +336,41 @@ const App = () => {
           >
             Let technology serve peace, <br></br> sincerely{" "}
           </h2>
+          <div className="centered" style={{ marginTop: "40px" }}>
+            <img
+              alt="express yourself!"
+              // height={"100px"}
+              src="envelope.jpg"
+              width={"40%"}
+            ></img>
+          </div>{" "}
           <div className="columns">
             <p
               style={{
-                backgroundColor: "black",
+                backgroundColor: "gray",
                 marginLeft: "10%",
                 color: "white",
                 padding: "40px",
-
                 textAlign: "left",
                 fontSize: "1.6rem",
               }}
             >
-              {/* this is our first tool, using blockchain tech. web3 components for
-              transparency and resiliency.
-              <br></br> */}
-              {/* <br></br>
-            we got some reasonings as using tech in our first method of
-            expressions and acknowledgements. we'll be oracles, architechs and
-            makers of peace, as a civilisation. It is to have access to a human
-            right and accessible universal experience.
-            <br></br>
-            <br></br>
-            In all that, this tech, or digital versions of them are not the only
-            way, just one of solutions that are scalable. All could work with a
-            letter/directly. all you need is a browser, {""}
-            and a few clicks to sign and confirm what you want to express.
-            <br></br> */}
+             
               It takes free will, responsibility and generousity in giving out
               an assurance, which to become your promise, your legacy.
-              {/* <br></br>
-              <br></br>
-              it is all about experiencing this right to express and acknowledge
-              for the world. */}
+           
             </p>
             <p
               style={{
                 // backgroundColor: "black",
                 // marginRight: "6%",
                 marginLeft: "8%",
-                marginRight: "8%",
+                marginRight: "10%",
                 color: "black",
                 padding: "30px",
                 backgroundColor: "#BBE6B6",
 
-                textAlign: "right",
+                textAlign: "left",
                 fontSize: "1.6rem",
               }}
             >
@@ -416,7 +406,7 @@ const App = () => {
               fontSize: "1.6rem",
             }}
           >
-            As a proof of concept; a peer-to-peer diplomacy tool, started on
+            As a proof of concept; <br></br>a peer-to-peer diplomacy tool, launched on
             blockchain (
             <a
               href="https://blog.logrocket.com/mainnet-vs-testnet-environments-explained/"
@@ -428,10 +418,11 @@ const App = () => {
             ) for {" "}
             <strong>
               {" "}
-              freely expressing, <br></br> co-signing and sealing a world peace,
-              together {"&"} undeniably.
+              freely expressing, co-signing<br></br> and sealing a world peace,
+            <br></br>  together {"&"} undeniably. <br></br> <br></br>It's an experience, that is priceless.
             </strong>
           </p>
+
 
           <button className="dapp-button" onClick={connectHandler}>
               open app
@@ -455,7 +446,9 @@ const App = () => {
                 color: "black",
               }}
             >
-              <a href="https://www.canva.com/design/DAFJb1m8MxA/olzSyTC7tGyGkbUrSBhMfQ/edit?utm_content=DAFJb1m8MxA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">
+              <a href="https://www.canva.com/design/DAFJb1m8MxA/olzSyTC7tGyGkbUrSBhMfQ/edit?utm_content=DAFJb1m8MxA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+              target={"_blank"}
+              rel="noreferrer">
                 read guide{" "}
               </a>
             </button>
@@ -477,14 +470,7 @@ const App = () => {
             </button>
           </div>
           <br></br>
-          <div className="centered" style={{ marginTop: "40px" }}>
-            <img
-              alt="express yourself!"
-              // height={"100px"}
-              src="envelope.jpg"
-              width={"40%"}
-            ></img>
-          </div>{" "}
+ 
           <br></br>
           <hr></hr>
           <h2
