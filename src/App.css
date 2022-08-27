@@ -562,15 +562,11 @@ a:hover {
 .contract-at-rinkeby:hover {
   background-color: rgb(128, 134, 130);
   color: #1d003b;
-
-
 }
-
 
 .contract-at-goerli:hover {
   background-color: rgb(240, 117, 189);
   color: #1d003b;
-
 
 }
 .source-code:hover {

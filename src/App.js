@@ -286,7 +286,7 @@ const App = () => {
                   // backgroundColor: "black",
                   // marginRight: "6%",
                   marginLeft: "10%",
-                  marginRight: "10%",
+                  marginRight: "16%",
                   color: "white",
                   padding: "22px",
                   paddingRight: "40px",
@@ -359,7 +359,7 @@ const App = () => {
               alt="express yourself!"
               // height={"100px"}
               src="envelope.jpg"
-              width={"40%"}
+              width={"42%"}
             ></img>
           </div>{" "}
           <div className="columns">
@@ -391,7 +391,7 @@ const App = () => {
               }}
             >
               {" "}
-              Tech is an optional tool; to catalyze {"&"}
+              Tech is an optional tool; to catalyze {"& "}
               empower a world peace, via an accessible, inclusive, transparent
               and legit process and environment.
             </p>
@@ -428,9 +428,20 @@ const App = () => {
                 target={"_blank"}
                 rel="noreferrer"
               >
-                testnets
-              </a>
-              ). <i>It's an experience, that is priceless.</i>{" "}
+                test networks).
+              </a> {" "}
+              <br></br>
+              <span
+                  style={{
+                    backgroundColor: "yellow",
+                    color: "black",
+                    paddingLeft: "4px",
+                    paddingRight: "4px",
+                  }}
+                >
+                  <i>It's an experience, that is priceless.</i>
+                </span>{" "}
+               
               {/* 
               <br></br> for
               <strong>
@@ -506,7 +517,7 @@ const App = () => {
               bgColor={"black"}
               questionTxt={"what"}
               answerTxt={
-                "Global, peer-to-peer consensus of billions: a progressive regeneration via disarmament and world peace vision."
+                "A global, peer-to-peer consensus of billions: a progressive regeneration via disarmament and world peace vision."
               }
             />
             <AccordeonItem
@@ -530,15 +541,18 @@ const App = () => {
               bgColor={"orange"}
               questionTxt={"how"}
               answerTxt={
-                "We'll figure out together. Here, contracts, in core, technical tools of reflections; helping us making a world peace via expressions, demands, acknowledgements and hence assurances to the rest of the world, undeniably. This well may be in forms of, writing social and environmental contracts, that are writing a future, from now."
+                "We will figure out together. Here, contracts, in core, tools of reflections; helping us making a world peace via expressions, demands, acknowledgements and hence assurances to the rest of the world, undeniably."
               }
+              // answerTxt={
+              //   "We'll figure out together. Here, contracts, in core, technical tools of reflections; helping us making a world peace via expressions, demands, acknowledgements and hence assurances to the rest of the world, undeniably. This well may be in forms of, writing social and environmental contracts, that are writing a future, from now."
+              // }
             />
             <AccordeonItem
               txtColor={"black"}
               bgColor={"#afeeee"}
               questionTxt={"when "}
               answerTxt={
-                "Anytime, anywhere. It's our legacy. An effective and legitimate  experience of this right, in fact, should be sufficient a once in a lifetime."
+                "Anytime, anywhere. It's our legacy, to be. An effective and legitimate  experience of this right, in fact, should suffice even when expressed, once in a lifetime."
               }
             />
           </div>
@@ -567,7 +581,7 @@ const App = () => {
                 rel="noreferrer"
                 target="_blank"
               >
-                @Goerli
+                @Görli
               </a>
             </button>
             <br></br>

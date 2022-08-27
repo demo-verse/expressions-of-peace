@@ -1,4 +1,4 @@
-import {useRef, useEffect, useState} from 'react';
+import { useRef, useEffect, useState } from "react";
 const AccordeonItem = ({ questionTxt, answerTxt, bgColor, txtColor }) => {
   const [active, setActive] = useState(false);
 
@@ -15,17 +15,20 @@ const AccordeonItem = ({ questionTxt, answerTxt, bgColor, txtColor }) => {
   };
 
   return (
-    <div className='faq-accordeon'>
+    <div className="faq-accordeon">
       <button
         className={`question-section ${active}`}
-        style={{fontSize: "1.6rem"}}
+        style={{ fontSize: "1.6rem" }}
         onClick={toggleAccordion}
       >
-        <div style={{backgroundColor: bgColor}}>
+        <div style={{ backgroundColor: bgColor }}>
           <div className="question-align">
-            <h2 className="question-style"
-            style={{color: txtColor, paddingLeft: "2.2rem"}}
-            >{questionTxt}</h2>
+            <h2
+              className="question-style"
+              style={{ color: txtColor, paddingLeft: "4rem" }}
+            >
+              {questionTxt}
+            </h2>
             {/* <FiPlus
                   className={active ? `question-icon rotate` : `question-icon`}
                 /> */}
@@ -34,7 +37,7 @@ const AccordeonItem = ({ questionTxt, answerTxt, bgColor, txtColor }) => {
             ref={contentRef}
             className={active ? `answer answer-divider` : `answer`}
           >
-            <p style={{color: txtColor, fontSize: "1.4rem"}}>{answerTxt}</p>
+            <p style={{ textAlign:"start", color: txtColor, fontSize: "2rem", paddingLeft: "0.rem", paddingTop: "0.2rem" }}>{answerTxt}</p>
           </div>
         </div>
       </button>
