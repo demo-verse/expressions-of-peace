@@ -639,14 +639,14 @@ const App = () => {
               Smart contracts
             </a>{" "}
             here in this context, act as global, public mail boxes,
-            <br></br> yet to become social consensus contracts.
+             yet to become social consensus contracts.
             <br></br> <br></br>
             <a
               href="https://www.youtube.com/watch?v=xxLLIxuY3gg"
               target={"_blank"}
               rel="noreferrer"
             >
-              Here
+              <u>Here</u> 
             </a>{" "}
             is a short video and{" "}
             <a
@@ -654,7 +654,7 @@ const App = () => {
               target={"_blank"}
               rel="noreferrer"
             >
-              here
+              <u>here</u>
             </a>{" "}
             is an article about social contract theories.
             <br></br>
@@ -663,7 +663,17 @@ const App = () => {
             <span style={{ fontStyle: "italic" }}>
               in case people cannot express or acknowledge peace for security
               reasons, they'd keep their anonymity as long as they needed.{" "}
-              <br></br>( until their uniqueness in the system is proven. )
+            <br></br>  ( until their uniqueness in the system  proven at some point in the future. check 
+            {" "}
+              <a
+              href="https://en.wikipedia.org/wiki/Proof_of_personhood"
+              target={"_blank"}
+              rel="noreferrer"
+            >
+              <u>Proof of Personhood</u>
+            </a>
+            
+            ) 
             </span>
           </p>
           {/* <p style={{ backgroundColor: "yellow" }}>
