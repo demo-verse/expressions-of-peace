@@ -102,14 +102,16 @@ h2 {
   color: white;
   font-size: 1.4rem;
   font-weight: bold;
-  padding-right: "12px";
+  /* padding-right: "12px"; */
+  padding: 20px;
   border: 10px solid rgb(0, 255, 238);
   /* padding: 0.3rem 0.5rem; */
   border-radius: 0.8rem;
+  margin-left: 2rem;
   margin-right: 10rem;
   cursor: pointer;
-  width: 40rem;
-  height: 5.2rem;
+  width: 10rem;
+  height: 10rem;
 }
 
 .navbar .logo {
@@ -418,8 +420,10 @@ footer .container {
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
   cursor: pointer;
-  width: 92vw;
+  width: 62vw;
   align-content: center;
+  padding-left: 10%;
+  margin-left: 16%;
 }
 
 .question-align {

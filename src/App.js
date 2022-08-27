@@ -242,14 +242,31 @@ const App = () => {
         <section className="expressions center">
           <div className="columns">
             <div style={{ marginLeft: "10%" }}>
-              <h1 style={{ fontSize: "2rem", marginTop: "1rem", lineHeight: "1.8rem" }}>
+              <h1
+                style={{
+                  fontSize: "2rem",
+                  marginTop: "1rem",
+                  lineHeight: "1.8rem",
+                }}
+              >
                 start, a world peace.
               </h1>
-              <h1
-                style={{ fontSize: "2rem", marginTop: "1rem", color: "purple", lineHeight: "1.8rem" }}
+              <a
+                href="https://www.youtube.com/watch?v=jW4VZ5J0fNQ"
+                target={"_blank"}
+                rel="noreferrer"
               >
-                express yourself!
-              </h1>
+                <h1
+                  style={{
+                    fontSize: "2rem",
+                    marginTop: "1rem",
+                    color: "purple",
+                    lineHeight: "1.8rem",
+                  }}
+                >
+                  express yourself!
+                </h1>
+              </a>
               .
               {/* <h1>
                 <a
@@ -268,10 +285,10 @@ const App = () => {
                 style={{
                   // backgroundColor: "black",
                   // marginRight: "6%",
-                  marginLeft: "16%",
+                  marginLeft: "10%",
                   marginRight: "10%",
                   color: "white",
-                  padding: "36px",
+                  padding: "22px",
                   paddingRight: "40px",
                   backgroundColor: "#4B6D8B",
 
@@ -351,15 +368,13 @@ const App = () => {
                 backgroundColor: "gray",
                 marginLeft: "10%",
                 color: "white",
-                padding: "40px",
+                padding: "22px",
                 textAlign: "left",
                 fontSize: "1.6rem",
               }}
             >
-             
               It takes free will, responsibility and generousity in giving out
-              an assurance, which to become your promise, your legacy.
-           
+              an assurance, which to become our promise, our legacy.
             </p>
             <p
               style={{
@@ -377,8 +392,8 @@ const App = () => {
             >
               {" "}
               Tech is intended as an optional tool. Aim is to catalyze and
-              empower making a world peace, via an accessible, inclusive,
-              transparent and legit process and environment.
+              empower a world peace, via an accessible, inclusive, transparent
+              and legit process and environment.
             </p>
 
             {/* <p>
@@ -393,39 +408,40 @@ const App = () => {
             of peace-making scale of billions.
           </p> */}
           <div className="columns">
+            <p
+              style={{
+                // marginRight: "6%",
+                marginLeft: "8%",
+                marginRight: "8%",
+                color: "black",
+                padding: "40px",
+                // backgroundColor: "#BBE6B6",
 
-          <p
-            style={{
-              // marginRight: "6%",
-              marginLeft: "8%",
-              marginRight: "8%",
-              color: "black",
-              padding: "40px",
-              // backgroundColor: "#BBE6B6",
-
-              textAlign: "left",
-              fontSize: "1.6rem",
-            }}
-          >
-            As a proof of concept; <br></br>a peer-to-peer diplomacy tool,<br></br> launched on
-            blockchain (
-            <a
-              href="https://blog.logrocket.com/mainnet-vs-testnet-environments-explained/"
-              target={"_blank"}
-              rel="noreferrer"
+                textAlign: "left",
+                fontSize: "1.6rem",
+              }}
             >
-              testnets
-            </a>
-            )<br></br>  for {" "}
-            <strong> 
-              {" "}
-              freely imagining, expressing, <br></br> co-signing and sealing a world peace,
-             together {"&"} undeniably. <br></br> <br></br>It's an experience, that is priceless.
-            </strong>
-          </p>
+              As a proof of concept; <br></br>a peer-to-peer diplomacy tool,
+              launched on blockchain (
+              <a
+                href="https://blog.logrocket.com/mainnet-vs-testnet-environments-explained/"
+                target={"_blank"}
+                rel="noreferrer"
+              >
+                testnets
+              </a>
+              ). <i>It's an experience, that is priceless.</i>{" "}
+              {/* 
+              <br></br> for
+              <strong>
+                {" "}
+                freely imagining, expressing, <br></br> co-signing and sealing a
+                world peace, together {"&"} undeniably. <br></br> <br></br>It's
+                an experience, that is priceless.
+              </strong> */}
+            </p>
 
-
-          <button className="dapp-button" onClick={connectHandler}>
+            <button className="dapp-button" onClick={connectHandler}>
               open app
             </button>
           </div>
@@ -443,13 +459,15 @@ const App = () => {
             <button
               className="connect-button"
               style={{
-                backgroundColor: "yellow",
+                backgroundColor: "white",
                 color: "black",
               }}
             >
-              <a href="https://www.canva.com/design/DAFJb1m8MxA/olzSyTC7tGyGkbUrSBhMfQ/edit?utm_content=DAFJb1m8MxA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
-              target={"_blank"}
-              rel="noreferrer">
+              <a
+                href="https://www.canva.com/design/DAFJb1m8MxA/olzSyTC7tGyGkbUrSBhMfQ/edit?utm_content=DAFJb1m8MxA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                target={"_blank"}
+                rel="noreferrer"
+              >
                 read guide{" "}
               </a>
             </button>
@@ -457,7 +475,7 @@ const App = () => {
             <button
               className="connect-button"
               style={{
-                backgroundColor: "#C29B8D",
+                backgroundColor: "white",
                 color: "black",
               }}
             >
@@ -471,16 +489,59 @@ const App = () => {
             </button>
           </div>
           <br></br>
- 
-              
-                        <div>
-                          <AccordeonItem  txtColor={"white"} bgColor = {"black"} questionTxt={"what"} answerTxt={"Global, peer-to-peer consensus of billions: a ogressive regeneration via disarmament and world peace vision."} />
-                          <AccordeonItem   txtColor={"black"} bgColor = {"yellow"}  questionTxt={"why"} answerTxt={"Consensus is what we need to solve global problems. Peace is that consensus, that needs consensus in the first place."} />
-                          <AccordeonItem    txtColor={"black"} bgColor = {"#fac2d6"} questionTxt={"who"} answerTxt={"As a multi-stakeholder environment, including individuals, states, non-gov orgs and corporations of war and peace industries. Basically, together. "} />
-                          <AccordeonItem    txtColor={"black"} bgColor = {"orange"} questionTxt={"how"} answerTxt={"We'll figure out together. Here, contracts, in core, technical tools of reflections; helping us making a world peace via expressions, demands, acknowledgements and hence assurances to the rest of the world, undeniably. This well may be in forms of, writing social and environmental contracts, that are writing a future, from now."} />
-                          <AccordeonItem    txtColor={"black"} bgColor = {"#afeeee"} questionTxt={"when & where"} answerTxt={"Anytime, anywhere. Now, while you are alive. It's our legacy. An effective and legitimate  experience of this right, in fact, should be sufficient a once in a lifetime."} />
-              
-                        </div>
+          <hr></hr>
+          <h1
+            style={{
+              textAlign: "center",
+              marginTop: "2rem",
+              fontSize: "2.2rem",
+              marginBottom: "2rem",
+            }}
+          >
+           ? You may wonder;
+          </h1>
+          <div>
+            <AccordeonItem
+              txtColor={"white"}
+              bgColor={"black"}
+              questionTxt={"what"}
+              answerTxt={
+                "Global, peer-to-peer consensus of billions: a progressive regeneration via disarmament and world peace vision."
+              }
+            />
+            <AccordeonItem
+              txtColor={"black"}
+              bgColor={"yellow"}
+              questionTxt={"why"}
+              answerTxt={
+                "Consensus is what we need to solve global problems. Peace is that consensus, that needs consensus in the first place."
+              }
+            />
+            <AccordeonItem
+              txtColor={"black"}
+              bgColor={"#fac2d6"}
+              questionTxt={"who"}
+              answerTxt={
+                "As a multi-stakeholder environment, including individuals, states, non-gov orgs and corporations of war and peace industries. Basically, altogether. "
+              }
+            />
+            <AccordeonItem
+              txtColor={"black"}
+              bgColor={"orange"}
+              questionTxt={"how"}
+              answerTxt={
+                "We'll figure out together. Here, contracts, in core, technical tools of reflections; helping us making a world peace via expressions, demands, acknowledgements and hence assurances to the rest of the world, undeniably. This well may be in forms of, writing social and environmental contracts, that are writing a future, from now."
+              }
+            />
+            <AccordeonItem
+              txtColor={"black"}
+              bgColor={"#afeeee"}
+              questionTxt={"when "}
+              answerTxt={
+                "Anytime, anywhere. It's our legacy. An effective and legitimate  experience of this right, in fact, should be sufficient a once in a lifetime."
+              }
+            />
+          </div>
           <br></br>
           <hr></hr>
           <h2
@@ -531,11 +592,11 @@ const App = () => {
                     open app
                   </button> */}
           </div>
+          <br></br>
+          <hr></hr>
           <h2 style={{ fontSize: "2rem", marginTop: "100px" }}>
             <span>Why </span> blockchain @ design?{" "}
           </h2>
-
-          
           <p
             style={{
               fontSize: "1.6rem",
@@ -544,7 +605,7 @@ const App = () => {
               paddingRight: "10%",
             }}
           >
-             <div>
+            <div>
               <strong>resilience {" <|> "} </strong>
               <strong>transparency {" <|> "} </strong>
               <strong>immutability {" <|> "} </strong>
@@ -553,7 +614,8 @@ const App = () => {
               {/* <strong> anonymity </strong> */}
             </div>
             <br></br>
-            Expressions of Peace are letters, from you, to the rest of the world.
+            Expressions of Peace are letters, from you, to the rest of the
+            world.
             <br></br> <br></br>
             <a
               href="https://en.wikipedia.org/wiki/Smart_contract"
@@ -562,7 +624,7 @@ const App = () => {
             >
               Smart contracts
             </a>{" "}
-            here in this context, act as global, public mail boxes, 
+            here in this context, act as global, public mail boxes,
             <br></br> yet to become social consensus contracts.
             <br></br> <br></br>
             <a
@@ -571,29 +633,23 @@ const App = () => {
               rel="noreferrer"
             >
               Here
-            </a>
-             {" "} is a short video and {" "} 
-             <a
+            </a>{" "}
+            is a short video and{" "}
+            <a
               href="https://www.e-ir.info/2012/10/09/the-social-contract-theory-in-a-global-context/"
               target={"_blank"}
               rel="noreferrer"
             >
               here
-            </a>
-             {" "} 
-             
-             is an article about social contract theories.
+            </a>{" "}
+            is an article about social contract theories.
             <br></br>
             <br></br>
-           
-
             <strong>* </strong>
             <span style={{ fontStyle: "italic" }}>
-
-             in case people cannot express or acknowledge peace for
-            security reasons, they'd keep their anonymity as long as they
-            needed. <br></br> 
-            ( until their uniqueness in the system is proven. )
+              in case people cannot express or acknowledge peace for security
+              reasons, they'd keep their anonymity as long as they needed.{" "}
+              <br></br>( until their uniqueness in the system is proven. )
             </span>
           </p>
           {/* <p style={{ backgroundColor: "yellow" }}>
@@ -675,6 +731,7 @@ const App = () => {
               allowfullscreen
             ></iframe> */}
 
+            {/* Dirty Harry - Gorillaz */}
             <iframe
               width="80%"
               height="640"
@@ -684,6 +741,17 @@ const App = () => {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             ></iframe>
+            {/* 
+            Our Dance - Wax Tailor ft. Charlotte Savary
+            <iframe
+             width="80%"
+             height="640"
+              src="https://www.youtube.com/embed/gH5ja60ZuWE"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe> */}
 
             {/* <iframe
               width="80%"
@@ -700,6 +768,7 @@ const App = () => {
 
       <footer>
         <div className="container">
+         
           <a
             className="license-link"
             href="https://creativecommons.org/licenses/by-sa/2.0/"
@@ -713,6 +782,14 @@ const App = () => {
           </a>
           expressions:
           <a
+            className="contract-at-goerli"
+            href="https://goerli.etherscan.io/address/0xe563950e3d97c1cf11665163d4b14ead092c503c"
+            rel="noreferrer"
+            target="_blank"
+          >
+            @Görli
+          </a>
+          <a
             className="contract-at-rinkeby"
             href="https://rinkeby.etherscan.io/address/0x6d584295790d2c9f7f2d4249b6caebc15b1da682"
             rel="noreferrer"
@@ -720,15 +797,16 @@ const App = () => {
           >
             @Rinkeby
           </a>
+         
+          faucets:
           <a
-            className="contract-at-goerli"
-            href="https://goerli.etherscan.io/address/0xe563950e3d97c1cf11665163d4b14ead092c503c"
+            className="faucet-goerli"
+            href="https://goerlifaucet.com/"
             rel="noreferrer"
             target="_blank"
           >
-            @Goerli
+            $Görli
           </a>
-          faucets:
           <a
             className="faucet-rinkeby"
             href="https://faucet.rinkeby.io/"
@@ -738,20 +816,12 @@ const App = () => {
             $Rinkeby
           </a>
           <a
-            className="faucet-goerli"
-            href="https://goerlifaucet.com/"
-            rel="noreferrer"
-            target="_blank"
-          >
-            $Goerli
-          </a>
-          <a
             className="source-code-link"
             href="https://github.com/demo-verse/expressions-of-peace"
             rel="noreferrer"
             target="_blank"
           >
-            code
+            sourceCode
           </a>
           {/* {gasPrice} gwei &bull; {blockNumber} */}
         </div>
