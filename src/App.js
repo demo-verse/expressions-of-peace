@@ -261,10 +261,10 @@ const App = () => {
                     fontSize: "2rem",
                     marginTop: "1rem",
                     color: "purple",
-                    lineHeight: "1.8rem",
+                    lineHeight: "2.2rem",
                   }}
                 >
-                  express yourself!
+                 <u>express yourself!</u> 
                 </h1>
               </a>
               .
@@ -383,7 +383,7 @@ const App = () => {
                 marginLeft: "8%",
                 marginRight: "10%",
                 color: "black",
-                padding: "30px",
+                padding: "22px",
                 backgroundColor: "#BBE6B6",
 
                 textAlign: "left",
@@ -391,7 +391,7 @@ const App = () => {
               }}
             >
               {" "}
-              Tech is intended as an optional tool. Aim is to catalyze and
+              Tech is an optional tool; to catalyze {"&"}
               empower a world peace, via an accessible, inclusive, transparent
               and legit process and environment.
             </p>
@@ -457,7 +457,7 @@ const App = () => {
           </a>{" "} */}
           <div className="centered columns">
             <button
-              className="connect-button"
+              className="read-guide-button"
               style={{
                 backgroundColor: "white",
                 color: "black",
@@ -473,7 +473,7 @@ const App = () => {
             </button>
 
             <button
-              className="connect-button"
+              className="watch-demo-button"
               style={{
                 backgroundColor: "white",
                 color: "black",
