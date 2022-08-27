@@ -4,6 +4,7 @@ import { ethers } from "ethers";
 // import { makeNFT } from "./NFTMaker";
 // import ExpressionOfPeace from "./artifacts/contracts/ExpressionOfPeace.sol/ExpressionOfPeace_Rinkeby.json";
 import ExpressionOfPeace_Goerli from "./artifacts/contracts/ExpressionOfPeace.sol/ExpressionOfPeace_Goerli.json";
+import AccordeonItem from "./AccordeonItem";
 
 // will initiate all chains with their test networks.
 // first, ethereum's rinkeby test network.
@@ -241,11 +242,11 @@ const App = () => {
         <section className="expressions center">
           <div className="columns">
             <div style={{ marginLeft: "10%" }}>
-              <h1 style={{ fontSize: "2rem", marginTop: "1rem" }}>
+              <h1 style={{ fontSize: "2rem", marginTop: "1rem", lineHeight: "1.8rem" }}>
                 start, a world peace.
               </h1>
               <h1
-                style={{ fontSize: "2rem", marginTop: "1rem", color: "purple" }}
+                style={{ fontSize: "2rem", marginTop: "1rem", color: "purple", lineHeight: "1.8rem" }}
               >
                 express yourself!
               </h1>
@@ -406,7 +407,7 @@ const App = () => {
               fontSize: "1.6rem",
             }}
           >
-            As a proof of concept; <br></br>a peer-to-peer diplomacy tool, launched on
+            As a proof of concept; <br></br>a peer-to-peer diplomacy tool,<br></br> launched on
             blockchain (
             <a
               href="https://blog.logrocket.com/mainnet-vs-testnet-environments-explained/"
@@ -415,11 +416,11 @@ const App = () => {
             >
               testnets
             </a>
-            ) for {" "}
-            <strong>
+            )<br></br>  for {" "}
+            <strong> 
               {" "}
-              freely expressing, co-signing<br></br> and sealing a world peace,
-            <br></br>  together {"&"} undeniably. <br></br> <br></br>It's an experience, that is priceless.
+              freely imagining, expressing, <br></br> co-signing and sealing a world peace,
+             together {"&"} undeniably. <br></br> <br></br>It's an experience, that is priceless.
             </strong>
           </p>
 
@@ -471,6 +472,15 @@ const App = () => {
           </div>
           <br></br>
  
+              
+                        <div>
+                          <AccordeonItem  txtColor={"white"} bgColor = {"black"} questionTxt={"what"} answerTxt={"Global, peer-to-peer consensus of billions: a ogressive regeneration via disarmament and world peace vision."} />
+                          <AccordeonItem   txtColor={"black"} bgColor = {"yellow"}  questionTxt={"why"} answerTxt={"Consensus is what we need to solve global problems. Peace is that consensus, that needs consensus in the first place."} />
+                          <AccordeonItem    txtColor={"black"} bgColor = {"#fac2d6"} questionTxt={"who"} answerTxt={"As a multi-stakeholder environment, including individuals, states, non-gov orgs and corporations of war and peace industries. Basically, together. "} />
+                          <AccordeonItem    txtColor={"black"} bgColor = {"orange"} questionTxt={"how"} answerTxt={"We'll figure out together. Here, contracts, in core, technical tools of reflections; helping us making a world peace via expressions, demands, acknowledgements and hence assurances to the rest of the world, undeniably. This well may be in forms of, writing social and environmental contracts, that are writing a future, from now."} />
+                          <AccordeonItem    txtColor={"black"} bgColor = {"#afeeee"} questionTxt={"when & where"} answerTxt={"Anytime, anywhere. Now, while you are alive. It's our legacy. An effective and legitimate  experience of this right, in fact, should be sufficient a once in a lifetime."} />
+              
+                        </div>
           <br></br>
           <hr></hr>
           <h2

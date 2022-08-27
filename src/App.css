@@ -411,6 +411,73 @@ footer .container {
   background-color: transparent;
 }
 
+.question-section {
+  background: transparent;
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  cursor: pointer;
+  width: 92vw;
+  align-content: center;
+}
+
+.question-align {
+  align-items: center;
+  display: flex;
+  min-height: 60px;
+  text-align: center;
+}
+.question-style h2 {
+  text-align: center;
+}
+.faq-accordeon {
+
+  margin-top: 20px;
+}
+
+.question-align h4 {
+  margin-left: 8px;
+}
+
+.question-align .question-style{
+  text-align: center;
+}
+.question-styling {
+  font-size: 32px;
+  width: 100%;
+}
+
+.question-icon {
+  background: none;
+  border: none;
+  color: #1b6aae;
+  cursor: pointer;
+  font-size: 22px;
+  margin-left: auto;
+  margin-right: 8px;
+}
+
+.rotate {
+  transform: rotate(45deg);
+}
+
+.answer-divider {
+  border-top: 1px solid lightgray;
+}
+.question-align question-style {
+  text-align: center;
+}
+
+.answer {
+  margin-left: 8px;
+  margin-right: 8px;
+  /* max-height: 0; */
+  overflow: hidden;
+  transition: max-height 0.6s ease;
+  text-align: left;
+}
+
 .Collapsible__trigger {
   background: #202428;
   color: #fff;
