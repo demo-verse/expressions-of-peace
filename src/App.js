@@ -351,7 +351,7 @@ const App = () => {
           </h2>
           <h2
             className="centered"
-            style={{ fontSize: "2.2rem", lineHeight: "2.6rem" }}
+            style={{ fontSize: "1.8rem", lineHeight: "2.6rem" }}
           >
             how would you imagine, express and make a World Peace?
           </h2>
@@ -366,14 +366,15 @@ const App = () => {
           <h2
             className="centered"
             style={{
-              fontSize: "2.2rem",
+              fontSize: "1.8rem",
               lineHeight: "2.6rem",
               marginTop: "40px",
             }}
-          >
-            this is where <br></br> technology helps peacemaking, <br></br>{" "}
+            >
+            a technology can help peace and trust making, <br></br>{" "}
             sincerely.
           </h2>
+          <hr></hr>
           <h1
             style={{
               textAlign: "center",
