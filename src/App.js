@@ -370,7 +370,7 @@ const App = () => {
             className="centered"
             style={{ fontSize: "2.2rem", lineHeight: "2.6rem", marginTop: "40px" }}
           >
-           This is where all kinds of technology serve peace, <br></br> sincerely and to be, effectively.{" "}
+           this is where <br></br> technology helps peacemaking, <br></br> sincerely.
           </h2>
 
           <h1
@@ -381,7 +381,7 @@ const App = () => {
               marginBottom: "2rem",
             }}
           >
-           ? You may wonder;
+           ? you may wonder;
           </h1>
           <div>
             <AccordeonItem
@@ -450,7 +450,7 @@ const App = () => {
                 // backgroundColor: "#BBE6B6",
 
                 textAlign: "left",
-                fontSize: "1.6rem",
+                fontSize: "1.8rem",
               }}
             >
               As a proof of concept; <br></br>a peer-to-peer diplomacy tool,
@@ -539,7 +539,7 @@ const App = () => {
                 color: "white",
                 padding: "22px",
                 textAlign: "left",
-                fontSize: "1.6rem",
+                fontSize: "1.8rem",
               }}
             >
               It takes free will, and a feeling of responsibility and generousity in giving out
@@ -556,12 +556,11 @@ const App = () => {
                 backgroundColor: "#afeeee",
 
                 textAlign: "left",
-                fontSize: "1.6rem",
+                fontSize: "1.8rem",
               }}
             >
               {" "}
-              Tech is an optional tool; to catalyze {"& "}
-              empower a World Peace, via an accessible, inclusive, transparent
+              Tech is an optional tool; to catalyze a World Peace, via an accessible, inclusive, transparent
               and legit process and environment, together.
             </p>
 
