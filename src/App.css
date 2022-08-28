@@ -109,8 +109,8 @@ h2 {
   border: 10px solid rgb(0, 255, 238);
   /* padding: 0.3rem 0.5rem; */
   border-radius: 0.8rem;
-  margin-left: 2rem;
-  margin-right: 10rem;
+  /* margin-left: 2rem; */
+  margin-right: 4rem;
   cursor: pointer;
   width: 10rem;
   height: 10rem;
