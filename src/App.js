@@ -517,7 +517,7 @@ const App = () => {
               bgColor={"black"}
               questionTxt={"what"}
               answerTxt={
-                "A global, peer-to-peer consensus of billions: a progressive regeneration via disarmament and world peace vision."
+                "A global, peer-to-peer consensus of billions: a progressive world peace vision, notion and projects to empower a change, undeniably."
               }
             />
             <AccordeonItem
@@ -533,7 +533,7 @@ const App = () => {
               bgColor={"#fac2d6"}
               questionTxt={"who"}
               answerTxt={
-                "As a multi-stakeholder environment, including individuals, states, non-gov orgs and corporations of war and peace industries. Basically, altogether. "
+                "This is a multi-stakeholder scenario; including every individual, their states, non-gov orgs and corporations."
               }
             />
             <AccordeonItem
@@ -541,7 +541,7 @@ const App = () => {
               bgColor={"orange"}
               questionTxt={"how"}
               answerTxt={
-                "We will figure out together. Here, contracts, in core, tools of reflections; helping us making a world peace via expressions, demands, acknowledgements and hence assurances to the rest of the world, undeniably."
+                "We will figure out together. Here, contracts, in core, tools of reflections; helping us making a world peace via expressions, acknowledgements and hence assurances to the world."
               }
               // answerTxt={
               //   "We'll figure out together. Here, contracts, in core, technical tools of reflections; helping us making a world peace via expressions, demands, acknowledgements and hence assurances to the rest of the world, undeniably. This well may be in forms of, writing social and environmental contracts, that are writing a future, from now."
@@ -552,7 +552,7 @@ const App = () => {
               bgColor={"#afeeee"}
               questionTxt={"when "}
               answerTxt={
-                "Anytime, anywhere. It's our legacy, to be. An effective and legitimate  experience of this right, in fact, should suffice even when expressed, once in a lifetime."
+                "Anytime and anywhere. It's our legacy, to be. An effective and legitimate  experience of this right, in fact, should be enough, even when considered as,  a once in a lifetime experience\"."
               }
             />
           </div>
