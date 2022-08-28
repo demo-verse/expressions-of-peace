@@ -128,6 +128,8 @@ const App = () => {
   //   setRefIncluded(!refIncluded);
   // }
 
+  
+
   // handles submit button
   // add textual version  of the expression
   const handleSubmit = async (e) => {
@@ -208,7 +210,7 @@ const App = () => {
                 // onKeyPress={(e) => !/[0-9]/.test(e.key) && e.preventDefault()}
 
                 name="value"
-                placeholder="how would you imagine and express a world peace?"
+                placeholder="how would you imagine, express and make a World Peace?"
               />
               {/* <div className="checkbox">
                 including ref? {refIncluded} <input
@@ -249,7 +251,7 @@ const App = () => {
                   lineHeight: "1.8rem",
                 }}
               >
-                start, a world peace.
+                start, a World Peace.
               </h1>
               <a
                 href="https://www.youtube.com/watch?v=jW4VZ5J0fNQ"
@@ -308,7 +310,7 @@ const App = () => {
                 >
                   to experience,
                 </span>{" "}
-                as a civilisation.
+                a World Peace, as a civilisation.
               </p>
             </div>
           </div>
@@ -329,7 +331,7 @@ const App = () => {
             <br></br>
             We hope, this would be a new perspective, where any individual can
             express their imagination and their way of peace-making, empowering
-            the rest, including their states, to seal a world peace.
+            the rest, including their states, to seal a World Peace.
           </p> */}
           <br></br>
           {/* <div className="morpheus">
@@ -348,12 +350,14 @@ const App = () => {
           >
             <strong>#GenerationPeace!</strong>
           </h2>
+
           <h2
             className="centered"
             style={{ fontSize: "2.2rem", lineHeight: "2.6rem" }}
           >
-            Let technology serve peace, <br></br> sincerely{" "}
+            how would you imagine, express and make a World Peace?
           </h2>
+        
           <div className="centered" style={{ marginTop: "40px" }}>
             <img
               alt="express yourself!"
@@ -362,51 +366,79 @@ const App = () => {
               width={"42%"}
             ></img>
           </div>{" "}
-          <div className="columns">
-            <p
-              style={{
-                backgroundColor: "gray",
-                marginLeft: "10%",
-                color: "white",
-                padding: "22px",
-                textAlign: "left",
-                fontSize: "1.6rem",
-              }}
-            >
-              It takes free will, responsibility and generousity in giving out
-              an assurance, which to become our promise, our legacy.
-            </p>
-            <p
-              style={{
-                // backgroundColor: "black",
-                // marginRight: "6%",
-                marginLeft: "8%",
-                marginRight: "10%",
-                color: "black",
-                padding: "22px",
-                backgroundColor: "#BBE6B6",
+          <h2
+            className="centered"
+            style={{ fontSize: "2.2rem", lineHeight: "2.6rem", marginTop: "40px" }}
+          >
+           This is where all kinds of technology serve peace, <br></br> sincerely and to be, effectively.{" "}
+          </h2>
 
-                textAlign: "left",
-                fontSize: "1.6rem",
-              }}
-            >
-              {" "}
-              Tech is an optional tool; to catalyze {"& "}
-              empower a world peace, via an accessible, inclusive, transparent
-              and legit process and environment.
-            </p>
+          <h1
+            style={{
+              textAlign: "center",
+              marginTop: "2rem",
+              fontSize: "2.2rem",
+              marginBottom: "2rem",
+            }}
+          >
+           ? You may wonder;
+          </h1>
+          <div>
+            <AccordeonItem
+              txtColor={"white"}
+              bgColor={"black"}
+              questionTxt={"what"}
+              answerTxt={
+                "A global, peer-to-peer diplomacy and consensus of billions: a progressive World Peace vision, challenge, experience and a historical change, together: A mutual assured regeneration."
+              }
 
-            {/* <p>
-            <br></br> . As a proof of concept, and
-            part of futher research and development, <br></br>
-            Expressions of Peace were initiated on blockchain. <br></br>
-          </p> */}
+              
+              answerTxtSub = {"The p2p consensus and effective accumulation of will, shall be acknowledged as: People encouraging empowering themselves, each other and their represented states in the United Nations, to co-sign a no-more-war agreement: A Mutual Assured Regeneration."}
+            />
+            <AccordeonItem
+              txtColor={"black"}
+              bgColor={"yellow"}
+              questionTxt={"why"}
+              answerTxt={
+                "Making common sense and meaning is what we need to solve global problems. Peace is that consensus, that needs consensus in the first place, to sincerely and effectively move with the problems that caused by wars, inequalities and climate change. We'd like to treat every individual having (ideally) same authority on co-signing a world peace. "
+              }
+            />
+            <AccordeonItem
+              txtColor={"black"}
+              bgColor={"#fac2d6"}
+              questionTxt={"who"}
+              answerTxt={
+                "This is a multi-stakeholder scenario; including every individual, their states, non-gov orgs and corporations."
+              }
+            />
+            <AccordeonItem
+              txtColor={"black"}
+              bgColor={"orange"}
+              questionTxt={"how"}
+              answerTxt={
+                "We will figure out together. Here, contracts, in core, tools of reflections; helping us making a World Peace via expressions, acknowledgements and hence assurances to the world."
+              }
+              // answerTxt={
+              //   "We'll figure out together. Here, contracts, in core, technical tools of reflections; helping us making a World Peace via expressions, demands, acknowledgements and hence assurances to the rest of the world, undeniably. This well may be in forms of, writing social and environmental contracts, that are writing a future, from now."
+              // }
+            />
+            <AccordeonItem
+              txtColor={"black"}
+              bgColor={"#afeeee"}
+              questionTxt={"when "}
+              answerTxt={
+                "Anytime and anywhere. It's our legacy, to be. An effective and legitimate  experience of this right, in fact, should be enough, even when considered as,  a once in a lifetime experience\" of 21st century and forwards."
+              }
+            />
+                      <AccordeonItem
+              txtColor={"white"}
+              bgColor={"red"}
+              questionTxt={"lastly"}
+              answerTxt={
+                "Project, is considered as an artwork with a new perspective. "
+              }
+            />
           </div>
-          {/* <h2>what can we observe with this app? </h2>
-          <p>
-            this way, any individual can express their imagination and their way
-            of peace-making scale of billions.
-          </p> */}
           <div className="columns">
             <p
               style={{
@@ -447,7 +479,7 @@ const App = () => {
               <strong>
                 {" "}
                 freely imagining, expressing, <br></br> co-signing and sealing a
-                world peace, together {"&"} undeniably. <br></br> <br></br>It's
+                World Peace, together {"&"} undeniably. <br></br> <br></br>It's
                 an experience, that is priceless.
               </strong> */}
             </p>
@@ -499,63 +531,56 @@ const App = () => {
               </a>
             </button>
           </div>
-          <br></br>
-          <hr></hr>
-          <h1
-            style={{
-              textAlign: "center",
-              marginTop: "2rem",
-              fontSize: "2.2rem",
-              marginBottom: "2rem",
-            }}
-          >
-           ? You may wonder;
-          </h1>
-          <div>
-            <AccordeonItem
-              txtColor={"white"}
-              bgColor={"black"}
-              questionTxt={"what"}
-              answerTxt={
-                "A global, peer-to-peer consensus of billions: a progressive world peace vision, notion and projects to empower a change, undeniably."
-              }
-            />
-            <AccordeonItem
-              txtColor={"black"}
-              bgColor={"yellow"}
-              questionTxt={"why"}
-              answerTxt={
-                "Consensus is what we need to solve global problems. Peace is that consensus, that needs consensus in the first place."
-              }
-            />
-            <AccordeonItem
-              txtColor={"black"}
-              bgColor={"#fac2d6"}
-              questionTxt={"who"}
-              answerTxt={
-                "This is a multi-stakeholder scenario; including every individual, their states, non-gov orgs and corporations."
-              }
-            />
-            <AccordeonItem
-              txtColor={"black"}
-              bgColor={"orange"}
-              questionTxt={"how"}
-              answerTxt={
-                "We will figure out together. Here, contracts, in core, tools of reflections; helping us making a world peace via expressions, acknowledgements and hence assurances to the world."
-              }
-              // answerTxt={
-              //   "We'll figure out together. Here, contracts, in core, technical tools of reflections; helping us making a world peace via expressions, demands, acknowledgements and hence assurances to the rest of the world, undeniably. This well may be in forms of, writing social and environmental contracts, that are writing a future, from now."
-              // }
-            />
-            <AccordeonItem
-              txtColor={"black"}
-              bgColor={"#afeeee"}
-              questionTxt={"when "}
-              answerTxt={
-                "Anytime and anywhere. It's our legacy, to be. An effective and legitimate  experience of this right, in fact, should be enough, even when considered as,  a once in a lifetime experience\"."
-              }
-            />
+          <div className="columns">
+            <p
+              style={{
+                backgroundColor: "gray",
+                marginLeft: "10%",
+                color: "white",
+                padding: "22px",
+                textAlign: "left",
+                fontSize: "1.6rem",
+              }}
+            >
+              It takes free will, and a feeling of responsibility and generousity in giving out
+              an assurance, which to become our promise, our legacy, undeniably.
+            </p>
+            <p
+              style={{
+                // backgroundColor: "black",
+                // marginRight: "6%",
+                marginLeft: "8%",
+                marginRight: "10%",
+                color: "black",
+                padding: "22px",
+                backgroundColor: "#afeeee",
+
+                textAlign: "left",
+                fontSize: "1.6rem",
+              }}
+            >
+              {" "}
+              Tech is an optional tool; to catalyze {"& "}
+              empower a World Peace, via an accessible, inclusive, transparent
+              and legit process and environment, together.
+            </p>
+
+            {/* <p>
+            <br></br> . As a proof of concept, and
+            part of futher research and development, <br></br>
+            Expressions of Peace were initiated on blockchain. <br></br>
+          </p> */}
           </div>
+          {/* <h2>what can we observe with this app? </h2>
+          <p>
+            this way, any individual can express their imagination and their way
+            of peace-making scale of billions.
+          </p> */}
+          
+          <br></br>
+
+          
+         
           <br></br>
           <hr></hr>
           <h2
@@ -609,7 +634,7 @@ const App = () => {
           <br></br>
           <hr></hr>
           <h2 style={{ fontSize: "2rem", marginTop: "100px" }}>
-            <span>Why </span> blockchain @ design?{" "}
+            <span>Why </span> blockchain @ tech design?{" "}
           </h2>
           <p
             style={{
@@ -639,7 +664,10 @@ const App = () => {
               Smart contracts
             </a>{" "}
             here in this context, act as global, public mail boxes,
-             yet to become social consensus contracts.
+             yet to become social consensus contracts where we sign with a crypto wallet, without required (real) money.
+             <br></br>             <br></br>
+
+              In the making of a World Peace, via experiencing of a right, it would be a mistake to make it a money game.
             <br></br> <br></br>
             <a
               href="https://www.youtube.com/watch?v=xxLLIxuY3gg"
@@ -657,6 +685,12 @@ const App = () => {
               <u>here</u>
             </a>{" "}
             is an article about social contract theories.
+            <br></br>
+            <br></br>
+
+  
+
+            
             <br></br>
             <br></br>
             <strong>* </strong>
