@@ -389,7 +389,7 @@ const App = () => {
               bgColor={"black"}
               questionTxt={"what"}
               answerTxt={
-                "A global, peer-to-peer diplomacy and consensus of billions: a progressive World Peace vision, challenge, experience and a historical change, together: A mutual assured regeneration."
+                "A global, peer-to-peer diplomacy and consensus of billions: a progressive World Peace vision, challenge, experience and a historical change, together: A Mutual Assured Regeneration, aka the Art of Peace."
               }
 
               
@@ -408,7 +408,7 @@ const App = () => {
               bgColor={"#fac2d6"}
               questionTxt={"who"}
               answerTxt={
-                "This is a multi-stakeholder scenario; including every individual, their states, non-gov orgs and corporations."
+                "This is a multi-stakeholder scenario; including every individual, their states, non-gov orgs and corporations. In short, you, me, they, altogether. This is a holistic and inclusive cooperation, by design."
               }
             />
             <AccordeonItem
