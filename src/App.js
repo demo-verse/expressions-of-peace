@@ -370,9 +370,8 @@ const App = () => {
               lineHeight: "2.6rem",
               marginTop: "40px",
             }}
-            >
-            a technology can help peace and trust making, <br></br>{" "}
-            sincerely.
+          >
+            a technology can help peace and trust making, <br></br> sincerely.
           </h2>
           <hr></hr>
           <h1
@@ -437,10 +436,7 @@ const App = () => {
               bgColor={"red"}
               questionTxt={"lastly"}
               answerTxt={
-                "Design, notion and perspective shall be a canvas, to make an Art of Peace on it, together. Future generations (beholders) will be learning from our Expressions of Peace and remember the 21st century as \"aware, courageous, artful and peaceful enough\", on empowering themselves, each other and their states, via accumulation and observation of legitimate and sincere, will and intentions. " 
-                
-                
-                
+                'Design, notion and perspective shall be a canvas, to make an Art of Peace on it, together. Future generations (beholders) will be learning from our Expressions of Peace and remember the people lived in the 21st century as "aware, courageous, artful and peaceful enough", on empowering themselves, each other and their states, via accumulation and observation of legitimate and sincere, will and intentions. '
               }
             />
           </div>
@@ -476,7 +472,10 @@ const App = () => {
                   paddingRight: "4px",
                 }}
               >
-                <i>It's an experience, that is priceless. It's more about being, than having.</i>
+                <i>
+                  It's an experience, that is priceless. It's more about being,
+                  than having.
+                </i>
               </span>{" "}
               {/* 
               <br></br> for
@@ -535,7 +534,7 @@ const App = () => {
               </a>
             </button>
           </div>
-          <div className="columns" style={{margin: "2rem"}}>
+          <div className="columns" style={{ margin: "2rem" }}>
             <p
               style={{
                 backgroundColor: "gray",
