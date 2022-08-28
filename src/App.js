@@ -417,7 +417,7 @@ const App = () => {
               bgColor={"orange"}
               questionTxt={"how"}
               answerTxt={
-                "We will figure out together. Here, contracts, in core, tools of reflections; helping us making a World Peace via expressions, acknowledgements and hence assurances to the world."
+                "We will figure out together. Here, contracts, in core, tools of reflections; helping us making a World Peace via expressions, acknowledgements and hence assurances to the world. We hope, that intentionality overcomes impressions and biases."
               }
               // answerTxt={
               //   "We'll figure out together. Here, contracts, in core, technical tools of reflections; helping us making a World Peace via expressions, demands, acknowledgements and hence assurances to the rest of the world, undeniably. This well may be in forms of, writing social and environmental contracts, that are writing a future, from now."
