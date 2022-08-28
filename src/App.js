@@ -128,8 +128,6 @@ const App = () => {
   //   setRefIncluded(!refIncluded);
   // }
 
-  
-
   // handles submit button
   // add textual version  of the expression
   const handleSubmit = async (e) => {
@@ -266,7 +264,7 @@ const App = () => {
                     lineHeight: "2.2rem",
                   }}
                 >
-                 <u>express yourself!</u> 
+                  <u>express yourself!</u>
                 </h1>
               </a>
               .
@@ -289,10 +287,11 @@ const App = () => {
                   // marginRight: "6%",
                   marginLeft: "10%",
                   marginRight: "16%",
-                  color: "white",
+                  color: "black",
                   padding: "22px",
                   paddingRight: "40px",
-                  backgroundColor: "#4B6D8B",
+                  // backgroundColor: "#4B6D8B",
+                  backgroundColor: "#afeeee",
 
                   textAlign: "right",
                   fontSize: "1.6rem",
@@ -308,9 +307,9 @@ const App = () => {
                     paddingRight: "4px",
                   }}
                 >
-                  to experience,
+                  to experience
                 </span>{" "}
-                a World Peace, as a civilisation.
+                a World Peace, as a civilisation in participation.
               </p>
             </div>
           </div>
@@ -350,14 +349,12 @@ const App = () => {
           >
             <strong>#GenerationPeace!</strong>
           </h2>
-
           <h2
             className="centered"
             style={{ fontSize: "2.2rem", lineHeight: "2.6rem" }}
           >
             how would you imagine, express and make a World Peace?
           </h2>
-        
           <div className="centered" style={{ marginTop: "40px" }}>
             <img
               alt="express yourself!"
@@ -368,11 +365,15 @@ const App = () => {
           </div>{" "}
           <h2
             className="centered"
-            style={{ fontSize: "2.2rem", lineHeight: "2.6rem", marginTop: "40px" }}
+            style={{
+              fontSize: "2.2rem",
+              lineHeight: "2.6rem",
+              marginTop: "40px",
+            }}
           >
-           this is where <br></br> technology helps peacemaking, <br></br> sincerely.
+            this is where <br></br> technology helps peacemaking, <br></br>{" "}
+            sincerely.
           </h2>
-
           <h1
             style={{
               textAlign: "center",
@@ -381,7 +382,7 @@ const App = () => {
               marginBottom: "2rem",
             }}
           >
-           ? you may wonder;
+            ? you may wonder;
           </h1>
           <div>
             <AccordeonItem
@@ -391,9 +392,9 @@ const App = () => {
               answerTxt={
                 "A global, peer-to-peer diplomacy and consensus of billions: a progressive World Peace vision, challenge, experience and a historical change, together: A Mutual Assured Regeneration, aka the Art of Peace."
               }
-
-              
-              answerTxtSub = {"The p2p consensus and effective accumulation of will, shall be acknowledged as: People encouraging empowering themselves, each other and their represented states in the United Nations, to co-sign a no-more-war agreement: A Mutual Assured Regeneration."}
+              answerTxtSub={
+                "The p2p consensus and effective accumulation of will, shall be acknowledged as: People encouraging empowering themselves, each other and their represented states in the United Nations, to co-sign a no-more-war agreement: A Mutual Assured Regeneration."
+              }
             />
             <AccordeonItem
               txtColor={"black"}
@@ -430,7 +431,7 @@ const App = () => {
                 "Anytime and anywhere. It's our legacy, to be. An effective and legitimate  experience of this right, in fact, should be enough, even when considered as,  a once in a lifetime experience\" of 21st century and forwards."
               }
             />
-                      <AccordeonItem
+            <AccordeonItem
               txtColor={"white"}
               bgColor={"red"}
               questionTxt={"lastly"}
@@ -461,19 +462,18 @@ const App = () => {
                 rel="noreferrer"
               >
                 test networks).
-              </a> {" "}
+              </a>{" "}
               <br></br>
               <span
-                  style={{
-                    backgroundColor: "yellow",
-                    color: "black",
-                    paddingLeft: "4px",
-                    paddingRight: "4px",
-                  }}
-                >
-                  <i>It's an experience, that is priceless.</i>
-                </span>{" "}
-               
+                style={{
+                  backgroundColor: "yellow",
+                  color: "black",
+                  paddingLeft: "4px",
+                  paddingRight: "4px",
+                }}
+              >
+                <i>It's an experience, that is priceless.</i>
+              </span>{" "}
               {/* 
               <br></br> for
               <strong>
@@ -542,8 +542,9 @@ const App = () => {
                 fontSize: "1.8rem",
               }}
             >
-              It takes free will, and a feeling of responsibility and generousity in giving out
-              an assurance, which to become our promise, our legacy, undeniably.
+              It takes free will, and a feeling of responsibility and
+              generousity in giving out an assurance, which to become our
+              promise, our legacy, undeniably.
             </p>
             <p
               style={{
@@ -560,8 +561,9 @@ const App = () => {
               }}
             >
               {" "}
-              Tech is an optional tool; to catalyze a World Peace, via an accessible, inclusive, transparent
-              and legit process and environment, together.
+              Tech is an optional tool; to catalyze a World Peace, via an
+              accessible, inclusive, transparent and legit process and
+              environment, together.
             </p>
 
             {/* <p>
@@ -575,11 +577,7 @@ const App = () => {
             this way, any individual can express their imagination and their way
             of peace-making scale of billions.
           </p> */}
-          
           <br></br>
-
-          
-         
           <br></br>
           <hr></hr>
           <h2
@@ -662,18 +660,19 @@ const App = () => {
             >
               Smart contracts
             </a>{" "}
-            here in this context, act as global, public mail boxes,
-             yet to become social consensus contracts where we sign with a crypto wallet, without required (real) money.
-             <br></br>             <br></br>
-
-              In the making of a World Peace, via experiencing of a right, it would be a mistake to make it a money game.
+            here in this context, act as global, public mail boxes, yet to
+            become social consensus contracts where we sign with a crypto
+            wallet, without required (real) money.
+            <br></br> <br></br>
+            In the making of a World Peace, via experiencing of a right, it
+            would be a mistake to make it a money game.
             <br></br> <br></br>
             <a
               href="https://www.youtube.com/watch?v=xxLLIxuY3gg"
               target={"_blank"}
               rel="noreferrer"
             >
-              <u>Here</u> 
+              <u>Here</u>
             </a>{" "}
             is a short video and{" "}
             <a
@@ -686,27 +685,22 @@ const App = () => {
             is an article about social contract theories.
             <br></br>
             <br></br>
-
-  
-
-            
             <br></br>
             <br></br>
             <strong>* </strong>
             <span style={{ fontStyle: "italic" }}>
               in case people cannot express or acknowledge peace for security
               reasons, they'd keep their anonymity as long as they needed.{" "}
-            <br></br>  ( until their uniqueness in the system  proven at some point in the future. check 
-            {" "}
+              <br></br> ( until their uniqueness in the system proven at some
+              point in the future. check{" "}
               <a
-              href="https://en.wikipedia.org/wiki/Proof_of_personhood"
-              target={"_blank"}
-              rel="noreferrer"
-            >
-              <u>Proof of Personhood</u>
-            </a>
-            
-            ) 
+                href="https://en.wikipedia.org/wiki/Proof_of_personhood"
+                target={"_blank"}
+                rel="noreferrer"
+              >
+                <u>Proof of Personhood</u>
+              </a>
+              )
             </span>
           </p>
           {/* <p style={{ backgroundColor: "yellow" }}>
@@ -825,7 +819,6 @@ const App = () => {
 
       <footer>
         <div className="container">
-         
           <a
             className="license-link"
             href="https://creativecommons.org/licenses/by-sa/2.0/"
@@ -854,7 +847,6 @@ const App = () => {
           >
             @Rinkeby
           </a>
-         
           faucets:
           <a
             className="faucet-goerli"
