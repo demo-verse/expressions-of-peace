@@ -110,10 +110,11 @@ h2 {
   /* padding: 0.3rem 0.5rem; */
   border-radius: 0.8rem;
   /* margin-left: 2rem; */
-  margin-right: 4rem;
+  /* margin-right: 8rem; */
   cursor: pointer;
   width: 10rem;
   height: 10rem;
+  margin-left: 42%;
 }
 a {
   text-decoration: inherit;
@@ -597,9 +598,25 @@ a:hover {
   font-size: larger;
 }
 
-/* @media only screen and (max-width: 960px) {
-
-} */
+@media only screen and (max-width: 480px) {
+  .dapp-button {
+    background: #020202;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: bold;
+    /* padding-right: "12px"; */
+    padding: 20px;
+    border: 10px solid rgb(0, 255, 238);
+    /* padding: 0.3rem 0.5rem; */
+    border-radius: 0.8rem;
+    /* margin-left: 2rem; */
+    /* margin-right: 8rem; */
+    cursor: pointer;
+    width: 10rem;
+    height: 10rem;
+    align-content: center;
+  }
+}
 
 
 @media only screen and (max-width: 960px) {

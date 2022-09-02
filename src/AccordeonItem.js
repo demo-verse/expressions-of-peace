@@ -37,7 +37,17 @@ const AccordeonItem = ({ questionTxt, answerTxt, bgColor, txtColor }) => {
             ref={contentRef}
             className={active ? `answer answer-divider` : `answer`}
           >
-            <p style={{ textAlign:"start", color: txtColor, fontSize: "1.8rem", paddingLeft: "0.rem", paddingTop: "0.2rem" }}>{answerTxt}</p>
+            <p
+              style={{
+                textAlign: "start",
+                color: txtColor,
+                fontSize: "1.8rem",
+                paddingLeft: "0.rem",
+                paddingTop: "0.2rem",
+              }}
+            >
+              {answerTxt}
+            </p>
           </div>
         </div>
       </button>

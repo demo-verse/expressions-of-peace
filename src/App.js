@@ -5,6 +5,7 @@ import { ethers } from "ethers";
 // import ExpressionOfPeace from "./artifacts/contracts/ExpressionOfPeace.sol/ExpressionOfPeace_Rinkeby.json";
 import ExpressionOfPeace_Goerli from "./artifacts/contracts/ExpressionOfPeace.sol/ExpressionOfPeace_Goerli.json";
 import AccordeonItem from "./AccordeonItem";
+import Footer from "./Footer";
 
 // will initiate all chains with their test networks.
 // first, ethereum's rinkeby test network.
@@ -64,10 +65,10 @@ const App = () => {
           params: [{ chainId: hexChainId }],
         });
       } catch (switchError) {
-        // This error code indicates that the chain has not been added to MetaMask.
+        // This error code indicates that the Görli network was not present @ the MetaMask wallet.
         if (switchError.code === 4902) {
           console.log(
-            "This network is not available in your metamask, please add it"
+            "This network is not available in your metamask, please add it manually."
           );
         }
         console.log("Failed to switch to the network");
@@ -239,36 +240,35 @@ const App = () => {
           </div>
         </section>
       ) : (
-        <section className="expressions center">
-          <div className="columns">
-            <div style={{ marginLeft: "10%" }}>
+        <section className="expressions centeed">
+          <div style={{ textAlign: "center" }}>
+            <h1
+              style={{
+                fontSize: "2rem",
+                marginTop: "1rem",
+                lineHeight: "1.8rem",
+              }}
+            >
+              start, a World Peace.
+            </h1>
+            <a
+              href="https://www.youtube.com/watch?v=jW4VZ5J0fNQ"
+              target={"_blank"}
+              rel="noreferrer"
+            >
               <h1
                 style={{
                   fontSize: "2rem",
                   marginTop: "1rem",
-                  lineHeight: "1.8rem",
+                  color: "purple",
+                  lineHeight: "2.2rem",
                 }}
               >
-                start, a World Peace.
+                <u>express yourself!</u>
               </h1>
-              <a
-                href="https://www.youtube.com/watch?v=jW4VZ5J0fNQ"
-                target={"_blank"}
-                rel="noreferrer"
-              >
-                <h1
-                  style={{
-                    fontSize: "2rem",
-                    marginTop: "1rem",
-                    color: "purple",
-                    lineHeight: "2.2rem",
-                  }}
-                >
-                  <u>express yourself!</u>
-                </h1>
-              </a>
-              .
-              {/* <h1>
+            </a>
+            .
+            {/* <h1>
                 <a
                   href="https://www.youtube.com/watch?v=2lK4LrD8Ii4"
                   target={"_blank"}
@@ -277,7 +277,6 @@ const App = () => {
                   {"&"} go all the way
                 </a>
               </h1> */}
-            </div>
             <div>
               <p
                 // style={{ fontSize: "2rem", margin: "100px" }}
@@ -293,12 +292,13 @@ const App = () => {
                   // backgroundColor: "#4B6D8B",
                   backgroundColor: "#afeeee",
 
-                  textAlign: "right",
+                  textAlign: "center",
                   fontSize: "1.6rem",
                 }}
               >
                 {" "}
                 Expressions of Peace, extend the Freedom of Expression;{" "}
+                <br></br>
                 <span
                   style={{
                     backgroundColor: "yellow",
@@ -341,7 +341,7 @@ const App = () => {
           </div>{" "} */}
           <h2
             style={{
-              fontSize: "2.2rem",
+              fontSize: "1.6rem",
               lineHeight: "2.6rem",
               marginTop: "2rem",
               marginBottom: "2rem",
@@ -369,9 +369,12 @@ const App = () => {
               fontSize: "1.8rem",
               lineHeight: "2.6rem",
               marginTop: "40px",
+              marginRight: "8%",
+              marginLeft: "8%",
             }}
           >
-            a technology can help peace and trust making, <br></br> sincerely.
+            a technology can sincerely and effectively help peace and trust
+            making in the 21st century.
           </h2>
           <hr></hr>
           <h1
@@ -401,7 +404,7 @@ const App = () => {
               bgColor={"yellow"}
               questionTxt={"why"}
               answerTxt={
-                "Making common sense and meaning is what we need to solve global problems. Peace is that consensus, that needs consensus in the first place, to sincerely and effectively move with the problems that caused by wars, inequalities and climate change. We'd like to treat every individual having (ideally) same authority on co-signing a world peace. "
+                'Making common sense and meaning is what we need to solve global problems. Peace is that consensus, that needs consensus in the first place, to sincerely and effectively move with the problems that caused by wars, inequalities and climate change. We\'d like to treat every "peaceful" individual having (ideally) same significance on co-signing a world peace. '
               }
             />
             <AccordeonItem
@@ -417,7 +420,7 @@ const App = () => {
               bgColor={"orange"}
               questionTxt={"how"}
               answerTxt={
-                "We will figure out together. Here, contracts, in core, tools of reflections; helping us making a World Peace via expressions, acknowledgements and hence assurances to the world. We hope, that intentionality overcomes impressions and biases."
+                "We will figure out together. Here, contracts, in core, are tools of reflections; helping us making a World Peace via expressions, acknowledgements and hence assurances to the world. We hope, that intentionality overcomes impressions and biases."
               }
               // answerTxt={
               //   "We'll figure out together. Here, contracts, in core, technical tools of reflections; helping us making a World Peace via expressions, demands, acknowledgements and hence assurances to the rest of the world, undeniably. This well may be in forms of, writing social and environmental contracts, that are writing a future, from now."
@@ -486,10 +489,6 @@ const App = () => {
                 an experience, that is priceless.
               </strong> */}
             </p>
-
-            <button className="dapp-button" onClick={connectHandler}>
-              open app
-            </button>
           </div>
           {/* <br></br> */}
           {/* <a
@@ -526,7 +525,7 @@ const App = () => {
               }}
             >
               <a
-                href="https://www.youtube.com/watch?v=mYwuYeqp6a0"
+                href="https://www.youtube.com/watch?v=QtqhPR7d0I"
                 target={"_blank"}
                 rel="noreferrer"
               >
@@ -534,6 +533,14 @@ const App = () => {
               </a>
             </button>
           </div>
+          <br></br>
+          <h1 style={{ textAlign: "center" }}>
+            after completing the web3 guide above, <br></br> now you are ready
+            to Express yourself!
+          </h1>
+          <button className="dapp-button" onClick={connectHandler}>
+            open app
+          </button>
           {/* <div className="columns" style={{ margin: "2rem" }}>
             <p
               style={{
@@ -571,7 +578,7 @@ const App = () => {
 
       
           </div> */}
-         <br></br>
+          <br></br>
           <hr></hr>
           <h2
             style={{
@@ -622,6 +629,17 @@ const App = () => {
                   </button> */}
           </div>
           <br></br>
+          <h1 style={{ textAlign: "center" }}>
+            <a
+              href="https://github.com/demo-verse/expressions-of-peace"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <u>here</u> 
+            </a> {" "}
+            is how to read them in the transaction history of the smart contracts. 
+          </h1>
+          <br></br>
           <hr></hr>
           <h2 style={{ fontSize: "2rem", marginTop: "100px" }}>
             <span>Why </span> blockchain @ tech design?{" "}
@@ -646,11 +664,10 @@ const App = () => {
             Expressions of Peace are letters, from you, to the rest of the
             world.
             <br></br> <br></br>
-
             Tech is an optional tool; to catalyze a World Peace, via an
-              accessible, inclusive, transparent and legit process and
-              environment, together. <br></br>
-              <br></br>
+            accessible, inclusive, transparent and legit process and
+            environment, together. <br></br>
+            <br></br>
             <a
               href="https://en.wikipedia.org/wiki/Smart_contract"
               target={"_blank"}
@@ -663,10 +680,12 @@ const App = () => {
             wallet, without requiring (real) money.
             <br></br> <br></br>
             In the making of a World Peace, via experiencing of a right, it
-            would be a fallacy to make it a money game. Well, we're starting an era of Peace Industries somwhow, based on being, rather than having in core.
+            would be a fallacy to make it a money game.
+            <br></br>
+            <br></br>
+            Well, we're starting an era of Peace Industries somwhow, based on
+            being, rather than having in core.
             <br></br> <br></br>
-
-            
             <a
               href="https://www.youtube.com/watch?v=xxLLIxuY3gg"
               target={"_blank"}
@@ -783,26 +802,26 @@ const App = () => {
             ></iframe> */}
 
             {/* Dirty Harry - Gorillaz */}
-            <iframe
+            {/* <iframe
               width="80%"
               height="640"
               src="https://www.youtube.com/embed/cLnkQAeMbIM"
               title="YouTube video player"
-              frameborder="0"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe> */}
+
+            {/* Our Dance - Wax Tailor ft. Charlotte Savary */}
+            <iframe
+              width="80%"
+              height="640"
+              src="https://www.youtube.com/embed/-QtqhPR7d0I"
+              title="YouTube video player"
+              frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             ></iframe>
-            {/* 
-            Our Dance - Wax Tailor ft. Charlotte Savary
-            <iframe
-             width="80%"
-             height="640"
-              src="https://www.youtube.com/embed/gH5ja60ZuWE"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe> */}
 
             {/* <iframe
               width="80%"
@@ -817,64 +836,7 @@ const App = () => {
         </section>
       )}
 
-      <footer>
-        <div className="container">
-          <a
-            className="license-link"
-            href="https://creativecommons.org/licenses/by-sa/2.0/"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <img
-              src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-sa.svg"
-              alt="creative commons shareAlike"
-            ></img>
-          </a>
-          expressions:
-          <a
-            className="contract-at-goerli"
-            href="https://goerli.etherscan.io/address/0xe563950e3d97c1cf11665163d4b14ead092c503c"
-            rel="noreferrer"
-            target="_blank"
-          >
-            @Görli
-          </a>
-          <a
-            className="contract-at-rinkeby"
-            href="https://rinkeby.etherscan.io/address/0x6d584295790d2c9f7f2d4249b6caebc15b1da682"
-            rel="noreferrer"
-            target="_blank"
-          >
-            @Rinkeby
-          </a>
-          faucets:
-          <a
-            className="faucet-goerli"
-            href="https://goerlifaucet.com/"
-            rel="noreferrer"
-            target="_blank"
-          >
-            $Görli
-          </a>
-          <a
-            className="faucet-rinkeby"
-            href="https://faucet.rinkeby.io/"
-            rel="noreferrer"
-            target="_blank"
-          >
-            $Rinkeby
-          </a>
-          <a
-            className="source-code-link"
-            href="https://github.com/demo-verse/expressions-of-peace"
-            rel="noreferrer"
-            target="_blank"
-          >
-            sourceCode
-          </a>
-          {/* {gasPrice} gwei &bull; {blockNumber} */}
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };
