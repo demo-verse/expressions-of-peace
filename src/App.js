@@ -339,19 +339,20 @@ const App = () => {
               alt="creative commons shareAlike"
             ></img>
           </div>{" "} */}
-          <h2
+          <h3
             style={{
-              fontSize: "1.6rem",
+              fontSize: "2rem",
               lineHeight: "2.6rem",
               marginTop: "2rem",
               marginBottom: "2rem",
+              textAlign: "center"
             }}
           >
             <strong>#GenerationPeace!</strong>
-          </h2>
+          </h3>
           <h2
             className="centered"
-            style={{ fontSize: "1.8rem", lineHeight: "2.6rem" }}
+            style={{ fontSize: "1.6rem", lineHeight: "2.6rem" }}
           >
             how would you imagine, express and make a World Peace?
           </h2>
@@ -366,7 +367,7 @@ const App = () => {
           <h2
             className="centered"
             style={{
-              fontSize: "1.8rem",
+              fontSize: "1.6rem",
               lineHeight: "2.6rem",
               marginTop: "40px",
               marginRight: "8%",
@@ -374,7 +375,7 @@ const App = () => {
             }}
           >
             a technology can sincerely and effectively help peace and trust
-            making in the 21st century.
+            making in the 21st century (and forwards).
           </h2>
           <hr></hr>
           <h1
@@ -580,6 +581,7 @@ const App = () => {
       
           </div> */}
           <br></br>
+          <br></br>
           <hr></hr>
           <h2
             style={{
@@ -644,7 +646,7 @@ const App = () => {
           <br></br>
           <hr></hr>
           <h2 style={{ fontSize: "2rem", marginTop: "100px" }}>
-            <span>Why </span> distributed ledgers @ tech design?{" "}
+            <span>Why </span> distributed ledgers @ solution design?{" "}
           </h2>
           <p
             style={{
@@ -657,9 +659,9 @@ const App = () => {
             Expressions of Peace are letters, from you, to the rest of the
             world.
             <br></br> <br></br>
-            <u> Tech is an optional tool;</u> catalyzing a World Peace, via an
-            accessible, inclusive, transparent and legit process and
-            environment, together. <br></br>
+            <strong> Tech is an optional tool;</strong> imagined to catalyze a World Peace, via an
+            accessible, inclusive, transparent, resilient and (hopefully) legit process and
+            environment, altogether. <br></br>
             <br></br>
             <a
               href="https://en.wikipedia.org/wiki/Smart_contract"
@@ -683,8 +685,12 @@ const App = () => {
               <u>Mutual Assured Destruction</u>,  
             </a> simply because it's literally <strong>MAD.</strong> 
             <br></br> <br></br>
+            <strong>
 
-            That's why we'd like this to be treated and perceived as a petition, where people in essence, proactively encouraging and (even) empowering their respective governments to reflect their wishes provide them security with a shield of peace, rather than war machines.
+            That's why we'd like this whole process to be treated, perceived and implemented as a global petition, where people in essence, proactively encouraging and (even) empowering their respective governments to reflect and align with those wishes and provide them security with a shield of an ultimate peace, rather than war machines, <i>first time in the history</i>.
+            </strong>
+
+            
             <br></br> <br></br>
             In the making of a World Peace, via experiencing of an emerging
             human right, it would be a fallacy to make it a money game.
@@ -694,8 +700,8 @@ const App = () => {
             Peace, is all about standing equal in Peace making. <br></br>{" "}
             <br></br> It's about sharing a right and experiencing that together.
             <br></br>
-            Well, we're starting an era of Peace Industries somwhow, based on
-            being, rather than having in core.
+            We're wishfully and optimistically starting an era of Peace Industries, which is based on
+            being, rather than having in core. <br></br> It's to be the Age of Peace, with Art of Peace.
             <br></br> <br></br>
             <a
               href="https://www.youtube.com/watch?v=xxLLIxuY3gg"
@@ -715,6 +721,7 @@ const App = () => {
             is an article about social contract theories.
             <br></br>
             <br></br>
+            <hr></hr>
             <br></br>
             <br></br>
             <strong>* </strong>
