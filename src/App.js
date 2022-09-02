@@ -453,8 +453,9 @@ const App = () => {
                 padding: "40px",
                 // backgroundColor: "#BBE6B6",
 
-                textAlign: "left",
+                textAlign: "center",
                 fontSize: "1.8rem",
+              
               }}
             >
               As a proof of concept; first phase of a peer-to-peer diplomacy
@@ -466,8 +467,7 @@ const App = () => {
               >
                 <u>test networks.</u>
               </a>{" "}
-              <br></br>
-              <br></br>
+              
               <span
                 style={{
                   backgroundColor: "yellow",
@@ -526,7 +526,7 @@ const App = () => {
               }}
             >
               <a
-                href="https://www.youtube.com/watch?v=QtqhPR7d0I"
+                href="https://www.youtube.com/watch?v=mYwuYeqp6a0"
                 target={"_blank"}
                 rel="noreferrer"
               >
@@ -684,7 +684,7 @@ const App = () => {
             </a> simply because it's literally <strong>MAD.</strong> 
             <br></br> <br></br>
 
-            That's why we'd like this to be treated and perceived as a petition, where people in essence, proactively encouraging empowering and (even) empowering their respective governments to reflect their wishes provide them security with a shield of peace, rather than war machines.
+            That's why we'd like this to be treated and perceived as a petition, where people in essence, proactively encouraging and (even) empowering their respective governments to reflect their wishes provide them security with a shield of peace, rather than war machines.
             <br></br> <br></br>
             In the making of a World Peace, via experiencing of an emerging
             human right, it would be a fallacy to make it a money game.
