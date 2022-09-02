@@ -534,7 +534,7 @@ const App = () => {
               </a>
             </button>
           </div>
-          <div className="columns" style={{ margin: "2rem" }}>
+          {/* <div className="columns" style={{ margin: "2rem" }}>
             <p
               style={{
                 backgroundColor: "gray",
@@ -569,19 +569,9 @@ const App = () => {
               environment, together.
             </p>
 
-            {/* <p>
-            <br></br> . As a proof of concept, and
-            part of futher research and development, <br></br>
-            Expressions of Peace were initiated on blockchain. <br></br>
-          </p> */}
-          </div>
-          {/* <h2>what can we observe with this app? </h2>
-          <p>
-            this way, any individual can express their imagination and their way
-            of peace-making scale of billions.
-          </p> */}
-          <br></br>
-          <br></br>
+      
+          </div> */}
+         <br></br>
           <hr></hr>
           <h2
             style={{
@@ -656,6 +646,11 @@ const App = () => {
             Expressions of Peace are letters, from you, to the rest of the
             world.
             <br></br> <br></br>
+
+            Tech is an optional tool; to catalyze a World Peace, via an
+              accessible, inclusive, transparent and legit process and
+              environment, together. <br></br>
+              <br></br>
             <a
               href="https://en.wikipedia.org/wiki/Smart_contract"
               target={"_blank"}
@@ -665,11 +660,13 @@ const App = () => {
             </a>{" "}
             here in this context, act as global, public mail boxes, yet to
             become social consensus contracts where we sign with a crypto
-            wallet, without required (real) money.
+            wallet, without requiring (real) money.
             <br></br> <br></br>
             In the making of a World Peace, via experiencing of a right, it
-            would be a mistake to make it a money game.
+            would be a fallacy to make it a money game. Well, we're starting an era of Peace Industries somwhow, based on being, rather than having in core.
             <br></br> <br></br>
+
+            
             <a
               href="https://www.youtube.com/watch?v=xxLLIxuY3gg"
               target={"_blank"}
