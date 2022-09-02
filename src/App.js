@@ -457,15 +457,16 @@ const App = () => {
                 fontSize: "1.8rem",
               }}
             >
-              As a proof of concept; <br></br>a peer-to-peer diplomacy tool,
-              launched on blockchain (
+              As a proof of concept; first phase of a peer-to-peer diplomacy
+              tool launched on Ethereum blockchain's{" "}
               <a
                 href="https://blog.logrocket.com/mainnet-vs-testnet-environments-explained/"
                 target={"_blank"}
                 rel="noreferrer"
               >
-                test networks).
+                <u>test networks.</u>
               </a>{" "}
+              <br></br>
               <br></br>
               <span
                 style={{
@@ -476,8 +477,8 @@ const App = () => {
                 }}
               >
                 <i>
-                  It's an experience, that is priceless. It's more about being,
-                  than having.
+                  It's an experience, that is priceless; more about being, than
+                  having.
                 </i>
               </span>{" "}
               {/* 
@@ -635,14 +636,15 @@ const App = () => {
               rel="noreferrer"
               target="_blank"
             >
-              <u>here</u> 
-            </a> {" "}
-            is how to read them in the transaction history of the smart contracts. 
+              <u>here</u>
+            </a>{" "}
+            is how to read them in the transaction history of the smart
+            contracts.
           </h1>
           <br></br>
           <hr></hr>
           <h2 style={{ fontSize: "2rem", marginTop: "100px" }}>
-            <span>Why </span> blockchain @ tech design?{" "}
+            <span>Why </span> distributed ledgers @ tech design?{" "}
           </h2>
           <p
             style={{
@@ -652,19 +654,10 @@ const App = () => {
               paddingRight: "10%",
             }}
           >
-            <div>
-              <strong>resilience {" <|> "} </strong>
-              <strong>transparency {" <|> "} </strong>
-              <strong>immutability {" <|> "} </strong>
-              <strong>anonymity*</strong>
-
-              {/* <strong> anonymity </strong> */}
-            </div>
-            <br></br>
             Expressions of Peace are letters, from you, to the rest of the
             world.
             <br></br> <br></br>
-            Tech is an optional tool; to catalyze a World Peace, via an
+            <u> Tech is an optional tool;</u> catalyzing a World Peace, via an
             accessible, inclusive, transparent and legit process and
             environment, together. <br></br>
             <br></br>
@@ -673,15 +666,33 @@ const App = () => {
               target={"_blank"}
               rel="noreferrer"
             >
-              Smart contracts
+              <u>Smart contracts </u> on test networks,
             </a>{" "}
-            here in this context, act as global, public mail boxes, yet to
-            become social consensus contracts where we sign with a crypto
-            wallet, without requiring (real) money.
+            in this context, act as global, public mail boxes, yet to become
+            social consensus contracts, where we would sign, without requiring
+            money with real value.
             <br></br> <br></br>
-            In the making of a World Peace, via experiencing of a right, it
-            would be a fallacy to make it a money game.
+            We truly believe that Peace should not be brought up as a resolution of voting or people given
+            environment or processes where, they would tend to continue the paranoid-by-default,
+            as-is doctrine of the post-war era: {" "} 
+            <a
+              href="https://en.wikipedia.org/wiki/Mutual_assured_destruction"
+              target={"_blank"}
+              rel="noreferrer"
+            >
+              <u>Mutual Assured Destruction</u>,  
+            </a> simply because it's literally <strong>MAD.</strong> 
+            <br></br> <br></br>
+
+            That's why we'd like this to be treated and perceived as a petition, where people in essence, proactively encouraging empowering and (even) empowering their respective governments to reflect their wishes provide them security with a shield of peace, rather than war machines.
+            <br></br> <br></br>
+            In the making of a World Peace, via experiencing of an emerging
+            human right, it would be a fallacy to make it a money game.
             <br></br>
+            <br></br>
+            Expressions of Peace, for a Mutual Assured Regeneration, aka. Art of
+            Peace, is all about standing equal in Peace making. <br></br>{" "}
+            <br></br> It's about sharing a right and experiencing that together.
             <br></br>
             Well, we're starting an era of Peace Industries somwhow, based on
             being, rather than having in core.
