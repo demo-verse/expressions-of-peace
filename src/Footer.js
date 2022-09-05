@@ -71,7 +71,7 @@ return (
             target="_blank"
             style={{fontSize: "1.2rem"}}
           >
-             <img src="demoVerse-logo.png" width={"100px"} height="42px">
+             <img src="demoVerse-logo.png" width={"100px"} height="42px" alt="demoVerse">
           </img>
           </a>
 <strong>{"&"}</strong>
@@ -82,7 +82,7 @@ return (
             target="_blank"
             style={{fontSize: "1.2rem"}}
           >
-             <img src="start-logo.png" width={"100px"} height="32px">
+             <img src="start-logo.png" width={"100px"} height="32px" alt="stateful.art">
           </img>
           </a>
         </div>
