@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.5.0 <0.9.0;
 
-// in V1, country-citizenship relation will be 1:1
+// in V2, country-citizenship relation will be 1:1
 // will be using ISO codes:  https://www.countrycode.org/
 // First deployed @ 4.9.22
 // https://goerli.etherscan.io/address/0x82e4afb4c80f84ffa2c95af29293c538f96f726e
