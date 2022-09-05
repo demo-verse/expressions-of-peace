@@ -57,7 +57,34 @@ return (
           >
             sourceCode
           </a>
+
+       
           {/* {gasPrice} gwei &bull; {blockNumber} */}
+        </div>
+
+        <div className="columns">
+  
+        <a
+            // className="source-code-link"
+            href="https://demover.se"
+            rel="noreferrer"
+            target="_blank"
+            style={{fontSize: "1.2rem"}}
+          >
+             <img src="demoVerse-logo.png" width={"100px"} height="42px">
+          </img>
+          </a>
+<strong>{"&"}</strong>
+           <a
+            // className="source-code-link"
+            href="https://stateful.art"
+            rel="noreferrer"
+            target="_blank"
+            style={{fontSize: "1.2rem"}}
+          >
+             <img src="start-logo.png" width={"100px"} height="32px">
+          </img>
+          </a>
         </div>
       </footer>
 );

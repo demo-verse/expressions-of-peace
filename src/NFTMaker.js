@@ -24,7 +24,7 @@ export const makeNFT = (textual) => {
     method: "post",
     url: "https://thentic.tech/api/nfts/contract",
     data: {
-      key: "K2KaJxb888EcdgtfhmCVHGPxs5Zh16SS",
+      key: "",
       chain_id: "5",
       name: "Expression of Peace",
       short_name: textual,
