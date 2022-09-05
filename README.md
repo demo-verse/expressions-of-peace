@@ -2,7 +2,18 @@
 
 Expressions of Peace are sincere ways of resiliently, simply, expressing peace, being the core civil component of an undeniable, resilient World Peace. 
 
-They are extending the Freedom of Expression.
+They are extending the Freedom of Expression. Via the experiencing and "using" of this emerging human right, we'll be sharing equal significance on making a world peace. 
+
+Introducing peer-to-peer diplomacy:
+
+Peers (stakeholders) being individuals, states, NGOs, Corporations (last two are optional but probably necessary in the years ahead).
+
+Below was the solution design that started with NFTs. That evolved in the time between February 2022 and August 2022: 
+From having, to being. 
+
+![NFTs](https://www.demover.se/a_flow_of_peace.png)
+Now, it's changed to a sort of points of truth (multiple versions of social contracts).
+
 
 ---
 This tool's purpose is making a World Peace observable and sustainable. 
