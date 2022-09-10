@@ -1,0 +1,50 @@
+[
+  {
+    "inputs": [
+      { "internalType": "string", "name": "_expression", "type": "string" },
+      { "internalType": "string", "name": "_country_code", "type": "string" }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [
+      { "internalType": "string", "name": "_expression", "type": "string" },
+      { "internalType": "string", "name": "_country_code", "type": "string" }
+    ],
+    "name": "express_as_citizen",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "string", "name": "_expression", "type": "string" }
+    ],
+    "name": "just_express",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "read",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "string",
+            "name": "current_expression",
+            "type": "string"
+          },
+          { "internalType": "string", "name": "country_code", "type": "string" }
+        ],
+        "internalType": "struct ExpressionOfPeaceV2.Expression",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

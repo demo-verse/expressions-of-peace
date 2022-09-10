@@ -71,10 +71,10 @@ return (
             target="_blank"
             style={{fontSize: "1.2rem"}}
           >
-             <img src="demoVerse-logo.png" width={"100px"} height="42px" alt="demoVerse">
+             <img src="demoVerse-logo.png" width={"100px"} height="32px" alt="demoVerse">
           </img>
           </a>
-<strong>{"&"}</strong>
+{/* <strong>{"&"}</strong> */}
            <a
             // className="source-code-link"
             href="https://stateful.art"

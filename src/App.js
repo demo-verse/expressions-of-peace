@@ -4,8 +4,12 @@ import { ethers } from "ethers";
 // import { makeNFT } from "./NFTMaker";
 // import ExpressionOfPeace from "./artifacts/contracts/ExpressionOfPeace.sol/ExpressionOfPeace_Rinkeby.json";
 import ExpressionOfPeace_Goerli from "./artifacts/contracts/ExpressionOfPeace.sol/ExpressionOfPeace_Goerli.json";
+// import expressionOfPeace_GoerliV2 from "./artifacts/contracts/ExpressionOfPeace.sol/ExpressionOfPeace_GoerliV2.json";
+
 import AccordeonItem from "./AccordeonItem";
 import Footer from "./Footer";
+
+// import SelectSearch from 'react-select-search';
 
 // will initiate all chains with their test networks.
 // first, ethereum's rinkeby test network.
@@ -17,9 +21,13 @@ import Footer from "./Footer";
 const expressionOfPeaceAddress_Goerli =
   "0xe563950E3d97c1CF11665163D4B14EAD092C503C";
 
+// const expressionOfPeaceAddress_GoerliV2 =
+//   "0x82e4afb4c80f84ffa2c95af29293c538f96f726e";
 // ABI so the web3 library knows how to interact with our contract
 // const expressionOfPeaceABI = ExpressionOfPeace;
 const expressionOfPeaceABI_Goerli = ExpressionOfPeace_Goerli;
+// const expressionOfPeaceABI_GoerliV2 = expressionOfPeace_GoerliV2;
+
 // const CHAIN_ID_RINKEBY = 4; // rinkeby testnet @ ethereum
 const CHAIN_ID_GOERLI = 5; // goerli testnet @ ethereum
 
@@ -145,6 +153,8 @@ const App = () => {
       provider
     );
 
+  
+
     // a signer is necessary when we want to write to blockchain
     // a wallet doesn't need to sign/spend any gas to read from blockchain
     const signer = provider.getSigner();
@@ -238,6 +248,7 @@ const App = () => {
               ></iframe>
             ) : null} */}
           </div>
+
         </section>
       ) : (
         <section className="expressions centeed">
@@ -345,14 +356,19 @@ const App = () => {
               lineHeight: "2.6rem",
               marginTop: "2rem",
               marginBottom: "2rem",
-              textAlign: "center"
+              textAlign: "center",
             }}
           >
             <strong>#GenerationPeace!</strong>
           </h3>
           <h2
             className="centered"
-            style={{ fontSize: "1.6rem", lineHeight: "2.6rem" }}
+            style={{
+              fontSize: "1.6rem",
+              lineHeight: "2.6rem",
+              marginLeft: "16%",
+              marginRight: "16%",
+            }}
           >
             how would you imagine, express and make a World Peace?
           </h2>
@@ -364,10 +380,10 @@ const App = () => {
               width={"42%"}
             ></img>
           </div>{" "}
-          <h2
+          <p
             className="centered"
             style={{
-              fontSize: "1.6rem",
+              // fontSize: "1.6rem",
               lineHeight: "2.6rem",
               marginTop: "40px",
               marginRight: "8%",
@@ -375,8 +391,8 @@ const App = () => {
             }}
           >
             a technology can sincerely and effectively help peace and trust
-            making in the 21st century (and forwards).
-          </h2>
+            making in the 21st century and forwards.
+          </p>
           <hr></hr>
           <h1
             style={{
@@ -394,7 +410,7 @@ const App = () => {
               bgColor={"black"}
               questionTxt={"what"}
               answerTxt={
-                "A global, peer-to-peer diplomacy and consensus of billions: a progressive World Peace vision, challenge, experience and a historical change, together: A Mutual Assured Regeneration, aka the Art of Peace."
+                "A global, peer-to-peer diplomacy and consensus of billions: a progressive World Peace vision, challenge and a historical change: A Mutual Assured Regeneration, aka. the Art of Peace."
               }
               answerTxtSub={
                 "The p2p consensus and effective accumulation of will, shall be acknowledged as: People encouraging empowering themselves, each other and their represented states in the United Nations, to co-sign a no-more-war agreement: A Mutual Assured Regeneration."
@@ -405,7 +421,7 @@ const App = () => {
               bgColor={"yellow"}
               questionTxt={"why"}
               answerTxt={
-                'Making common sense and meaning is what we need to solve global problems. Peace is that consensus, that needs consensus in the first place, to sincerely and effectively move with the problems that caused by wars, inequalities and climate change. We\'d like to treat every "peaceful" individual having (ideally) same significance on co-signing a world peace. '
+                "Making common sense and meaning is needed to solve global problems. A World Peace is a consensus, that needs consensus in the first place, to sincerely and effectively move away with the problems that caused by a senseless competition, resulting with sustained conflicts, wars, inequalities and climate change."
               }
             />
             <AccordeonItem
@@ -413,7 +429,7 @@ const App = () => {
               bgColor={"#fac2d6"}
               questionTxt={"who"}
               answerTxt={
-                "This is a multi-stakeholder scenario; including every individual, their states, non-gov orgs and corporations. In short, you, me, they, altogether. This is a holistic and inclusive cooperation, by design."
+                "This is a multi-stakeholder scenario; including every individual, their states, NGOs and corporations. In short, altogether. Gotta be a holistic, diverse and inclusive cooperation, by design. "
               }
             />
             <AccordeonItem
@@ -421,7 +437,7 @@ const App = () => {
               bgColor={"orange"}
               questionTxt={"how"}
               answerTxt={
-                "We will figure out together. Here, contracts, in core, are tools of reflections; helping us making a World Peace via expressions, acknowledgements and hence assurances to the world. We hope, that intentionality overcomes impressions and biases."
+                "We will figure out together and develop multiple, evolving solutions and social contracts as imagination, research and developments proceed. Here, social contracts, in core, helping us making a World Peace via expressions, acknowledgements and hence assurances to the world. We are hopeful, that intentionality will overcome impressions and biases."
               }
               // answerTxt={
               //   "We'll figure out together. Here, contracts, in core, technical tools of reflections; helping us making a World Peace via expressions, demands, acknowledgements and hence assurances to the rest of the world, undeniably. This well may be in forms of, writing social and environmental contracts, that are writing a future, from now."
@@ -432,7 +448,7 @@ const App = () => {
               bgColor={"#afeeee"}
               questionTxt={"when "}
               answerTxt={
-                "Anytime and anywhere. It's our legacy, to be. An effective and legitimate  experience of this right, in fact, should be enough, even when considered as,  a once in a lifetime experience\" of 21st century and forwards."
+                'An ultimate world peace, is our legacy, to be. An effective experience of this, in fact, should be enough, even when considered as a  "once in a lifetime experience" of the 21st century and forwards.'
               }
             />
             <AccordeonItem
@@ -440,7 +456,7 @@ const App = () => {
               bgColor={"red"}
               questionTxt={"lastly"}
               answerTxt={
-                'Design, notion and perspective shall be a canvas, to make an Art of Peace on it, together. Future generations (beholders) will be learning from our Expressions of Peace and remember the people lived in the 21st century as "aware, courageous, artful and peaceful enough", on empowering themselves, each other and their states, via accumulation and observation of legitimate and sincere, will and intentions. '
+                'Design, notion and perspective shall be a canvas, on which humanity making Art of Peace, together. Future generations, beholders, will be learning from our expressions and remember us as "aware, courageous, artful and peaceful enough", on empowering ourselves, each other and our states, via accumulation and observation of legitimate and sincere, will and intentions. A World peace, initiated by citizens, is not a matter of legitimacy, but matter of time in its observation and accomplishment. Power and violence shall be seperated so well.'
               }
             />
           </div>
@@ -456,11 +472,10 @@ const App = () => {
 
                 textAlign: "center",
                 fontSize: "1.8rem",
-              
               }}
             >
-              As a proof of concept; first phase of a peer-to-peer diplomacy
-              tool launched on Ethereum blockchain's{" "}
+              As a proof of concept; a peer-to-peer diplomacy tool launched on
+              Ethereum blockchain's{" "}
               <a
                 href="https://blog.logrocket.com/mainnet-vs-testnet-environments-explained/"
                 target={"_blank"}
@@ -468,7 +483,7 @@ const App = () => {
               >
                 <u>test networks.</u>
               </a>{" "}
-              
+              <br></br> <br></br>
               <span
                 style={{
                   backgroundColor: "yellow",
@@ -536,13 +551,21 @@ const App = () => {
             </button>
           </div>
           <br></br>
-          <h1 style={{ textAlign: "center" }}>
-            after completing the web3 guide above, <br></br> now you are ready
-            to Express yourself!
-          </h1>
-          <button className="dapp-button" onClick={connectHandler}>
-            open app
-          </button>
+          <div className="columns">
+            <p
+              style={{
+                textAlign: "center",
+                fontSize: "1.6rem",
+                marginRight: "22px",
+              }}
+            >
+              after completing the web3 guide above, <br></br> now you are ready
+              to Express yourself!
+            </p>
+            <button className="dapp-button" onClick={connectHandler}>
+              open app
+            </button>
+          </div>
           {/* <div className="columns" style={{ margin: "2rem" }}>
             <p
               style={{
@@ -588,10 +611,29 @@ const App = () => {
               fontSize: "2rem",
               marginTop: "60px",
               marginBottom: "60px",
+              lineHeight: "2rem",
             }}
           >
-            Current expressions:
+            Expressions as Transactions:
           </h2>
+          <p
+            style={{
+              textAlign: "center",
+              fontSize: "1.8rem",
+              marginLeft: "10%",
+              marginRight: "10%",
+            }}
+          >
+            <a
+              href="https://github.com/demo-verse/expressions-of-peace"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <u>Here</u>
+            </a>{" "}
+            is how to read each expession, embedded in the transaction history
+            of each social smart contracts we deploy to test networks.
+          </p>
           <div className="centered columns">
             <button
               className="connect-button"
@@ -632,22 +674,45 @@ const App = () => {
                   </button> */}
           </div>
           <br></br>
-          <h1 style={{ textAlign: "center" }}>
-            <a
-              href="https://github.com/demo-verse/expressions-of-peace"
-              rel="noreferrer"
-              target="_blank"
-            >
-              <u>here</u>
-            </a>{" "}
-            is how to read them in the transaction history of the smart
-            contracts.
-          </h1>
           <br></br>
           <hr></hr>
-          <h2 style={{ fontSize: "2rem", marginTop: "100px" }}>
-            <span>Why </span> distributed ledgers @ solution design?{" "}
+
+        
+
+          <h2
+            style={{
+              fontSize: "2rem",
+              marginTop: "100px",
+              lineHeight: "2.2rem",
+            }}
+          >
+            <span>Why </span> blockchain @ solution design?{" "}
           </h2>
+          <div className="columns">
+            <p
+              style={{
+                backgroundColor: "yellow",
+                textAlign: "start",
+                fontSize: "1.6rem",
+                padding: "2rem",
+              }}
+            >
+              a distributed ledger is
+              <br></br>
+              <br></br> {"> "}based on a distributed consensus algorithm
+              <br></br> {"> "}transparent, immutable, open-source
+              <br></br> {"> "}cannot be censored or shut down
+              <br></br> {"> "}equally accessible to everyone
+              <br></br> {"> "}by design, allows anonymity<strong>*</strong>
+            </p>
+
+            {/* <img
+              alt="express yourself!"
+              // height={"100px"}
+              src="blockchain-img.png"
+              width={"38%"}
+            ></img> */}
+          </div>
           <p
             style={{
               fontSize: "1.6rem",
@@ -659,50 +724,83 @@ const App = () => {
             Expressions of Peace are letters, from you, to the rest of the
             world.
             <br></br> <br></br>
-            <strong> Tech is an optional tool;</strong> imagined to catalyze a World Peace, via an
-            accessible, inclusive, transparent, resilient and (hopefully) legit process and
-            environment, altogether. <br></br>
+            <strong> Tech, in fact, is an optional tool;</strong> imagined to
+            catalyze a World Peace, via an accessible, inclusive, transparent,
+            resilient and legitimate process and environment, altogether.{" "}
             <br></br>
+            <br></br>
+
+            <img
+              alt="Nelson Mandela encouraging us to make peace"
+              // height={"100px"}
+              src="blockchain-img.png"
+              // width={"38%"}
+            ></img>
+
+<br></br> <br></br>
             <a
               href="https://en.wikipedia.org/wiki/Smart_contract"
               target={"_blank"}
               rel="noreferrer"
             >
-              <u>Smart contracts </u> on test networks,
-            </a>{" "}
+              <u>Smart contracts </u>
+            </a>
+            {"  "}
             in this context, act as global, public mail boxes, yet to become
-            social consensus contracts, where we would sign, without requiring
-            money with real value.
+            social consensus contracts of a petition, where we would sign,
+            without requiring money with real value.
             <br></br> <br></br>
-            We truly believe that Peace should not be brought up as a resolution of voting or people given
-            environment or processes where, they would tend to continue the paranoid-by-default,
-            as-is doctrine of the post-war era: {" "} 
-            <a
-              href="https://en.wikipedia.org/wiki/Mutual_assured_destruction"
-              target={"_blank"}
-              rel="noreferrer"
-            >
-              <u>Mutual Assured Destruction</u>,  
-            </a> simply because it's literally <strong>MAD.</strong> 
-            <br></br> <br></br>
-            <strong>
-
-            That's why we'd like this whole process to be treated, perceived and implemented as a global petition, where people in essence, proactively encouraging and (even) empowering their respective governments to reflect and align with those wishes and provide them security with a shield of an ultimate peace, rather than war machines, <i>first time in the history</i>.
-            </strong>
 
             
+            We truly believe that Peace should not be brought up as a resolution
+            of voting or people given environment or processes, where they
+            hesitate or exclude one another, by the separation, biases
+            we have inherited and manupilated with, since ages.
             <br></br> <br></br>
+            <img
+              alt="Nelson Mandela encouraging us to make peace"
+              // height={"100px"}
+              src="Nelson_Mandela_GenerationPeace.png"
+              // width={"38%"}
+            ></img>
+            <br></br>
+            <br></br>
+            <strong>
+              That's why we'd like this whole process to be treated, perceived
+              and implemented as a global petition,{" "}
+            </strong>{" "}
+            where people, in essence, proactively encouraging and empowering
+            their respective states to reflect and align with their wishes and
+            provide a sustainable security with a shield of an ultimate peace,
+            rather than war machines,{" "}
+            <strong>
+              {" "}
+              <i> first time in the history</i>.
+            </strong>
+            <br></br> <br></br>
+           
             In the making of a World Peace, via experiencing of an emerging
             human right, it would be a fallacy to make it a money game.
-            <br></br>
-            <br></br>
-            Expressions of Peace, for a Mutual Assured Regeneration, aka. Art of
-            Peace, is all about standing equal in Peace making. <br></br>{" "}
-            <br></br> It's about sharing a right and experiencing that together.
-            <br></br>
-            We're wishfully and optimistically starting an era of Peace Industries, which is based on
-            being, rather than having in core. <br></br> It's to be the Age of Peace, with Art of Peace.
             <br></br> <br></br>
+            We are designing incentives and a gamified experience however,
+            expressions and acknowledgements will never have a cost or
+            over-requested data.
+            <br></br>
+            <br></br>
+            Expressions and acknowledgements of Peace, for a Mutual Assured
+            Regeneration,{" "}
+            <strong>is all about standing equal in Peace making. </strong>
+            <br></br>
+            <br></br>
+            What we have been observing so far: the ones sign peace treaties,
+            have been the ones with highest capacity of violence, and the
+            majority, impacted by conflicts have no significant labor or impact
+            in making and sustaining that.
+            <br></br>
+            <br></br>
+            It is time to separate power and violence, in fact, search power
+            somewhere else: in the conscious and wisdom of a great civilisation:
+            #GenerationPeace <br></br> <br></br>
             <a
               href="https://www.youtube.com/watch?v=xxLLIxuY3gg"
               target={"_blank"}
@@ -740,15 +838,6 @@ const App = () => {
               )
             </span>
           </p>
-          {/* <p style={{ backgroundColor: "yellow" }}>
-            a blockchain, is a distributed ledger technology, that is:
-            <br></br>
-            <br></br> - based on a distributed consensus algorithm,
-            <br></br>- transparent, immutable, open-source
-            <br></br>- cannot be censored or shut down <strong>*</strong>
-            <br></br>- equally accessible to everyone <strong>**</strong>
-            <br></br>- anonymity is guaranteed<strong> by design.</strong>
-          </p> */}
           <hr></hr>
           {/* <p>
             <span style={{ fontStyle: "italic" }}>

@@ -114,7 +114,9 @@ h2 {
   cursor: pointer;
   width: 10rem;
   height: 10rem;
-  margin-left: 46%;
+  /* margin-left: 36%;
+  margin-right: 36%; */
+
 }
 a {
   text-decoration: inherit;
