@@ -257,7 +257,7 @@ const App = () => {
               style={{
                 fontSize: "2rem",
                 marginTop: "1rem",
-                lineHeight: "1.8rem",
+                lineHeight: "1.6rem",
               }}
             >
               start, a World Peace.
@@ -383,7 +383,7 @@ const App = () => {
           <p
             className="centered"
             style={{
-              // fontSize: "1.6rem",
+              fontSize: "1.6rem",
               lineHeight: "2.6rem",
               marginTop: "40px",
               marginRight: "8%",
@@ -471,7 +471,7 @@ const App = () => {
                 // backgroundColor: "#BBE6B6",
 
                 textAlign: "center",
-                fontSize: "1.8rem",
+                fontSize: "1.6rem",
               }}
             >
               As a proof of concept; a peer-to-peer diplomacy tool launched on
@@ -574,7 +574,7 @@ const App = () => {
                 color: "white",
                 padding: "22px",
                 textAlign: "left",
-                fontSize: "1.8rem",
+                fontSize: "1.6rem",
               }}
             >
               It takes free will, and a feeling of responsibility and
@@ -592,7 +592,7 @@ const App = () => {
                 backgroundColor: "#afeeee",
 
                 textAlign: "left",
-                fontSize: "1.8rem",
+                fontSize: "1.6rem",
               }}
             >
               {" "}
@@ -619,7 +619,7 @@ const App = () => {
           <p
             style={{
               textAlign: "center",
-              fontSize: "1.8rem",
+              fontSize: "1.6rem",
               marginLeft: "10%",
               marginRight: "10%",
             }}
@@ -771,7 +771,9 @@ const App = () => {
             </strong>{" "}
             where people, in essence, proactively encouraging and empowering
             their respective states to reflect and align with their wishes and
-            provide a sustainable security with a shield of an ultimate peace,
+            provide a sustainable security. 
+            <br></br><br></br>
+            This time, with a shield of an ultimate peace,
             rather than war machines,{" "}
             <strong>
               {" "}

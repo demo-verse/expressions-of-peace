@@ -41,7 +41,7 @@ const AccordeonItem = ({ questionTxt, answerTxt, bgColor, txtColor }) => {
               style={{
                 textAlign: "start",
                 color: txtColor,
-                fontSize: "1.8rem",
+                fontSize: "1.6rem",
                 paddingLeft: "0.6rem",
                 paddingTop: "0.2rem",
               }}
