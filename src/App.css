@@ -98,6 +98,13 @@ h2 {
 
 }
 
+.blockchain-img {
+  /* max-width: 80%; */
+  margin-left: 10%;
+  margin-right: 10%;
+
+}
+
 
 .dapp-button {
   background: #020202;
