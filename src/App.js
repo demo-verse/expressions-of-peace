@@ -153,8 +153,6 @@ const App = () => {
       provider
     );
 
-  
-
     // a signer is necessary when we want to write to blockchain
     // a wallet doesn't need to sign/spend any gas to read from blockchain
     const signer = provider.getSigner();
@@ -248,7 +246,6 @@ const App = () => {
               ></iframe>
             ) : null} */}
           </div>
-
         </section>
       ) : (
         <section className="expressions centeed">
@@ -676,9 +673,6 @@ const App = () => {
           <br></br>
           <br></br>
           <hr></hr>
-
-        
-
           <h2
             style={{
               fontSize: "2rem",
@@ -699,11 +693,11 @@ const App = () => {
             >
               a distributed ledger is
               <br></br>
-              <br></br> {"> "}based on a distributed consensus algorithm
+              <br></br> {"> "}decentralized 
               <br></br> {"> "}transparent, immutable, open-source
-              <br></br> {"> "}cannot be censored or shut down
-              <br></br> {"> "}equally accessible to everyone
-              <br></br> {"> "}by design, allows anonymity<strong>*</strong>
+              <br></br> {"> "}censorship-resistant
+              <br></br> {"> "} (almost) equally accessible
+              <br></br> {"> "}allowing anonymity<strong>*</strong>
             </p>
 
             {/* <img
@@ -729,15 +723,13 @@ const App = () => {
             resilient and legitimate process and environment, altogether.{" "}
             <br></br>
             <br></br>
-
             <img
               alt="Nelson Mandela encouraging us to make peace"
               // height={"100px"}
               src="blockchain-img.png"
               // width={"38%"}
             ></img>
-
-<br></br> <br></br>
+            <br></br> <br></br>
             <a
               href="https://en.wikipedia.org/wiki/Smart_contract"
               target={"_blank"}
@@ -750,12 +742,10 @@ const App = () => {
             social consensus contracts of a petition, where we would sign,
             without requiring money with real value.
             <br></br> <br></br>
-
-            
             We truly believe that Peace should not be brought up as a resolution
             of voting or people given environment or processes, where they
-            hesitate or exclude one another, by the separation, biases
-            we have inherited and manupilated with, since ages.
+            hesitate or exclude one another, by the separation, biases we have
+            inherited and manupilated with, since ages.
             <br></br> <br></br>
             <img
               alt="Nelson Mandela encouraging us to make peace"
@@ -771,16 +761,16 @@ const App = () => {
             </strong>{" "}
             where people, in essence, proactively encouraging and empowering
             their respective states to reflect and align with their wishes and
-            provide a sustainable security. 
-            <br></br><br></br>
-            This time, with a shield of an ultimate peace,
-            rather than war machines,{" "}
+            provide a sustainable security.
+            <br></br>
+            <br></br>
+            This time, with a shield of an ultimate peace, rather than war
+            machines,{" "}
             <strong>
               {" "}
               <i> first time in the history</i>.
             </strong>
             <br></br> <br></br>
-           
             In the making of a World Peace, via experiencing of an emerging
             human right, it would be a fallacy to make it a money game.
             <br></br> <br></br>
@@ -797,12 +787,14 @@ const App = () => {
             What we have been observing so far: the ones sign peace treaties,
             have been the ones with highest capacity of violence, and the
             majority, impacted by conflicts have no significant labor or impact
-            in making and sustaining that.
+            in the making and sustaining a world peace.
             <br></br>
             <br></br>
             It is time to separate power and violence, in fact, search power
             somewhere else: in the conscious and wisdom of a great civilisation:
-            #GenerationPeace <br></br> <br></br>
+            <br></br>         
+<strong>#GenerationPeace</strong>
+             <br></br> <br></br>
             <a
               href="https://www.youtube.com/watch?v=xxLLIxuY3gg"
               target={"_blank"}
