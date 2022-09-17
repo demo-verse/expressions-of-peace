@@ -300,7 +300,7 @@ const App = () => {
               lineHeight: "2.4rem",
             }}
           >
-            Expressions as Transactions:
+            Expressions as <br></br> Pseudo-transactions:
           </h2>
           <p
             style={{
