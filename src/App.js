@@ -368,7 +368,7 @@ const App = () => {
               lineHeight: "2.2rem",
             }}
           >
-           Reasonings on the use of blockchain{" "}
+            Reasonings on the use of blockchain{" "}
           </h2>
           <div className="columns">
             <p
@@ -394,8 +394,8 @@ const App = () => {
               paddingRight: "10%",
             }}
           >
-            Expressions of Peace are sincere letters, from you, to the rest of the
-            world.
+            Expressions of Peace are sincere letters, from you, to the rest of
+            the world.
             <br></br> <br></br>
             <img
               alt="expressions of peace are letters from you to the rest of the world"
@@ -421,14 +421,42 @@ const App = () => {
             In the making of a World Peace, via experiencing of an emerging
             human right, it would be a fallacy to make it a total money game.
             <br></br> <br></br>
-            We are designing incentives and a gamified experience however,
+            We are designing financial incentives to motivate all, however;
             <i>
               {" "}
-              expressions and acknowledgements will never have a cost or
-              over-requested data.
+              the act of making expressions and acknowledgements on blockchain will never have an explicit cost
+              or over-requested data.
+              <br></br>
+              <br></br>
+              The necessary infrastructure to generate Non-fungible Tokens (NFT) 
+              on-demand, will be provided. 
+              <br></br><br></br>
+              Below is the initial, overall incentive design, 
+              
+              <a
+              href="https://github.com/demo-verse/expressions-metadata-standard"
+              target={"_blank"}
+              rel="noreferrer"
+              style={{backgroundColor: "bisque"}}
+            >
+             {" "}here linked {" "}
+            </a>
+               
+              
+              is the metadata standard for NFTs. <br></br><br></br> Stakeholders can optionally include statistics of acknowledgements, attestations and recognitions respectively and variety of gain/yield tokens as appreciation to their actions and interactions.
             </i>
             <br></br>
             <br></br>
+            <a
+              href="./an-optimistic-flow-of-peace.png"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <img
+                alt="an optimistic flow of peace"
+                src="an-optimistic-flow-of-peace.png"
+              ></img>
+            </a>
             <hr></hr>
             <br></br>
             <h3 style={{ lineHeight: "2.4rem", fontSize: "2.2rem" }}>
