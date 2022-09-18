@@ -40,6 +40,8 @@ const HumanRight = () => {
         }}
       >
         <strong>Introducing a new human right:</strong>{" "}
+  
+
         <span
           style={{
             backgroundColor: "yellow",
@@ -50,13 +52,14 @@ const HumanRight = () => {
         >
           Individuals are equally significant
         </span>{" "}
-        on being co-signers/sealers of a legitimate world peace treaty*,
-        and be powerful as their states on this matter, in the 21st
+        on being co-signers/sealers of a legitimate world peace treaty*, <br></br>
+        and shall be(come) powerful as their states on this matter, in the 21st
         century.
       </p>
       <p>
-      <i>* introducing a p2p diplomacy doctrine, <br></br> for a mutual assured regeneration aka. Art of Peace.</i>
+      <i>* Introducing a p2p diplomacy doctrine: <br></br>  a mutual assured regeneration aka. Art of Peace.</i>
       </p>
+      
       {/* <div className="centered" style={{ marginTop: "40px" }}>
         <img
           alt="express yourself!"
@@ -71,7 +74,9 @@ const HumanRight = () => {
           fontSize: "1.6rem",
           lineHeight: "2.6rem",
           marginTop: "40px",
-          marginRight: "8%",
+          mar
+          
+          ginRight: "8%",
           marginLeft: "8%",
         }}
       >
