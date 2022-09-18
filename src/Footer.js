@@ -58,12 +58,22 @@ return (
             sourceCode
           </a>
 
+          <a
+            className="source-code-link"
+            href="https://app.dework.xyz/demoverse/expressions-of-peace"
+            rel="noreferrer"
+            target="_blank"
+            style={{fontSize: "1.2rem"}}
+          >
+            contribute
+          </a>
+
        
           {/* {gasPrice} gwei &bull; {blockNumber} */}
         </div>
 
         <div className="columns">
-  
+          <h2>by</h2>
         <a
             // className="source-code-link"
             href="https://demover.se"
@@ -74,7 +84,8 @@ return (
              <img src="demoVerse-logo.png" width={"100px"} height="32px" alt="demoVerse">
           </img>
           </a>
-{/* <strong>{"&"}</strong> */}
+          <h2>of</h2>
+
            <a
             // className="source-code-link"
             href="https://stateful.art"
