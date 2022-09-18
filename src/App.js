@@ -17,12 +17,11 @@ import HumanRight from "./HumanRight";
 const CHAIN_ID_GOERLI = 5; // goerli testnet @ ethereum
 
 const App = () => {
- 
   const [account, setAccount] = useState("");
   // const [balance, setBalance] = useState("");
   // const [currentChainId, setCurrentChainId] = useState(null);
   const [connected, setConnected] = useState(false);
-  
+
   // handles setting account and balance
   const accountHandler = async (account) => {
     setAccount(account);
@@ -107,7 +106,7 @@ const App = () => {
 
   // handles submit button
   // add textual version  of the expression
-  
+
   return (
     <div className="layout">
       <header className="navbar">
@@ -245,8 +244,8 @@ const App = () => {
                 marginRight: "22px",
               }}
             >
-              after completing the web3 guide above, <br></br> now you are ready
-              to Express yourself on #web3!
+              after completing the guide above, <br></br> you are ready to
+              express peace, <br></br> on #web3!
             </p>
             <button className="dapp-button" onClick={connectHandler}>
               open app
@@ -369,7 +368,7 @@ const App = () => {
               lineHeight: "2.2rem",
             }}
           >
-            <span>Why </span> blockchain @ solution design?{" "}
+           Reasonings on the use of blockchain{" "}
           </h2>
           <div className="columns">
             <p
@@ -380,14 +379,12 @@ const App = () => {
                 padding: "2rem",
               }}
             >
-              {"> "}transparent/undeniable, 
+              {"> "}transparent/undeniable,
               <br></br> {"> "}immutable, open-sourced
               <br></br> {"> "}censorship-resistant
               <br></br> {"> "} (almost) equally accessible
               <br></br> {"> "}allowing anonymity<strong>*</strong>
             </p>
-
-       
           </div>
           <p
             style={{
@@ -397,15 +394,15 @@ const App = () => {
               paddingRight: "10%",
             }}
           >
-            Expressions of Peace are letters, from you, to the rest of the
+            Expressions of Peace are sincere letters, from you, to the rest of the
             world.
             <br></br> <br></br>
-            <strong> Tech, in fact, is an optional tool;</strong> imagined to
-            catalyze a World Peace, via an accessible, inclusive, transparent,
-            resilient and legitimate process and environment, altogether.{" "}
-         
-           
-            <br></br> <br></br>
+            <img
+              alt="expressions of peace are letters from you to the rest of the world"
+              src="expressions-of-peace-are-letters.png"
+              width={"62%"}
+            ></img>
+            <br></br>
             <a
               href="https://en.wikipedia.org/wiki/Smart_contract"
               target={"_blank"}
@@ -416,21 +413,25 @@ const App = () => {
             {"  "}
             on test networks, in this context, act as global, public mail boxes,
             yet to become social consensus contracts of a petition, where we
-            would sign, without requiring money with real value.
+            would sign, without requiring money with real value. <br></br>
+            <br></br>That's why have started on test networks, rather than
+            mainnet. <br></br>It is meant to be a priceless experience, and
+            legacy. <i>So be it.</i>
             <br></br> <br></br>
-
-          
-            <div className="blockchain-img">
-            <img
-              alt="Nelson Mandela encouraging us to make peace"
-              src="blockchain-img.png"
-            ></img>
-            </div>
+            In the making of a World Peace, via experiencing of an emerging
+            human right, it would be a fallacy to make it a total money game.
+            <br></br> <br></br>
+            We are designing incentives and a gamified experience however,
+            <i>
+              {" "}
+              expressions and acknowledgements will never have a cost or
+              over-requested data.
+            </i>
             <br></br>
             <br></br>
             <hr></hr>
             <br></br>
-            <h3 style={{ lineHeight: "2.4rem", fontSize:"2.2rem" }}>
+            <h3 style={{ lineHeight: "2.4rem", fontSize: "2.2rem" }}>
               Not a matter of legitimacy, but time.
             </h3>
             <br></br>
@@ -439,7 +440,6 @@ const App = () => {
             hesitate on generousity, exclude one another, by the separation,
             biases inherited, since ages.
             <br></br> <br></br>
-
             <Reasoning />
             <br></br>
             <br></br>

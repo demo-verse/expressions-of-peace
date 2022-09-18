@@ -20,11 +20,11 @@ const Outro = () => {
       <br></br>
 
       
-      It is time to separate power and violence, in fact, search power somewhere
+      <strong>It is time to separate power and violence</strong>, in fact, search power somewhere
       else: in the conscious and wisdom of a great civilisation:
-      <br></br>
-      <strong>#GenerationPeace</strong>
+      <strong> {" "}#GenerationPeace</strong>
       <br></br> <br></br>
+
       <a
         href="https://www.youtube.com/watch?v=xxLLIxuY3gg"
         target={"_blank"}

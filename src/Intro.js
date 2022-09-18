@@ -16,6 +16,7 @@ const Intro = () => {
       >
         start, a World Peace.
       </h1>
+      <hr></hr>
       <a
         href="https://www.youtube.com/watch?v=jW4VZ5J0fNQ"
         target={"_blank"}
