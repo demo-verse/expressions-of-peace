@@ -73,7 +73,6 @@ return (
         </div>
 
         <div className="columns">
-          <h2>by</h2>
         <a
             // className="source-code-link"
             href="https://demover.se"
@@ -84,7 +83,6 @@ return (
              <img src="demoVerse-logo.png" width={"100px"} height="32px" alt="demoVerse">
           </img>
           </a>
-          <h2>of</h2>
 
            <a
             // className="source-code-link"
