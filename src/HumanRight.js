@@ -52,8 +52,8 @@ const HumanRight = () => {
         >
           Individuals are equally significant
         </span>{" "}
-        on being co-signers/sealers of a legitimate world peace treaty*, <br></br>
-        and shall be(come) powerful as their states on this matter, in the 21st
+        on being co-signers and sealers of a world peace treaty*, <br></br>
+        and shall be legitimately as powerful as their states on this matter, in the 21st
         century.
       </p>
       <p>
