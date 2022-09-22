@@ -21,7 +21,7 @@ const Outro = () => {
 
       
       <strong>It is time to separate power and violence</strong>, in fact, search power somewhere
-      else: in the conscious and wisdom of a great civilisation:
+      else: in the conscience and wisdom of a great civilization:
       <strong> {" "}#GenerationPeace</strong>
       <br></br> <br></br>
 

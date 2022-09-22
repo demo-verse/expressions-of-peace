@@ -16,7 +16,7 @@ const Reasoning = () => {
             </strong>{" "}
             where people, in essence, proactively encouraging and empowering
             their respective states via expressions and acknowledgements, and expected their wishes aligned and
-            provided a sustainable security as a reflection. 
+            provided with a sustainable security as a reflection. 
             <br></br>
             <br></br>
             This time, with a shield of an ultimate peace, rather than war
