@@ -126,13 +126,23 @@ const Expressions = () => {
     let expressionTxt = "";
     let countryISO = "";
 
+    // if both expression text and citizenship info received 
+    //from the last expression, do the first if below
     if (expression.length > 1) {
       expressionTxt = expression[0];
       countryISO = expression[1];
       setValue(expressionTxt);
       setLastCountry(countryISO);
-      if (countries.includes(countryISO) === true) {
-        setCountryFlagExists(true);
+    } 
+    //if only one of them received, set whichever been stored only.
+    if(expression.length == 1) {
+      if(expression[0].length > 0) {
+        expressionTxt = expression[0];
+        setValue(expressionTxt)
+      }
+      if(expression[1].length > 0) {
+        countryISO = expression[1];
+        setLastCountry(countryISO);
       }
     }
     console.log(`expression text: ${JSON.stringify(expressionTxt)}`);
