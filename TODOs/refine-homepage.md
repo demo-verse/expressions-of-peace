@@ -45,7 +45,7 @@ Expressions and Acknowledgements of Peace are ways of interaction for any indivi
 
 >>>> start an organisation on github
 
->>>>launch ~  https://demoVer.se with no-logo.
+>>>>launch ~  https://demoVer.se (January)
 
 >>>>launch https://expressionsofpeace.org (August)
 
