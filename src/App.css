@@ -67,6 +67,18 @@ h2 {
   align-items: center;
 }
 
+.country-select {
+  /* background-color: gainsboro; */
+  width: 70%;
+}
+
+.flags-menu{
+  background-color: black;
+  height: 2.6rem;
+  color: black;
+  
+}
+
 .centered {
   display: flex;
   flex-direction: column;
@@ -336,19 +348,22 @@ textarea {
   font-size: 1.4rem;
 }
 
-.new-expression-card button {
+.new-expression-card .sign-button button {
   background: #2073e5;
   color: white;
-  font: inherit;
-  font-size: 1.2rem;
+  /* font: inherit; */
+  font-size: 1.6rem;
   border: 1px solid black;
   padding: 0.3rem 0.5rem;
-  border-radius: 0.8rem;
+  border-radius: 0.4rem;
   cursor: pointer;
   /* margin: 1rem; */
   /* width: 60%; */
   margin-bottom: 1rem;
-  margin-top: 12px;
+  /* margin-top: 12px; */
+  /* width: 40%; */
+  /* max-width: inherit; */
+  width: inherit;
 }
 
 /* divide a div in two  */

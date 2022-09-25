@@ -1,28 +1,40 @@
 import "./App.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ethers } from "ethers";
+import ReactFlagsSelect from "react-flags-select";
+import { hasFlag, countries } from "country-flag-icons";
+
+import getUnicodeFlagIcon from "country-flag-icons/unicode";
+
 // import { makeNFT } from "./NFTMaker";
 // import ExpressionOfPeace from "./artifacts/contracts/ExpressionOfPeace.sol/ExpressionOfPeace_Rinkeby.json";
 import ExpressionOfPeace_Goerli from "./artifacts/contracts/ExpressionOfPeace.sol/ExpressionOfPeace_Goerli.json";
-
+import ExpressionOfPeace_GoerliV2 from "./artifacts/contracts/ExpressionOfPeace.sol/ExpressionOfPeace_GoerliV2.json";
 // const expressionOfPeaceAddress = "0x6d584295790d2C9f7F2D4249B6CAebC15b1DA682";
-const expressionOfPeaceAddress_Goerli =
-  "0xe563950E3d97c1CF11665163D4B14EAD092C503C";
+// const expressionOfPeaceAddress_Goerli =
+//   "0xe563950E3d97c1CF11665163D4B14EAD092C503C";
 
-// const expressionOfPeaceAddress_GoerliV2 =
-//   "0x82e4afb4c80f84ffa2c95af29293c538f96f726e";
+const expressionOfPeaceAddress_GoerliV2 =
+  "0x82e4afb4c80f84ffa2c95af29293c538f96f726e";
 // ABI so the web3 library knows how to interact with our contract
 // const expressionOfPeaceABI = ExpressionOfPeace;
-const expressionOfPeaceABI_Goerli = ExpressionOfPeace_Goerli;
-// const expressionOfPeaceABI_GoerliV2 = expressionOfPeace_GoerliV2;
+// const expressionOfPeaceABI_Goerli = ExpressionOfPeace_Goerli;
+const expressionOfPeaceABI_GoerliV2 = ExpressionOfPeace_GoerliV2;
 
 const CHAIN_ID_GOERLI = 5; // goerli testnet @ ethereum
 
 const Expressions = () => {
   // const [provider, setProvider] = useState();
   const [inputValue, setInputValue] = useState("");
-  const [value, setValue] = useState("...");
- 
+  const [value, setValue] = useState("click to read last expression");
+  const [selectedCountry, setSelectedCountry] = useState("");
+  const [lastCountry, setLastCountry] = useState("");
+  const [countryFlagExists, setCountryFlagExists] = useState(false);
+
+  useEffect(() => {
+    console.log(`selected country as: ${selectedCountry}`);
+  }, [selectedCountry]);
+
   const networkHandler = async (_currentChainId) => {
     function dec2hex(i) {
       return `0x${i.toString(16)}`;
@@ -74,8 +86,8 @@ const Expressions = () => {
 
     // create instance of contract using our contract address, abi, and provider
     const contract = new ethers.Contract(
-      expressionOfPeaceAddress_Goerli,
-      expressionOfPeaceABI_Goerli,
+      expressionOfPeaceAddress_GoerliV2,
+      expressionOfPeaceABI_GoerliV2,
       provider
     );
 
@@ -83,7 +95,16 @@ const Expressions = () => {
     // a wallet doesn't need to sign/spend any gas to read from blockchain
     const signer = provider.getSigner();
     const contractWithSigner = contract.connect(signer);
-    await contractWithSigner.set(inputValue);
+
+    if (inputValue.length > 0 &&  selectedCountry.length > 0) {
+      await contractWithSigner.express_as_citizen(inputValue, selectedCountry);
+    } else if (inputValue.length > 0 && !selectedCountry.length > 0){
+      await contractWithSigner.just_express(inputValue);
+    } else {
+      alert('Please express peace, as in the text area.') // alert for now 
+    }
+
+    // await contractWithSigner.set(inputValue);
     // setAlreadySigned(true);
   };
 
@@ -92,49 +113,87 @@ const Expressions = () => {
     networkHandler();
     console.log("retreiving data..");
     const expressionOfPeaceContract = new ethers.Contract(
-      expressionOfPeaceAddress_Goerli,
-      expressionOfPeaceABI_Goerli,
+      expressionOfPeaceAddress_GoerliV2,
+      expressionOfPeaceABI_GoerliV2,
       provider
     );
 
-    //get last expression value, stored as current_expression.
-    // we can use 'get' here because the abi provides us with a reference to the methods defined in our smart contract
-    const expressionTxt = await expressionOfPeaceContract.get();
-    setValue(expressionTxt);
+    //get last expression tuple (array),
+    //storing current_expression at its index 0
+    // and citizenship info as ISO code of country, at index 1.
+    //https://www.countrycode.org/
+
+    const expression = await expressionOfPeaceContract.read();
+    let expressionTxt = "";
+    let countryISO = "";
+
+    if (expression.length > 1) {
+      expressionTxt = expression[0];
+      countryISO = expression[1];
+      setValue(expressionTxt);
+      setLastCountry(countryISO);
+      if (countries.includes(countryISO) === true) {
+        setCountryFlagExists(true);
+      }
+    }
+    console.log(`expression text: ${JSON.stringify(expressionTxt)}`);
+    console.log(`last read country code: ${JSON.stringify(countryISO)}`);
   };
 
   return (
     <section className="cards">
-    <div className="last-expression-card">
-      <h2>last expression</h2>
-      <button onClick={handleRetrieveData}>read</button>
+      <div className="last-expression-card">
+        <h2>last expression</h2>
+        <button onClick={handleRetrieveData}>read</button>
 
-      <p>{value}</p>
-    </div>
+        <p>{value}</p>
+        {lastCountry.length > 0 ? (
+          <>expressed by someone from {getUnicodeFlagIcon(lastCountry)}</>
+        ) : null}
+      </div>
 
-    <div className="new-expression-card">
-      <h2>yours, sincerely</h2>
-      <form onSubmit={handleSubmit} className="input">
-        <textarea
-          type="text"
-          required
-          value={inputValue}
-          onChange={(e) => setInputValue(e.target.value)}
-          // onKeyPress={(e) => e.preventDefault()}
-          // onKeyPress={(e) => !/[0-9]/.test(e.key) && e.preventDefault()}
+      <div className="new-expression-card">
+        <h2>yours, sincerely</h2>
+        
+        <form onSubmit={handleSubmit} className="input">
+          <textarea
+            type="text"
+            required
+            value={inputValue}
+            onChange={(e) => setInputValue(e.target.value)}
+            // onKeyPress={(e) => e.preventDefault()}
+            // onKeyPress={(e) => !/[0-9]/.test(e.key) && e.preventDefault()}
 
-          name="value"
-          placeholder="how would you imagine, express and make a World Peace?"
-        />
-        {/* <div className="checkbox">
+            name="value"
+            placeholder="how would you imagine, express and make a World Peace?"
+          />
+          {/* <div className="checkbox">
           including ref? {refIncluded} <input
             type="checkbox"
             checked={refIncluded}
             onChange={(e) => handleRefToggle(e.target.checked)}
           />
         </div> */}
-        <button>sign</button>
-        {/* {alreadySigned ? (
+        <div className="columns">
+        <div className="country-select">
+          optionally, add your citizenship <br></br><br></br>
+        <ReactFlagsSelect
+          selected={selectedCountry}
+          className= "flags-menu"
+          optionsSize={16}
+          selectedSize={18}
+          searchPlaceholder="type to search"
+          
+          fullWidth={false}
+          onSelect={(countryCode) => setSelectedCountry(countryCode)}
+          searchable
+        />
+      </div>  
+          <div className="sign-button">
+          <button>sign</button>
+          </div>
+        </div>
+          {/* {alreadySigned ? (
           <button onClick={generateNFT}> make nft</button>
         ) : (
           <button onClick={generateNFT} disabled>
@@ -142,9 +201,9 @@ const Expressions = () => {
             make nft
           </button>
         )} */}
-      </form>
+        </form>
 
-      {/* {nftGenerarated ? (
+        {/* {nftGenerarated ? (
         <iframe
           src="https://thentic.tech/request?id=nC9mNnMiFIi2kKru"
           title="your nft"
@@ -152,8 +211,9 @@ const Expressions = () => {
           width="360px"
         ></iframe>
       ) : null} */}
-    </div>
-  </section>
+      </div>
+     
+    </section>
   );
 };
 
