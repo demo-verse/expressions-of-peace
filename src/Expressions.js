@@ -2,7 +2,6 @@ import "./App.css";
 import { useState, useEffect } from "react";
 import { ethers } from "ethers";
 import ReactFlagsSelect from "react-flags-select";
-import { countries } from "country-flag-icons";
 
 import getUnicodeFlagIcon from "country-flag-icons/unicode";
 
@@ -135,7 +134,7 @@ const Expressions = () => {
       setLastCountry(countryISO);
     } 
     //if only one of them received, set whichever been stored only.
-    if(expression.length == 1) {
+    if(expression.length === 1) {
       if(expression[0].length > 0) {
         expressionTxt = expression[0];
         setValue(expressionTxt)
