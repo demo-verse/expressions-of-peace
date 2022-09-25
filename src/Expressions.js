@@ -2,13 +2,13 @@ import "./App.css";
 import { useState, useEffect } from "react";
 import { ethers } from "ethers";
 import ReactFlagsSelect from "react-flags-select";
-import { hasFlag, countries } from "country-flag-icons";
+import { countries } from "country-flag-icons";
 
 import getUnicodeFlagIcon from "country-flag-icons/unicode";
 
 // import { makeNFT } from "./NFTMaker";
 // import ExpressionOfPeace from "./artifacts/contracts/ExpressionOfPeace.sol/ExpressionOfPeace_Rinkeby.json";
-import ExpressionOfPeace_Goerli from "./artifacts/contracts/ExpressionOfPeace.sol/ExpressionOfPeace_Goerli.json";
+// import ExpressionOfPeace_Goerli from "./artifacts/contracts/ExpressionOfPeace.sol/ExpressionOfPeace_Goerli.json";
 import ExpressionOfPeace_GoerliV2 from "./artifacts/contracts/ExpressionOfPeace.sol/ExpressionOfPeace_GoerliV2.json";
 // const expressionOfPeaceAddress = "0x6d584295790d2C9f7F2D4249B6CAebC15b1DA682";
 // const expressionOfPeaceAddress_Goerli =
@@ -29,7 +29,6 @@ const Expressions = () => {
   const [value, setValue] = useState("click to read last expression");
   const [selectedCountry, setSelectedCountry] = useState("");
   const [lastCountry, setLastCountry] = useState("");
-  const [countryFlagExists, setCountryFlagExists] = useState(false);
 
   useEffect(() => {
     console.log(`selected country as: ${selectedCountry}`);
@@ -174,23 +173,23 @@ const Expressions = () => {
             onChange={(e) => handleRefToggle(e.target.checked)}
           />
         </div> */}
-        <div className="columns">
+        <div className="sign-for-peace">
         <div className="country-select">
-          optionally, add your citizenship <br></br><br></br>
+          <i>optionally, add your citizenship info</i> 
         <ReactFlagsSelect
           selected={selectedCountry}
           className= "flags-menu"
           optionsSize={16}
           selectedSize={18}
           searchPlaceholder="type to search"
-          
+          size
           fullWidth={false}
           onSelect={(countryCode) => setSelectedCountry(countryCode)}
           searchable
         />
       </div>  
           <div className="sign-button">
-          <button>sign</button>
+          <button>sign now</button>
           </div>
         </div>
           {/* {alreadySigned ? (
