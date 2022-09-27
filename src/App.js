@@ -333,6 +333,23 @@ const App = () => {
             for now please be patient.
           </p>
           <div className="centered columns">
+
+          <button
+              className="connect-button"
+              style={{
+                backgroundColor: "white",
+                color: "black",
+              }}
+            >
+              <a
+                className="contract-at-goerli"
+                href="https://goerli.etherscan.io/address/0x82e4afb4c80f84ffa2c95af29293c538f96f726e"
+                rel="noreferrer"
+                target="_blank"
+              >
+                V2@Görli
+              </a>
+            </button>
             <button
               className="connect-button"
               style={{
@@ -346,7 +363,7 @@ const App = () => {
                 rel="noreferrer"
                 target="_blank"
               >
-                @Görli
+                V1@Görli
               </a>
             </button>
             <br></br>
@@ -363,7 +380,7 @@ const App = () => {
                 rel="noreferrer"
                 target="_blank"
               >
-                @Rinkeby
+                V1@Rinkeby
               </a>
             </button>
 
