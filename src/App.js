@@ -186,7 +186,7 @@ const App = () => {
               <br></br>
               <i >
                 {" "}
-                Experiencing this takes only a browser, a metamask wallet,<br></br> free will and generousity .. <br></br> {"&"} more importantly, <br></br> please use it responsibly and
+                Experiencing this takes only a browser, a metamask wallet,<br></br> free will and generosity.. <br></br> {"&"} more importantly, <br></br> please use it responsibly and
                 peacefully ;)
               </i>
               </span>{" "}
@@ -518,7 +518,7 @@ const App = () => {
             <br></br>
             We truly believe that Peace should not be brought up as a resolution
             of voting or people given environment or processes, where they
-            hesitate on generousity, exclude one another, by the separation,
+            hesitate on generosity, exclude one another, by the separation,
             biases inherited, since ages.
             <br></br> <br></br>
             <Reasoning />
