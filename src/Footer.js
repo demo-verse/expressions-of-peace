@@ -21,9 +21,19 @@ return (
             target="_blank"
             style={{fontSize: "1.2rem"}}
           >
-            projection
+            contribution
           </a>
          
+          <a
+            className="source-code-link"
+            href="https://twitter.com/demoversal"
+            rel="noreferrer"
+            target="_blank"
+            style={{fontSize: "1.2rem"}}
+          >
+            twitter
+          </a>
+
           <a
             className="source-code-link"
             href="https://github.com/demo-verse/expressions-of-peace"
@@ -31,7 +41,7 @@ return (
             target="_blank"
             style={{fontSize: "1.2rem"}}
           >
-            sourceCode
+            github
           </a>
        
           {/* {gasPrice} gwei &bull; {blockNumber} */}
@@ -72,6 +82,7 @@ return (
           </a>
 
         </div>
+        
       </footer>
 );
 }
