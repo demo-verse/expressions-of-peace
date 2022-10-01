@@ -1,0 +1,89 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_expression_tx_to_ack",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_acker_country_code",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_acked_country_code",
+				"type": "string"
+			}
+		],
+		"name": "acknowledge_as_citizen",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_expression_tx_to_ack",
+				"type": "string"
+			}
+		],
+		"name": "acknowledge_as_world_citizen",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_expression_tx_to_ack",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_acker_country_code",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_acked_country_code",
+				"type": "string"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"inputs": [],
+		"name": "read",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "string",
+						"name": "expression_tx_to_ack",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "acker_country_code",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "acked_country_code",
+						"type": "string"
+					}
+				],
+				"internalType": "struct AcknowledgementOfPeace.Acknowledgement",
+				"name": "",
+				"type": "tuple"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]
