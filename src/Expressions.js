@@ -9,16 +9,22 @@ import getUnicodeFlagIcon from "country-flag-icons/unicode";
 // import ExpressionOfPeace from "./artifacts/contracts/ExpressionOfPeace.sol/ExpressionOfPeace_Rinkeby.json";
 // import ExpressionOfPeace_Goerli from "./artifacts/contracts/ExpressionOfPeace.sol/ExpressionOfPeace_Goerli.json";
 import ExpressionOfPeace_GoerliV2 from "./artifacts/contracts/ExpressionOfPeace.sol/ExpressionOfPeace_GoerliV2.json";
+// import AcknowledgementOfPeace_Goerli from "./artifacts/contracts/AcknowledgementOfPeace.sol/AcknowledgementOfPeace_Goerli.json";
+
 // const expressionOfPeaceAddress = "0x6d584295790d2C9f7F2D4249B6CAebC15b1DA682";
 // const expressionOfPeaceAddress_Goerli =
 //   "0xe563950E3d97c1CF11665163D4B14EAD092C503C";
 
 const expressionOfPeaceAddress_GoerliV2 =
   "0x82e4afb4c80f84ffa2c95af29293c538f96f726e";
+
+// const acknowledgementOfPeace_Goerli =
+//   "0x84d1C5e0915887F83E366219FB50AFe06aFD97Be";
 // ABI so the web3 library knows how to interact with our contract
 // const expressionOfPeaceABI = ExpressionOfPeace;
 // const expressionOfPeaceABI_Goerli = ExpressionOfPeace_Goerli;
 const expressionOfPeaceABI_GoerliV2 = ExpressionOfPeace_GoerliV2;
+// const acknowledgementOfPeaceABI_Goerli = AcknowledgementOfPeace_Goerli;
 
 const CHAIN_ID_GOERLI = 5; // goerli testnet @ ethereum
 
@@ -75,6 +81,25 @@ const Expressions = () => {
   };
   // handles submit button
   // add textual version  of the expression
+
+  // const handleAck = async (e) => {
+  //   e.preventDefault();
+
+  //   const provider = new ethers.providers.Web3Provider(window.ethereum);
+  //   networkHandler();
+
+  //   const contract = new ethers.Contract(
+  //     acknowledgementOfPeace_Goerli,
+  //     acknowledgementOfPeaceABI_Goerli,
+  //     provider
+  //   );
+
+  //   const signer = provider.getSigner();
+  //   const contractWithSigner = contract.connect(signer);
+  //   await contractWithSigner.acknowledge_as_citizen("","",""); // this should work
+    
+  // };
+
   const handleSubmit = async (e) => {
     // stops page from refreshing
     e.preventDefault();
@@ -94,12 +119,12 @@ const Expressions = () => {
     const signer = provider.getSigner();
     const contractWithSigner = contract.connect(signer);
 
-    if (inputValue.length > 0 &&  selectedCountry.length > 0) {
+    if (inputValue.length > 0 && selectedCountry.length > 0) {
       await contractWithSigner.express_as_citizen(inputValue, selectedCountry);
-    } else if (inputValue.length > 0 && !selectedCountry.length > 0){
+    } else if (inputValue.length > 0 && !selectedCountry.length > 0) {
       await contractWithSigner.just_express(inputValue);
     } else {
-      alert('Please express peace, as in the text area.') // alert for now 
+      alert("Please express peace, as in the text area."); // alert for now
     }
 
     // await contractWithSigner.set(inputValue);
@@ -125,21 +150,21 @@ const Expressions = () => {
     let expressionTxt = "";
     let countryISO = "";
 
-    // if both expression text and citizenship info received 
+    // if both expression text and citizenship info received
     //from the last expression, do the first if below
     if (expression.length > 1) {
       expressionTxt = expression[0];
       countryISO = expression[1];
       setValue(expressionTxt);
       setLastCountry(countryISO);
-    } 
+    }
     //if only one of them received, set whichever been stored only.
-    if(expression.length === 1) {
-      if(expression[0].length > 0) {
+    if (expression.length === 1) {
+      if (expression[0].length > 0) {
         expressionTxt = expression[0];
-        setValue(expressionTxt)
+        setValue(expressionTxt);
       }
-      if(expression[1].length > 0) {
+      if (expression[1].length > 0) {
         countryISO = expression[1];
         setLastCountry(countryISO);
       }
@@ -151,18 +176,18 @@ const Expressions = () => {
   return (
     <section className="cards">
       <div className="last-expression-card">
-        <h2>last expression</h2>
-        <button onClick={handleRetrieveData}>read</button>
+        <h2>Last Expression</h2>
+        <button onClick={handleRetrieveData}>read it</button>
 
-        <p>{value}</p>
+        <p style={{fontSize: "1.6rem"}}>{value}</p>
         {lastCountry.length > 0 ? (
-          <>expressed by someone from {getUnicodeFlagIcon(lastCountry)}</>
+          <> <h1>expressed by someone <br></br> from </h1> {getUnicodeFlagIcon(lastCountry)}</>
         ) : null}
       </div>
 
       <div className="new-expression-card">
-        <h2>yours, sincerely</h2>
-        
+        <h2>Yours, Sincerely</h2>
+
         <form onSubmit={handleSubmit} className="input">
           <textarea
             type="text"
@@ -182,25 +207,29 @@ const Expressions = () => {
             onChange={(e) => handleRefToggle(e.target.checked)}
           />
         </div> */}
-        <div className="sign-for-peace">
-        <div className="country-select">
-          <i>optionally, add your citizenship info</i> 
-        <ReactFlagsSelect
-          selected={selectedCountry}
-          className= "flags-menu"
-          optionsSize={16}
-          selectedSize={18}
-          searchPlaceholder="type to search"
-          size
-          fullWidth={false}
-          onSelect={(countryCode) => setSelectedCountry(countryCode)}
-          searchable
-        />
-      </div>  
-          <div className="sign-button">
-          <button>sign now</button>
+        <br></br>
+          <div className="sign-for-peace">
+            <div className="country-select">
+              <div className="columns">
+              <i>optionally, add your citizenship</i>
+              <ReactFlagsSelect
+                selected={selectedCountry}
+                className="flags-menu"
+                optionsSize={12}
+                selectedSize={12}
+                searchPlaceholder="type to search"
+                
+                fullWidth={false}
+                onSelect={(countryCode) => setSelectedCountry(countryCode)}
+                searchable
+              />
+              </div>
+            </div>
+            <br></br>
+            <div className="sign-button">
+              <button>sign now</button>
+            </div>
           </div>
-        </div>
           {/* {alreadySigned ? (
           <button onClick={generateNFT}> make nft</button>
         ) : (
@@ -220,7 +249,6 @@ const Expressions = () => {
         ></iframe>
       ) : null} */}
       </div>
-     
     </section>
   );
 };

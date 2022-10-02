@@ -84,6 +84,7 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
 }
 .navbar {
   color: #fff;
@@ -100,6 +101,11 @@ h2 {
   justify-content: center;
   align-items: center;
   
+  
+}
+
+.columns .web3 {
+  margin: 4rem;
 }
 .columns .connect-button {
   margin: 0.5rem;
@@ -131,8 +137,8 @@ h2 {
   /* margin-left: 2rem; */
   /* margin-right: 8rem; */
   cursor: pointer;
-  width: 10rem;
-  height: 10rem;
+  width: 12rem;
+  height: 6rem;
   /* margin-left: 36%;
   margin-right: 36%; */
 
@@ -145,6 +151,7 @@ a {
   font-size: 2rem;
   font-weight: bold;
   align-self: center;
+  text-align: center;
   /* padding-left: 2%; */
   margin-left: 0;
 }
@@ -176,12 +183,44 @@ a {
   height: 5.2rem;
 }
 
+.expr-contract-button-goerli-v2 {
+  background: #020202;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: bold;
+  border: 1px solid black;
+  border: 10px solid rgb(132, 193, 189);
+
+  /* padding: 0.3rem 0.5rem; */
+  border-radius: 0.8rem;
+  cursor: pointer;
+  width: 16rem;
+  height: 5.2rem;
+}
+
+.ack-contract-button-goerli {
+  background: #020202;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: bold;
+  /* margin-left: 2rem; */
+  border: 1px solid black;
+  border: 10px solid rgb(183, 76, 163);
+
+  /* padding: 0.3rem 0.5rem; */
+  border-radius: 0.8rem;
+  cursor: pointer;
+  width: 16rem;
+  height: 5.2rem;
+}
+
 .read-guide-button {
   background: #020202;
   color: white;
   font-size: 1.6rem;
   font-weight: bold;
-  margin-right: 2rem;
+  /* margin-right: 2rem; */
+  /* margin-top: 2rem; */
   border: 1px solid black;
   border: 10px solid rgb(0, 0, 0);
 
@@ -261,13 +300,15 @@ a {
   height: 100%;
 }
 
+
 .cards {
   display: flex;
   flex-direction: column;
-  margin: 2rem auto;
-  padding: 0 2rem;
+  margin: 2.2rem auto;
+  padding: 2.2rem 2rem;
   text-align: center;
   width: 80%;
+  background-color: rgb(181, 150, 110);
 }
 
 .checkbox {
@@ -360,6 +401,7 @@ textarea {
   /* margin: 1rem; */
   /* width: 60%; */
   margin-bottom: 1rem;
+  margin-left: 0px;
   /* margin-top: 12px; */
   /* width: 40%; */
   /* max-width: inherit; */
@@ -475,6 +517,10 @@ footer .container {
   padding-bottom: 0.7rem;
   background-color: transparent;
 }
+.questions {
+  margin: 0;
+
+}
 
 .question-section {
   background: transparent;
@@ -589,7 +635,7 @@ a:hover {
   color: #1d003b;
 }
 
-.contract-at-goerli:hover {
+.contract-at-goerli {
   background-color: rgb(240, 117, 189);
   color: #1d003b;
 
@@ -622,7 +668,7 @@ a:hover {
   font-size: larger;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 640px) {
   .dapp-button {
     background: #020202;
     color: white;
@@ -636,9 +682,26 @@ a:hover {
     /* margin-left: 2rem; */
     /* margin-right: 8rem; */
     cursor: pointer;
-    width: 10rem;
-    height: 10rem;
+    width: 8rem;
+    height: 8rem;
     align-content: center;
+  }
+
+  .read-guide-button {
+    background: #020202;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: bold;
+    /* margin-right: 2rem; */
+    margin-top: 2rem;
+    border: 1px solid black;
+    border: 10px solid rgb(0, 0, 0);
+  
+    /* padding: 0.3rem 0.5rem; */
+    border-radius: 0.8rem;
+    cursor: pointer;
+    width: 8rem;
+    height: 5.2rem;
   }
 }
 

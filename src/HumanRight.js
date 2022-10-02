@@ -2,10 +2,6 @@ import "./human-right.css";
 const HumanRight = () => {
   return (
     <div className="human-right">
-      <img
-        alt="Nelson Mandela encouraging us to make peace"
-        src="Nelson_Mandela_GenerationPeace.png"
-      ></img>
       <h3
         style={{
           fontSize: "2rem",
@@ -16,15 +12,18 @@ const HumanRight = () => {
           paddingTop: "20px",
         }}
       >
-        <strong>#GenerationPeace!</strong>
+        <strong style={{ fontSize: "2rem" }}>Generation Peace!</strong>
       </h3>
       <p
         className="centered"
         style={{
           fontSize: "1.8rem",
-          lineHeight: "2.6rem",
+          lineHeight: "2.4rem",
           paddingLeft: "40px",
           paddingRight: "40px",
+          backgroundColor: "orange",
+          paddingBlock: "20px",
+          color: "black",
         }}
       >
         How would you imagine, express, acknowledge and make a World Peace?
@@ -34,32 +33,65 @@ const HumanRight = () => {
         className="centered"
         style={{
           fontSize: "1.8rem",
-          lineHeight: "2.6rem",
-          paddingLeft: "40px",
-          paddingRight: "40px",
+          lineHeight: "2.6rem"
+          
         }}
       >
-        <strong>Introducing a new human right:</strong>{" "}
-  
-
+        <strong>Introducing a new human right:</strong> <br></br>
         <span
           style={{
             backgroundColor: "yellow",
             color: "black",
             paddingRight: "6px",
             paddingLeft: "6px",
+                      paddingBlock: "20px",
+                      fontWeight:"500"
+
           }}
         >
-          Individuals are equally significant
+          Individuals are equally significant on being co-signers and sealers of
+          a world peace treaty*,
         </span>{" "}
-        on being co-signers and sealers of a world peace treaty*, <br></br>
-        and shall be legitimately as powerful as their states on this matter, in the 21st
-        century.
+        <br></br>
+        .. and shall be legitimately as powerful as their states on this matter, <br></br> in
+        the 21st century (and forwards)
       </p>
       <p>
-      <i>* Introducing a p2p diplomacy doctrine: <br></br>  a mutual assured regeneration aka. Art of Peace.</i>
+        <i style={{ fontSize: "1.8rem" }}>
+          * Introducing a 21st century,{" "}
+            <span
+              style={{  backgroundColor: "red", color: "black" }}
+            >
+              {" "}
+              peer to peer diplomacy
+            </span>  paradigm on {" "}
+          <span
+            style={{ backgroundColor: "aqua", color: "black" }}
+          >
+            blockchain,
+          </span>
+          <br></br> through a synthesis of two doctrines:{" "}
+          <br></br> <br></br>
+          -Mutual Assured Destruction <br></br> X <br></br>
+          +Mutual Assured Regeneration <br></br>||
+          <br></br>
+          <strong>
+            <span
+              style={{
+                padding: "3px",
+                backgroundColor: "yellow",
+                color: "black",
+              }}
+            >
+              {" "}
+              ~ Peace by Equality 
+            </span>
+          </strong>
+          <br></br>
+        </i>
+        <br></br>
       </p>
-      
+
       {/* <div className="centered" style={{ marginTop: "40px" }}>
         <img
           alt="express yourself!"

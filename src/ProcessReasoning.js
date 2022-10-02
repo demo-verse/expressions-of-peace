@@ -1,4 +1,4 @@
-const Reasoning = () => {
+const ProcessReasoning = () => {
     return (
         <div>
           <img
@@ -29,4 +29,4 @@ const Reasoning = () => {
 
         </div>
     ); }
-export default Reasoning;
+export default ProcessReasoning;

@@ -5,7 +5,7 @@ const Outro = () => {
              ~ Outro ~ 
             </h3>
 <br></br>
-            Expressions and acknowledgements of peace, for a mutual assured
+            Expressions  of peace, for a mutual assured
             regeneration,{" "}
             <strong>is all about standing equal in peace and trust making. </strong>
      <br></br>     <br></br>
@@ -21,8 +21,8 @@ const Outro = () => {
 
       
       <strong>It is time to separate power and violence</strong>, in fact, search power somewhere
-      else: in the conscience and wisdom of a great civilization:
-      <strong> {" "}#GenerationPeace</strong>
+      else: in the conscience and wisdom of a great civilization: Humanity.
+      {/* <strong> {" "}#GenerationPeace</strong> */}
       <br></br> <br></br>
 
       <a
@@ -40,7 +40,7 @@ const Outro = () => {
       >
         <u>here</u>
       </a>{" "}
-      is an article about social contract theories and their evolution/adoption throughout the history.
+      is an article about social contract theories and their evolution throughout the history.
       <br></br>
       <br></br>
       <hr></hr>
