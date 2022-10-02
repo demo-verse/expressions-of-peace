@@ -4,6 +4,7 @@ const HybridTheory = () => {
   return (
     <div>
        <iframe
+       title="constants,dynamics and conditionals of a world peace"
         width="100%"
         height="300"
         scrolling="no"
