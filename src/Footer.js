@@ -34,11 +34,11 @@ const Footer = () => {
           target="_blank"
           style={{ fontSize: "1.2rem" }}
         >
-          tasksOfpeace
+          bountiesOfPeace
         </a>
         <a
           className="source-code-link"
-          href="https://github.com/demo-verse/expressions-of-peace"
+          href="https://crowdin.com/project/worldpeace"
           rel="noreferrer"
           target="_blank"
           style={{ fontSize: "1.2rem" }}
