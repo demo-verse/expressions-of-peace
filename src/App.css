@@ -246,7 +246,7 @@ a {
   height: 5.2rem;
 }
 .enter-dapp-button {
-  background: #e90270;
+  background: #0f1213;
   color: white;
   font-size: 1.6rem;
   font-weight: bold;
@@ -308,7 +308,7 @@ a {
   padding: 2.2rem 2rem;
   text-align: center;
   width: 80%;
-  background-color: rgb(181, 150, 110);
+  background-color:#33FFF3;
 }
 
 .checkbox {
@@ -322,7 +322,7 @@ textarea {
   font-size: 1.2rem;
   width: 100%;
   min-height: 420px;
-  background: #cdc74f;
+  background: #efefe8;
 }
 
 .card {
@@ -367,26 +367,27 @@ textarea {
   background: #202428;
   color: #fff;
   border-radius: 0.8rem;
-  margin: 1.25rem 0.7rem;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
   padding: 1.2rem 2rem;
 }
 
 .new-expression-card {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: #202428;
-  color: #fff;
-  border-radius: 0.8rem;
-  margin: 1.25rem 0.7rem;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
-  padding: 1.2rem 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #202428;
+    color: #fff;
+    border-radius: 0.8rem;
+    box-shadow: 0 3px 5px rgb(0 0 0 / 60%);
 }
 
 .new-expression-card textarea {
   font-size: 1.4rem;
+}
+.new-expression-card textarea::placeholder {
+  font-size: 2.6rem;
+  /* text-align: center; */
 }
 
 .new-expression-card .sign-button button {
@@ -443,7 +444,17 @@ textarea {
 }
 
 .last-expression-card button {
-  background: #80e840;
+  background: #e90270;
+  color: white;
+  font-size: 1.6rem;
+  font-weight: bold;
+  border: 1px solid black;
+  /* padding: 0.3rem 0.5rem; */
+  border-radius: 0.8rem;
+  cursor: pointer;
+  width: 12rem;
+  height: 3.6rem;
+  /* background: #80e840;
   color: black;
   font: inherit;
   font-size: 1.2rem;
@@ -451,9 +462,7 @@ textarea {
   padding: 0.3rem 0.5rem;
   border-radius: 0.8rem;
   cursor: pointer;
-  /* margin: 1rem; */
-  /* width: 60%; */
-  margin-bottom: 1rem;
+  margin-bottom: 1rem; */
 }
 
 .card button:active {
@@ -766,7 +775,7 @@ a:hover {
     font-size: 1.2rem;
     width: 100%;
     min-height: 320px;
-    background: #cdc74f;
+    background: #eeeedd;
   }
 }
 

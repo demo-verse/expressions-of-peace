@@ -31,7 +31,7 @@ const CHAIN_ID_GOERLI = 5; // goerli testnet @ ethereum
 const Expressions = () => {
   // const [provider, setProvider] = useState();
   const [inputValue, setInputValue] = useState("");
-  const [value, setValue] = useState("click to read last expression");
+  const [value, setValue] = useState("");
   const [selectedCountry, setSelectedCountry] = useState("");
   const [lastCountry, setLastCountry] = useState("");
 
@@ -177,7 +177,7 @@ const Expressions = () => {
     <section className="cards">
       <div className="last-expression-card">
         <h2>Last Expression</h2>
-        <button onClick={handleRetrieveData}>read it</button>
+        <button onClick={handleRetrieveData}>read</button>
 
         <p style={{fontSize: "1.6rem"}}>{value}</p>
         {lastCountry.length > 0 ? (
