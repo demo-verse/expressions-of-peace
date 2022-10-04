@@ -96,27 +96,45 @@ const Toolkit = () => {
   };
   return (
     <div className="centered">
-      <br></br>
-      <h2 style={{ lineHeight: "2rem" }}>
-        Initial toolkit of<br></br> peer-to-peer diplomacy
-      </h2>
-      
-      <button
-        className="read-guide-button"
+      <h2
         style={{
-          backgroundColor: "white",
-          color: "black",
+          fontSize: "2.2rem",
+          marginTop: "20px",
+          lineHeight: "2.4rem",
         }}
       >
+        {" "}
+        Initial toolkit of<br></br> peer-to-peer diplomacy
+      </h2>
+
+      <p>
+        As a proof of concept; a decentralized app launched on Ethereum
+        blockchain's{" "}
+        <a
+          href="https://blog.logrocket.com/mainnet-vs-testnet-environments-explained/"
+          target={"_blank"}
+          rel="noreferrer"
+        >
+          <u>test networks.</u>
+        </a>{" "}
+      </p>
+
+      <i>
+        {" "}
         <a
           href="https://link.storjshare.io/s/jxrrj5fnnylyveqkgvxjqkzfgwzq/videoeop/EOP%20Video.mov"
           target={"_blank"}
           rel="noreferrer"
         >
-          demo{" "}
+          <span style={{ backgroundColor: "yellow", fontWeight: "bolder" }}>
+            {" "}
+            {">> "}Watch this to see in action
+          </span>
         </a>
-      </button>
-      <br></br>      <br></br>
+      </i>
+      <br></br>
+
+      <br></br>
 
       <button
         className="read-guide-button"
@@ -130,7 +148,7 @@ const Toolkit = () => {
           target={"_blank"}
           rel="noreferrer"
         >
-          install{" "}
+          guide{" "}
         </a>
       </button>
       {!connected ? null : (

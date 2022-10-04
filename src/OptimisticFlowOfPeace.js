@@ -11,7 +11,7 @@ const OptimisticFlowOfPeace = () => {
                src="an-optimistic-flow-of-peace.png"
              ></img>
            </a>
-           <br></br> <i> (click to display fullscreen )</i> <br></br>
+            <p> <i>Click image to display fullscreen </i></p> 
     </div>
     )
 }

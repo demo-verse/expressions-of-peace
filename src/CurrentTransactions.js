@@ -1,7 +1,13 @@
-const CurrentExpressions = () => {
+const CurrentTransactions = () => {
   return (
-    <div className="centered">
-      <h2 style={{ lineHeight: "2rem" }}>
+    <div style={{width:"80%", marginLeft: "10%"}}>
+            <h2
+        style={{
+          fontSize: "2.2rem",
+          marginTop: "42px",
+          lineHeight: "2.4rem",
+        }}
+      >
         Browse the happenings on blockchain
       </h2>
 
@@ -26,7 +32,8 @@ const CurrentExpressions = () => {
       </p>
       <br></br>
       {/* <div className="columns"> */}
-      <button
+   <div className="centered">
+   <button
         className="expr-contract-button-goerli-v2"
         style={{
           backgroundColor: "white",
@@ -59,9 +66,10 @@ const CurrentExpressions = () => {
           Acknowledgements
         </a>
       </button>
+   </div>
     </div>
     // </div>
   );
 };
 
-export default CurrentExpressions;
+export default CurrentTransactions;

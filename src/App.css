@@ -127,7 +127,7 @@ h2 {
 .dapp-button {
   background: #020202;
   color: white;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   font-weight: bold;
   /* padding-right: "12px"; */
   padding: 20px;
@@ -186,7 +186,7 @@ a {
 .expr-contract-button-goerli-v2 {
   background: #020202;
   color: white;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: bold;
   border: 1px solid black;
   border: 10px solid rgb(132, 193, 189);
@@ -201,7 +201,7 @@ a {
 .ack-contract-button-goerli {
   background: #020202;
   color: white;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: bold;
   /* margin-left: 2rem; */
   border: 1px solid black;
@@ -217,7 +217,7 @@ a {
 .read-guide-button {
   background: #020202;
   color: white;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   font-weight: bold;
   /* margin-right: 2rem; */
   /* margin-top: 2rem; */

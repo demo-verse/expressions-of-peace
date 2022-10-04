@@ -4,7 +4,7 @@ import Outro from "./Outro";
 import Questions from "./Questions";
 import Intro from "./Intro";
 import HumanRight from "./HumanRight";
-import CurrentExpressions from "./CurrentExpressions";
+import CurrentTransactions from "./CurrentTransactions";
 import Toolkit from "./Toolkit";
 import HybridTheory from "./HybridTheory";
 import ExtendIt from "./ExtendIt";
@@ -35,7 +35,7 @@ const App = () => {
             lineHeight: "2.4rem",
           }}
         >
-          Individual Sovereignity via Peace-oriented Diplomacy
+          An impact oriented, individual sovereignity, <br></br> through  <br></br>Peace-oriented Diplomacy
         </h2>
    
 
@@ -46,7 +46,7 @@ const App = () => {
             color: "black",
          
             textAlign: "center",
-            fontSize: "1.6rem",
+            // fontSize: "1.6rem",
           }}
         >
           <span
@@ -58,21 +58,12 @@ const App = () => {
             }}
           >
             <i>
-              It's an experience, that is priceless; more about being, than
+              Peacemaking is an experience, that is priceless; more about being, than
               having.
             </i>
-            <br></br> <br></br>
+            
           </span>{" "}
-          <br></br>
-          As a proof of concept; a decentralized app launched on Ethereum
-          blockchain's{" "}
-          <a
-            href="https://blog.logrocket.com/mainnet-vs-testnet-environments-explained/"
-            target={"_blank"}
-            rel="noreferrer"
-          >
-            <u>test networks.</u>
-          </a>{" "}
+         
         </p>
 
         <div className="centered">
@@ -80,7 +71,7 @@ const App = () => {
             style={{
               textAlign: "center",
               marginTop: "2rem",
-              fontSize: "2.2rem",
+              fontSize: "2rem",
               marginBottom: "2rem",
             }}
           >
@@ -104,7 +95,7 @@ const App = () => {
 
           <hr></hr>
           <br></br>
-          <CurrentExpressions />
+          <CurrentTransactions />
         </div>
 
         <br></br>
