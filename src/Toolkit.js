@@ -119,10 +119,16 @@ const Toolkit = () => {
         </a>{" "}
         <br></br> <br></br>
         This means, it will not cost a dime to use your right to stand equal on
-        peacemaking.
+        peacemaking. 
+        <br></br>
+        Here, we provide tools, the product is a World Peace, by Equality. <i>Not you.</i>
         <br></br> <br></br>
         It only requires free will, and more than that, generosity, awareness
         and common sense.
+        <br></br> <br></br>
+        World deserves the best, so we've started with blockchain technology. 
+        <br></br>
+        Reason is its resilient, transparent and undeniable behaviour.
       </p>
 
       <i>

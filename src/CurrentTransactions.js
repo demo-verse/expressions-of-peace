@@ -48,6 +48,8 @@ const CurrentTransactions = () => {
         style={{
           backgroundColor: "white",
           color: "black",
+          marginBottom: "32px",
+          marginTop: "12px"
         }}
       >
         <a
@@ -65,7 +67,7 @@ const CurrentTransactions = () => {
             target={"_blank"}
             rel="noreferrer"
           >
-            <span style={{ backgroundColor: "yellow", fontWeight:"bolder" }}> {">> "}Watch acknowledgements demo in action</span>
+            <span style={{ backgroundColor: "yellow", fontWeight:"bolder" }}> {">> "}Watch acknowledgements in action</span>
           </a>
    </div>
     </div>
