@@ -3,7 +3,6 @@ import OptimisticFlowOfPeace from "./OptimisticFlowOfPeace";
 const HybridTheory = () => {
   return (
     <div>
-   
       <OptimisticFlowOfPeace />
       <h2
         style={{
@@ -17,26 +16,29 @@ const HybridTheory = () => {
       </h2>
 
       <p>
-        When someone or a state makes an <strong>Expression of Peace</strong>, it means
-        that person not excluding any other people or state on peacemaking. 
-        <br></br><br></br>
-        This is a mindset, that is constant/unconditional and takes a high level of generosity;
-        which results an acceptance of one big humanity, and an attitude and
-        a feeling of living a world residency.
+        When someone or a state makes an <strong>Expression of Peace</strong>,
+        it means that stakeholder not excluding any other people or state on
+        peacemaking.
+        <br></br>
+        <br></br>
+        This is a mindset, that is un(variable|conditional), hence constant and  takes a high level
+        of generosity and the least need for caution; which results an acceptance of one big humanity, and an
+        attitude and a feeling of living a world residency.
       </p>
       <p>
         When a stakeholder finds an expression "peaceful", it's an{" "}
         <strong>Acknowledgement of Peace</strong>. Through those peer to peer
-        interactions, bilateral and multilateral, so called "mini-pacts of peace" can
-        cherish. 
+        interactions, bilateral and multilateral, so called "mini-pacts of
+        peace" can cherish.
         <br></br>
-        Through observations those, we'd love to realise meaningful,
-        intentional and international bonds between stakeholders with the least effort.
+        Through observations those, we'd love to realise meaningful, intentional
+        and international bonds between stakeholders with the least effort.
         <br></br>
         <br></br>
         This very part, will provide the time and rethinking the rigid nature of
-        "enemy/ally" structures, that'll hopefully be obsolete, and a unit would
-        emerge by an observability aroud the accumulation of will and intentions, of people and other stakeholders.
+        "enemy/ally" structures, that'll hopefully be obsolete, and a unity would
+        emerge by an observability aroud the accumulation of will and
+        intentions, of people and other stakeholders.
         <br></br>
         <br></br>
         <strong>Attestations of Peace</strong>, is planned to be another
@@ -45,7 +47,7 @@ const HybridTheory = () => {
         <br></br>
         <br></br>
         If ever requested, attestations will help us to promote peaceful and
-        verified Expressions and Acknowledgements. This is also how we are going
+        verified expressions and acknowledgements. This is also how we are going
         to provide the high level of
         <i>
           <a
@@ -60,13 +62,18 @@ const HybridTheory = () => {
         in the overall flow.
       </p>
       <p>
-      <strong>Recognitions of Peace</strong> are going to have conditionals,
+        <strong>Recognitions of Peace</strong> are going to have conditionals,
         at least for the interactions to happen between the states in the
-        Charter of the United Nations. 
-        <br></br> We will be imagining and designing a solution for that; being an escrow system and mediation framework, including states, corporations operating in the defense sector. 
-        <br></br>        <br></br>
-
-        On this part, we're only caring about how states will recognize the expressions and acknowledgements of people worldwide, and reflect humanity via their expressed intentions to seal a World Peace as its final stakeholders.
+        Charter of the United Nations.
+        
+        <br></br> <br></br> We will be imagining and designing a solution for that; being
+        an escrow system and mediation framework, including states, corporations
+        operating in the defense sector.
+        <br></br> <br></br>
+        On this part, we're only caring about how states will recognize the
+        expressions and acknowledgements of people worldwide, and reflect
+        humanity via their expressed intentions to seal a World Peace as its
+        final stakeholders.
       </p>
       <strong></strong>
       {/* <br></br>

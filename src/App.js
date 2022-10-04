@@ -10,7 +10,6 @@ import HybridTheory from "./HybridTheory";
 import ExtendIt from "./ExtendIt";
 
 const App = () => {
-  
   return (
     <div className="layout">
       <header className="navbar">
@@ -35,35 +34,40 @@ const App = () => {
             lineHeight: "2.4rem",
           }}
         >
-          An impact oriented, individual sovereignity, <br></br> through  <br></br>Peace-oriented Diplomacy
+          Individual Sovereignty, <br></br> through <br></br>Peace-oriented
+          Diplomacy
         </h2>
-   
 
         <p
           style={{
-            marginLeft: "8%",
-            marginRight: "8%",
+            marginLeft: "10%",
+            marginRight: "10%",
             color: "black",
-         
+
             textAlign: "center",
             // fontSize: "1.6rem",
           }}
         >
           <span
             style={{
-              backgroundColor: "yellow",
+              // backgroundColor: "yellow",
               color: "black",
               paddingLeft: "4px",
-              paddingRight: "4px",
+              paddingRight: "4px"
             }}
           >
+              Peacemaking is an experience, that is priceless; <br></br> more about being,
+              than having.
+              <br></br>
+              <br></br>
+              Here, we'll be sharing rights, along with resources. It's even easier.
             <i>
-              Peacemaking is an experience, that is priceless; more about being, than
-              having.
+              <br></br><br></br>
+              Let's get to used to that, sooner is better.
             </i>
+
             
           </span>{" "}
-         
         </p>
 
         <div className="centered">
@@ -77,12 +81,10 @@ const App = () => {
           >
             ? you may wonder;
           </h1>
-
         </div>
 
         <div className="questions">
-        <Questions />
-
+          <Questions />
         </div>
         <br></br>
         <br></br>
@@ -101,10 +103,8 @@ const App = () => {
         <br></br>
         <br></br>
         <hr></hr>
-       
-        <div className="centered">
-        
-        </div>
+
+        <div className="centered"></div>
         <br></br>
 
         <p
@@ -160,13 +160,7 @@ const App = () => {
           <hr></hr>
           <br></br>
           <Outro />
-          <img
-        alt="YinYang symbol"
-        src="YinYang.png"
-        width={"22%"}
-      ></img>
-      
-     
+          <img alt="YinYang symbol" src="YinYang.png" width={"22%"}></img>
         </p>
         <hr></hr>
 
@@ -185,7 +179,8 @@ const App = () => {
           ></iframe>
         </div>
       </section>
-<br></br><br></br>
+      <br></br>
+      <br></br>
 
       <Footer />
     </div>

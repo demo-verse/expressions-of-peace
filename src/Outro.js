@@ -11,13 +11,13 @@ const Outro = () => {
         power, have been the ones with highest capacity of violence, whether
         they use it or not in an offensive manner. <br></br>
         <br></br> However the majority impacted by conflicts, have no
-        significant labor, direct impact, hence legitimacy in the making and
+        significant labor, direct impact, hence observale legitimacy in the making and
         sustaining a world peace.
         <br></br>
         <br></br>
         <strong>It is time to separate power and violence</strong>, in fact,
         search power somewhere else: in the conscience and wisdom of a great
-        civilization: Humanity.
+        civilization: <strong>Humanity</strong>.
         {/* <strong> {" "}#GenerationPeace</strong> */}
         <br></br> <br></br>
         <a

@@ -8,7 +8,7 @@ return(
               bgColor={"black"}
               questionTxt={"what"}
               answerTxt={
-                "A global, peer-to-peer diplomacy and consensus, of the world residents: a progressive World Peace vision, challenge and a historical change. The scope is clear: ending direct and indirect/proxied conflicts and wars between the member states of the Charter of the United Nations; while reallocating the future investments on war industries to regeneration: 2030 Sustainable Development Goals. (eg. via making tax for defense unnecessary, as citizens of states proactively sealing those multi-lateral assurances with their peers via the acknowledgements of Peace.)"
+                "A global, peer-to-peer diplomacy and consensus, of the world residents: a progressive World Peace vision, challenge and a historical change. The scope is clear: ending direct and indirect/proxied conflicts and wars between the member states of the Charter of the United Nations; while reallocating the future investments on war industries to regeneration: 2030 Sustainable Development Goals. (eg. via making tax for defense unnecessary, as citizens of states proactively sealing those multi-lateral assurances with their peers with the Acknowledgements of Peace.)"
               }
               answerTxtSub={
                 "The p2p consensus and effective accumulation of will, shall be acknowledged as: People encouraging empowering themselves, each other and their represented states in the United Nations, to co-sign a no-more-war agreement: A Mutual Assured Regeneration."

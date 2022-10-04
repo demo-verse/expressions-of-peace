@@ -8,7 +8,7 @@ const CurrentTransactions = () => {
           lineHeight: "2.4rem",
         }}
       >
-        Browse the happenings on blockchain
+        Browse the happenings <br></br> on blockchain
       </h2>
 
       <p>
@@ -20,14 +20,7 @@ const CurrentTransactions = () => {
         <i>
           To discover all the expressions and
           acknowledgements, choose one pseudo-transaction from list and dig into its data.
-          <br></br> <br></br>{" "}
-          <a
-            href="https://link.storjshare.io/s/jxrrj5fnnylyveqkgvxjqkzfgwzq/videoeop/EOP%20Video.mov"
-            target={"_blank"}
-            rel="noreferrer"
-          >
-            <span style={{ backgroundColor: "yellow", fontWeight:"bolder" }}> {">> "}Watch this to see in action</span>
-          </a>
+         
         </i>
       </p>
       <br></br>
@@ -66,6 +59,14 @@ const CurrentTransactions = () => {
           Acknowledgements
         </a>
       </button>
+<br></br>
+      <a
+            href="https://link.storjshare.io/s/jxrrj5fnnylyveqkgvxjqkzfgwzq/videoeop/EOP%20Video.mov"
+            target={"_blank"}
+            rel="noreferrer"
+          >
+            <span style={{ backgroundColor: "yellow", fontWeight:"bolder" }}> {">> "}Watch acknowledgements demo in action</span>
+          </a>
    </div>
     </div>
     // </div>

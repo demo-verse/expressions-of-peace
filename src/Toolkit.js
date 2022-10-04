@@ -117,11 +117,17 @@ const Toolkit = () => {
         >
           <u>test networks.</u>
         </a>{" "}
+        <br></br> <br></br>
+        This means, it will not cost a dime to use your right to stand equal on
+        peacemaking.
+        <br></br> <br></br>
+        It only requires free will, and more than that, generosity, awareness
+        and common sense.
       </p>
 
       <i>
         {" "}
-        <a
+        {/* <a
           href="https://link.storjshare.io/s/jxrrj5fnnylyveqkgvxjqkzfgwzq/videoeop/EOP%20Video.mov"
           target={"_blank"}
           rel="noreferrer"
@@ -130,7 +136,7 @@ const Toolkit = () => {
             {" "}
             {">> "}Watch this to see in action
           </span>
-        </a>
+        </a> */}
       </i>
       <br></br>
 
@@ -148,7 +154,7 @@ const Toolkit = () => {
           target={"_blank"}
           rel="noreferrer"
         >
-          guide{" "}
+          install{" "}
         </a>
       </button>
       {!connected ? null : (

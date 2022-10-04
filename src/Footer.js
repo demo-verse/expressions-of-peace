@@ -2,6 +2,18 @@ import { React } from "react";
 const Footer = () => {
   return (
     <footer>
+      <div className="centered">
+      <a
+          className="source-code-link"
+          href="https://miro.com/app/board/uXjVOX94E5k=/?invite_link_id=638195022576"
+          rel="noreferrer"
+          target="_blank"
+          style={{ fontSize: "1.2rem" }}
+        >
+          imagination
+        </a>  
+        <br></br>
+      </div>
       <div className="columns">
         <a
           className="source-code-link"
@@ -34,7 +46,7 @@ const Footer = () => {
           target="_blank"
           style={{ fontSize: "1.2rem" }}
         >
-          bountiesOfPeace
+          bounties
         </a>
         <a
           className="source-code-link"
