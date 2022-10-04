@@ -12,14 +12,14 @@ const CurrentTransactions = () => {
       </h2>
 
       <p>
-        Currently we're displaying only the last Expression of Peace. <br></br>
+        Currently, in our app, we're displaying only the last Expression of Peace, that's the only one stored at a time. <br></br> <br></br> The rest, is on each contract's transaction history, cannot be altered aka. immutable. <br></br>
         Acknowledgements of Peace are manually done via referring to an existing
         expression's transaction hash.
         <br></br>
         <br></br>{" "}
         <i>
-          To discover all the happenings history for expressions and
-          acknowledgements, choose one pseudo-transaction and dig into its data.
+          To discover all the expressions and
+          acknowledgements, choose one pseudo-transaction from list and dig into its data.
           <br></br> <br></br>{" "}
           <a
             href="https://link.storjshare.io/s/jxrrj5fnnylyveqkgvxjqkzfgwzq/videoeop/EOP%20Video.mov"

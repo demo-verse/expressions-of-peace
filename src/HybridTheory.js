@@ -4,6 +4,7 @@ const HybridTheory = () => {
   return (
     <div>
    
+      <OptimisticFlowOfPeace />
       <h2
         style={{
           fontSize: "2.2rem",
@@ -14,27 +15,28 @@ const HybridTheory = () => {
         Constants, Dynamics & Conditionals of<br></br> a World Peace
         {/* A Hybrid Game Theory for Peace, <br></br> on Blockchain */}
       </h2>
-<br></br>
-      <OptimisticFlowOfPeace />
 
       <p>
-        When someone makes an <strong>Expression of Peace</strong>, it means
-        that person do not exclude any people or state on peacemaking. This is a
-        mindset, that's unconditional and takes a high level of generosity,
-        which results an acceptance of one big humanity, and a manner and
-        feeling of living a world residency.
+        When someone or a state makes an <strong>Expression of Peace</strong>, it means
+        that person not excluding any other people or state on peacemaking. 
+        <br></br><br></br>
+        This is a mindset, that is constant/unconditional and takes a high level of generosity;
+        which results an acceptance of one big humanity, and an attitude and
+        a feeling of living a world residency.
       </p>
       <p>
-        When someone finds an expression of someone else "peaceful", it's an{" "}
+        When a stakeholder finds an expression "peaceful", it's an{" "}
         <strong>Acknowledgement of Peace</strong>. Through those peer to peer
-        interactions, bilateral and multilateral, mini-pacts of of peace will
-        cherish. Through observations those, we'd love to build meaningful,
-        intentional and international bonds with least effort.
+        interactions, bilateral and multilateral, so called "mini-pacts of peace" can
+        cherish. 
+        <br></br>
+        Through observations those, we'd love to realise meaningful,
+        intentional and international bonds between stakeholders with the least effort.
         <br></br>
         <br></br>
         This very part, will provide the time and rethinking the rigid nature of
-        "enemy/ally" structures, that'll hopefully be obsolete, and a unity will
-        emerge.
+        "enemy/ally" structures, that'll hopefully be obsolete, and a unit would
+        emerge by an observability aroud the accumulation of will and intentions, of people and other stakeholders.
         <br></br>
         <br></br>
         <strong>Attestations of Peace</strong>, is planned to be another
