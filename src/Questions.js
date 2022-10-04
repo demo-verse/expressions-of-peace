@@ -51,10 +51,10 @@ return(
             />
             <AccordeonItem
               txtColor={"white"}
-              bgColor={"red"}
+              bgColor={"black"}
               questionTxt={"lastly"}
               answerTxt={
-                'Design, notion and perspective shall be a canvas, on which humanity making Art of Peace, together. Future generations, beholders, will be learning from our expressions and remember us as "aware, courageous, artful and peaceful enough", on empowering ourselves, each other and our states, via accumulation and observation of legitimate and sincere, will and intentions. A World peace, initiated by citizens, is not a matter of legitimacy, but matter of time in its observation and accomplishment. Power and violence shall be seperated so well.'
+                'Design, notion and perspective shall be a canvas, on which humanity making Art of Peace, together. Future generations, beholders, will be learning from our efforts and remember us as "aware, courageous, artful and peaceful enough" on empowering ourselves, each other and our states, via accumulation and observation of legitimate and sincere, will and intentions. Trust that, a World peace, initiated by citizens, is not a matter of legitimacy, but matter of time in its observation and accomplishment. Power and violence shall be seperated so well.'
               }
             />
           </div>

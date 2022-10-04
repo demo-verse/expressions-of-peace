@@ -95,41 +95,61 @@ const Toolkit = () => {
     // we set desiredChainId as the
   };
   return (
-      <div className="centered">
-        <br></br>
-         <button
-              className="read-guide-button"
-              style={{
-                backgroundColor: "white",
-                color: "black",
-              }}
-            >
-              <a
-                href="https://www.canva.com/design/DAFJb1m8MxA/olzSyTC7tGyGkbUrSBhMfQ/edit?utm_content=DAFJb1m8MxA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
-                target={"_blank"}
-                rel="noreferrer"
-              >
-                install{" "}
-              </a>
-            </button>
-         {!connected ? null : (
-            <div style={{ alignSelf: "center", marginTop:"2rem" }}>
-              <button className="enter-dapp-button" onClick={disconnectHandler}>
-                close
-              </button>
-            </div>
-          )}
-        {connected? (<Expressions/>): (
-<div>
-         
-  
+    <div className="centered">
+      <br></br>
+      <h2 style={{ lineHeight: "2rem" }}>
+        Initial toolkit of<br></br> peer-to-peer diplomacy
+      </h2>
+      
+      <button
+        className="read-guide-button"
+        style={{
+          backgroundColor: "white",
+          color: "black",
+        }}
+      >
+        <a
+          href="https://link.storjshare.io/s/jxrrj5fnnylyveqkgvxjqkzfgwzq/videoeop/EOP%20Video.mov"
+          target={"_blank"}
+          rel="noreferrer"
+        >
+          demo{" "}
+        </a>
+      </button>
+      <br></br>      <br></br>
+
+      <button
+        className="read-guide-button"
+        style={{
+          backgroundColor: "white",
+          color: "black",
+        }}
+      >
+        <a
+          href="https://www.canva.com/design/DAFJb1m8MxA/olzSyTC7tGyGkbUrSBhMfQ/edit?utm_content=DAFJb1m8MxA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+          target={"_blank"}
+          rel="noreferrer"
+        >
+          install{" "}
+        </a>
+      </button>
+      {!connected ? null : (
+        <div style={{ alignSelf: "center", marginTop: "2rem" }}>
+          <button className="enter-dapp-button" onClick={disconnectHandler}>
+            close
+          </button>
+        </div>
+      )}
+      {connected ? (
+        <Expressions />
+      ) : (
+        <div>
           <button className="dapp-button" onClick={connectHandler}>
             open app
           </button>
-         </div>
-        )}
         </div>
-      
+      )}
+    </div>
   );
 };
 

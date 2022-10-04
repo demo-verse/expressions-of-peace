@@ -99,8 +99,12 @@ const App = () => {
         <br></br>
         <br></br>
         <div className="">
-          <CurrentExpressions />
           <Toolkit />
+          <br></br>
+
+          <hr></hr>
+          <br></br>
+          <CurrentExpressions />
         </div>
 
         <br></br>
@@ -111,8 +115,6 @@ const App = () => {
         
         </div>
         <br></br>
-        <br></br>
-        <hr></hr>
 
         <p
           style={{

@@ -33,10 +33,13 @@ const ExtendIt = () => {
 
           </p>
          
-          <img
+        <div className="centered">
+        <img
+        width={"800px"}
             alt="Nelson Mandela encouraging us to make peace"
             src="Nelson_Mandela_GenerationPeace.png"
           ></img>
+        </div>
           <br></br>
 
         </div>
