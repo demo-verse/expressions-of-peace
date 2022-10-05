@@ -160,7 +160,7 @@ const Toolkit = () => {
           target={"_blank"}
           rel="noreferrer"
         >
-          install{" "}
+          1. install{" "}
         </a>
       </button>
       {!connected ? null : (
@@ -175,7 +175,7 @@ const Toolkit = () => {
       ) : (
         <div>
           <button className="dapp-button" onClick={connectHandler}>
-            open app
+            2. open app
           </button>
         </div>
       )}
