@@ -198,7 +198,7 @@ const Expressions = () => {
             // onKeyPress={(e) => !/[0-9]/.test(e.key) && e.preventDefault()}
 
             name="value"
-            placeholder="> how would you imagine, express and make a World Peace?"
+            placeholder="> how would you imagine, express, acknowledge and make a World Peace?"
           />
           {/* <div className="checkbox">
           including ref? {refIncluded} <input
