@@ -193,7 +193,7 @@ const Toolkit = () => {
           target={"_blank"}
           rel="noreferrer"
         >
-          read guide{" "}
+          read guide to see how it works{" "}
         </a>
       </button>
 
@@ -221,11 +221,11 @@ const Toolkit = () => {
         }}
       >
         <a
-          href="https://www.youtube.com/watch?v=Af_lQ1zUnoM"
+          href="https://goerlifaucet.com"
           target={"_blank"}
           rel="noreferrer"
         >
-          get free ethereum to write on chain{" "}
+          get testnet ethereum to write on blockchain{" "}
         </a>
       </button>
       {!connected ? null : (
