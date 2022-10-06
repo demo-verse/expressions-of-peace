@@ -2,17 +2,20 @@ const Outro = () => {
   return (
     <div>
       <h3 style={{ fontSize: "2.2rem" }}>~ Outro ~</h3>
-      <p>
-        Expressions of peace, for a mutual assured regeneration,{" "}
-        <strong>is all about standing equal in peace and trust making. </strong>
+      <p style={{textAlign:"left", marginLeft: "10%", marginRight:"10%"}}>
+        Expressions and Acknowledgements of Peace, for a mutual assured regeneration,{" "}
+        <strong>is all about standing equal in peace and trust making: </strong> namingly, a World Peace by Equality.
         <br></br> <br></br>
-        What we have been observing so far: the ones opts-in and out of peace
-        treaties, traditionally and naturally, by delegation or inheritance of
+        Historically, we have been observing this: parties opts-in and out of peace
+        treaties; traditionally and naturally, by delegation or inheritance of
         power, have been the ones with highest capacity of violence, whether
-        they use it or not in an offensive manner. <br></br>
-        <br></br> However the majority impacted by conflicts, have no
-        significant labor, direct impact, hence observale legitimacy in the making and
-        sustaining a world peace.
+        they use it or not in an offensive manner, or even if not use at all. <br></br>
+        <br></br> However, citizens, the majority impacted by conflicts, have no
+        direct impact, significant labor, hence any observable legitimacy in the making and
+        sustaining a world peace. 
+        <br></br>        <br></br>
+
+        With peace-oriented diplomacy, we'd like to give that power to people, and that's individual sovereignty in the context of being a co-signer of a World Peace treaty.
         <br></br>
         <br></br>
         <strong>It is time to separate power and violence</strong>, in fact,

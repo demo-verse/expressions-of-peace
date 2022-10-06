@@ -2,7 +2,7 @@ import OptimisticFlowOfPeace from "./OptimisticFlowOfPeace";
 
 const HybridTheory = () => {
   return (
-    <div>
+    <div><strong>* </strong>
       <OptimisticFlowOfPeace />
       <h2
         style={{
@@ -14,18 +14,20 @@ const HybridTheory = () => {
         Constants, Dynamics & Conditionals of<br></br> a World Peace
         {/* A Hybrid Game Theory for Peace, <br></br> on Blockchain */}
       </h2>
+{/* <div style={{marginLeft: "20%", marginRight:"20%", textAlign:"left"}}> */}
+<div className="centered">
 
-      <p>
+<p style={{textAlign:"left", marginLeft: "10%", marginRight:"10%"}}>
         When someone or a state makes an <strong>Expression of Peace</strong>,
         it means that stakeholder not excluding any other people or state on
         peacemaking.
         <br></br>
         <br></br>
-        This is a mindset, that is un(variable|conditional), hence constant and  takes a high level
+        This is a mindset, that is un(variable|conditional), hence constant-like and takes a high level
         of generosity and the least need for caution; which results an acceptance of one big humanity, and an
         attitude and a feeling of living a world residency.
       </p>
-      <p>
+      <p style={{textAlign:"left", marginLeft: "10%", marginRight:"10%"}}>
         When a stakeholder finds an expression "peaceful", it's an{" "}
         <strong>Acknowledgement of Peace</strong>. Through those peer to peer
         interactions, bilateral and multilateral, so called "mini-pacts of
@@ -61,21 +63,26 @@ const HybridTheory = () => {
         </i>
         in the overall flow.
       </p>
-      <p>
+      <p style={{textAlign:"left", marginLeft: "10%", marginRight:"10%"}}>
         <strong>Recognitions of Peace</strong> are going to have conditionals,
         at least for the interactions to happen between the states in the
         Charter of the United Nations.
         
-        <br></br> <br></br> We will be imagining and designing a solution for that; being
+        <br></br> <br></br> We will be (only) imagining and designing a solution for that; which being
         an escrow system and mediation framework, including states, corporations
-        operating in the defense sector.
+        operating in the defense sector. 
+        <br></br>        <br></br>
+
+        Basically, people will be rewarding states and such corporations and investors with $respect, as they express and intend to seal when their conditionals are satisfied. Otherwise, funds they deposit to get into the escrow, would be transferred to a global fund of regeneration. 
         <br></br> <br></br>
         On this part, we're only caring about how states will recognize the
         expressions and acknowledgements of people worldwide, and reflect
         humanity via their expressed intentions to seal a World Peace as its
         final stakeholders.
       </p>
-      <strong></strong>
+</div>
+
+   
       {/* <br></br>
       <a
         href="https://en.wikipedia.org/wiki/Smart_contract"

@@ -17,15 +17,7 @@ const CurrentTransactions = () => {
         expression's transaction hash.
         <br></br>
         <br></br>{" "}
-        <i>
-          To discover all the expressions and
-          acknowledgements, choose one pseudo-transaction from list and dig into its data.
-         
-        </i>
-      </p>
-      <br></br>
-      {/* <div className="columns"> */}
-   <div className="centered">
+        <div className="centered">
    <button
         className="expr-contract-button-goerli-v2"
         style={{
@@ -42,14 +34,7 @@ const CurrentTransactions = () => {
           Expressions
         </a>
       </button>
-      <br></br>
-      <a
-            href="https://www.youtube.com/watch?v=SaqKac-3ncM"
-            target={"_blank"}
-            rel="noreferrer"
-          >
-            <span style={{ backgroundColor: "yellow", fontWeight:"bolder" }}> {">> "}Watch expressions in action</span>
-          </a>
+   
 
       <br></br>
       <button
@@ -61,24 +46,19 @@ const CurrentTransactions = () => {
           marginTop: "12px"
         }}
       >
-        <a
-          className="ack-contract-at-goerli"
-          href="https://goerli.etherscan.io/address/0x84d1c5e0915887f83e366219fb50afe06afd97be"
-          rel="noreferrer"
-          target="_blank"
-        >
-          Acknowledgements
-        </a>
+      Acknowledgements
       </button>
-<br></br>
-      <a
-            href="https://www.youtube.com/watch?v=Z_9rQ6zqh1Q"
-            target={"_blank"}
-            rel="noreferrer"
-          >
-            <span style={{ backgroundColor: "yellow", fontWeight:"bolder" }}> {">> "}Watch acknowledgements in action</span>
-          </a>
+
    </div>
+        <i>
+          To discover all the expressions and
+          acknowledgements, choose one pseudo-transaction from list and dig into its data. <br></br> We are working on displaying them here, on a dasboard and map. For now, we need your patience for a few weeks.
+         
+        </i>
+      </p>
+      <br></br>
+      {/* <div className="columns"> */}
+ 
     </div>
     // </div>
   );

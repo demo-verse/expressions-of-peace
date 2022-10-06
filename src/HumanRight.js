@@ -26,7 +26,7 @@ const HumanRight = () => {
           color: "black",
         }}
       >
-        How would you imagine, express, acknowledge and make a World Peace?
+        How would you imagine, express, acknowledge and make a World Peace? 
       </p>
 
       <p

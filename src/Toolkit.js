@@ -104,11 +104,11 @@ const Toolkit = () => {
         }}
       >
         {" "}
-        Introducing Peacemaker, <br></br>initial toolkit of peer-to-peer
-        diplomacy, @ web3.
+        Introducing the Peacemaker: <br></br>a toolkit for peer-to-peer
+        diplomacy
       </h2>
 
-      <p>
+      <p style={{marginLeft: "20%", marginRight:"20%", textAlign:"left"}}>
         As a proof of concept; a decentralized app launched on Ethereum
         blockchain's{" "}
         <a
@@ -162,32 +162,24 @@ const Toolkit = () => {
         However, we need education on using this technology*<br></br> <br></br>
         <strong>
           Here, we provide tools, the product is a World Peace, by Equality.{" "}
-          <i>Not you.</i>
+          <i>Not you.</i> {" << "}
         </strong>
-        <br></br> <br></br>
         It only requires free will, and more than that, generosity, awareness
         and common sense.
-        <br></br> <br></br>
-        <a
-          href="https://link.storjshare.io/s/jxrrj5fnnylyveqkgvxjqkzfgwzq/videoeop/EOP%20Video.mov"
-          target={"_blank"}
-          rel="noreferrer"
-        ></a>
+        {/* <br></br> <br></br> */}
+     
         {/* <br></br><br></br> */}
-        World deserves the best, so we've started with blockchain technology. We
+        {/* World deserves the best, so we've started with blockchain technology. We
         need an observable and undeniable world peace. We have the technology
-        for that, already..
+        for that, already. */}
         <br></br> <br></br>
-        The main reason is its{" "}
+        So far made efforts to design an initial solution and a roadmap <strong>*</strong> with blockchain, because of its{" "}
         <strong>distributed, resilient and transparent nature</strong>, and our
         passion to start the foundations of Peace Economies with its tokenomics:
         capacity of incentivisation.
       </p>
 
       <i> </i>
-      <br></br>
-
-      <br></br>
 
       <button
         className="read-guide-button"
@@ -201,7 +193,39 @@ const Toolkit = () => {
           target={"_blank"}
           rel="noreferrer"
         >
-          1. install{" "}
+          read guide{" "}
+        </a>
+      </button>
+
+      <button
+        className="install-metamask-button"
+        style={{
+          backgroundColor: "white",
+          color: "black",
+        }}
+      >
+        <a
+          href="https://www.youtube.com/watch?v=Af_lQ1zUnoM"
+          target={"_blank"}
+          rel="noreferrer"
+        >
+          install metamask wallet to sign{" "}
+        </a>
+      </button>
+
+      <button
+        className="install-metamask-button"
+        style={{
+          backgroundColor: "white",
+          color: "black",
+        }}
+      >
+        <a
+          href="https://www.youtube.com/watch?v=Af_lQ1zUnoM"
+          target={"_blank"}
+          rel="noreferrer"
+        >
+          get free ethereum to write on chain{" "}
         </a>
       </button>
       {!connected ? null : (
@@ -216,7 +240,7 @@ const Toolkit = () => {
       ) : (
         <div>
           <button className="dapp-button" onClick={connectHandler}>
-            2. open app
+            open app
           </button>
         </div>
       )}

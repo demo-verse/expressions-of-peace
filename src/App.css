@@ -214,6 +214,23 @@ a {
   height: 5.2rem;
 }
 
+.install-metamask-button {
+  background: #c2a513;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  /* margin-right: 2rem; */
+  /* margin-top: 2rem; */
+  border: 1px solid black;
+  border: 10px solid rgb(0, 0, 0);
+
+  /* padding: 0.3rem 0.5rem; */
+  border-radius: 0.8rem;
+  cursor: pointer;
+  width: 10rem;
+  height: 10rem;
+}
+
 .read-guide-button {
   background: #020202;
   color: white;
@@ -227,8 +244,8 @@ a {
   /* padding: 0.3rem 0.5rem; */
   border-radius: 0.8rem;
   cursor: pointer;
-  width: 12rem;
-  height: 5.2rem;
+  width: 10rem;
+  height: 10rem;
 }
 
 .watch-demo-button {
@@ -254,8 +271,8 @@ a {
   /* padding: 0.3rem 0.5rem; */
   border-radius: 0.8rem;
   cursor: pointer;
-  width: 12rem;
-  height: 3.6rem;
+  width: 10rem;
+  height: 10rem;
 }
 
 
@@ -387,7 +404,7 @@ textarea {
 }
 
 .new-expression-card textarea::placeholder {
-  font-size: 2.2rem;
+  font-size: 2rem;
   text-align: center;
   padding-top: 2rem;
 }
@@ -692,9 +709,28 @@ a:hover {
     /* margin-left: 2rem; */
     /* margin-right: 8rem; */
     cursor: pointer;
-    width: 8rem;
-    height: 8rem;
+    width: 10rem;
+    height: 10rem;
     align-content: center;
+    margin-top: 2rem;
+  }
+
+
+  .install-metamask-button {
+    background: #020202;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: bold;
+    /* margin-right: 2rem; */
+    margin-top: 2rem;
+    border: 1px solid black;
+    border: 10px solid rgb(9, 9, 9);
+  
+    /* padding: 0.3rem 0.5rem; */
+    border-radius: 0.8rem;
+    cursor: pointer;
+    width: 10rem;
+    height: 10rem;
   }
 
   .read-guide-button {
@@ -710,8 +746,8 @@ a:hover {
     /* padding: 0.3rem 0.5rem; */
     border-radius: 0.8rem;
     cursor: pointer;
-    width: 8rem;
-    height: 5.2rem;
+    width: 10rem;
+    height: 10rem;
   }
 }
 

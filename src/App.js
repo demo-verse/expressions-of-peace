@@ -34,7 +34,7 @@ const App = () => {
             lineHeight: "2.4rem",
           }}
         >
-          Individual Sovereignty, <br></br> through <br></br>Peace-oriented
+          Individual Sovereignty, <br></br> through<br></br>Peace-oriented
           Diplomacy
         </h2>
 
@@ -43,14 +43,12 @@ const App = () => {
             marginLeft: "10%",
             marginRight: "10%",
             color: "black",
-
             textAlign: "center",
-            // fontSize: "1.6rem",
+          
           }}
         >
           <span
             style={{
-              // backgroundColor: "yellow",
               color: "black",
               paddingLeft: "4px",
               paddingRight: "4px",
@@ -60,12 +58,10 @@ const App = () => {
             about being, than having.
             <br></br>
             <br></br>
-            Here, we'll be sharing rights, along with resources. It's even
-            easier.
+            Here, we'll be sharing rights, along with resources. 
             <i>
               <br></br>
-              <br></br>
-              Let's get to used to that, sooner is better.
+              It's even easier. Let's get to used to that, sooner is better.
             </i>
           </span>{" "}
         </p>
