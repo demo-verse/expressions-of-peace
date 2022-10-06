@@ -140,7 +140,7 @@ const Toolkit = () => {
 
         <a
         
-          href="https://www.youtube.com/watch?v=SaqKac-3ncM"
+          href="https://www.youtube.com/watch?v=Z_9rQ6zqh1Q"
           target={"_blank"}
           rel="noreferrer"
         >
@@ -158,7 +158,6 @@ const Toolkit = () => {
         {"  in action"}
         <br></br> <br></br>
 
-        {/* https://www.youtube.com/watch?v=Z_9rQ6zqh1Q */}
         It will not cost a dime to use your right to stand equal on peacemaking.
         However, we need education on using this technology*<br></br> <br></br>
         <strong>
