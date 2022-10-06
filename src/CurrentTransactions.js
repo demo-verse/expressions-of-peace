@@ -43,6 +43,15 @@ const CurrentTransactions = () => {
         </a>
       </button>
       <br></br>
+      <a
+            href="https://www.youtube.com/watch?v=SaqKac-3ncM"
+            target={"_blank"}
+            rel="noreferrer"
+          >
+            <span style={{ backgroundColor: "yellow", fontWeight:"bolder" }}> {">> "}Watch expressions in action</span>
+          </a>
+
+      <br></br>
       <button
         className="ack-contract-button-goerli"
         style={{
@@ -63,7 +72,7 @@ const CurrentTransactions = () => {
       </button>
 <br></br>
       <a
-            href="https://link.storjshare.io/s/jxrrj5fnnylyveqkgvxjqkzfgwzq/videoeop/EOP%20Video.mov"
+            href="https://www.youtube.com/watch?v=Z_9rQ6zqh1Q"
             target={"_blank"}
             rel="noreferrer"
           >

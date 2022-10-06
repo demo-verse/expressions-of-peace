@@ -80,8 +80,18 @@ const Footer = () => {
           github
         </a>
 
-        {/* {gasPrice} gwei &bull; {blockNumber} */}
+        <a
+          className="source-code-link"
+          href="https://www.youtube.com/channel/UCqtm34_hfBCSnFr03KgqUSg/featured"
+          rel="noreferrer"
+          target="_blank"
+          style={{ fontSize: "1.2rem" }}
+        >
+          youtube
+        </a>
       </div>
+
+    
 
     <br></br><br></br>
       <div className="columns">
