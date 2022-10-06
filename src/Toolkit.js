@@ -104,7 +104,8 @@ const Toolkit = () => {
         }}
       >
         {" "}
-        Initial toolkit of<br></br> peer-to-peer diplomacy
+        Introducing Peacemaker, <br></br>initial toolkit of peer-to-peer
+        diplomacy, @ web3.
       </h2>
 
       <p>
@@ -116,34 +117,75 @@ const Toolkit = () => {
           rel="noreferrer"
         >
           <u>test networks.</u>
-        </a>{" "}
-        <br></br> <br></br>
-        This means, it will not cost a dime to use your right to stand equal on
-        peacemaking. 
+        </a>
         <br></br>
-        Here, we provide tools, the product is a World Peace, by Equality. <i>Not you.</i>
+        <br></br>
+         {"Watch "} <a
+        
+          href="https://www.youtube.com/watch?v=SaqKac-3ncM"
+          target={"_blank"}
+          rel="noreferrer"
+        >
+          <span
+            style={{
+              backgroundColor: "turquoise",
+              // paddingBlock: "1.2rem",
+              fontWeight: "bolder",
+            }}
+          >
+            {" "}
+            {">> "} expressions
+          </span>{" "}
+        </a> {" and "} 
+
+        <a
+        
+          href="https://www.youtube.com/watch?v=SaqKac-3ncM"
+          target={"_blank"}
+          rel="noreferrer"
+        >
+          <span
+            style={{
+              backgroundColor: "turquoise",
+              // paddingBlock: "1.2rem",
+              fontWeight: "bolder",
+            }}
+          >
+            {" "}
+            acknowledgements {" <<"}
+          </span>{" "}
+        </a>
+        {"  in action"}
+        <br></br> <br></br>
+
+        {/* https://www.youtube.com/watch?v=Z_9rQ6zqh1Q */}
+        It will not cost a dime to use your right to stand equal on peacemaking.
+        However, we need education on using this technology*<br></br> <br></br>
+        <strong>
+          Here, we provide tools, the product is a World Peace, by Equality.{" "}
+          <i>Not you.</i>
+        </strong>
         <br></br> <br></br>
         It only requires free will, and more than that, generosity, awareness
         and common sense.
         <br></br> <br></br>
-        World deserves the best, so we've started with blockchain technology. 
-        <br></br>
-        Reason is its resilient, transparent and undeniable behaviour.
-      </p>
-
-      <i>
-        {" "}
-        {/* <a
+        <a
           href="https://link.storjshare.io/s/jxrrj5fnnylyveqkgvxjqkzfgwzq/videoeop/EOP%20Video.mov"
           target={"_blank"}
           rel="noreferrer"
-        >
-          <span style={{ backgroundColor: "yellow", fontWeight: "bolder" }}>
-            {" "}
-            {">> "}Watch this to see in action
-          </span>
-        </a> */}
-      </i>
+        ></a>
+        {/* <br></br><br></br> */}
+        World deserves the best, so we've started with blockchain technology. We
+        need an observable and undeniable world peace. We have the technology
+        for that, already..
+        <br></br> <br></br>
+        The main reason is its{" "}
+        <strong>distributed, resilient and transparent nature</strong>, and our
+        passion to start the foundations of Peace Economies with its tokenomics:
+        capacity of incentivisation.
+      </p>
+
+      <i> </i>
       <br></br>
 
       <br></br>

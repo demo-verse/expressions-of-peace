@@ -53,23 +53,24 @@ const App = () => {
               // backgroundColor: "yellow",
               color: "black",
               paddingLeft: "4px",
-              paddingRight: "4px"
+              paddingRight: "4px",
             }}
           >
-              Peacemaking is an experience, that is priceless; <br></br> more about being,
-              than having.
-              <br></br>
-              <br></br>
-              Here, we'll be sharing rights, along with resources. It's even easier.
+            Peacemaking is an experience, that is priceless; <br></br> more
+            about being, than having.
+            <br></br>
+            <br></br>
+            Here, we'll be sharing rights, along with resources. It's even
+            easier.
             <i>
-              <br></br><br></br>
+              <br></br>
+              <br></br>
               Let's get to used to that, sooner is better.
             </i>
-
-            
           </span>{" "}
         </p>
 
+<hr></hr>
         <div className="centered">
           <h1
             style={{
@@ -160,7 +161,7 @@ const App = () => {
           <hr></hr>
           <br></br>
           <Outro />
-          <img alt="YinYang symbol" src="YinYang.png" width={"22%"}></img>
+          <img alt="YinYang symbol" src="YinYang.png" width={"12%"}></img>
         </p>
         <hr></hr>
 

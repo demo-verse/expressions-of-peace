@@ -3,15 +3,29 @@ const Footer = () => {
   return (
     <footer>
       <div className="centered">
-      <a
+      <div className="centered" style={{fontSize: "1.2rem",textAlign: "center", marginBlock: "0.2rem"}}>
+     <div style={{marginTop:"2rem"}}>
+     <img
+        alt="Peace symbol, colorful"
+        src="colorful-peace.png"
+        width={"16%"}
+      ></img>
+     </div>
+        <p style={{marginBlock: "1.4rem", marginLeft:"4rem", marginRight:"4rem", fontSize:"1.4rem"}}>
+          This human right, concept, perspective and notion shall be a canvas; on which our
+          kind making <span style={{color: "black", backgroundColor: "turquoise"}}>Art of Peace,</span> {" together"}
+        </p>
+      </div>
+
+        <a
           className="source-code-link"
           href="https://miro.com/app/board/uXjVOX94E5k=/?invite_link_id=638195022576"
           rel="noreferrer"
           target="_blank"
-          style={{ fontSize: "1.2rem" }}
+          style={{marginTop:"0.2rem", fontSize: "1.2rem" }}
         >
-          imagination
-        </a>  
+        {"> "}  imagination {" <"}
+        </a>
         <br></br>
       </div>
       <div className="columns">
@@ -91,11 +105,9 @@ const Footer = () => {
         </a>
       </div>
 
-    
-
-    <br></br><br></br>
+      <br></br>
+      <br></br>
       <div className="columns">
-      
         <a
           // className="source-code-link"
           href="https://demover.se"
@@ -126,9 +138,9 @@ const Footer = () => {
           ></img>
         </a>
       </div>
-      <br></br>   
-<div className="centered columns">
-<a
+      <br></br>
+      <div className="centered columns">
+        <a
           className="license-link"
           href="https://creativecommons.org/licenses/by-sa/2.0/"
           rel="noreferrer"
@@ -152,8 +164,14 @@ const Footer = () => {
             height={"60px"}
           ></img>
         </a>
-        
-</div>
+      </div>
+      <hr></hr>
+      <div className="centered">
+        <p  style={{ fontSize: "1.2rem", marginTop:"1rem" }}>contact@stateful.art</p>
+        <p  style={{ fontSize: "1.2rem" }}> {"<| "}<span style={{color: "turquoise"}}>all rights acknowledged</span> {" |>"}</p>
+
+      </div>
+    
     </footer>
   );
 };
