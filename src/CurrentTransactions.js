@@ -46,7 +46,14 @@ const CurrentTransactions = () => {
           marginTop: "12px"
         }}
       >
-      Acknowledgements
+          <a
+          className="expr-contract-at-goerli-v2"
+          href="https://goerli.etherscan.io/address/0x84d1c5e0915887f83e366219fb50afe06afd97be"
+          rel="noreferrer"
+          target="_blank"
+        >
+          Acknowledgements
+        </a>
       </button>
 
    </div>
