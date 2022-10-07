@@ -83,7 +83,7 @@ const Footer = () => {
         >
           twitter
         </a>
-
+{/* 
         <a
           className="source-code-link"
           href="https://github.com/demo-verse/expressions-of-peace"
@@ -92,7 +92,7 @@ const Footer = () => {
           style={{ fontSize: "1.2rem" }}
         >
           github
-        </a>
+        </a> */}
 
         <a
           className="source-code-link"
