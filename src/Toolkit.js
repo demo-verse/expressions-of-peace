@@ -108,7 +108,7 @@ const Toolkit = () => {
         diplomacy
       </h2>
 
-      <p style={{marginLeft: "20%", marginRight:"20%", textAlign:"left"}}>
+      <p style={{ marginBottom: "4rem",marginLeft: "10%", marginRight:"10%", textAlign:"left"}}>
         As a proof of concept; a decentralized app launched on Ethereum
         blockchain's{" "}
         <a
@@ -147,7 +147,8 @@ const Toolkit = () => {
           <span
             style={{
               backgroundColor: "turquoise",
-              // paddingBlock: "1.2rem",
+              color: "wheat",
+              background: "rgb(183, 76, 163)",
               fontWeight: "bolder",
             }}
           >
@@ -155,7 +156,7 @@ const Toolkit = () => {
             acknowledgements {" <<"}
           </span>{" "}
         </a>
-        {"  in action"}
+        {"  in action."}
         <br></br> <br></br>
 
         It will not cost a dime to use your right to stand equal on peacemaking.
@@ -179,7 +180,6 @@ const Toolkit = () => {
         capacity of incentivisation.
       </p>
 
-      <i> </i>
 
       <button
         className="read-guide-button"

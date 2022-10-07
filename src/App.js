@@ -34,8 +34,8 @@ const App = () => {
             lineHeight: "2.4rem",
           }}
         >
-          Individual Sovereignty, <br></br> through<br></br>Peace-oriented
-          Diplomacy
+          Peace-oriented
+          Diplomacy, <br></br> through<br></br>Individual Sovereignty
         </h2>
 
         <p
