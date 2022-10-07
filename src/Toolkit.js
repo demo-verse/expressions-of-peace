@@ -108,7 +108,14 @@ const Toolkit = () => {
         diplomacy
       </h2>
 
-      <p style={{ marginBottom: "4rem",marginLeft: "10%", marginRight:"10%", textAlign:"left"}}>
+      <p
+        style={{
+          marginBottom: "4rem",
+          marginLeft: "10%",
+          marginRight: "10%",
+          textAlign: "left",
+        }}
+      >
         As a proof of concept; a decentralized app launched on Ethereum
         blockchain's{" "}
         <a
@@ -120,8 +127,8 @@ const Toolkit = () => {
         </a>
         <br></br>
         <br></br>
-         {"Watch "} <a
-        
+        {"Watch "}{" "}
+        <a
           href="https://www.youtube.com/watch?v=SaqKac-3ncM"
           target={"_blank"}
           rel="noreferrer"
@@ -136,10 +143,9 @@ const Toolkit = () => {
             {" "}
             {">> "} expressions
           </span>{" "}
-        </a> {" and "} 
-
+        </a>{" "}
+        {" and "}
         <a
-        
           href="https://www.youtube.com/watch?v=Z_9rQ6zqh1Q"
           target={"_blank"}
           rel="noreferrer"
@@ -158,28 +164,25 @@ const Toolkit = () => {
         </a>
         {"  in action."}
         <br></br> <br></br>
-
         It will not cost a dime to use your right to stand equal on peacemaking.
-        However, we need education on using this technology*<br></br> <br></br>
+        It requires free will, and more than that, generosity, awareness and
+        common sense.
+        <br></br>
+        <br></br>
+        In fact, developers of blockchain-based applications use these test
+        environments before taking their systems to main networks. However, we
+        still need equal access to blockchain technology.<br></br> <br></br>
+        So far made efforts to design an initial solution and a roadmap{" "}
+        <strong>*</strong> with blockchain, because of its{" "}
+        <strong>distributed, resilient and transparent nature</strong>, and our
+        passion to start the foundations of Peace Economies.
+        <br></br>
+        <br></br>
         <strong>
           Here, we provide tools, the product is a World Peace, by Equality.{" "}
           <i>Not you.</i> {" << "}
         </strong>
-        It only requires free will, and more than that, generosity, awareness
-        and common sense.
-        {/* <br></br> <br></br> */}
-     
-        {/* <br></br><br></br> */}
-        {/* World deserves the best, so we've started with blockchain technology. We
-        need an observable and undeniable world peace. We have the technology
-        for that, already. */}
-        <br></br> <br></br>
-        So far made efforts to design an initial solution and a roadmap <strong>*</strong> with blockchain, because of its{" "}
-        <strong>distributed, resilient and transparent nature</strong>, and our
-        passion to start the foundations of Peace Economies with its tokenomics:
-        capacity of incentivisation.
       </p>
-
 
       <button
         className="read-guide-button"
@@ -220,11 +223,7 @@ const Toolkit = () => {
           color: "black",
         }}
       >
-        <a
-          href="https://goerlifaucet.com"
-          target={"_blank"}
-          rel="noreferrer"
-        >
+        <a href="https://goerlifaucet.com" target={"_blank"} rel="noreferrer">
           get testnet ethereum to write on blockchain{" "}
         </a>
       </button>
