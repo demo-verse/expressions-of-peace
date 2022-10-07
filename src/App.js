@@ -44,7 +44,6 @@ const App = () => {
             marginRight: "10%",
             color: "black",
             textAlign: "center",
-          
           }}
         >
           <span
@@ -58,15 +57,15 @@ const App = () => {
             about being, than having.
             <br></br>
             <br></br>
-            Here, we'll be sharing rights, along with resources. 
+            Here, we'll be sharing rights, along with resources.
             <i>
               <br></br>
-              It's even easier. Let's get to used to that, sooner is better.
+              It's even easier; let's get used to that, the sooner the better.
             </i>
           </span>{" "}
         </p>
 
-<hr></hr>
+        <hr></hr>
         <div className="centered">
           <h1
             style={{
