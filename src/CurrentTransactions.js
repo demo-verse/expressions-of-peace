@@ -59,7 +59,8 @@ const CurrentTransactions = () => {
    </div>
         <i>
           To discover all the expressions and
-          acknowledgements, choose one pseudo-transaction from list and dig into its data. <br></br> We are working on displaying them here, on a dasboard and map. For now, we need your patience for a few weeks.
+          acknowledgements, choose one pseudo-transaction from list and dig into its data. 
+          <br></br> We are working on displaying them here, on a dasboard and map. For now, we need your patience for a few weeks.
          
         </i>
 
@@ -102,7 +103,7 @@ const CurrentTransactions = () => {
             acknowledgements {" <<"}
           </span>{" "}
         </a>
-        {" and see how we retreive data for each pseudo-transaction on the testnet."}
+        {" and see how we can read data for each pseudo-transaction on the smart contract's transaction history."}
       </p>
       <br></br>
       {/* <div className="columns"> */}
