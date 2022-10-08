@@ -12,7 +12,7 @@ const CurrentTransactions = () => {
       </h2>
 
       <p>
-        Currently, in our app, we're displaying only the last Expression of Peace, that's the only one stored at a time. <br></br> <br></br> The rest, is on each contract's transaction history, cannot be altered aka. immutable. <br></br>
+        Currently, in our app, we're displaying only the last Expression of Peace, that's the only one stored at a time. <br></br> <br></br> The rest, is on each contract's transaction history, cannot be changed/altered. Widely called as, <strong>immutable.</strong> <br></br>
         Acknowledgements of Peace are manually done via referring to an existing
         expression's transaction hash.
         <br></br>
