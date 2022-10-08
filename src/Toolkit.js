@@ -127,7 +127,7 @@ const Toolkit = () => {
         </a>
         <br></br>
         <br></br>
-        {"Watch "}{" "}
+        {"Watch the making of "}{" "}
         <a
           href="https://www.youtube.com/watch?v=SaqKac-3ncM"
           target={"_blank"}
@@ -153,7 +153,7 @@ const Toolkit = () => {
           <span
             style={{
               backgroundColor: "turquoise",
-              color: "wheat",
+              color: "white",
               background: "rgb(183, 76, 163)",
               fontWeight: "bolder",
             }}
@@ -162,29 +162,12 @@ const Toolkit = () => {
             acknowledgements {" <<"}
           </span>{" "}
         </a>
-        {"  in action."}
-        <br></br> <br></br>
-        It will not cost a dime to use your right to stand equal on peacemaking.
-        It requires free will, and more than that, generosity, awareness and
-        common sense.
-        <br></br>
-        <br></br>
-        In fact, developers of blockchain-based applications use these test
-        environments before taking their systems to main networks. However, we
-        still need equal access to blockchain technology.<br></br> <br></br>
-        So far made efforts to design an initial solution and a roadmap{" "}
-        <strong>*</strong> with blockchain, because of its{" "}
-        <strong>distributed, resilient and transparent nature</strong>, and our
-        passion to start the foundations of Peace Economies.
-        <br></br>
-        <br></br>
-        <strong>
-          Here, we provide tools, the product is a World Peace, by Equality.{" "}
-          <i>Not you.</i> {" << "}
-        </strong>
-      </p>
+        {"  in action. After reading guide below and then following the other steps, you're set for making (textual) expressions and acknowledgements on blockchain."} Just click <strong>open app </strong>button near the end of this section, when you are all set.
+        <br></br> 
 
-      <button
+<br></br>
+       <div className="centered">
+       <button
         className="read-guide-button"
         style={{
           backgroundColor: "white",
@@ -196,9 +179,36 @@ const Toolkit = () => {
           target={"_blank"}
           rel="noreferrer"
         >
-          read guide to see how it works{" "}
+          read your guide here{" "}
         </a>
       </button>
+       </div>
+       <br></br>
+        Using your human right to stand equal on peacemaking, so in this project, expressing and acknowledging peace will never cost. It mainly requires free will, and more to that, generosity, awareness and
+        common sense.
+        <br></br>
+        <br></br>
+
+    
+        In fact, developers of blockchain-based applications use these test
+        environments before taking their systems to main networks. <br></br> <br></br> On this project, we
+        still need better accessibility to the technology and education, especially in themes around decentralized technologies, peace and climate change. <br></br> <br></br>
+
+<i>        We're happy that, this year's United Nations General Assembly had a resolution around introducing Peace and Climate Change related subjects into the curriculums at school, globally. Afterall, quality education and its accessibility will be among the requirements and as well, outcomes of a World Peace. <br></br><br></br>
+</i>      
+            
+        So far made efforts to design an initial solution and a roadmap{" "}
+        <strong>*</strong> with blockchain, because of its{" "}
+        <strong>distributed, resilient and transparent nature</strong>, and our
+        passion to start the foundations of Peace Economies. 
+        <br></br>
+        <br></br>
+        <strong>
+          Here, we provide free and open sourced/minded tools. <br></br> And the product not you, it is a World Peace, by Equality.{" "}{" << "}
+          <i>thanks to you.</i> 
+        </strong>
+      </p>
+
 
       <button
         className="install-metamask-button"

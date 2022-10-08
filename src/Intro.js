@@ -27,7 +27,7 @@ const Intro = () => {
             lineHeight: "2.2rem",
           }}
         >
-          express yourselves!
+          express yourself..
         </h1>
       
     </div>

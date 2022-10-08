@@ -19,7 +19,7 @@ return(
               bgColor={"yellow"}
               questionTxt={"why"}
               answerTxt={
-                "Making common sense and meaning is needed to solve global problems. A World Peace is a consensus, that needs consensus in the first place, to sincerely and effectively move away with the problems that caused by a senseless competition, resulting with sustained conflicts, wars, inequalities and climate change."
+                "Making common sense and meaning is needed to solve global problems. A World Peace is a consensus, that needs consensus in the first place; to sincerely and effectively move away with the problems that caused by a senseless competition, resulting with sustained conflicts, wars, inequalities and climate change."
               }
             />
             <AccordeonItem
@@ -46,15 +46,14 @@ return(
               bgColor={"#afeeee"}
               questionTxt={"when "}
               answerTxt={
-                'An ultimate world peace, is our legacy, to be. An effective use of this emerging right, in fact, should suffice, even when considered as a  "once in a lifetime experience" of the 21st century and forwards.'
-              }
+                'A World Peace, is our legacy, to be. An effective use of this emerging right, in fact, should suffice, even when it considered as a  "once in a lifetime action", of the 21st century. We would like to observe things really accelerated, by the time the first state recognizes the inclusion of their citizens, even if not delegating the peacemaking activities back to them altogether. That very event, can be interpreted as the starter of a domino effect.'              }
             />
             <AccordeonItem
               txtColor={"white"}
               bgColor={"black"}
               questionTxt={"lastly"}
               answerTxt={
-                'This human right, design, notion and perspective shall be a canvas, on which our kind making Art of Peace, together. Future generations, beholders, will be learning from our efforts and remember us as "aware, courageous, artful and peaceful enough" on empowering ourselves, each other and our states, via accumulation and observation of legitimate and sincere, will and intentions. Trust that, a World peace, initiated by citizens, is not a matter of legitimacy, but matter of time in its observation and accomplishment. Power and violence shall be seperated so well.'
+                'This human right, design, notion and perspective shall be a canvas, on which our kind making Art of Peace, together. Future generations, beholders, will be learning from our efforts and remember us as "aware, courageous, artful and peaceful enough" on empowering ourselves, each other and our states, via accumulation and observation of legitimate and sincere, will and intentions. Trust that, a World Peace, initiated by citizens, is not a matter of legitimacy, but matter of time in its observation and accomplishment. Power and violence shall be seperated so well.'
               }
             />
           </div>

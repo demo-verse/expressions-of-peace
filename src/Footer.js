@@ -13,7 +13,7 @@ const Footer = () => {
      </div>
         <p style={{marginBlock: "1.4rem", marginLeft:"4rem", marginRight:"4rem", fontSize:"1.4rem"}}>
           This human right, concept, perspective and notion shall be a canvas; on which our
-          kind making <span style={{color: "black", backgroundColor: "turquoise"}}>Art of Peace,</span> {" together"}
+          kind making <span style={{color: "black", backgroundColor: "turquoise"}}>Art of Peace,</span> {" together."}
         </p>
       </div>
 

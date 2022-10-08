@@ -62,6 +62,47 @@ const CurrentTransactions = () => {
           acknowledgements, choose one pseudo-transaction from list and dig into its data. <br></br> We are working on displaying them here, on a dasboard and map. For now, we need your patience for a few weeks.
          
         </i>
+
+        <br></br>        <br></br>
+
+         
+
+        {"Have a look at again, "}{" "}
+        <a
+          href="https://www.youtube.com/watch?v=SaqKac-3ncM"
+          target={"_blank"}
+          rel="noreferrer"
+        >
+          <span
+            style={{
+              backgroundColor: "turquoise",
+              // paddingBlock: "1.2rem",
+              fontWeight: "bolder",
+            }}
+          >
+            {" "}
+            {">> "} expressions
+          </span>{" "}
+        </a>{" "}
+        {" and "}
+        <a
+          href="https://www.youtube.com/watch?v=Z_9rQ6zqh1Q"
+          target={"_blank"}
+          rel="noreferrer"
+        >
+          <span
+            style={{
+              backgroundColor: "turquoise",
+              color: "white",
+              background: "rgb(183, 76, 163)",
+              fontWeight: "bolder",
+            }}
+          >
+            {" "}
+            acknowledgements {" <<"}
+          </span>{" "}
+        </a>
+        {" and see how we retreive data for each pseudo-transaction on the testnet."}
       </p>
       <br></br>
       {/* <div className="columns"> */}
