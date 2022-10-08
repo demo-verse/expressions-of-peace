@@ -205,9 +205,9 @@ const Toolkit = () => {
         <div className="centered">
           <iframe
             width="100%"
-            height="540"
+            height="640"
             src="https://www.youtube.com/embed/SaqKac-3ncM?start=15"
-            title="YouTube video player"
+            title="Making of an Expression of Peace"
             frameborder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen={true}
