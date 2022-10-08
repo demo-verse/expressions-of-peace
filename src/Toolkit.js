@@ -192,20 +192,24 @@ const Toolkit = () => {
         <br></br>
         
         <br></br>
-        Using your human right to stand equal on peacemaking, so in this
-        project, expressing and acknowledging peace will never cost. It mainly
+        In this project, using your human right to stand equal on peacemaking, via expressing and acknowledging peace will never cost something of a real value. <br></br> It mainly and basically
         requires free will, and more to that, generosity, awareness and common
         sense.
         <br></br>
         <br></br>
-        In fact, developers of blockchain-based applications use these test
-        environments before taking their systems to main networks. <br></br>{" "}
+        Software developers of blockchain-based applications use these test
+        environments before taking their systems to main networks. We care about its tech, but also care about the financial capacities and incentives that would bring to the table. <br></br>{" "}
         <br></br> 
-        
+         So far made efforts to design an initial solution and a roadmap{" "}
+        <strong>*</strong> with blockchain technology, because of its{" "}
+        <strong>distributed, resilient and transparent nature</strong>, and our
+        passion to start the foundations of Peace Economies.
+        <br></br>
+        <br></br>
         <div className="centered">
           <iframe
             width="100%"
-            height="640"
+            height="500"
             src="https://www.youtube.com/embed/SaqKac-3ncM?start=15"
             title="Making of an Expression of Peace"
             frameborder="0" 
@@ -227,15 +231,10 @@ const Toolkit = () => {
           well, outcomes of a World Peace. <br></br>
           <br></br>
         </i>
-        So far made efforts to design an initial solution and a roadmap{" "}
-        <strong>*</strong> with blockchain, because of its{" "}
-        <strong>distributed, resilient and transparent nature</strong>, and our
-        passion to start the foundations of Peace Economies.
-        <br></br>
-        <br></br>
+       
         <strong>
-          Here, we provide free and open sourced/minded tools. <br></br> And the
-          product not you, it is a World Peace, by Equality. {" << "}
+          Here, we provide free and open sourced and minded tools. <br></br> & the
+          product is not you, {">> "}it is a World Peace, by Equality. {" << "}
           <i>thanks to you.</i>
         </strong>
       </p>
