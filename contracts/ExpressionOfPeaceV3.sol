@@ -7,7 +7,7 @@ pragma solidity >=0.5.0 <0.9.0;
 //from EoPV1 and EoPV2 contracts as express_as_anonymous_world_resident
 // will be using ISO codes:  https://www.countrycode.org/
 
-contract ExpressionOfPeaceV2 {
+contract ExpressionOfPeaceV3 {
     struct Expression {
         string last_expression;
         string country_code;
