@@ -784,19 +784,7 @@ a:hover {
     width: 40%;
   }
 
-  /* create div with background image */
-  .envelope {
-    background-image: url("../public/envelope.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 20vh;
-    width: 100vw;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1;
-  }
+
 
   .last-expression-card p {
     text-align: start;

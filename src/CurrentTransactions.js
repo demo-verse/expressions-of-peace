@@ -1,7 +1,7 @@
 const CurrentTransactions = () => {
   return (
-    <div style={{width:"80%", marginLeft: "10%"}}>
-            <h2
+    <div style={{ width: "80%", marginLeft: "10%" }}>
+      <h2
         style={{
           fontSize: "2.2rem",
           marginTop: "42px",
@@ -12,61 +12,66 @@ const CurrentTransactions = () => {
       </h2>
 
       <p>
-        Currently, in our app, we're displaying only the last Expression of Peace, that's the only one stored at a time. <br></br> <br></br> The rest, is on each contract's transaction history, cannot be changed/altered. Widely called as, <strong>immutable.</strong> <br></br>
-        
+        Currently, in our app, we're displaying only the last Expression of
+        Peace, that's the only one stored at a time.
+        <br></br> <br></br>
+        <div className="centered">
+          <img
+            width={"420px"}
+            alt="Last expression"
+            src="a_world_peace_is_imminent.png"
+          ></img>
+        </div>
+        <br></br>
+        The rest, is on each contract's transaction history, cannot be
+        changed/altered. Widely called as, <strong>immutable.</strong> <br></br>
         <br></br>
         <br></br>{" "}
         <div className="centered">
-   <button
-        className="expr-contract-button-goerli-v2"
-        style={{
-          backgroundColor: "white",
-          color: "black",
-        }}
-      >
-        <a
-          className="expr-contract-at-goerli-v2"
-          href="https://goerli.etherscan.io/address/0x82e4afb4c80f84ffa2c95af29293c538f96f726e"
-          rel="noreferrer"
-          target="_blank"
-        >
-          Expressions
-        </a>
-      </button>
-   
+          <button
+            className="expr-contract-button-goerli-v2"
+            style={{
+              backgroundColor: "white",
+              color: "black",
+            }}
+          >
+            <a
+              className="expr-contract-at-goerli-v2"
+              href="https://goerli.etherscan.io/address/0x82e4afb4c80f84ffa2c95af29293c538f96f726e"
+              rel="noreferrer"
+              target="_blank"
+            >
+              Expressions
+            </a>
+          </button>
 
-      <br></br>
-      <button
-        className="ack-contract-button-goerli"
-        style={{
-          backgroundColor: "white",
-          color: "black",
-          marginBottom: "32px",
-          marginTop: "12px"
-        }}
-      >
-          <a
-          className="expr-contract-at-goerli-v2"
-          href="https://goerli.etherscan.io/address/0x84d1c5e0915887f83e366219fb50afe06afd97be"
-          rel="noreferrer"
-          target="_blank"
-        >
-          Acknowledgements
-        </a>
-      </button>
-
-   </div>
+          <br></br>
+          <button
+            className="ack-contract-button-goerli"
+            style={{
+              backgroundColor: "white",
+              color: "black",
+              marginBottom: "32px",
+              marginTop: "12px",
+            }}
+          >
+            <a
+              className="expr-contract-at-goerli-v2"
+              href="https://goerli.etherscan.io/address/0x84d1c5e0915887f83e366219fb50afe06afd97be"
+              rel="noreferrer"
+              target="_blank"
+            >
+              Acknowledgements
+            </a>
+          </button>
+        </div>
         <i>
-          To discover all the expressions and
-          acknowledgements, choose one pseudo-transaction from list and dig into its data. 
-          <br></br> We are working on displaying them here, on a dasboard and map. For now, we need your patience for a few weeks.
-         
+          To discover all the expressions and acknowledgements, choose one
+          pseudo-transaction from list and dig into its data.
+          <br></br> We are working on displaying them here, on a dasboard and
+          map. For now, we need your patience for a few weeks.
         </i>
-
-        <br></br>        <br></br>
-
-         
-
+        <br></br> <br></br>
         {"Have a look at again, "}{" "}
         <a
           href="https://www.youtube.com/watch?v=SaqKac-3ncM"
@@ -102,11 +107,12 @@ const CurrentTransactions = () => {
             acknowledgements {" <<"}
           </span>{" "}
         </a>
-        {" and see how we can read data for each pseudo-transaction on the smart contract's transaction history."}
+        {
+          " and see how we can read data for each pseudo-transaction on the smart contract's transaction history."
+        }
       </p>
       <br></br>
       {/* <div className="columns"> */}
- 
     </div>
     // </div>
   );
