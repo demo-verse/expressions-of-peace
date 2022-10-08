@@ -165,8 +165,10 @@ const Toolkit = () => {
         {
           "  in action. After reading guide below and then following the other steps, you're set for making (textual) expressions and acknowledgements on blockchain."
         }{" "}
-        <br></br>
-        <br></br> When you are all set, just click <strong>open app </strong>
+        <br></br><br></br>
+        Note that, currently Acknowledgements of Peace are manually done via referring to an existing
+        expression's transaction hash, via directly interacting with the smart contract on etherscan. (see it in action, above)
+        <br></br><br></br> When you are all set, just click <strong>open app </strong>
         button near the end of this section.
         <br></br>
         <br></br>
