@@ -4,12 +4,22 @@ pragma solidity >=0.5.0 <0.9.0;
 // in V2, country-citizenship relation will be 1:1
 // we'll be introducing two new fields: full_name and nick_name
 // and re-interpret the just_express function
-//from EoPV1 and EoPV2 contracts as express_as_anonymous_world_resident
-// will be using ISO codes:  https://www.countrycode.org/
+// from EoPV1 and EoPV2 contracts as express_as_anonymous_world_resident
+// country_code corresponds to ISO codes :  https://www.countrycode.org/
+//////////////////////////////////////////////////////////////////////
+// Incoming changes.. of a slow peace
+// in the next one, we'll make 1:N cardinality in person:citizenship relation,
+// meaning people can include their multi-nationality if they had.
 
+// also, will start increasing accessibility of expressions from 4th or 5th versions, 
+// meaning more multimedia (probably as their urls to ipfs) 
+// -- maybe would start using the NFT metadata standard at this stage. 
+// ( it is still quite raw as well. )
+// https://github.com/demo-verse/expressions-metadata-standard
+//////////////////////////////////////////////////////////////////////
 contract ExpressionOfPeaceV3 {
     struct Expression {
-        string last_expression;
+        string expression_txt;
         string country_code;
         string full_name;
         string nick_name;
@@ -24,12 +34,10 @@ contract ExpressionOfPeaceV3 {
         string memory _nick_name
     ) {
         expr.country_code = _country_code;
-        expr.last_expression = _expression_txt;
+        expr.expression_txt = _expression_txt;
         expr.full_name = _full_name;
         expr.nick_name = _nick_name;
     }
-
-  
 
     function express_as_citizen(
         string memory _expression_txt,
@@ -37,7 +45,7 @@ contract ExpressionOfPeaceV3 {
         string memory _full_name,
         string memory _nick_name
     ) public {
-        expr.last_expression = _expression_txt;
+        expr.expression_txt = _expression_txt;
         expr.country_code = _country_code;
         expr.full_name = _full_name;
         expr.nick_name = _nick_name;
@@ -47,7 +55,7 @@ contract ExpressionOfPeaceV3 {
         string memory _expression_txt,
         string memory _country_code
     ) public {
-        expr.last_expression = _expression_txt;
+        expr.expression_txt = _expression_txt;
         expr.country_code = _country_code;
     }
 
@@ -56,7 +64,7 @@ contract ExpressionOfPeaceV3 {
         string memory _full_name,
         string memory _nick_name
     ) public {
-        expr.last_expression = _expression_txt;
+        expr.expression_txt = _expression_txt;
         expr.full_name = _full_name;
         expr.nick_name = _nick_name;
     }
@@ -67,7 +75,7 @@ contract ExpressionOfPeaceV3 {
     function express_as_anonymous_world_resident(string memory _expression_txt)
         public
     {
-        expr.last_expression = _expression_txt;
+        expr.expression_txt = _expression_txt;
     }
 
     function read() public view returns (Expression memory) {
