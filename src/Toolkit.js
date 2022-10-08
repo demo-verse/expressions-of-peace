@@ -162,53 +162,81 @@ const Toolkit = () => {
             acknowledgements {" <<"}
           </span>{" "}
         </a>
-        {"  in action. After reading guide below and then following the other steps, you're set for making (textual) expressions and acknowledgements on blockchain."} Just click <strong>open app </strong>button near the end of this section, when you are all set.
-        <br></br> 
-
-<br></br>
-       <div className="centered">
-       <button
-        className="read-guide-button"
-        style={{
-          backgroundColor: "white",
-          color: "black",
-        }}
-      >
-        <a
-          href="https://www.canva.com/design/DAFJb1m8MxA/olzSyTC7tGyGkbUrSBhMfQ/edit?utm_content=DAFJb1m8MxA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
-          target={"_blank"}
-          rel="noreferrer"
-        >
-          read your guide here{" "}
-        </a>
-      </button>
-       </div>
-       <br></br>
-        Using your human right to stand equal on peacemaking, so in this project, expressing and acknowledging peace will never cost. It mainly requires free will, and more to that, generosity, awareness and
-        common sense.
+        {
+          "  in action. After reading guide below and then following the other steps, you're set for making (textual) expressions and acknowledgements on blockchain."
+        }{" "}
+        <br></br>
+        <br></br> When you are all set, just click <strong>open app </strong>
+        button near the end of this section.
         <br></br>
         <br></br>
-
-    
+        <div className="centered">
+          <button
+            className="read-guide-button"
+            style={{
+              backgroundColor: "white",
+              color: "black",
+            }}
+          >
+            <a
+              href="https://www.canva.com/design/DAFJb1m8MxA/olzSyTC7tGyGkbUrSBhMfQ/edit?utm_content=DAFJb1m8MxA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+              target={"_blank"}
+              rel="noreferrer"
+            >
+              read your guide here{" "}
+            </a>
+          </button>
+        </div>
+        <br></br>
+        
+        <br></br>
+        Using your human right to stand equal on peacemaking, so in this
+        project, expressing and acknowledging peace will never cost. It mainly
+        requires free will, and more to that, generosity, awareness and common
+        sense.
+        <br></br>
+        <br></br>
         In fact, developers of blockchain-based applications use these test
-        environments before taking their systems to main networks. <br></br> <br></br> On this project, we
-        still need better accessibility to the technology and education, especially in themes around decentralized technologies, peace and climate change. <br></br> <br></br>
+        environments before taking their systems to main networks. <br></br>{" "}
+        <br></br> 
+        
+        <div className="centered">
+          <iframe
+            width="100%"
+            height="480"
+            src="https://www.youtube.com/embed/SaqKac-3ncM?start=15"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullscreen
+          ></iframe>
+        </div>
 
-<i>        We're happy that, this year's United Nations General Assembly had a resolution around introducing Peace and Climate Change related subjects into the curriculums at school, globally. Afterall, quality education and its accessibility will be among the requirements and as well, outcomes of a World Peace. <br></br><br></br>
-</i>      
-            
+        <br></br>
+        On this project, we still need better accessibility to the
+        technology and education, especially in themes around decentralized
+        technologies, peace and climate change. <br></br> <br></br>
+        <i>
+          {" "}
+          We're happy that, this year's United Nations General Assembly had a
+          resolution around introducing Peace and Climate Change related
+          subjects into the curriculums at school, globally. Afterall, quality
+          education and its accessibility will be among the requirements and as
+          well, outcomes of a World Peace. <br></br>
+          <br></br>
+        </i>
         So far made efforts to design an initial solution and a roadmap{" "}
         <strong>*</strong> with blockchain, because of its{" "}
         <strong>distributed, resilient and transparent nature</strong>, and our
-        passion to start the foundations of Peace Economies. 
+        passion to start the foundations of Peace Economies.
         <br></br>
         <br></br>
         <strong>
-          Here, we provide free and open sourced/minded tools. <br></br> And the product not you, it is a World Peace, by Equality.{" "}{" << "}
-          <i>thanks to you.</i> 
+          Here, we provide free and open sourced/minded tools. <br></br> And the
+          product not you, it is a World Peace, by Equality. {" << "}
+          <i>thanks to you.</i>
         </strong>
       </p>
-
 
       <button
         className="install-metamask-button"
