@@ -29,13 +29,7 @@ contract ExpressionOfPeaceV3 {
         expr.nick_name = _nick_name;
     }
 
-    // writing an expression via this function
-    //is a behaviour of an anonymous world resident .
-    function express_as_anonymous_world_resident(string memory _expression_txt)
-        public
-    {
-        expr.last_expression = _expression_txt;
-    }
+  
 
     function express_as_citizen(
         string memory _expression_txt,
@@ -65,6 +59,15 @@ contract ExpressionOfPeaceV3 {
         expr.last_expression = _expression_txt;
         expr.full_name = _full_name;
         expr.nick_name = _nick_name;
+    }
+
+      // writing an expression via this function
+    //is a behaviour of an anonymous world resident .
+
+    function express_as_anonymous_world_resident(string memory _expression_txt)
+        public
+    {
+        expr.last_expression = _expression_txt;
     }
 
     function read() public view returns (Expression memory) {
