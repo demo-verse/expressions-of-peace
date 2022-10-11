@@ -8,25 +8,31 @@ const CurrentTransactions = () => {
           lineHeight: "2.4rem",
         }}
       >
-        Browse the happenings <br></br> on blockchain
+        Observe the happenings <br></br> on blockchain, <br></br> as pseudo-transactions
       </h2>
 
       <p>
         Currently, in our app, we're displaying only the last Expression of
         Peace, that's the only one stored at a time.
         <br></br> <br></br>
-        <div className="centered">
-          <img
-            width={"420px"}
-            alt="Last expression"
-            // src="a_world_peace_is_imminent.png"
-            src="expression_from_Joanna_from_Argentina.png"
-          ></img>
-        </div>
-        <br></br>
         The rest, is on each contract's transaction history, cannot be
         changed/altered. Widely called as, <strong>immutable.</strong> <br></br>
         <br></br>
+        <div className="centered">
+        <a
+             href="https://goerli.etherscan.io/address/0x82e4afb4c80f84ffa2c95af29293c538f96f726e"
+             rel="noreferrer"
+             target="_blank"
+           >
+             <img
+               alt="an optimistic flow of peace"
+               src="browse_happenings_on_etherscan.png"
+                width={"80%"}
+             ></img>
+           </a>
+        </div>
+        <br></br>
+      
         <br></br>{" "}
         <div className="centered">
           <button
