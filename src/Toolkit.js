@@ -104,9 +104,18 @@ const Toolkit = () => {
         }}
       >
         {" "}
-        Introducing the Peacemaker: <br></br>a toolkit for peer-to-peer
+        Introducing the Peacemaker: <br></br>a toolkit for decentralized
         diplomacy
       </h2>
+
+      <div className="centered">
+          <img
+            width={"80%"}
+            alt="Last expression"
+            // src="a_world_peace_is_imminent.png"
+            src="the_peacemaker_w_joanna_s_expression.png"
+          ></img>
+        </div>
 
       <p
         style={{

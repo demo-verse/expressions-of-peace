@@ -19,7 +19,8 @@ const CurrentTransactions = () => {
           <img
             width={"420px"}
             alt="Last expression"
-            src="a_world_peace_is_imminent.png"
+            // src="a_world_peace_is_imminent.png"
+            src="expression_from_Joanna_from_Argentina.png"
           ></img>
         </div>
         <br></br>
