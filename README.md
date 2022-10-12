@@ -34,7 +34,7 @@ As of 9.8.2022 we've made a hard switch to Goerli network since Rinkeby's faucet
 
 https://goerli.etherscan.io/address/0xe563950e3d97c1cf11665163d4b14ead092c503c
 
-One can simply check transaction hashes to display each expressions made with each set operation on the contract.
+One can simply check transaction hashes to display each expression made with each set operation on the contract.
 
 For example, this transaction:
 https://rinkeby.etherscan.io/tx/0xa7df107d235becf0d5d8c891c8a8d5be01eff05a406b1b330549fbbb23dc69c2
@@ -57,7 +57,7 @@ Hope this gives a hint for what's next, it is acknowledgements.
 
 We've found that easiest way is referring/quoting from another expression, with its transactionHash on the ledger.
 
-Special thanks to [@ChristianChiarulli](https://github.com/ChristianChiarulli) for open sourcing their web3 knowledge, stack and especially well use of the ethers library [on this repo](https://github.com/ChristianChiarulli/intro-fullstack-ethereum), resulting we decided building on top of that code, seperating hardhat logic to another repository for now, to be added soon. 
+Special thanks to [@ChristianChiarulli](https://github.com/ChristianChiarulli) for open sourcing their web3 knowledge, stack and especially well use of the ethers library [on this repo](https://github.com/ChristianChiarulli/intro-fullstack-ethereum), resulting we decided building on top of that code, separating hardhat logic to another repository for now, to be added soon. 
 
 **Bests, in Peace**
 
