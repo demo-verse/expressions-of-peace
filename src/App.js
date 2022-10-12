@@ -34,8 +34,8 @@ const App = () => {
             lineHeight: "2.4rem",
           }}
         >
-          Peace-oriented
-          Diplomacy, <br></br> through<br></br>Individual Sovereignty
+          Peace-oriented Diplomacy, <br></br> through<br></br>Individual
+          Sovereignty
         </h2>
 
         <p
@@ -164,11 +164,22 @@ const App = () => {
         <br></br>
         <div className="express-yourself">
           {/* Our Dance - Wax Tailor ft. Charlotte Savary */}
+
+          <iframe
+              width="80%"
+              height="640"
+            src="https://www.youtube.com/embed/cLnkQAeMbIM"
+            title="Gorillaz - Dirty Harry"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+
           <iframe
             width="80%"
             height="640"
             src="https://www.youtube.com/embed/-QtqhPR7d0I"
-            title="YouTube video player"
+            title="Wax Tailor - Our Dance"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
