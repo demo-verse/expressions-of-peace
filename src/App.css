@@ -37,9 +37,11 @@ h2 {
   margin: 0 auto;
   padding: 0 2rem;
 }
+
 .after-connect {
   background-color: black;
 }
+
 .express-yourself {
   background-color: #282c34;
   display: flex;
@@ -47,6 +49,7 @@ h2 {
   justify-content: center;
   align-items: center;
 }
+
 .morpheus {
   /* padding: 1.2rem; */
   display: flex;
@@ -54,10 +57,12 @@ h2 {
   justify-content: center;
   align-items: center;
 }
+
 .morpheus img {
   /* padding: 1.2rem; */
   width: "60%";
 }
+
 .change-the-world {
   padding: 1.2rem;
   background-color: #7098e9;
@@ -72,11 +77,11 @@ h2 {
   width: 70%;
 }
 
-.flags-menu{
+.flags-menu {
   background-color: black;
   height: 2.6rem;
   color: black;
-  
+
 }
 
 .centered {
@@ -84,8 +89,9 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
+
 }
+
 .navbar {
   color: #fff;
   height: 6rem;
@@ -100,13 +106,14 @@ h2 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  
-  
+
+
 }
 
 .columns .web3 {
   margin: 4rem;
 }
+
 .columns .connect-button {
   margin: 0.5rem;
 }
@@ -143,6 +150,7 @@ h2 {
   margin-right: 36%; */
 
 }
+
 a {
   text-decoration: inherit;
 }
@@ -159,7 +167,7 @@ a {
 .navbar .logo a {
   color: #fff;
   text-decoration: none;
-  
+
 }
 
 .navbar .logo a:hover {
@@ -262,6 +270,7 @@ a {
   width: 12rem;
   height: 5.2rem;
 }
+
 .enter-dapp-button {
   background: #0f1213;
   color: white;
@@ -325,7 +334,7 @@ a {
   padding: 2.2rem 2rem;
   text-align: center;
   width: 80%;
-  background-color:#33FFF3;
+  background-color: #33FFF3;
 }
 
 .checkbox {
@@ -354,11 +363,13 @@ textarea {
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
   padding: 1.2rem 2rem;
 }
+
 .expressions {
   background-color: #f1f1f1;
   padding: 1.2rem;
   margin-bottom: 0.5rem;
 }
+
 .expressions h2 {
   line-height: 1.2rem;
   margin-top: 0.6rem;
@@ -371,11 +382,13 @@ textarea {
   font-size: 1.2rem;
   text-align: center;
 }
+
 .last-expression-card p {
   height: auto;
   overflow-y: auto;
   font-size: 1.2rem;
 }
+
 .last-expression-card {
   display: flex;
   flex-direction: column;
@@ -390,13 +403,13 @@ textarea {
 
 .new-expression-card {
   display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: #202428;
-    color: #fff;
-    border-radius: 0.8rem;
-    box-shadow: 0 3px 5px rgb(0 0 0 / 60%);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #202428;
+  color: #fff;
+  border-radius: 0.8rem;
+  box-shadow: 0 3px 5px rgb(0 0 0 / 60%);
 }
 
 .new-expression-card textarea {
@@ -546,6 +559,7 @@ footer .container {
   padding-bottom: 0.7rem;
   background-color: transparent;
 }
+
 .questions {
   margin: 0;
 
@@ -568,9 +582,11 @@ footer .container {
   min-height: 60px;
   text-align: center;
 }
+
 .question-style h2 {
   text-align: center;
 }
+
 .faq-accordeon {
 
   margin-top: 20px;
@@ -580,9 +596,10 @@ footer .container {
   margin-left: 8px;
 }
 
-.question-align .question-style{
+.question-align .question-style {
   text-align: center;
 }
+
 .question-styling {
   font-size: 32px;
   width: 100%;
@@ -605,6 +622,7 @@ footer .container {
 .answer-divider {
   border-top: 1px solid lightgray;
 }
+
 .question-align question-style {
   text-align: center;
 }
@@ -642,6 +660,7 @@ footer a {
 
   /* add hover */
 }
+
 a:hover {
   background-color: yellow;
   color: #1d003b;
@@ -667,10 +686,12 @@ a:hover {
   color: #1d003b;
 
 }
+
 .source-code:hover {
   background-color: rgb(112, 226, 152);
   color: #1d003b;
 }
+
 .license-link:hover {
   background-color: rgb(103, 176, 245);
   /* color: #1d003b; */
@@ -725,7 +746,7 @@ a:hover {
     margin-top: 2rem;
     border: 1px solid black;
     border: 10px solid rgb(9, 9, 9);
-  
+
     /* padding: 0.3rem 0.5rem; */
     border-radius: 0.8rem;
     cursor: pointer;
@@ -742,7 +763,7 @@ a:hover {
     margin-top: 2rem;
     border: 1px solid black;
     border: 10px solid rgb(0, 0, 0);
-  
+
     /* padding: 0.3rem 0.5rem; */
     border-radius: 0.8rem;
     cursor: pointer;
@@ -758,13 +779,13 @@ a:hover {
   .account-button {
     display: none;
   }
-  
+
   .account-button:active {
     display: none;
 
   }
 
-  
+
   footer a {
     display: flex;
     flex-direction: column;
@@ -776,10 +797,11 @@ a:hover {
 
   }
 
- 
+
   .new-expression-card button {
     width: 40%;
   }
+
   .last-expression-card button {
     width: 40%;
   }
@@ -796,6 +818,7 @@ a:hover {
   .new-expression-card {
     width: 100%;
   }
+
   textarea {
     font-size: 1.2rem;
     width: 100%;
@@ -809,6 +832,7 @@ a:hover {
     width: 20%;
     margin-top: 30px;
   }
+
   .last-expression-card button {
     width: 20%;
     margin-top: 10px;
