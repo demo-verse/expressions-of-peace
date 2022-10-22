@@ -77,10 +77,23 @@ h2 {
   width: 70%;
 }
 
+#rfs-btn {
+  font-size: 18px;
+  width: 100%;
+  position: relative;
+  top: -13px;
+  left: auto;
+  padding: 5px 15px;
+  color: white;
+  border-radius: 0.4rem;
+  background-color: #2073e5;
+}
+
 .flags-menu {
-  background-color: black;
+  /* background-color: black; */
   height: 2.6rem;
   color: black;
+  margin: 0;
 
 }
 
