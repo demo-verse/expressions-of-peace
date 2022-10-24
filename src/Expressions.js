@@ -215,9 +215,10 @@ const Expressions = () => {
         </div> */}
           <br></br>
           <div className="sign-for-peace">
+            <i>optionally, add your citizenship</i>
+
             <div className="country-select">
               <div className="columns">
-                <i>optionally, add your citizenship</i>
                 <ReactFlagsSelect
                   selected={selectedCountry}
                   className="flags-menu"

@@ -81,8 +81,8 @@ h2 {
   font-size: 18px;
   width: 100%;
   position: relative;
-  top: -13px;
-  left: auto;
+  top: 15px;
+  left: 50%;
   padding: 5px 15px;
   color: white;
   border-radius: 0.4rem;
