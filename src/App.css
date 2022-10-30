@@ -78,7 +78,7 @@ h2 {
 }
 
 #rfs-btn {
-  font-size: 18px;
+  font-size: 1.2rem;
   width: 100%;
   position: relative;
   top: 15px;
@@ -94,6 +94,7 @@ h2 {
   height: 2.6rem;
   color: black;
   margin: 0;
+  font-size: 1.2rem;
 
 }
 
@@ -430,7 +431,7 @@ textarea {
 }
 
 .new-expression-card textarea::placeholder {
-  font-size: 2rem;
+  font-size: 1.2rem;
   text-align: center;
   padding-top: 2rem;
 }

@@ -224,18 +224,10 @@ const Expressions = () => {
                   className="flags-menu"
                   // optionsSize={12}
                   // selectedSize={12}
+                  style={{
+                    fontSize: '1.2rem',
+                  }}
                   searchPlaceholder="type to search"
-                  style={
-                    {
-                      // display: 'table',
-                      // margin: '0',
-                      // height: '8%',
-                      // padding: '0',
-                      // backgroundColor: 'black',
-                      // color: 'white',
-                      // fontSize: '12px',
-                    }
-                  }
                   fullWidth={false}
                   onSelect={(countryCode) => setSelectedCountry(countryCode)}
                   searchable
