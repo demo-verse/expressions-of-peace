@@ -1,14 +1,14 @@
-import "./App.css";
-import { useState, useEffect } from "react";
-import { ethers } from "ethers";
-import ReactFlagsSelect from "react-flags-select";
+import './App.css';
+import { useState, useEffect } from 'react';
+import { ethers } from 'ethers';
+import ReactFlagsSelect from 'react-flags-select';
 
-import getUnicodeFlagIcon from "country-flag-icons/unicode";
+import getUnicodeFlagIcon from 'country-flag-icons/unicode';
 
 // import { makeNFT } from "./NFTMaker";
 // import ExpressionOfPeace from "./artifacts/contracts/ExpressionOfPeace.sol/ExpressionOfPeace_Rinkeby.json";
 // import ExpressionOfPeace_Goerli from "./artifacts/contracts/ExpressionOfPeace.sol/ExpressionOfPeace_Goerli.json";
-import ExpressionOfPeace_GoerliV2 from "./artifacts/contracts/ExpressionOfPeace.sol/ExpressionOfPeace_GoerliV2.json";
+import ExpressionOfPeace_GoerliV2 from './artifacts/contracts/ExpressionOfPeace.sol/ExpressionOfPeace_GoerliV2.json';
 // import AcknowledgementOfPeace_Goerli from "./artifacts/contracts/AcknowledgementOfPeace.sol/AcknowledgementOfPeace_Goerli.json";
 
 // const expressionOfPeaceAddress = "0x6d584295790d2C9f7F2D4249B6CAebC15b1DA682";
@@ -16,7 +16,7 @@ import ExpressionOfPeace_GoerliV2 from "./artifacts/contracts/ExpressionOfPeace.
 //   "0xe563950E3d97c1CF11665163D4B14EAD092C503C";
 
 const expressionOfPeaceAddress_GoerliV2 =
-  "0x82e4afb4c80f84ffa2c95af29293c538f96f726e";
+  '0x82e4afb4c80f84ffa2c95af29293c538f96f726e';
 
 // const acknowledgementOfPeace_Goerli =
 //   "0x84d1C5e0915887F83E366219FB50AFe06aFD97Be";
@@ -30,10 +30,10 @@ const CHAIN_ID_GOERLI = 5; // goerli testnet @ ethereum
 
 const Expressions = () => {
   // const [provider, setProvider] = useState();
-  const [inputValue, setInputValue] = useState("");
-  const [value, setValue] = useState("");
-  const [selectedCountry, setSelectedCountry] = useState("");
-  const [lastCountry, setLastCountry] = useState("");
+  const [inputValue, setInputValue] = useState('');
+  const [value, setValue] = useState('');
+  const [selectedCountry, setSelectedCountry] = useState('');
+  const [lastCountry, setLastCountry] = useState('');
 
   useEffect(() => {
     console.log(`selected country as: ${selectedCountry}`);
@@ -47,17 +47,17 @@ const Expressions = () => {
       try {
         const hexChainId = dec2hex(_currentChainId);
         await window.ethereum.request({
-          method: "wallet_switchEthereumChain",
+          method: 'wallet_switchEthereumChain',
           params: [{ chainId: hexChainId }],
         });
       } catch (switchError) {
         // This error code indicates that the Görli network was not present @ the MetaMask wallet.
         if (switchError.code === 4902) {
           console.log(
-            "This network is not available in your metamask, please add it manually."
+            'This network is not available in your metamask, please add it manually.',
           );
         }
-        console.log("Failed to switch to the network");
+        console.log('Failed to switch to the network');
       }
     }
 
@@ -69,14 +69,14 @@ const Expressions = () => {
       // note that rinkeby will be closed down in October 2022.
       if (window.ethereum && _currentChainId !== Number(CHAIN_ID_GOERLI)) {
         // setNetworkValid(false);
-        console.log("switching to goerli for now.");
+        console.log('switching to goerli for now.');
         // setDesiredChainId(CHAIN_ID_GOERLI);
         requestSwitchNetwork(CHAIN_ID_GOERLI);
       } else {
-        console.log("network is valid");
+        console.log('network is valid');
       }
     } else {
-      console.log("no provider");
+      console.log('no provider');
     }
   };
   // handles submit button
@@ -97,7 +97,7 @@ const Expressions = () => {
   //   const signer = provider.getSigner();
   //   const contractWithSigner = contract.connect(signer);
   //   await contractWithSigner.acknowledge_as_citizen("","",""); // this should work
-    
+
   // };
 
   const handleSubmit = async (e) => {
@@ -111,7 +111,7 @@ const Expressions = () => {
     const contract = new ethers.Contract(
       expressionOfPeaceAddress_GoerliV2,
       expressionOfPeaceABI_GoerliV2,
-      provider
+      provider,
     );
 
     // a signer is necessary when we want to write to blockchain
@@ -124,7 +124,7 @@ const Expressions = () => {
     } else if (inputValue.length > 0 && !selectedCountry.length > 0) {
       await contractWithSigner.just_express(inputValue);
     } else {
-      alert("Please express peace, as in the text area."); // alert for now
+      alert('Please express peace, as in the text area.'); // alert for now
     }
 
     // await contractWithSigner.set(inputValue);
@@ -134,11 +134,11 @@ const Expressions = () => {
   const handleRetrieveData = async () => {
     const provider = new ethers.providers.Web3Provider(window.ethereum);
     networkHandler();
-    console.log("retreiving data..");
+    console.log('retreiving data..');
     const expressionOfPeaceContract = new ethers.Contract(
       expressionOfPeaceAddress_GoerliV2,
       expressionOfPeaceABI_GoerliV2,
-      provider
+      provider,
     );
 
     //get last expression tuple (array),
@@ -147,8 +147,8 @@ const Expressions = () => {
     //https://www.countrycode.org/
 
     const expression = await expressionOfPeaceContract.read();
-    let expressionTxt = "";
-    let countryISO = "";
+    let expressionTxt = '';
+    let countryISO = '';
 
     // if both expression text and citizenship info received
     //from the last expression, do the first if below
@@ -179,9 +179,15 @@ const Expressions = () => {
         <h2>Last Expression</h2>
         <button onClick={handleRetrieveData}>read</button>
 
-        <p style={{fontSize: "1.6rem"}}>{value}</p>
+        <p style={{ fontSize: '1.6rem' }}>{value}</p>
         {lastCountry.length > 0 ? (
-          <> <h1>expressed by someone <br></br> from </h1> {getUnicodeFlagIcon(lastCountry)}</>
+          <>
+            {' '}
+            <h1>
+              expressed by someone <br></br> from{' '}
+            </h1>{' '}
+            {getUnicodeFlagIcon(lastCountry)}
+          </>
         ) : null}
       </div>
 
@@ -207,22 +213,25 @@ const Expressions = () => {
             onChange={(e) => handleRefToggle(e.target.checked)}
           />
         </div> */}
-        <br></br>
+          <br></br>
           <div className="sign-for-peace">
+            <i>optionally, add your citizenship</i>
+
             <div className="country-select">
               <div className="columns">
-              <i>optionally, add your citizenship</i>
-              <ReactFlagsSelect
-                selected={selectedCountry}
-                className="flags-menu"
-                optionsSize={12}
-                selectedSize={12}
-                searchPlaceholder="type to search"
-                
-                fullWidth={false}
-                onSelect={(countryCode) => setSelectedCountry(countryCode)}
-                searchable
-              />
+                <ReactFlagsSelect
+                  selected={selectedCountry}
+                  className="flags-menu"
+                  // optionsSize={12}
+                  // selectedSize={12}
+                  style={{
+                    fontSize: '1.2rem',
+                  }}
+                  searchPlaceholder="type to search"
+                  fullWidth={false}
+                  onSelect={(countryCode) => setSelectedCountry(countryCode)}
+                  searchable
+                />
               </div>
             </div>
             <br></br>
