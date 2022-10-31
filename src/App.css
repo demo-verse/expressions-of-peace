@@ -82,7 +82,7 @@ h2 {
   width: 100%;
   position: relative;
   top: 15px;
-  left: 58%;
+  left: 48%;
   padding: 7px 16px;
   color: black;
   border-radius: 0.4rem;
@@ -443,7 +443,7 @@ textarea {
   /* font: inherit; */
   font-size: 1.2rem;
   border: 1px solid black;
-  padding: 10px 49px;
+  padding: 10px 220px;
   border-radius: 0.4rem;
   cursor: pointer;
   /* margin: 1rem; */
@@ -454,6 +454,11 @@ textarea {
   /* width: 40%; */
   /* max-width: inherit; */
   width: inherit;
+}
+
+.new-expression-card .sign-button button :hover {
+  background: black;
+  color: white;
 }
 
 /* divide a div in two  */
