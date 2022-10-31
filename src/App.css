@@ -82,11 +82,11 @@ h2 {
   width: 100%;
   position: relative;
   top: 15px;
-  left: 44%;
-  padding: 7px 15px;
-  color: white;
+  left: 58%;
+  padding: 7px 16px;
+  color: black;
   border-radius: 0.4rem;
-  background-color: #2073e5;
+  background-color: tomato;
 }
 
 .flags-menu {
@@ -438,12 +438,12 @@ textarea {
 
 
 .new-expression-card .sign-button button {
-  background: #2073e5;
-  color: white;
+  background: white;
+  color: black;
   /* font: inherit; */
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   border: 1px solid black;
-  padding: 0.5rem 3.2rem;
+  padding: 10px 49px;
   border-radius: 0.4rem;
   cursor: pointer;
   /* margin: 1rem; */
