@@ -12,7 +12,8 @@ const HumanRight = () => {
           paddingTop: "20px",
         }}
       >
-        <strong style={{ fontSize: "2rem" }}>Generation Peace!</strong>
+        <strong style={{ fontSize: "2rem", color: "red" }}>Generation</strong>        <strong style={{ fontSize: "2rem" }}>{" "} Peace!</strong>
+
       </h3>
       <p
         className="centered"
@@ -21,12 +22,12 @@ const HumanRight = () => {
           lineHeight: "2.4rem",
           paddingLeft: "40px",
           paddingRight: "40px",
-          backgroundColor: "orange",
+          backgroundColor: "turquoise",
           paddingBlock: "20px",
           color: "black",
         }}
       >
-        How would you imagine, express, acknowledge and make a World Peace? 
+        How would you imagine a World Peace, and make one? 
       </p>
 
       <p
@@ -43,18 +44,18 @@ const HumanRight = () => {
             backgroundColor: "yellow",
             color: "black",
             paddingRight: "6px",
+            justifyContent: "center",
             paddingLeft: "6px",
                       paddingBlock: "20px",
                       fontWeight:"500"
 
           }}
         >
-          Individuals are equally significant on being co-signers and sealers of
-          a world peace treaty*,
+          Everyone is equally significant on being co-signers and sealers of
+          a World Peace treaty, and shall be legitimately as powerful as their states, on this matter, in the 21st century.
         </span>{" "}
         <br></br>
-        .. and shall be legitimately as powerful as their states on this matter, <br></br> in
-        the 21st century (and forwards)
+       
       </p>
       <p>
         <i style={{ fontSize: "1.8rem" }}>

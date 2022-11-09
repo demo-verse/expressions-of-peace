@@ -4,7 +4,7 @@ const Intro = () => {
       <img
         alt="Peace symbol, colorful"
         src="colorful-peace.png"
-        width={"22%"}
+        width={"12%"}
       ></img>
       
       <h1
