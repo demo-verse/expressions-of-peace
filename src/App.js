@@ -1,13 +1,13 @@
 import "./App.css";
 import Footer from "./Footer";
-import Outro from "./Outro";
-import Questions from "./Questions";
-import Intro from "./Intro";
-import HumanRight from "./HumanRight";
-import CurrentTransactions from "./CurrentTransactions";
+// import Outro from "./Outro";
+// import Questions from "./Questions";
+// import Intro from "./Intro";
+// import HumanRight from "./HumanRight";
+// import CurrentTransactions from "./CurrentTransactions";
 import Toolkit from "./Toolkit";
-import HybridTheory from "./HybridTheory";
-import ExtendIt from "./ExtendIt";
+// import HybridTheory from "./HybridTheory";
+// import ExtendIt from "./ExtendIt";
 
 const App = () => {
   return (
