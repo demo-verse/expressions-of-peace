@@ -176,10 +176,9 @@ const Expressions = () => {
   return (
     <section className="cards">
       <div className="last-expression-card">
-        <h2>Last Expression</h2>
-        <button onClick={handleRetrieveData}>read</button>
+        <button onClick={handleRetrieveData}>read latest</button>
 
-        <p style={{ fontSize: '1.6rem' }}>{value}</p>
+        <p style={{ fontSize: '1.6rem', textAlign:"center" }}>{value}</p>
         {lastCountry.length > 0 ? (
           <>
             {' '}
@@ -194,7 +193,7 @@ const Expressions = () => {
       <div className="new-expression-card">
         <h2>Yours, Sincerely</h2>
 
-        <form onSubmit={handleSubmit} className="input">
+        <form onSubmit={handleSubmit} className="input centered">
           <textarea
             type="text"
             required
@@ -236,6 +235,7 @@ const Expressions = () => {
             </div>
             <br></br>
             <div className="sign-button">
+              <br></br>
               <button>sign now</button>
             </div>
           </div>
@@ -258,6 +258,8 @@ const Expressions = () => {
         ></iframe>
       ) : null} */}
       </div>
+
+     
     </section>
   );
 };

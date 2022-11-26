@@ -31,6 +31,29 @@ h2 {
   flex-direction: column;
   min-height: 100vh;
 }
+.flex-container {
+  width: 20%;
+  height: 200px;
+  background: aqua;
+  margin: auto;
+  padding: 10px;
+}
+
+.all-expressions {
+  width: 20%;
+  height: 200px;
+  background: red;
+  float: left;
+  margin-right: 20% ;
+}
+
+.open-dapp {
+  margin-left: 15%;
+  height: 200px;
+  background: black;
+  margin-left: 20%;
+  float: right;
+}
 
 .container {
   max-width: 69rem;
@@ -347,7 +370,7 @@ a {
   margin: 2.2rem auto;
   padding: 2.2rem 2rem;
   text-align: center;
-  width: 80%;
+  width: 100%;
   background-color: #33FFF3;
 }
 
@@ -860,12 +883,12 @@ a:hover {
 
   .last-expression-card p {
     text-align: start;
-    height: 14rem;
+    height: 16rem;
     overflow-y: auto;
     font-size: 1.2rem;
   }
 
   .cards {
-    width: 60%;
+    width: 80%;
   }
 }

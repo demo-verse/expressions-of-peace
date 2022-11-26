@@ -96,158 +96,28 @@ const Toolkit = () => {
   };
   return (
     <div className="centered">
-      <h2
+      {/* <h2
         style={{
-          fontSize: "2.2rem",
+          fontSize: "1.8rem",
           marginTop: "20px",
           lineHeight: "2.4rem",
         }}
       >
         {" "}
-        Introducing the Peacemaker: <br></br>a toolkit for decentralized
-        diplomacy
-      </h2>
+        
+      </h2> */}
 
-      <div className="centered">
+      {/* <div className="centered">
           <img
             width={"80%"}
             alt="Last expression"
             // src="a_world_peace_is_imminent.png"
             src="the_peacemaker_w_joanna_s_expression.png"
           ></img>
-        </div>
+        </div> */}
 
-      <p
-        style={{
-          marginBottom: "4rem",
-          marginLeft: "10%",
-          marginRight: "10%",
-          textAlign: "left",
-        }}
-      >
-        As a proof of concept; a decentralized app launched on Ethereum
-        blockchain's{" "}
-        <a
-          href="https://blog.logrocket.com/mainnet-vs-testnet-environments-explained/"
-          target={"_blank"}
-          rel="noreferrer"
-        >
-          <u>test networks.</u>
-        </a>
-        <br></br>
-        <br></br>
-        {"Watch the making of "}{" "}
-        <a
-          href="https://www.youtube.com/watch?v=SaqKac-3ncM"
-          target={"_blank"}
-          rel="noreferrer"
-        >
-          <span
-            style={{
-              backgroundColor: "turquoise",
-              // paddingBlock: "1.2rem",
-              fontWeight: "bolder",
-            }}
-          >
-            {" "}
-            {">> "} expressions
-          </span>{" "}
-        </a>{" "}
-        {" and "}
-        <a
-          href="https://www.youtube.com/watch?v=Z_9rQ6zqh1Q"
-          target={"_blank"}
-          rel="noreferrer"
-        >
-          <span
-            style={{
-              backgroundColor: "turquoise",
-              color: "white",
-              background: "rgb(183, 76, 163)",
-              fontWeight: "bolder",
-            }}
-          >
-            {" "}
-            acknowledgements {" <<"}
-          </span>{" "}
-        </a>
-        {
-          "  in action. After reading guide below and then following the other steps, you're set for making (textual) expressions and acknowledgements on blockchain."
-        }{" "}
-        <br></br><br></br>
-        Note that, currently Acknowledgements of Peace are manually done via referring to an existing
-        expression's transaction hash, via directly interacting with the smart contract on etherscan. (see it in action, above)
-        <br></br><br></br> When you are all set, just click <strong>open app </strong>
-        button near the end of this section.
-        <br></br>
-        <br></br>
-        <div className="centered">
-          <button
-            className="read-guide-button"
-            style={{
-              backgroundColor: "white",
-              color: "black",
-            }}
-          >
-            <a
-              href="https://www.canva.com/design/DAFJb1m8MxA/olzSyTC7tGyGkbUrSBhMfQ/edit?utm_content=DAFJb1m8MxA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
-              target={"_blank"}
-              rel="noreferrer"
-            >
-              read your guide here{" "}
-            </a>
-          </button>
-        </div>
-        <br></br>
-        
-        <br></br>
-        In this project, using your human right to stand equal on peacemaking, via expressing and acknowledging peace will never cost something of a real value. <br></br> It mainly and basically
-        requires free will, and more to that, generosity, awareness and common
-        sense.
-        <br></br>
-        <br></br>
-        Software developers of blockchain-based applications use these test
-        environments before taking their systems to main networks. We care about its tech, but also care about the financial capacities and incentives that would bring to the table. <br></br>{" "}
-        <br></br> 
-         So far made efforts to design an initial solution and a roadmap{" "}
-        <strong>*</strong> with blockchain technology, because of its{" "}
-        <strong>distributed, resilient and transparent nature</strong>, and our
-        passion to start the foundations of Peace Economies.
-        <br></br>
-        <br></br>
-        <div className="centered">
-          <iframe
-            width="100%"
-            height="500"
-            src="https://www.youtube.com/embed/SaqKac-3ncM?start=15"
-            title="Making of an Expression of Peace"
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen={true}
-          ></iframe>
-        </div>
-
-        <br></br>
-        On this project, we still need better accessibility to the
-        technology and education, especially in themes around decentralized
-        technologies, peace and climate change. <br></br> <br></br>
-        <i>
-          {" "}
-          We're happy that, this year's United Nations General Assembly had a
-          resolution around introducing Peace and Climate Change related
-          subjects into the curriculums at school, globally. Afterall, quality
-          education and its accessibility will be among the requirements and as
-          well, outcomes of a World Peace. <br></br>
-          <br></br>
-        </i>
-       
-        <strong>
-          Here, we provide free and open sourced and minded tools. <br></br> & the
-          product is not you, {">> "}it is a World Peace, by Equality. {" << "}
-          <i>thanks to you.</i>
-        </strong>
-      </p>
-
+     
+{/* 
       <button
         className="install-metamask-button"
         style={{
@@ -274,22 +144,68 @@ const Toolkit = () => {
         <a href="https://goerlifaucet.com" target={"_blank"} rel="noreferrer">
           get testnet ethereum to write on blockchain{" "}
         </a>
-      </button>
-      {!connected ? null : (
-        <div style={{ alignSelf: "center", marginTop: "2rem" }}>
-          <button className="enter-dapp-button" onClick={disconnectHandler}>
-            close
+      </button> */}
+   
+   <div className="centered" style={{marginTop: "42px", background: "black", paddingRight:"40px", paddingLeft:"40px"}}>
+          <h1 style={{color: "white", marginTop: "20px"}}>Browse'em all:</h1>
+            <button
+            className="ack-contract-button-goerli"
+            style={{
+              backgroundColor: "white",
+              color: "black",
+              marginBottom: "32px",
+              marginTop: "12px",
+            }}
+          >
+            <a
+              className="expr-contract-at-goerli-v2"
+              href="https://goerli.etherscan.io/address/0x82e4afb4c80f84ffa2c95af29293c538f96f726e"
+              rel="noreferrer"
+              target="_blank"
+            >
+              Expressions
+            </a>
+          </button>
+
+          <button
+            className="ack-contract-button-goerli"
+            style={{
+              backgroundColor: "white",
+              color: "black",
+              marginBottom: "32px",
+              marginTop: "12px",
+            }}
+          >
+            <a
+              className="expr-contract-at-goerli-v2"
+              href="https://goerli.etherscan.io/address/0x84d1c5e0915887f83e366219fb50afe06afd97be"
+              rel="noreferrer"
+              target="_blank"
+            >
+              Acknowledgements
+            </a>
           </button>
         </div>
-      )}
       {connected ? (
         <Expressions />
       ) : (
-        <div>
-          <button className="dapp-button" onClick={connectHandler}>
-            open app
+        <div style={{ alignSelf: "center", marginTop: "2rem" }}>
+        <button style={{borderRadius: "50%"}} className="enter-dapp-button" onClick={connectHandler}>
+          express yourself
+        </button>
+      </div>
+      )}
+         {!connected ? null : (
+       <>
+        <div style={{ alignSelf: "center", marginTop: "2rem" }}>
+          <button style={{ backgroundColor: "black", color:"red", borderRadius: "50%"}} className="enter-dapp-button" onClick={disconnectHandler}>
+            I'm good.
           </button>
+
+
+          
         </div>
+        </>
       )}
     </div>
   );
