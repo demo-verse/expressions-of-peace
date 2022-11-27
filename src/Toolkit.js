@@ -96,6 +96,18 @@ const Toolkit = () => {
   };
   return (
     <div className="centered">
+
+<div style={{backgroundColor: "black", color:"white", fontSize:"1.2rem", maxWidth: "74%", padding:"1rem"}}>
+
+<p>
+"<strong>Everyone is free</strong> to be proactive, claim their equality, and use
+                their free will to participate in a World Peace treaty, and be a
+                legitimate co-signer of it, <strong>regardless of their entitlement,
+                being official or not.</strong>"
+
+</p>
+</div>
+
       {/* <h2
         style={{
           fontSize: "1.8rem",
@@ -146,8 +158,46 @@ const Toolkit = () => {
         </a>
       </button> */}
    
-   <div className="centered" style={{marginTop: "42px", background: "black", paddingRight:"40px", paddingLeft:"40px"}}>
-          <h1 style={{color: "white", marginTop: "20px"}}>Browse'em all:</h1>
+   
+      {connected ? (
+        <Expressions />
+      ) : (
+
+        <div style={{ alignSelf: "center", marginTop: "2.2rem", backgroundColor: "turquoise", borderRadius:"50%", width:"12rem" }}>
+         <div style={{ alignSelf: "center", marginTop: "2.2rem", backgroundColor: "red", borderRadius:"50%", width:"12rem" }}>
+        <button style={{borderRadius: "50%"}} className="enter-dapp-button" onClick={connectHandler}>
+          express yourself
+        </button>
+      </div>
+      </div>
+
+      
+      )}
+         {!connected ? null : (
+   
+        <div style={{ alignSelf: "center", marginTop: "2rem" }}>
+          <button style={{ backgroundColor: "black", color:"white", borderRadius: "50%"}} className="enter-dapp-button" onClick={disconnectHandler}>
+            well expressed
+          </button>
+        </div>
+
+       
+      )}
+
+
+
+
+
+<div className="centered" style={{marginTop: "2.4rem", background: "black", paddingRight:"40px", paddingLeft:"40px", fontSize:"0.88rem", textAlign:"center"}}>
+          <p style={{color: "white", marginTop: "3.2rem"}}>Up to this day, people from {" "}
+          <strong>
+            Argentina, Brazil, Costa Rica, Germany, Italy, France, Türkiye and United States of America 
+            </strong> {" "}
+            have experienced peer-to-peer diplomacy.
+          </p>
+          <p style={{color: "white"}}>Below are the active smart contracts, having expressions and acknowledgements as pseudo-transactions, on Ethereum blockchain.
+          </p>
+
             <button
             className="ack-contract-button-goerli"
             style={{
@@ -186,28 +236,11 @@ const Toolkit = () => {
             </a>
           </button>
         </div>
-      {connected ? (
-        <Expressions />
-      ) : (
-        <div style={{ alignSelf: "center", marginTop: "2rem" }}>
-        <button style={{borderRadius: "50%"}} className="enter-dapp-button" onClick={connectHandler}>
-          express yourself
-        </button>
-      </div>
-      )}
-         {!connected ? null : (
-       <>
-        <div style={{ alignSelf: "center", marginTop: "2rem" }}>
-          <button style={{ backgroundColor: "black", color:"red", borderRadius: "50%"}} className="enter-dapp-button" onClick={disconnectHandler}>
-            I'm good.
-          </button>
-
-
-          
-        </div>
-        </>
-      )}
     </div>
+
+    
+
+    
   );
 };
 
