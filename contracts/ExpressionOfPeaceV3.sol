@@ -1,22 +1,22 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.5.0 <0.9.0;
 
-// in V2, country-citizenship relation will be 1:1
+//////////////////////////////////////////////////////////////////////
+// in V3
 // we'll be introducing two new fields: full_name and nick_name
 // and re-interpret the just_express function
 // from EoPV1 and EoPV2 contracts as express_as_anonymous_world_resident
 // country_code corresponds to ISO codes :  https://www.countrycode.org/
 //////////////////////////////////////////////////////////////////////
-// Incoming changes.. of a slow peace
 // in the next one, we'll make 1:N cardinality in person:citizenship relation,
 // meaning people can include their multi-nationality if they had.
 
 // also, will start increasing accessibility of expressions from 4th or 5th versions, 
-// meaning more multimedia (probably as their urls to ipfs) 
-// -- maybe would start using the NFT metadata standard at this stage. 
-// ( it is still quite raw as well. )
-// https://github.com/demo-verse/expressions-metadata-standard
+// meaning more multimedia (probably as their urls to ipfs) types will be supported.
+// -- maybe would start using the NFT metadata specification at this stage, 
+// or if it is articulated till then, the protocol itself, Proof of Peacemaking
 //////////////////////////////////////////////////////////////////////
+
 contract ExpressionOfPeaceV3 {
     struct Expression {
         string expression_txt;
